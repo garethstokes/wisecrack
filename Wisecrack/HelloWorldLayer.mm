@@ -124,6 +124,10 @@ enum {
 		[self addChild:label z:0];
 		[label setColor:ccc3(0,0,255)];
 		label.position = ccp( screenSize.width/2, screenSize.height-50);
+        
+        SpriteHelperLoader *spriteLoader = [[SpriteHelperLoader alloc] initWithContentOfFile:@"hall_of_legends"];
+        CCSprite* sprite = [spriteLoader spriteWithUniqueName:@"red_words_2_unit_test" atPosition:ccp(100,100) inLayer:self];
+
 		
 		[self schedule: @selector(tick:)];
 	}

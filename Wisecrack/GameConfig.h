@@ -41,5 +41,9 @@
 #error(unknown architecture)
 #endif
 
+// Game Konstants
+static int kBoardColumns = 9;
+static int kBoardRows = 14;
+
 #endif // __GAME_CONFIG_H
 
