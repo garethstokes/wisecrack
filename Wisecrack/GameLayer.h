@@ -19,5 +19,6 @@
 @property (nonatomic, retain) GameBoard* board;
 
 - (id) initWithBoard:(GameBoard *)board;
+- (void) wordClick:(id) sender;
 
 @end

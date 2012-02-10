@@ -25,7 +25,10 @@
         CCSprite *large = [loader spriteWithUniqueName:@"green_words_3_unit_test" atPosition:CGPointMake(100, 160) inLayer:self];
         [large setAnchorPoint:CGPointMake(0.19, 0.5)];
         */
-         
+        
+        CCMenu *menu = [CCMenu menuWithItems: nil];
+        [menu setPosition:CGPointMake(10, 2)];
+        
         int count = 1;
         NSLog(@"iterating through rows now: %d", [board.rows count]);
         for (NSArray *row in [board rows])
@@ -41,28 +44,49 @@
                 NSLog(@"x => %d, width => %d", word.offset, (int)word.size.width);
                 CGPoint position;
                 
-                position.y = count * 30;
-                position.x = word.offset * 30;
+                int unit = 30; //* CC_CONTENT_SCALE_FACTOR();
+                
+                position.y = count * unit;
+                position.x = word.offset * unit;
                 
                 //NSLog(@"position( x=>%d, y=>%d )", (int)position.x, (int)position.y);
-                CCSprite *sprite = [loader spriteWithUniqueName:key atPosition:position inLayer:self];
+                CCSprite *sprite = [loader spriteWithUniqueName:key atPosition:CGPointMake(0,0) inLayer:nil];
+                CCSprite *sprite2 = [loader spriteWithUniqueName:key atPosition:CGPointMake(0,0) inLayer:nil];
+
+                CCMenuItemImage *button = [CCMenuItemImage 
+                                           itemFromNormalSprite:sprite
+                                           selectedSprite:sprite2
+                                           target:self 
+                                           selector:@selector(wordClick:)];
                 
                 if (word.size.width == 3)
                 {
-                    [sprite setAnchorPoint:CGPointMake(0.19, 0.5)];
+                    //[sprite setAnchorPoint:CGPointMake(0.19, 0.5)];
+                    [button setAnchorPoint:CGPointMake(0.19, 0.5)];
                 }
                 
                 if (word.size.width == 2)
                 {
-                    [sprite setAnchorPoint:CGPointMake(0.27, 0.5)];
+                    //[sprite setAnchorPoint:CGPointMake(0.27, 0.5)];
+                    [button setAnchorPoint:CGPointMake(0.27, 0.5)];
                 }
+                
+                [button setPosition:position];
+                [menu addChild:button];
+                
             }
             
             count++;
         }
+        [self addChild:menu];
     }
     
     return self;
+}
+
+- (void) wordClick:(id) sender
+{
+    NSLog(@"click");
 }
 
 @end
