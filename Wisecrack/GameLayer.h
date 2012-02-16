@@ -14,9 +14,12 @@
 @interface GameLayer : CCLayer {
     GameBoard* board;
     SpriteHelperLoader* loader;
+    NSMutableArray *buttons;
+    CCMenu* menu;
 }
 
 @property (nonatomic, retain) GameBoard* board;
+@property (nonatomic, retain) NSMutableArray* buttons;
 
 - (id) initWithBoard:(GameBoard *)board;
 - (void) wordClick:(id) sender;

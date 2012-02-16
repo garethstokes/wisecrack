@@ -169,6 +169,9 @@
 		E73ECA0C14E3BA20001B1980 /* GameItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E73ECA0B14E3BA20001B1980 /* GameItem.m */; };
 		E73ECA0F14E3BB5D001B1980 /* GameBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = E73ECA0E14E3BB5D001B1980 /* GameBoard.m */; };
 		E73ECA1314E3BE8F001B1980 /* PrototypeGame.m in Sources */ = {isa = PBXBuildFile; fileRef = E73ECA1214E3BE8F001B1980 /* PrototypeGame.m */; };
+		E76B1B0514ED0F2600CBEA83 /* backgrounds-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E76B1B0214ED0F2500CBEA83 /* backgrounds-hd.png */; };
+		E76B1B0614ED0F2600CBEA83 /* backgrounds.png in Resources */ = {isa = PBXBuildFile; fileRef = E76B1B0314ED0F2500CBEA83 /* backgrounds.png */; };
+		E76B1B0714ED0F2600CBEA83 /* backgrounds.pshs in Resources */ = {isa = PBXBuildFile; fileRef = E76B1B0414ED0F2500CBEA83 /* backgrounds.pshs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -498,6 +501,9 @@
 		E73ECA0E14E3BB5D001B1980 /* GameBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBoard.m; sourceTree = "<group>"; };
 		E73ECA1114E3BE8F001B1980 /* PrototypeGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypeGame.h; sourceTree = "<group>"; };
 		E73ECA1214E3BE8F001B1980 /* PrototypeGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrototypeGame.m; sourceTree = "<group>"; };
+		E76B1B0214ED0F2500CBEA83 /* backgrounds-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backgrounds-hd.png"; path = "Resources/backgrounds-hd.png"; sourceTree = "<group>"; };
+		E76B1B0314ED0F2500CBEA83 /* backgrounds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backgrounds.png; path = Resources/backgrounds.png; sourceTree = "<group>"; };
+		E76B1B0414ED0F2500CBEA83 /* backgrounds.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = backgrounds.pshs; path = Resources/backgrounds.pshs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -589,6 +595,9 @@
 		E73EC83414E3B7F9001B1980 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E76B1B0214ED0F2500CBEA83 /* backgrounds-hd.png */,
+				E76B1B0314ED0F2500CBEA83 /* backgrounds.png */,
+				E76B1B0414ED0F2500CBEA83 /* backgrounds.pshs */,
 				E73B71FD14E3D15100E8D554 /* hall_of_legends-hd.png */,
 				E73B71FE14E3D15100E8D554 /* hall_of_legends.png */,
 				E73B71FF14E3D15100E8D554 /* hall_of_legends.pshs */,
@@ -1092,6 +1101,9 @@
 				E73B720014E3D15100E8D554 /* hall_of_legends-hd.png in Resources */,
 				E73B720114E3D15100E8D554 /* hall_of_legends.png in Resources */,
 				E73B720214E3D15100E8D554 /* hall_of_legends.pshs in Resources */,
+				E76B1B0514ED0F2600CBEA83 /* backgrounds-hd.png in Resources */,
+				E76B1B0614ED0F2600CBEA83 /* backgrounds.png in Resources */,
+				E76B1B0714ED0F2600CBEA83 /* backgrounds.pshs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

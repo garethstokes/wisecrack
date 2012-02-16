@@ -10,6 +10,7 @@
 
 @implementation GameLayer
 @synthesize board;
+@synthesize buttons;
 
 - (id) initWithBoard:(GameBoard *)b
 {
@@ -17,6 +18,14 @@
     {
         [self setBoard:b];
         loader = [[SpriteHelperLoader alloc] initWithContentOfFile:@"hall_of_legends"];
+        SpriteHelperLoader *bgloader = [[SpriteHelperLoader alloc] initWithContentOfFile:@"backgrounds"];
+        buttons = [NSMutableArray array];
+        
+        // background
+        CGSize size = [[CCDirector sharedDirector] winSize];
+        CCSprite *background = [bgloader spriteWithUniqueName:@"level_1_bg_grid-hd" atPosition:CGPointMake(size.width /2, size.height /2) inLayer:nil];
+        
+        [self addChild:background z:0];
         
         /*
         [loader spriteWithUniqueName:@"green_words_1_unit_test" atPosition:CGPointMake(100, 100) inLayer:self];
@@ -26,8 +35,8 @@
         [large setAnchorPoint:CGPointMake(0.19, 0.5)];
         */
         
-        CCMenu *menu = [CCMenu menuWithItems: nil];
-        [menu setPosition:CGPointMake(10, 2)];
+        menu = [CCMenu menuWithItems: nil];
+        [menu setPosition:CGPointMake(9, 5)];
         
         int count = 1;
         //NSLog(@"iterating through rows now: %d", [board.rows count]);
@@ -42,7 +51,7 @@
 
                 //NSLog(@"%@", key);
                 //NSLog(@"x => %d, width => %d", word.offset, (int)word.size.width);
-                NSLog(@"%@", [word hash]);
+                //NSLog(@"%@", [word hash]);
                 CGPoint position;
                 
                 int unit = 30; //* CC_CONTENT_SCALE_FACTOR();
@@ -76,12 +85,12 @@
                 [button setWord:word];
                 [button setPosition:position];
                 [menu addChild:button];
-                
+                [buttons addObject:button];
             }
             
             count++;
         }
-        [self addChild:menu];
+        [self addChild:menu z:10];
     }
     
     return self;
@@ -103,14 +112,26 @@
     // ask the board for all the matching colours 
     [board matchingColours:word result:matches];
     
-    
     // profit???
-    NSLog(@"matches");
+    if ([matches.allKeys count] <= 2) return;
+    
     for (GameItem *w in [matches allValues]) 
     {
-        NSLog(@"%@", [w hash]);
+        for (CCMenuItemImage *button in [menu children]) 
+        {
+            if ([[button.word hash] isEqualToString:[w hash]])
+            {
+                [button setVisible:NO];
+                //[menu removeChild:button cleanup:NO];
+            }
+        }
     }
-    
+}
+
+- (void) dealloc
+{   
+    [loader release];
+    [super dealloc];
 }
 
 @end

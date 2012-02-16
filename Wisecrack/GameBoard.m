@@ -93,7 +93,11 @@
     {
         if (word.colour == item.colour) 
         {
-            [d setValue:word forKey:[word hash]];
+            if ([d objectForKey:[word hash]] == nil)
+            {
+                [d setValue:word forKey:[word hash]];
+                [self matchingColours:word result:d];
+            }
         }
     }
 }
