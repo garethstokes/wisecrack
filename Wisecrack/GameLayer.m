@@ -19,7 +19,7 @@
         [self setBoard:b];
         loader = [[SpriteHelperLoader alloc] initWithContentOfFile:@"hall_of_legends"];
         SpriteHelperLoader *bgloader = [[SpriteHelperLoader alloc] initWithContentOfFile:@"backgrounds"];
-        buttons = [NSMutableArray array];
+        buttons = [[NSMutableArray array] retain];
         
         // background
         CGSize size = [[CCDirector sharedDirector] winSize];
@@ -54,10 +54,8 @@
                 //NSLog(@"%@", [word hash]);
                 CGPoint position;
                 
-                int unit = 30; //* CC_CONTENT_SCALE_FACTOR();
-                
-                position.y = count * unit;
-                position.x = word.offset * unit;
+                position.y = count * kUnit;
+                position.x = word.offset * kUnit;
                 
                 //NSLog(@"position( x=>%d, y=>%d )", (int)position.x, (int)position.y);
                 CCSprite *sprite = [loader spriteWithUniqueName:key atPosition:CGPointMake(0,0) inLayer:nil];
@@ -84,6 +82,7 @@
                 //[button setWord:[word duplicate]];
                 [button setWord:word];
                 [button setPosition:position];
+                [button retain];
                 [menu addChild:button];
                 [buttons addObject:button];
             }
@@ -121,11 +120,16 @@
         {
             if ([[button.word hash] isEqualToString:[w hash]])
             {
-                [button setVisible:NO];
-                //[menu removeChild:button cleanup:NO];
+                NSLog(@"hash: %@", [w hash]);
+                //[button setVisible:NO];
+                [buttons removeObject:button];
+                [menu removeChild:button cleanup:NO];
             }
         }
     }
+    
+    // move buttons across; 
+    
 }
 
 - (void) dealloc
