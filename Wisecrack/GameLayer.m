@@ -99,16 +99,18 @@
     
     // initial word
     [matches setValue:word forKey:[word hash]];
-    /*
+    
     // ask the board for all the matching colours 
     [board matchingColours:word result:matches];
     
+    
     // profit???
+    NSLog(@"matches");
     for (GameItem *w in [matches allValues]) 
     {
-        //NSLog(@"%@", [w hash]);
+        NSLog(@"%@", [w hash]);
     }
-    */
+    
 }
 
 @end

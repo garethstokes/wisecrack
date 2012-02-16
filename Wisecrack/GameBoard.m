@@ -28,12 +28,15 @@
 - (GameItem *) wordAtPosition:(CGPoint)p
 {
     p.x++;
-    NSArray *row = [rows objectAtIndex:p.y];
+    NSArray *row = [rows objectAtIndex:(p.y -1)];
     for (GameItem *word in row) {
         int from = word.offset;
         int to = (word.offset + (word.size.width -1));
-        if (p.x >= from && p.x <= to)
+        //NSLog(@"[ from => %d, to => %d ]", from, to);
+        //NSLog(@"[ p.x => %f, p.y => %f ]", p.x, p.y);
+        if ((p.x -1) >= from && (p.x -1) <= to)
         {
+            //NSLog(@"found");
             return word;
         }
     }
@@ -52,7 +55,7 @@
     }
     
     // right
-    if ((word.offset -1) + word.size.width < kBoardColumns)
+    if ((word.offset) + word.size.width < kBoardColumns)
     {
         GameItem *right = [self wordAtPosition:CGPointMake(word.offset + word.size.width, word.row)];
         [words setValue:right forKey:[right hash]];
@@ -84,17 +87,13 @@
 
 - (void) matchingColours:(GameItem *)item result:(NSMutableDictionary *)d
 {
-    NSLog(@"searching neighbours");
     NSArray *neighbours = [self neighbours:item];
-    NSLog(@"neighbours found: %d", [neighbours count]);
     
     for (GameItem *word in neighbours) 
     {
-        NSLog(@"searching for a match: %@", [word hash]);
         if (word.colour == item.colour) 
         {
             [d setValue:word forKey:[word hash]];
-            NSLog(@"match found: %@", [word hash]);
         }
     }
 }
