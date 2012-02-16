@@ -30,7 +30,7 @@
         [menu setPosition:CGPointMake(10, 2)];
         
         int count = 1;
-        NSLog(@"iterating through rows now: %d", [board.rows count]);
+        //NSLog(@"iterating through rows now: %d", [board.rows count]);
         for (NSArray *row in [board rows])
         {
             //NSLog(@"row number: %d", count);
@@ -41,7 +41,8 @@
                                   (int)word.size.width];
 
                 //NSLog(@"%@", key);
-                NSLog(@"x => %d, width => %d", word.offset, (int)word.size.width);
+                //NSLog(@"x => %d, width => %d", word.offset, (int)word.size.width);
+                NSLog(@"%@", [word hash]);
                 CGPoint position;
                 
                 int unit = 30; //* CC_CONTENT_SCALE_FACTOR();
@@ -71,6 +72,8 @@
                     [button setAnchorPoint:CGPointMake(0.27, 0.5)];
                 }
                 
+                //[button setWord:[word duplicate]];
+                [button setWord:word];
                 [button setPosition:position];
                 [menu addChild:button];
                 
@@ -87,6 +90,25 @@
 - (void) wordClick:(id) sender
 {
     NSLog(@"click");
+    NSMutableDictionary *matches = [NSMutableDictionary dictionary];
+
+    // map buttons to words
+    
+    GameItem *word = ((CCMenuItemImage *)sender).word;
+    NSLog(@"word: %@", [word hash]);
+    
+    // initial word
+    [matches setValue:word forKey:[word hash]];
+    /*
+    // ask the board for all the matching colours 
+    [board matchingColours:word result:matches];
+    
+    // profit???
+    for (GameItem *w in [matches allValues]) 
+    {
+        //NSLog(@"%@", [w hash]);
+    }
+    */
 }
 
 @end

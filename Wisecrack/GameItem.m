@@ -13,8 +13,9 @@
 @synthesize colour;
 @synthesize size;
 @synthesize offset;
+@synthesize row;
 
-- (GameItem *) copy
+- (GameItem *) duplicate
 {
     GameItem *copy = [[[GameItem alloc] init] autorelease];
     [copy setName:name];
@@ -22,6 +23,12 @@
     [copy setSize:size];
     [copy setOffset:offset];
     return copy;
+}
+
+- (NSString *) hash
+{
+    NSString *x = [NSString stringWithFormat:@"[ offset => %d, row => %d, width => %f ]", offset, row, size.width];
+    return x;
 }
 
 + (GameItem *) small
@@ -52,4 +59,3 @@
 }
 
 @end
-

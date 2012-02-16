@@ -13,14 +13,17 @@
     NSString *colour;
     CGSize size;
     int offset;
+    int row;
 }
 
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) NSString *colour;
 @property (nonatomic) CGSize size;
 @property (nonatomic) int offset;
+@property (nonatomic) int row;
 
-- (GameItem *) copy;
+- (GameItem *) duplicate;
+- (NSString *) hash;
 
 + (GameItem *) small;
 + (GameItem *) medium;

@@ -29,6 +29,8 @@
 #import "CCNode.h"
 #import "CCProtocols.h"
 
+#import "GameItem.h"
+
 @class CCSprite;
 
 #define kCCItemSize 32
@@ -300,7 +302,12 @@
  */
 @interface CCMenuItemImage : CCMenuItemSprite
 {
+    // GD: i know this is a hack... but inheritence is
+    // the root of all evil
+    GameItem *word;
 }
+
+@property (nonatomic, retain) GameItem *word;
 
 /** creates a menu item with a normal and selected image*/
 +(id) itemFromNormalImage: (NSString*)value selectedImage:(NSString*) value2;

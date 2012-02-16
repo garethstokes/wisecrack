@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "GameConfig.h"
+#import "GameItem.h"
 
 @interface GameBoard : NSObject {
     CGSize size;
@@ -22,5 +23,9 @@
 
 @property (nonatomic, retain) NSMutableArray* rows;
 @property (nonatomic, retain) NSMutableArray* columns;
+
+- (GameItem *) wordAtPosition:(CGPoint)p;
+- (NSArray *) neighbours:(GameItem *)word;
+- (void) matchingColours:(GameItem *)item result:(NSMutableDictionary *)d;
 
 @end

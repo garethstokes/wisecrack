@@ -50,14 +50,6 @@
     return self;
 }
 
-- (GameItem *) randomWord
-{
-    int index = arc4random() % numberOfWords;
-    //NSLog(@"random index: %d", index);
-    GameItem *word = [words objectAtIndex:index];
-    return [word copy];
-}
-
 - (void) fill:(GameBoard *)board
 {
     //[board setRows:[[NSMutableArray alloc] init]];
@@ -69,14 +61,17 @@
         int len = kBoardColumns;
         while (len > 0)
         {
-            GameItem *word = [self randomWord];
+            int index = arc4random() % numberOfWords;
+            GameItem *word = [[words objectAtIndex:index] duplicate];
+
             if (word.size.width <= len)
             {
                 word.offset = x;
                 x += word.size.width;
                 len -= word.size.width;
+                word.row = i+1;
                 [row addObject:word];
-                NSLog(@"x => %d, width => %d", word.offset, (int)word.size.width);
+                //NSLog(@"x => %d, width => %d", word.offset, (int)word.size.width);
             }
         }
         x = 1;

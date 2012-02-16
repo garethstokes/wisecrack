@@ -19,6 +19,5 @@
 @property (nonatomic, retain) NSArray* words;
 
 - (void) fill:(GameBoard *)board;
-- (GameItem *) randomWord;
 
 @end

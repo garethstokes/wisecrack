@@ -597,6 +597,7 @@ const uint32_t	kZoomActionTag = 0xc0c05002;
 #pragma mark CCMenuItemImage
 
 @implementation CCMenuItemImage
+@synthesize word;
 
 +(id) itemFromNormalImage: (NSString*)value selectedImage:(NSString*) value2
 {
