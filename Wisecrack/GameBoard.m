@@ -20,6 +20,14 @@
     if( (self=[super init]))
     {
         [self setSize:CGSizeMake(kBoardColumns, kBoardRows)];
+        
+        self.rows = [NSMutableArray array];
+        for (int i = 0; i < kBoardRows; i++) 
+        {
+            NSMutableArray *row = [[NSMutableArray alloc] init];
+            [rows addObject:row];
+            [row release];
+        }
     }
     
     return self;
@@ -100,6 +108,39 @@
             }
         }
     }
+}
+
+- (void) fill
+{
+    int x = 1;
+    PrototypeGame* game = [[PrototypeGame alloc] init];
+    for (int i = 0; i < kBoardRows; i++) 
+    {
+        NSMutableArray* row = [rows objectAtIndex:i];
+        int len = kBoardColumns;
+        while (len > 0)
+        {
+            int index = arc4random() % [game numberOfWords];
+            GameItem *word = [[[game words] objectAtIndex:index] duplicate];
+            
+            if (word.size.width <= len)
+            {
+                word.offset = x;
+                x += word.size.width;
+                len -= word.size.width;
+                word.row = i+1;
+                [row addObject:word];
+                //NSLog(@"[ x => %d, width => %d, row => %d ]", word.offset, (int)word.size.width, word.row);
+            }
+        }
+        x = 1;
+        //[rows addObject:row];
+        //[row release];
+    }
+
+    //[self setRows:rows];
+    //[rows release];
+    [game release];
 }
 
 @end

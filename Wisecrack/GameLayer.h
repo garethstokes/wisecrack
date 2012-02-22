@@ -23,5 +23,7 @@
 
 - (id) initWithBoard:(GameBoard *)board;
 - (void) wordClick:(id) sender;
+- (void) drawButtons;
+- (void) clearButtons;
 
 @end

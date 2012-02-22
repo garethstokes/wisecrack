@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "GameBoard.h"
 #import "GameConfig.h"
 #import "GameItem.h"
 
@@ -17,7 +16,8 @@
 }
 
 @property (nonatomic, retain) NSArray* words;
+@property (nonatomic) int numberOfWords;
 
-- (void) fill:(GameBoard *)board;
+//- (void) fill:(GameBoard *)board;
 
 @end

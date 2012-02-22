@@ -19,8 +19,7 @@
     
     // GameLayer
     GameBoard * board = [[[GameBoard alloc] init] autorelease];
-    PrototypeGame *prototype = [[[PrototypeGame alloc] init] autorelease];
-    [prototype fill:board];
+    [board fill];
     
     GameLayer* gameLayer = [[GameLayer alloc] initWithBoard:board];
     [scene setGame:gameLayer];

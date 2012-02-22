@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "GameConfig.h"
 #import "GameItem.h"
+#import "PrototypeGame.h"
 
 @interface GameBoard : NSObject {
     CGSize size;
@@ -27,5 +28,6 @@
 - (GameItem *) wordAtPosition:(CGPoint)p;
 - (NSArray *) neighbours:(GameItem *)word;
 - (void) matchingColours:(GameItem *)item result:(NSMutableDictionary *)d;
+- (void) fill;
 
 @end

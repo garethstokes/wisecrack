@@ -11,6 +11,7 @@
 
 @implementation PrototypeGame
 @synthesize words;
+@synthesize numberOfWords;
 
 - (id) init
 {
@@ -48,39 +49,6 @@
     }
     
     return self;
-}
-
-- (void) fill:(GameBoard *)board
-{
-    //[board setRows:[[NSMutableArray alloc] init]];
-    NSMutableArray *rows = [[NSMutableArray alloc] initWithCapacity:kBoardRows];
-
-    int x = 1;
-    for (int i = 0; i < kBoardRows; i++) {
-        NSMutableArray *row = [[NSMutableArray alloc] init];
-        int len = kBoardColumns;
-        while (len > 0)
-        {
-            int index = arc4random() % numberOfWords;
-            GameItem *word = [[words objectAtIndex:index] duplicate];
-
-            if (word.size.width <= len)
-            {
-                word.offset = x;
-                x += word.size.width;
-                len -= word.size.width;
-                word.row = i+1;
-                [row addObject:word];
-                //NSLog(@"x => %d, width => %d", word.offset, (int)word.size.width);
-            }
-        }
-        x = 1;
-        [rows addObject:row];
-        [row release];
-    }
-    
-    [board setRows:rows];
-    [rows release];
 }
 
 @end
