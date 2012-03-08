@@ -110,27 +110,65 @@
     }
 }
 
+- (BOOL) fits:(GameItem* )word offset:(int)offset row:(int)row
+{
+    // make sure there isn't any other word already set. 
+    for (int g = 0; g < word.size.width; g++) 
+    {
+        GameItem *foundItem;
+        foundItem = [self wordAtPosition:CGPointMake(offset +g, row)];
+        if (foundItem != nil)
+        {
+            NSLog(@"found word at pos: %@", [foundItem hash]);
+            return NO;
+        }
+    }
+    
+    return YES;
+}
+
 - (void) fill
 {
     int x = 1;
     PrototypeGame* game = [[PrototypeGame alloc] init];
+    // loop through all the rows
     for (int i = 0; i < kBoardRows; i++) 
     {
         NSMutableArray* row = [rows objectAtIndex:i];
         int len = kBoardColumns;
-        while (len > 0)
+        while (x <= len)
         {
+            // pick a random word and see if it fits. 
+            // and keep doing this until the row has 
+            // been filled. 
             int index = arc4random() % [game numberOfWords];
             GameItem *word = [[[game words] objectAtIndex:index] duplicate];
             
+            word.offset = x;
+            word.row = i+1;
+            
+            NSLog(@"offset +g: %d, row: %d", x, i+1);
+            
+            if ([self fits:word offset:x row:i +1]) 
+            {
+                NSLog(@"fits: %@", [word hash]);
+            }
+            else 
+            { 
+                x++;
+                //len--;
+                continue; 
+            }
+            
+            if (x + word.size.width > kBoardColumns +1) continue;
+            
             if (word.size.width <= len)
             {
-                word.offset = x;
                 x += word.size.width;
-                len -= word.size.width;
-                word.row = i+1;
+                //len -= word.size.width;
                 [row addObject:word];
                 //NSLog(@"[ x => %d, width => %d, row => %d ]", word.offset, (int)word.size.width, word.row);
+                NSLog(@"adding: %@, x: %d", [word hash], x);
             }
         }
         x = 1;
