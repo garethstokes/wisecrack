@@ -697,7 +697,7 @@
 {
 	NSAssert( action != nil, @"Argument must be non-nil");
 	
-	[[CCActionManager sharedManager] addAction:action target:self paused:!isRunning_];
+	[[CCActionManager sharedManager] addAction:action target:self paused:NO];
 	return action;
 }
 

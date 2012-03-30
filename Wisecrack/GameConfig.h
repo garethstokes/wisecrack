@@ -43,8 +43,9 @@
 
 // Game Konstants
 static int kBoardColumns = 9;
-static int kBoardRows = 14;
-static int kUnit = 30;
+static int kBoardRows = 12;
+static int kUnitWidth = 34;
+static int kUnitHeight = 36;
 
 #endif // __GAME_CONFIG_H
 

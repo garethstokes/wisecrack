@@ -89,9 +89,9 @@
 				<key>Frame-HD</key>
 				<string>{{0, 0}, {640, 960}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0}, {0.496894, 1}}</string>
+				<string>{{0, 0}, {0.496894, 0.941176}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1288, 960}</string>
+				<string>{1288, 1020}</string>
 				<key>Image</key>
 				<string>backgrounds.png</string>
 				<key>Image-HD</key>
@@ -101,11 +101,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/backgrounds-hd.png</string>
 				<key>Name</key>
-				<string>level_1_bg_grid-hd</string>
+				<string>level_1_bg</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{644, 480}</string>
+				<string>{644, 510}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -173,9 +173,9 @@
 				<key>Frame-HD</key>
 				<string>{{646, 0}, {640, 960}}</string>
 				<key>FrameUV</key>
-				<string>{{0.501553, 0}, {0.998447, 1}}</string>
+				<string>{{0.501553, 0}, {0.998447, 0.941176}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1288, 960}</string>
+				<string>{1288, 1020}</string>
 				<key>Image</key>
 				<string>backgrounds.png</string>
 				<key>Image-HD</key>
@@ -185,11 +185,263 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/backgrounds-hd.png</string>
 				<key>Name</key>
-				<string>level_1_bg-hd</string>
+				<string>home_bg</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{644, 480}</string>
+				<string>{644, 510}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{0, 483}, {115, 25}}</string>
+				<key>Frame-HD</key>
+				<string>{{0, 966}, {230, 50}}</string>
+				<key>FrameUV</key>
+				<string>{{0, 0.947059}, {0.178571, 0.996078}}</string>
+				<key>HD_ImageSize</key>
+				<string>{1288, 1020}</string>
+				<key>Image</key>
+				<string>backgrounds.png</string>
+				<key>Image-HD</key>
+				<string>backgrounds-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/backgrounds.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/backgrounds-hd.png</string>
+				<key>Name</key>
+				<string>score_numerals</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{644, 510}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{118, 483}, {44, 26}}</string>
+				<key>Frame-HD</key>
+				<string>{{236, 966}, {88, 52}}</string>
+				<key>FrameUV</key>
+				<string>{{0.18323, 0.947059}, {0.251553, 0.998039}}</string>
+				<key>HD_ImageSize</key>
+				<string>{1288, 1020}</string>
+				<key>Image</key>
+				<string>backgrounds.png</string>
+				<key>Image-HD</key>
+				<string>backgrounds-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/backgrounds.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/backgrounds-hd.png</string>
+				<key>Name</key>
+				<string>pause_btn_off</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{644, 510}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{164, 483}, {44, 26}}</string>
+				<key>Frame-HD</key>
+				<string>{{328, 966}, {88, 52}}</string>
+				<key>FrameUV</key>
+				<string>{{0.254658, 0.947059}, {0.322981, 0.998039}}</string>
+				<key>HD_ImageSize</key>
+				<string>{1288, 1020}</string>
+				<key>Image</key>
+				<string>backgrounds.png</string>
+				<key>Image-HD</key>
+				<string>backgrounds-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/backgrounds.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/backgrounds-hd.png</string>
+				<key>Name</key>
+				<string>pause_btn_on</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{644, 510}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>

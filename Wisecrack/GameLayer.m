@@ -23,26 +23,36 @@
         
         // background
         CGSize size = [[CCDirector sharedDirector] winSize];
-        CCSprite *background = [bgloader spriteWithUniqueName:@"level_1_bg_grid-hd" atPosition:CGPointMake(size.width /2, size.height /2) inLayer:nil];
+        CCSprite *background = [bgloader spriteWithUniqueName:@"level_1_bg" atPosition:CGPointMake(size.width /2, size.height /2) inLayer:nil];
         
         [self addChild:background z:0];
         
-        /*
-        [loader spriteWithUniqueName:@"green_words_1_unit_test" atPosition:CGPointMake(100, 100) inLayer:self];
-        CCSprite *medium = [loader spriteWithUniqueName:@"green_words_2_unit_test" atPosition:CGPointMake(100, 130) inLayer:self];
-        [medium setAnchorPoint:CGPointMake(0.27, 0.5)];
-        CCSprite *large = [loader spriteWithUniqueName:@"green_words_3_unit_test" atPosition:CGPointMake(100, 160) inLayer:self];
-        [large setAnchorPoint:CGPointMake(0.19, 0.5)];
-        */
+        //[loader spriteWithUniqueName:@"green_words_1_unit_test" atPosition:CGPointMake(100, 100) inLayer:self];
+        //CCSprite *medium = [loader spriteWithUniqueName:@"green_words_2_unit_test" atPosition:CGPointMake(100, 130) inLayer:self];
+        //[medium setAnchorPoint:CGPointMake(0.27, 0.5)];
+        //CCSprite *large = [loader spriteWithUniqueName:@"green_words_3_unit_test" atPosition:CGPointMake(100, 160) inLayer:nil];
+        //[large setAnchorPoint:CGPointMake(0.19, 0.5)];
         
         menu = [CCMenu menuWithItems: nil];
-        [menu setPosition:CGPointMake(9, 5)];
+        [menu setPosition:CGPointMake(-8, -12)];
 
         [self drawButtons];
         [self addChild:menu z:10];
+        
+        [self schedule:@selector(step:) interval:0.5];
     }
     
     return self;
+}
+
+- (void) step:(id) sender
+{
+    NSLog(@"stepping");
+    
+    // refill the board;
+    [board fill];
+    //[self clearButtons];
+    [self drawButtons];
 }
 
 - (void) clearButtons
@@ -66,7 +76,7 @@
 {
     int count = 1;
     
-    [self clearButtons];
+    //[self clearButtons];
     
     NSLog(@"iterating through rows now: %d", [board.rows count]);
     for (NSArray *row in [board rows])
@@ -74,21 +84,36 @@
         //NSLog(@"row number: %d", count);
         for (GameItem *word in row)
         {
-            NSString *key = [NSString stringWithFormat:@"%@_words_%d_unit_test", 
+            BOOL hasBeenFound = NO;
+            for (CCMenuItemImage *button in buttons)
+            {
+                if ([[button.word hash] isEqualToString:[word hash]])
+                {
+                    hasBeenFound = YES;
+                    break;
+                }
+            }
+            if (hasBeenFound) continue;
+            
+            NSString *key_up = [NSString stringWithFormat:@"%@_%d_up", 
                              [word colour], 
                              (int)word.size.width];
+            
+            NSString *key_down = [NSString stringWithFormat:@"%@_%d_up", 
+                                [word colour], 
+                                (int)word.size.width];
             
             //NSLog(@"%@", key);
             //NSLog(@"x => %d, width => %d", word.offset, (int)word.size.width);
             //NSLog(@"%@", [word hash]);
             CGPoint position;
             
-            position.y = count * kUnit;
-            position.x = word.offset * kUnit;
+            position.y = count * kUnitHeight;
+            position.x = word.offset * kUnitWidth;
             
             //NSLog(@"position( x=>%d, y=>%d )", (int)position.x, (int)position.y);
-            CCSprite *sprite = [loader spriteWithUniqueName:key atPosition:CGPointMake(0,0) inLayer:nil];
-            CCSprite *sprite2 = [loader spriteWithUniqueName:key atPosition:CGPointMake(0,0) inLayer:nil];
+            CCSprite *sprite = [loader spriteWithUniqueName:key_up atPosition:CGPointMake(0,0) inLayer:nil];
+            CCSprite *sprite2 = [loader spriteWithUniqueName:key_down atPosition:CGPointMake(0,0) inLayer:nil];
             
             CCMenuItemImage *button = [CCMenuItemImage 
                                        itemFromNormalSprite:sprite
@@ -137,30 +162,39 @@
     // ask the board for all the matching colours 
     [board matchingColours:word result:matches];
     
-    // profit???
+    // we need more than 2 matches to continue. 
     if ([matches.allKeys count] <= 2) return;
     
+    // remove all the matched words. 
     for (GameItem *w in [matches allValues]) 
     {
         for (CCMenuItemImage *button in [menu children]) 
         {
             if ([[button.word hash] isEqualToString:[w hash]])
             {
-                NSLog(@"hash: %@", [w hash]);
-                //[button setVisible:NO];
-                [buttons removeObject:button];
-                [menu removeChild:button cleanup:YES];
+                NSLog(@"fading out... %@", [word hash]);
                 
-                NSMutableArray *boardRow = [board.rows objectAtIndex:([button.word row] -1)];
-                [boardRow removeObject:[button word]];
+                [button runAction:[CCSequence actions:
+                                   [CCFadeOut actionWithDuration:0.5],
+                                   [CCCallFuncO actionWithTarget:self selector:@selector(removeButton:) object:button], 
+                                   nil]];
             }
         }
     }
+}
+
+- (void) removeButton:(id)sender
+{
+    CCMenuItemImage * button = (CCMenuItemImage *)sender;
+    NSLog(@"removing button: %@", [button.word hash]);
     
-    // refill the board;
-    [board fill];
-    [self clearButtons];
-    [self drawButtons];
+    
+    [button setVisible:NO];
+    [buttons removeObject:button];
+    [menu removeChild:button cleanup:YES];
+     
+    NSMutableArray *boardRow = [board.rows objectAtIndex:([button.word row] -1)];
+    [boardRow removeObject:[button word]];
 }
 
 - (void) dealloc

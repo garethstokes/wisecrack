@@ -14,6 +14,7 @@
 
 #import "HelloWorldLayer.h"
 #import "GameScene.h"
+#import "HomeScene.h"
 
 @implementation AppDelegate
 
@@ -114,7 +115,8 @@
 	
 	// Run the intro Scene
 	//[[CCDirector sharedDirector] runWithScene: [HelloWorldLayer scene]];
-    [[CCDirector sharedDirector] runWithScene: [GameScene create]];
+    //[[CCDirector sharedDirector] runWithScene: [GameScene create]];
+    [[CCDirector sharedDirector] runWithScene: [HomeScene create]];
 }
 
 

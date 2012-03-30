@@ -10,6 +10,7 @@
 #import "GameBoard.h"
 #import "SpriteHelperLoader.h"
 #import "GameItem.h"
+#import "WCButton.h"
 
 @interface GameLayer : CCLayer {
     GameBoard* board;
@@ -23,6 +24,7 @@
 
 - (id) initWithBoard:(GameBoard *)board;
 - (void) wordClick:(id) sender;
+- (void) testClick:(id) sender;
 - (void) drawButtons;
 - (void) clearButtons;
 

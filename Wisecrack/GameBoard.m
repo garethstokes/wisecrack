@@ -119,7 +119,7 @@
         foundItem = [self wordAtPosition:CGPointMake(offset +g, row)];
         if (foundItem != nil)
         {
-            NSLog(@"found word at pos: %@", [foundItem hash]);
+            //NSLog(@"found word at pos: %@", [foundItem hash]);
             return NO;
         }
     }
@@ -144,10 +144,13 @@
             int index = arc4random() % [game numberOfWords];
             GameItem *word = [[[game words] objectAtIndex:index] duplicate];
             
+            // extra randomness
+            [game shuffle];
+            
             word.offset = x;
             word.row = i+1;
             
-            NSLog(@"offset +g: %d, row: %d", x, i+1);
+            //NSLog(@"offset +g: %d, row: %d", x, i+1);
             
             if ([self fits:word offset:x row:i +1]) 
             {
@@ -155,8 +158,11 @@
             }
             else 
             { 
+                GameItem *w = [[GameItem alloc] init];
+                [w setSize:CGSizeMake(1, 1)];
+                if ([self fits:w offset:x row:i +1]) continue;
+                
                 x++;
-                //len--;
                 continue; 
             }
             

@@ -20,4 +20,6 @@
 
 //- (void) fill:(GameBoard *)board;
 
+- (void) shuffle;
+
 @end

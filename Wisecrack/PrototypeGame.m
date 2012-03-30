@@ -20,12 +20,14 @@
         NSMutableArray* w = [[NSMutableArray alloc] init];
         numberOfWords = 0;
     
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 5; i++)
         {
             NSString* colour; 
             if (i == 0) colour = @"green";
             if (i == 1) colour = @"red";
             if (i == 2) colour = @"blue";
+            if (i == 3) colour = @"yellow";
+            if (i == 4) colour = @"grey";
             
             // small;
             GameItem* small = [GameItem small];
@@ -49,6 +51,25 @@
     }
     
     return self;
+}
+
+- (void)shuffle
+{
+    
+    static BOOL seeded = NO;
+    if(!seeded)
+    {
+        seeded = YES;
+        srandom(time(NULL));
+    }
+    
+    NSUInteger count = [words count];
+    for (NSUInteger i = 0; i < count; ++i) {
+        // Select a random element between i and end of array to swap with.
+        int nElements = count - i;
+        int n = (random() % nElements) + i;
+        [words exchangeObjectAtIndex:i withObjectAtIndex:n];
+    }
 }
 
 @end

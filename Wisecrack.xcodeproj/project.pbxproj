@@ -169,9 +169,17 @@
 		E73ECA0C14E3BA20001B1980 /* GameItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E73ECA0B14E3BA20001B1980 /* GameItem.m */; };
 		E73ECA0F14E3BB5D001B1980 /* GameBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = E73ECA0E14E3BB5D001B1980 /* GameBoard.m */; };
 		E73ECA1314E3BE8F001B1980 /* PrototypeGame.m in Sources */ = {isa = PBXBuildFile; fileRef = E73ECA1214E3BE8F001B1980 /* PrototypeGame.m */; };
+		E74B46591509559A0099ABAC /* home-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E74B46541509559A0099ABAC /* home-hd.plist */; };
+		E74B465A1509559A0099ABAC /* home-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E74B46551509559A0099ABAC /* home-hd.png */; };
+		E74B465B1509559A0099ABAC /* home.plist in Resources */ = {isa = PBXBuildFile; fileRef = E74B46561509559A0099ABAC /* home.plist */; };
+		E74B465C1509559A0099ABAC /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = E74B46571509559A0099ABAC /* home.png */; };
+		E74B465D1509559A0099ABAC /* home.pshs in Resources */ = {isa = PBXBuildFile; fileRef = E74B46581509559A0099ABAC /* home.pshs */; };
+		E74B4661150955CF0099ABAC /* HomeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E74B4660150955CF0099ABAC /* HomeScene.m */; };
+		E74B466815095B7B0099ABAC /* HomeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E74B466715095B7B0099ABAC /* HomeLayer.m */; };
 		E76B1B0514ED0F2600CBEA83 /* backgrounds-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E76B1B0214ED0F2500CBEA83 /* backgrounds-hd.png */; };
 		E76B1B0614ED0F2600CBEA83 /* backgrounds.png in Resources */ = {isa = PBXBuildFile; fileRef = E76B1B0314ED0F2500CBEA83 /* backgrounds.png */; };
 		E76B1B0714ED0F2600CBEA83 /* backgrounds.pshs in Resources */ = {isa = PBXBuildFile; fileRef = E76B1B0414ED0F2500CBEA83 /* backgrounds.pshs */; };
+		E76E8BC3152553C200E240D7 /* WCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E76E8BC2152553C200E240D7 /* WCButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -501,9 +509,20 @@
 		E73ECA0E14E3BB5D001B1980 /* GameBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBoard.m; sourceTree = "<group>"; };
 		E73ECA1114E3BE8F001B1980 /* PrototypeGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypeGame.h; sourceTree = "<group>"; };
 		E73ECA1214E3BE8F001B1980 /* PrototypeGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrototypeGame.m; sourceTree = "<group>"; };
+		E74B46541509559A0099ABAC /* home-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "home-hd.plist"; path = "Resources/home-hd.plist"; sourceTree = "<group>"; };
+		E74B46551509559A0099ABAC /* home-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home-hd.png"; path = "Resources/home-hd.png"; sourceTree = "<group>"; };
+		E74B46561509559A0099ABAC /* home.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = home.plist; path = Resources/home.plist; sourceTree = "<group>"; };
+		E74B46571509559A0099ABAC /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = Resources/home.png; sourceTree = "<group>"; };
+		E74B46581509559A0099ABAC /* home.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = home.pshs; path = Resources/home.pshs; sourceTree = "<group>"; };
+		E74B465F150955CF0099ABAC /* HomeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScene.h; sourceTree = "<group>"; };
+		E74B4660150955CF0099ABAC /* HomeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScene.m; sourceTree = "<group>"; };
+		E74B466615095B7A0099ABAC /* HomeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeLayer.h; sourceTree = "<group>"; };
+		E74B466715095B7B0099ABAC /* HomeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeLayer.m; sourceTree = "<group>"; };
 		E76B1B0214ED0F2500CBEA83 /* backgrounds-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backgrounds-hd.png"; path = "Resources/backgrounds-hd.png"; sourceTree = "<group>"; };
 		E76B1B0314ED0F2500CBEA83 /* backgrounds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backgrounds.png; path = Resources/backgrounds.png; sourceTree = "<group>"; };
 		E76B1B0414ED0F2500CBEA83 /* backgrounds.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = backgrounds.pshs; path = Resources/backgrounds.pshs; sourceTree = "<group>"; };
+		E76E8BC1152553C200E240D7 /* WCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCButton.h; sourceTree = "<group>"; };
+		E76E8BC2152553C200E240D7 /* WCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -530,6 +549,10 @@
 			children = (
 				E73B720A14E3DB2400E8D554 /* GameLayer.h */,
 				E73B720B14E3DB2400E8D554 /* GameLayer.m */,
+				E74B466615095B7A0099ABAC /* HomeLayer.h */,
+				E74B466715095B7B0099ABAC /* HomeLayer.m */,
+				E76E8BC1152553C200E240D7 /* WCButton.h */,
+				E76E8BC2152553C200E240D7 /* WCButton.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -595,6 +618,11 @@
 		E73EC83414E3B7F9001B1980 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E74B46541509559A0099ABAC /* home-hd.plist */,
+				E74B46551509559A0099ABAC /* home-hd.png */,
+				E74B46561509559A0099ABAC /* home.plist */,
+				E74B46571509559A0099ABAC /* home.png */,
+				E74B46581509559A0099ABAC /* home.pshs */,
 				E76B1B0214ED0F2500CBEA83 /* backgrounds-hd.png */,
 				E76B1B0314ED0F2500CBEA83 /* backgrounds.png */,
 				E76B1B0414ED0F2500CBEA83 /* backgrounds.pshs */,
@@ -1012,6 +1040,8 @@
 			children = (
 				E73ECA0514E3B89F001B1980 /* GameScene.h */,
 				E73ECA0614E3B89F001B1980 /* GameScene.m */,
+				E74B465F150955CF0099ABAC /* HomeScene.h */,
+				E74B4660150955CF0099ABAC /* HomeScene.m */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -1104,6 +1134,11 @@
 				E76B1B0514ED0F2600CBEA83 /* backgrounds-hd.png in Resources */,
 				E76B1B0614ED0F2600CBEA83 /* backgrounds.png in Resources */,
 				E76B1B0714ED0F2600CBEA83 /* backgrounds.pshs in Resources */,
+				E74B46591509559A0099ABAC /* home-hd.plist in Resources */,
+				E74B465A1509559A0099ABAC /* home-hd.png in Resources */,
+				E74B465B1509559A0099ABAC /* home.plist in Resources */,
+				E74B465C1509559A0099ABAC /* home.png in Resources */,
+				E74B465D1509559A0099ABAC /* home.pshs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1254,6 +1289,9 @@
 				E73ECA1314E3BE8F001B1980 /* PrototypeGame.m in Sources */,
 				E73B720914E3DA0B00E8D554 /* SpriteHelperLoader.mm in Sources */,
 				E73B720C14E3DB2400E8D554 /* GameLayer.m in Sources */,
+				E74B4661150955CF0099ABAC /* HomeScene.m in Sources */,
+				E74B466815095B7B0099ABAC /* HomeLayer.m in Sources */,
+				E76E8BC3152553C200E240D7 /* WCButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,11 +12,11 @@
 	<string>SpriteHelper</string>
 	<key>ImportedImages</key>
 	<array>
-		<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1_test/hall_of_legends.png</string>
+		<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
 	</array>
 	<key>ImportedImages-HD</key>
 	<array>
-		<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1_test/hall_of_legends-hd.png</string>
+		<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
 	</array>
 	<key>ImportedImages-HD_relative</key>
 	<array>
@@ -85,27 +85,27 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{0, 0}, {90, 30}}</string>
+				<string>{{0, 0}, {102, 36}}</string>
 				<key>Frame-HD</key>
-				<string>{{0, 0}, {180, 60}}</string>
+				<string>{{0, 0}, {204, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0}, {0.584416, 0.234375}}</string>
+				<string>{{0, 0}, {0.361702, 0.117647}}</string>
 				<key>HD_ImageSize</key>
-				<string>{308, 256}</string>
+				<string>{564, 612}</string>
 				<key>Image</key>
 				<string>hall_of_legends.png</string>
 				<key>Image-HD</key>
 				<string>hall_of_legends-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1_test/hall_of_legends.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1_test/hall_of_legends-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
 				<key>Name</key>
-				<string>red_words_3_unit_test</string>
+				<string>yellow_3_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{154, 128}</string>
+				<string>{282, 306}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -169,27 +169,27 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{0, 33}, {90, 30}}</string>
+				<string>{{105, 0}, {102, 36}}</string>
 				<key>Frame-HD</key>
-				<string>{{0, 66}, {180, 60}}</string>
+				<string>{{210, 0}, {204, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0.257812}, {0.584416, 0.492188}}</string>
+				<string>{{0.37234, 0}, {0.734043, 0.117647}}</string>
 				<key>HD_ImageSize</key>
-				<string>{308, 256}</string>
+				<string>{564, 612}</string>
 				<key>Image</key>
 				<string>hall_of_legends.png</string>
 				<key>Image-HD</key>
 				<string>hall_of_legends-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1_test/hall_of_legends.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1_test/hall_of_legends-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
 				<key>Name</key>
-				<string>blue_words_3_unit_test</string>
+				<string>yellow_3_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{154, 128}</string>
+				<string>{282, 306}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -253,27 +253,27 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{0, 65}, {90, 30}}</string>
+				<string>{{0, 39}, {102, 36}}</string>
 				<key>Frame-HD</key>
-				<string>{{0, 130}, {180, 60}}</string>
+				<string>{{0, 78}, {204, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0.507812}, {0.584416, 0.742188}}</string>
+				<string>{{0, 0.127451}, {0.361702, 0.245098}}</string>
 				<key>HD_ImageSize</key>
-				<string>{308, 256}</string>
+				<string>{564, 612}</string>
 				<key>Image</key>
 				<string>hall_of_legends.png</string>
 				<key>Image-HD</key>
 				<string>hall_of_legends-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1_test/hall_of_legends.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1_test/hall_of_legends-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
 				<key>Name</key>
-				<string>green_words_3_unit_test</string>
+				<string>red_3_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{154, 128}</string>
+				<string>{282, 306}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -337,27 +337,27 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{93, 0}, {60, 30}}</string>
+				<string>{{105, 39}, {102, 36}}</string>
 				<key>Frame-HD</key>
-				<string>{{186, 0}, {120, 60}}</string>
+				<string>{{210, 78}, {204, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.603896, 0}, {0.993506, 0.234375}}</string>
+				<string>{{0.37234, 0.127451}, {0.734043, 0.245098}}</string>
 				<key>HD_ImageSize</key>
-				<string>{308, 256}</string>
+				<string>{564, 612}</string>
 				<key>Image</key>
 				<string>hall_of_legends.png</string>
 				<key>Image-HD</key>
 				<string>hall_of_legends-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1_test/hall_of_legends.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1_test/hall_of_legends-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
 				<key>Name</key>
-				<string>blue_words_2_unit_test</string>
+				<string>red_3_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{154, 128}</string>
+				<string>{282, 306}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -421,27 +421,27 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{93, 33}, {60, 30}}</string>
+				<string>{{0, 77}, {102, 36}}</string>
 				<key>Frame-HD</key>
-				<string>{{186, 66}, {120, 60}}</string>
+				<string>{{0, 154}, {204, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.603896, 0.257812}, {0.993506, 0.492188}}</string>
+				<string>{{0, 0.251634}, {0.361702, 0.369281}}</string>
 				<key>HD_ImageSize</key>
-				<string>{308, 256}</string>
+				<string>{564, 612}</string>
 				<key>Image</key>
 				<string>hall_of_legends.png</string>
 				<key>Image-HD</key>
 				<string>hall_of_legends-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1_test/hall_of_legends.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1_test/hall_of_legends-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
 				<key>Name</key>
-				<string>red_words_2_unit_test</string>
+				<string>grey_3_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{154, 128}</string>
+				<string>{282, 306}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -505,27 +505,27 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{93, 65}, {60, 29.5}}</string>
+				<string>{{105, 77}, {102, 36}}</string>
 				<key>Frame-HD</key>
-				<string>{{186, 130}, {120, 59}}</string>
+				<string>{{210, 154}, {204, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.603896, 0.507812}, {0.993506, 0.738281}}</string>
+				<string>{{0.37234, 0.251634}, {0.734043, 0.369281}}</string>
 				<key>HD_ImageSize</key>
-				<string>{308, 256}</string>
+				<string>{564, 612}</string>
 				<key>Image</key>
 				<string>hall_of_legends.png</string>
 				<key>Image-HD</key>
 				<string>hall_of_legends-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1_test/hall_of_legends.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1_test/hall_of_legends-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
 				<key>Name</key>
-				<string>green_words_2_unit_test</string>
+				<string>grey_3_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{154, 128}</string>
+				<string>{282, 306}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -589,27 +589,27 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{0, 98}, {30, 30}}</string>
+				<string>{{0, 116}, {102, 36}}</string>
 				<key>Frame-HD</key>
-				<string>{{0, 196}, {60, 60}}</string>
+				<string>{{0, 232}, {204, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0.765625}, {0.194805, 1}}</string>
+				<string>{{0, 0.379085}, {0.361702, 0.496732}}</string>
 				<key>HD_ImageSize</key>
-				<string>{308, 256}</string>
+				<string>{564, 612}</string>
 				<key>Image</key>
 				<string>hall_of_legends.png</string>
 				<key>Image-HD</key>
 				<string>hall_of_legends-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1_test/hall_of_legends.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1_test/hall_of_legends-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
 				<key>Name</key>
-				<string>red_words_1_unit_test</string>
+				<string>blue_3_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{154, 128}</string>
+				<string>{282, 306}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -673,27 +673,27 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{33, 98}, {30, 30}}</string>
+				<string>{{0, 154}, {102, 36}}</string>
 				<key>Frame-HD</key>
-				<string>{{66, 196}, {60, 60}}</string>
+				<string>{{0, 308}, {204, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.214286, 0.765625}, {0.409091, 1}}</string>
+				<string>{{0, 0.503268}, {0.361702, 0.620915}}</string>
 				<key>HD_ImageSize</key>
-				<string>{308, 256}</string>
+				<string>{564, 612}</string>
 				<key>Image</key>
 				<string>hall_of_legends.png</string>
 				<key>Image-HD</key>
 				<string>hall_of_legends-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1_test/hall_of_legends.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1_test/hall_of_legends-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
 				<key>Name</key>
-				<string>blue_words_1_unit_test</string>
+				<string>blue_3_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{154, 128}</string>
+				<string>{282, 306}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -757,27 +757,1791 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{65, 98}, {30, 30}}</string>
+				<string>{{0, 193}, {102, 36}}</string>
 				<key>Frame-HD</key>
-				<string>{{130, 196}, {60, 60}}</string>
+				<string>{{0, 386}, {204, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.422078, 0.765625}, {0.616883, 1}}</string>
+				<string>{{0, 0.630719}, {0.361702, 0.748366}}</string>
 				<key>HD_ImageSize</key>
-				<string>{308, 256}</string>
+				<string>{564, 612}</string>
 				<key>Image</key>
 				<string>hall_of_legends.png</string>
 				<key>Image-HD</key>
 				<string>hall_of_legends-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1_test/hall_of_legends.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1_test/hall_of_legends-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
 				<key>Name</key>
-				<string>green_words_1_unit_test</string>
+				<string>green_3_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{154, 128}</string>
+				<string>{282, 306}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{0, 231}, {102, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{0, 462}, {204, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0, 0.754902}, {0.361702, 0.872549}}</string>
+				<key>HD_ImageSize</key>
+				<string>{564, 612}</string>
+				<key>Image</key>
+				<string>hall_of_legends.png</string>
+				<key>Image-HD</key>
+				<string>hall_of_legends-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
+				<key>Name</key>
+				<string>green_3_up</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{282, 306}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{209, 0}, {68, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{418, 0}, {136, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.741135, 0}, {0.98227, 0.117647}}</string>
+				<key>HD_ImageSize</key>
+				<string>{564, 612}</string>
+				<key>Image</key>
+				<string>hall_of_legends.png</string>
+				<key>Image-HD</key>
+				<string>hall_of_legends-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
+				<key>Name</key>
+				<string>red_2_up</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{282, 306}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{209, 39}, {68, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{418, 78}, {136, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.741135, 0.127451}, {0.98227, 0.245098}}</string>
+				<key>HD_ImageSize</key>
+				<string>{564, 612}</string>
+				<key>Image</key>
+				<string>hall_of_legends.png</string>
+				<key>Image-HD</key>
+				<string>hall_of_legends-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
+				<key>Name</key>
+				<string>red_2_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{282, 306}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{209, 77}, {68, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{418, 154}, {136, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.741135, 0.251634}, {0.98227, 0.369281}}</string>
+				<key>HD_ImageSize</key>
+				<string>{564, 612}</string>
+				<key>Image</key>
+				<string>hall_of_legends.png</string>
+				<key>Image-HD</key>
+				<string>hall_of_legends-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
+				<key>Name</key>
+				<string>yellow_2_up</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{282, 306}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{0, 270}, {68, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{0, 540}, {136, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0, 0.882353}, {0.241135, 1}}</string>
+				<key>HD_ImageSize</key>
+				<string>{564, 612}</string>
+				<key>Image</key>
+				<string>hall_of_legends.png</string>
+				<key>Image-HD</key>
+				<string>hall_of_legends-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
+				<key>Name</key>
+				<string>yellow_2_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{282, 306}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{105, 116}, {68, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{210, 232}, {136, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.37234, 0.379085}, {0.613475, 0.496732}}</string>
+				<key>HD_ImageSize</key>
+				<string>{564, 612}</string>
+				<key>Image</key>
+				<string>hall_of_legends.png</string>
+				<key>Image-HD</key>
+				<string>hall_of_legends-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
+				<key>Name</key>
+				<string>grey_2_up</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{282, 306}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{175, 116}, {68, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{350, 232}, {136, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.620567, 0.379085}, {0.861702, 0.496732}}</string>
+				<key>HD_ImageSize</key>
+				<string>{564, 612}</string>
+				<key>Image</key>
+				<string>hall_of_legends.png</string>
+				<key>Image-HD</key>
+				<string>hall_of_legends-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
+				<key>Name</key>
+				<string>grey_2_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{282, 306}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{105, 154}, {68, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{210, 308}, {136, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.37234, 0.503268}, {0.613475, 0.620915}}</string>
+				<key>HD_ImageSize</key>
+				<string>{564, 612}</string>
+				<key>Image</key>
+				<string>hall_of_legends.png</string>
+				<key>Image-HD</key>
+				<string>hall_of_legends-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
+				<key>Name</key>
+				<string>blue_2_up</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{282, 306}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{175, 154}, {68, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{350, 308}, {136, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.620567, 0.503268}, {0.861702, 0.620915}}</string>
+				<key>HD_ImageSize</key>
+				<string>{564, 612}</string>
+				<key>Image</key>
+				<string>hall_of_legends.png</string>
+				<key>Image-HD</key>
+				<string>hall_of_legends-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
+				<key>Name</key>
+				<string>blue_2_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{282, 306}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{105, 193}, {68, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{210, 386}, {136, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.37234, 0.630719}, {0.613475, 0.748366}}</string>
+				<key>HD_ImageSize</key>
+				<string>{564, 612}</string>
+				<key>Image</key>
+				<string>hall_of_legends.png</string>
+				<key>Image-HD</key>
+				<string>hall_of_legends-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
+				<key>Name</key>
+				<string>green_2_up</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{282, 306}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{105, 231}, {68, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{210, 462}, {136, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.37234, 0.754902}, {0.613475, 0.872549}}</string>
+				<key>HD_ImageSize</key>
+				<string>{564, 612}</string>
+				<key>Image</key>
+				<string>hall_of_legends.png</string>
+				<key>Image-HD</key>
+				<string>hall_of_legends-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
+				<key>Name</key>
+				<string>green_2_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{282, 306}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{246, 116}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{492, 232}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.87234, 0.379085}, {0.992908, 0.496732}}</string>
+				<key>HD_ImageSize</key>
+				<string>{564, 612}</string>
+				<key>Image</key>
+				<string>hall_of_legends.png</string>
+				<key>Image-HD</key>
+				<string>hall_of_legends-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
+				<key>Name</key>
+				<string>green_1_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{282, 306}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{246, 154}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{492, 308}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.87234, 0.503268}, {0.992908, 0.620915}}</string>
+				<key>HD_ImageSize</key>
+				<string>{564, 612}</string>
+				<key>Image</key>
+				<string>hall_of_legends.png</string>
+				<key>Image-HD</key>
+				<string>hall_of_legends-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
+				<key>Name</key>
+				<string>green_1_up</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{282, 306}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{105, 270}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{210, 540}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.37234, 0.882353}, {0.492908, 1}}</string>
+				<key>HD_ImageSize</key>
+				<string>{564, 612}</string>
+				<key>Image</key>
+				<string>hall_of_legends.png</string>
+				<key>Image-HD</key>
+				<string>hall_of_legends-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
+				<key>Name</key>
+				<string>red_1_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{282, 306}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{175, 193}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{350, 386}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.620567, 0.630719}, {0.741135, 0.748366}}</string>
+				<key>HD_ImageSize</key>
+				<string>{564, 612}</string>
+				<key>Image</key>
+				<string>hall_of_legends.png</string>
+				<key>Image-HD</key>
+				<string>hall_of_legends-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
+				<key>Name</key>
+				<string>red_1_up</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{282, 306}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{212, 193}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{424, 386}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.751773, 0.630719}, {0.87234, 0.748366}}</string>
+				<key>HD_ImageSize</key>
+				<string>{564, 612}</string>
+				<key>Image</key>
+				<string>hall_of_legends.png</string>
+				<key>Image-HD</key>
+				<string>hall_of_legends-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
+				<key>Name</key>
+				<string>grey_1_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{282, 306}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{248, 193}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{496, 386}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.879433, 0.630719}, {1, 0.748366}}</string>
+				<key>HD_ImageSize</key>
+				<string>{564, 612}</string>
+				<key>Image</key>
+				<string>hall_of_legends.png</string>
+				<key>Image-HD</key>
+				<string>hall_of_legends-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
+				<key>Name</key>
+				<string>grey_1_up</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{282, 306}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{175, 231}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{350, 462}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.620567, 0.754902}, {0.741135, 0.872549}}</string>
+				<key>HD_ImageSize</key>
+				<string>{564, 612}</string>
+				<key>Image</key>
+				<string>hall_of_legends.png</string>
+				<key>Image-HD</key>
+				<string>hall_of_legends-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
+				<key>Name</key>
+				<string>blue_1_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{282, 306}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{175, 270}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{350, 540}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.620567, 0.882353}, {0.741135, 1}}</string>
+				<key>HD_ImageSize</key>
+				<string>{564, 612}</string>
+				<key>Image</key>
+				<string>hall_of_legends.png</string>
+				<key>Image-HD</key>
+				<string>hall_of_legends-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
+				<key>Name</key>
+				<string>blue_1_up</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{282, 306}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{212, 231}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{424, 462}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.751773, 0.754902}, {0.87234, 0.872549}}</string>
+				<key>HD_ImageSize</key>
+				<string>{564, 612}</string>
+				<key>Image</key>
+				<string>hall_of_legends.png</string>
+				<key>Image-HD</key>
+				<string>hall_of_legends-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
+				<key>Name</key>
+				<string>yellow_1_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{282, 306}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{248, 231}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{496, 462}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.879433, 0.754902}, {1, 0.872549}}</string>
+				<key>HD_ImageSize</key>
+				<string>{564, 612}</string>
+				<key>Image</key>
+				<string>hall_of_legends.png</string>
+				<key>Image-HD</key>
+				<string>hall_of_legends-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/hall_of_legends-hd.png</string>
+				<key>Name</key>
+				<string>yellow_1_up</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{282, 306}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
