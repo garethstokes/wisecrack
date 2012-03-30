@@ -23,7 +23,7 @@
         
         // background
         CGSize size = [[CCDirector sharedDirector] winSize];
-        CCSprite *background = [bgloader spriteWithUniqueName:@"level_1_bg" atPosition:CGPointMake(size.width /2, size.height /2) inLayer:nil];
+        CCSprite *background = [bgloader spriteWithUniqueName:@"level_1_bg" atPosition:CGPointMake((size.width /2) -1, size.height /2) inLayer:nil];
         
         [self addChild:background z:0];
         
