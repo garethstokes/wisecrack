@@ -180,6 +180,8 @@
 		E76B1B0614ED0F2600CBEA83 /* backgrounds.png in Resources */ = {isa = PBXBuildFile; fileRef = E76B1B0314ED0F2500CBEA83 /* backgrounds.png */; };
 		E76B1B0714ED0F2600CBEA83 /* backgrounds.pshs in Resources */ = {isa = PBXBuildFile; fileRef = E76B1B0414ED0F2500CBEA83 /* backgrounds.pshs */; };
 		E76E8BC3152553C200E240D7 /* WCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E76E8BC2152553C200E240D7 /* WCButton.m */; };
+		E76E8BC615259B1300E240D7 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = E76E8BC515259B1300E240D7 /* Icon-Small.png */; };
+		E76E8BC815259B1900E240D7 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E76E8BC715259B1900E240D7 /* Icon-Small@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -523,6 +525,8 @@
 		E76B1B0414ED0F2500CBEA83 /* backgrounds.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = backgrounds.pshs; path = Resources/backgrounds.pshs; sourceTree = "<group>"; };
 		E76E8BC1152553C200E240D7 /* WCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCButton.h; sourceTree = "<group>"; };
 		E76E8BC2152553C200E240D7 /* WCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCButton.m; sourceTree = "<group>"; };
+		E76E8BC515259B1300E240D7 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		E76E8BC715259B1900E240D7 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -560,6 +564,8 @@
 		E73EC81414E3B7F9001B1980 = {
 			isa = PBXGroup;
 			children = (
+				E76E8BC715259B1900E240D7 /* Icon-Small@2x.png */,
+				E76E8BC515259B1300E240D7 /* Icon-Small.png */,
 				E73EC83314E3B7F9001B1980 /* Wisecrack */,
 				E73EC82214E3B7F9001B1980 /* Frameworks */,
 				E73EC82014E3B7F9001B1980 /* Products */,
@@ -1139,6 +1145,8 @@
 				E74B465B1509559A0099ABAC /* home.plist in Resources */,
 				E74B465C1509559A0099ABAC /* home.png in Resources */,
 				E74B465D1509559A0099ABAC /* home.pshs in Resources */,
+				E76E8BC615259B1300E240D7 /* Icon-Small.png in Resources */,
+				E76E8BC815259B1900E240D7 /* Icon-Small@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
