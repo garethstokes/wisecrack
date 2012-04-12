@@ -10,6 +10,10 @@
 		E70AD9B21536C94700057555 /* score_numerals-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E70AD9B11536C94700057555 /* score_numerals-hd.png */; };
 		E70AD9ED1536E78400057555 /* ScoreCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = E70AD9EC1536E78400057555 /* ScoreCalculator.m */; };
 		E70AD9F41536EB5500057555 /* GameObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E70AD9F31536EB5500057555 /* GameObjectCache.m */; };
+		E70ADA2F153700B500057555 /* options-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E70ADA2C153700B400057555 /* options-hd.png */; };
+		E70ADA30153700B500057555 /* options.png in Resources */ = {isa = PBXBuildFile; fileRef = E70ADA2D153700B400057555 /* options.png */; };
+		E70ADA31153700B500057555 /* options.pshs in Resources */ = {isa = PBXBuildFile; fileRef = E70ADA2E153700B400057555 /* options.pshs */; };
+		E70ADA34153701D100057555 /* OptionsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E70ADA33153701D100057555 /* OptionsLayer.m */; };
 		E73B71FB14E3D13400E8D554 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E73B71F914E3D13400E8D554 /* Default.png */; };
 		E73B71FC14E3D13400E8D554 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E73B71FA14E3D13400E8D554 /* Default@2x.png */; };
 		E73B720014E3D15100E8D554 /* hall_of_legends-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E73B71FD14E3D15100E8D554 /* hall_of_legends-hd.png */; };
@@ -199,6 +203,11 @@
 		E70AD9EC1536E78400057555 /* ScoreCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreCalculator.m; sourceTree = "<group>"; };
 		E70AD9F21536EB5500057555 /* GameObjectCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObjectCache.h; sourceTree = "<group>"; };
 		E70AD9F31536EB5500057555 /* GameObjectCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObjectCache.m; sourceTree = "<group>"; };
+		E70ADA2C153700B400057555 /* options-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "options-hd.png"; path = "Resources/options-hd.png"; sourceTree = "<group>"; };
+		E70ADA2D153700B400057555 /* options.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = options.png; path = Resources/options.png; sourceTree = "<group>"; };
+		E70ADA2E153700B400057555 /* options.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = options.pshs; path = Resources/options.pshs; sourceTree = "<group>"; };
+		E70ADA32153701D100057555 /* OptionsLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsLayer.h; sourceTree = "<group>"; };
+		E70ADA33153701D100057555 /* OptionsLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsLayer.m; sourceTree = "<group>"; };
 		E73B71F914E3D13400E8D554 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
 		E73B71FA14E3D13400E8D554 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		E73B71FD14E3D15100E8D554 /* hall_of_legends-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hall_of_legends-hd.png"; path = "Resources/hall_of_legends-hd.png"; sourceTree = "<group>"; };
@@ -577,6 +586,8 @@
 				E74B466715095B7B0099ABAC /* HomeLayer.m */,
 				E7C19C70152C18600039A419 /* HudLayer.h */,
 				E7C19C71152C18600039A419 /* HudLayer.m */,
+				E70ADA32153701D100057555 /* OptionsLayer.h */,
+				E70ADA33153701D100057555 /* OptionsLayer.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -644,6 +655,9 @@
 		E73EC83414E3B7F9001B1980 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E70ADA2C153700B400057555 /* options-hd.png */,
+				E70ADA2D153700B400057555 /* options.png */,
+				E70ADA2E153700B400057555 /* options.pshs */,
 				E70AD9B11536C94700057555 /* score_numerals-hd.png */,
 				E7C19C75152C194F0039A419 /* score_numerals.png */,
 				E766438B152D79450065E64A /* hud-hd.png */,
@@ -1185,6 +1199,9 @@
 				E766438F152D79450065E64A /* hud.png in Resources */,
 				E7664390152D79450065E64A /* hud.pshs in Resources */,
 				E70AD9B21536C94700057555 /* score_numerals-hd.png in Resources */,
+				E70ADA2F153700B500057555 /* options-hd.png in Resources */,
+				E70ADA30153700B500057555 /* options.png in Resources */,
+				E70ADA31153700B500057555 /* options.pshs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1340,6 +1357,7 @@
 				E7C19C72152C18600039A419 /* HudLayer.m in Sources */,
 				E70AD9ED1536E78400057555 /* ScoreCalculator.m in Sources */,
 				E70AD9F41536EB5500057555 /* GameObjectCache.m in Sources */,
+				E70ADA34153701D100057555 /* OptionsLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

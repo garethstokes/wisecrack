@@ -7,6 +7,8 @@
 //
 
 #import "HudLayer.h"
+#import "OptionsLayer.h"
+#import "GameObjectCache.h"
 
 @implementation HudLayer
 
@@ -36,8 +38,8 @@
         CCSprite *pauseOff = [loader spriteWithUniqueName:@"pause_btn_off" atPosition:ccp(0, 0) inLayer:nil];
         
         CCMenuItemImage *button = [CCMenuItemImage 
-                                   itemFromNormalSprite: pauseOn
-                                   selectedSprite: pauseOff
+                                   itemFromNormalSprite: pauseOff
+                                   selectedSprite: pauseOn
                                    target:self 
                                    selector:@selector(openOptions:)];
         
@@ -45,7 +47,7 @@
         CCMenu *menu = [CCMenu menuWithItems: button, nil];
         [menu setPosition:CGPointMake(32, 25)];
         
-        //[self addChild:menu z:10];
+        [self addChild:menu z:10];
         
     }
     
@@ -55,7 +57,11 @@
 - (void) openOptions:(id)sender
 {
     // open options screen here.
+    OptionsLayer *options = [[[OptionsLayer alloc] init] autorelease];
     
+    CGSize size = [[CCDirector sharedDirector] winSize];
+    [options setPosition:ccp(size.width /2, size.height /2)];
+    [[[GameObjectCache sharedGameObjectCache] gameScene] addChild:options z:200];
 }
 
 - (void) updateScoreLabel:(int)number

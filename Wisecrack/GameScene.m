@@ -7,6 +7,7 @@
 //
 
 #import "GameScene.h"
+#import "GameObjectCache.h"
 
 @implementation GameScene
 @synthesize background;
@@ -18,6 +19,7 @@
     [GameObjectCache purgeGameObjectCache]; 
     
     GameScene* scene = [[[GameScene alloc] init] autorelease];
+    [[GameObjectCache sharedGameObjectCache] addGameScene:scene];
     
     // GameLayer
     GameBoard * board = [[[GameBoard alloc] init] autorelease];

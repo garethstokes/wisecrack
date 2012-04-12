@@ -59,6 +59,17 @@ static GameObjectCache *sharedGameObjectCache_=nil;
     [hudLayer_ retain];
 }
 
+-(void) addGameScene:(GameScene*)newGameScene
+{
+    CCLOG(@"GameObjectCache addGameScene");
+    
+    if(gameScene_ != nil)
+        [gameScene_ release];
+    
+    gameScene_ = newGameScene;  
+    [gameScene_ retain];
+}
+
 //***********************
 //Retrieve objects 
 
@@ -76,12 +87,20 @@ static GameObjectCache *sharedGameObjectCache_=nil;
     return hudLayer_;
 }
 
+-(GameScene*) gameScene
+{
+    NSAssert(gameScene_ != nil, @"gameScene member has not been set in GameObjectCache object ");
+    
+    return gameScene_;
+}
+
 - (id)init
 {
   CCLOG(@"GameObjectCache Init");
 	if( (self=[super init]) ) {
         gameLayer_ = nil;
         hudLayer_ = nil;
+        gameScene_ = nil;
     }
 	
 	return self;
@@ -91,6 +110,7 @@ static GameObjectCache *sharedGameObjectCache_=nil;
   CCLOG(@"GameObjectCache Dealloc");
   [gameLayer_ release];
   [hudLayer_ release];
+  [gameScene_ release];
   
   [super dealloc];
 }

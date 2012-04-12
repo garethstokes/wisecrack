@@ -20,7 +20,7 @@
     {
         [self setBoard:b];
         loader = [[SpriteHelperLoader alloc] initWithContentOfFile:@"hall_of_legends"];
-        SpriteHelperLoader *bgloader = [[SpriteHelperLoader alloc] initWithContentOfFile:@"backgrounds"];
+        SpriteHelperLoader *bgloader = [[[SpriteHelperLoader alloc] initWithContentOfFile:@"backgrounds"] autorelease];
         buttons = [[NSMutableArray array] retain];
         
         // background
@@ -179,7 +179,7 @@
         id myShake = [CCShaky3D actionWithRange:5 shakeZ:NO grid:ccg(2,2) duration:0.1];
         [self runAction: [CCSequence actions: myShake, [myShake reverse], [CCStopGrid action], nil]];
         
-        SpriteHelperLoader *bgloader = [[SpriteHelperLoader alloc] initWithContentOfFile:@"backgrounds"];
+        SpriteHelperLoader *bgloader = [[[SpriteHelperLoader alloc] initWithContentOfFile:@"backgrounds"] autorelease];
         
         CGSize size = [[CCDirector sharedDirector] winSize];
         CCSprite * minus = [bgloader spriteWithUniqueName:@"minus50" atPosition:CGPointMake((size.width /2) + 5, size.height /2) inLayer:nil];
