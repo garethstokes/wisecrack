@@ -168,7 +168,28 @@
     [board matchingColours:word result:matches];
     
     // we need more than 2 matches to continue. 
-    if ([matches.allKeys count] <= 2) return;
+    if ([matches.allKeys count] <= kGroupMinSize) 
+    {
+        // remove 50 points;
+        score -= 50;
+        if (score < 0) score = 0;
+        
+        [[[GameObjectCache sharedGameObjectCache] hudLayer] updateScoreLabel:score];
+        
+        id myShake = [CCShaky3D actionWithRange:5 shakeZ:NO grid:ccg(2,2) duration:0.1];
+        [self runAction: [CCSequence actions: myShake, [myShake reverse], [CCStopGrid action], nil]];
+        
+        SpriteHelperLoader *bgloader = [[SpriteHelperLoader alloc] initWithContentOfFile:@"backgrounds"];
+        
+        CGSize size = [[CCDirector sharedDirector] winSize];
+        CCSprite * minus = [bgloader spriteWithUniqueName:@"minus50" atPosition:CGPointMake((size.width /2) + 5, size.height /2) inLayer:nil];
+        
+        [self addChild:minus z:100];
+        
+        [minus runAction:[CCFadeOut actionWithDuration:1.5]];
+        
+        return;
+    }
     
     // remove all the matched words. 
     for (GameItem *w in [matches allValues]) 
