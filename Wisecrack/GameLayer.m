@@ -167,6 +167,9 @@
     // ask the board for all the matching colours 
     [board matchingColours:word result:matches];
     
+    // ask the board for all the matching words 
+    [board matchingWords:word result:matches];
+    
     // we need more than 2 matches to continue. 
     if ([matches.allKeys count] <= kGroupMinSize) 
     {

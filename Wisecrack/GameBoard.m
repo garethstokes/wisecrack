@@ -110,6 +110,23 @@
     }
 }
 
+- (void) matchingWords:(GameItem *)item result:(NSMutableDictionary *)d
+{
+    NSArray *neighbours = [self neighbours:item];
+    
+    for (GameItem *word in neighbours) 
+    {
+        if ([word.name isEqualToString:[item name]])
+        {
+            if ([d objectForKey:[word hash]] == nil)
+            {
+                [d setValue:word forKey:[word hash]];
+                [self matchingWords:word result:d];
+            }
+        }
+    }
+}
+
 - (BOOL) fits:(GameItem* )word offset:(int)offset row:(int)row
 {
     // make sure there isn't any other word already set. 
