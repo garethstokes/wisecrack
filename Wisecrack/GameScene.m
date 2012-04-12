@@ -15,6 +15,8 @@
 
 + (GameScene *) create
 {
+    [GameObjectCache purgeGameObjectCache]; 
+    
     GameScene* scene = [[[GameScene alloc] init] autorelease];
     
     // GameLayer
@@ -24,12 +26,14 @@
     GameLayer* gameLayer = [[GameLayer alloc] initWithBoard:board];
     [scene setGame:gameLayer];
     [scene addChild:gameLayer z:10];
+    [[GameObjectCache sharedGameObjectCache] addGameLayer:gameLayer];
     [gameLayer release];
     
     // HUD
     HudLayer * hud = [[HudLayer alloc] init];
     [scene setHud:hud];
     [scene addChild:hud z:20];
+    [[GameObjectCache sharedGameObjectCache] addHudLayer:hud];
     [hud release];
     
     return scene;

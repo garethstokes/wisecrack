@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E70AD9B21536C94700057555 /* score_numerals-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E70AD9B11536C94700057555 /* score_numerals-hd.png */; };
+		E70AD9ED1536E78400057555 /* ScoreCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = E70AD9EC1536E78400057555 /* ScoreCalculator.m */; };
+		E70AD9F41536EB5500057555 /* GameObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E70AD9F31536EB5500057555 /* GameObjectCache.m */; };
 		E73B71FB14E3D13400E8D554 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E73B71F914E3D13400E8D554 /* Default.png */; };
 		E73B71FC14E3D13400E8D554 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E73B71FA14E3D13400E8D554 /* Default@2x.png */; };
 		E73B720014E3D15100E8D554 /* hall_of_legends-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E73B71FD14E3D15100E8D554 /* hall_of_legends-hd.png */; };
@@ -193,6 +195,10 @@
 
 /* Begin PBXFileReference section */
 		E70AD9B11536C94700057555 /* score_numerals-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "score_numerals-hd.png"; path = "Resources/score_numerals-hd.png"; sourceTree = "<group>"; };
+		E70AD9EB1536E78400057555 /* ScoreCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreCalculator.h; sourceTree = "<group>"; };
+		E70AD9EC1536E78400057555 /* ScoreCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreCalculator.m; sourceTree = "<group>"; };
+		E70AD9F21536EB5500057555 /* GameObjectCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObjectCache.h; sourceTree = "<group>"; };
+		E70AD9F31536EB5500057555 /* GameObjectCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObjectCache.m; sourceTree = "<group>"; };
 		E73B71F914E3D13400E8D554 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
 		E73B71FA14E3D13400E8D554 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		E73B71FD14E3D15100E8D554 /* hall_of_legends-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hall_of_legends-hd.png"; path = "Resources/hall_of_legends-hd.png"; sourceTree = "<group>"; };
@@ -1076,10 +1082,14 @@
 		E73ECA0914E3B9F2001B1980 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E70AD9F21536EB5500057555 /* GameObjectCache.h */,
+				E70AD9F31536EB5500057555 /* GameObjectCache.m */,
 				E73ECA0A14E3BA20001B1980 /* GameItem.h */,
 				E73ECA0B14E3BA20001B1980 /* GameItem.m */,
 				E73ECA0D14E3BB5D001B1980 /* GameBoard.h */,
 				E73ECA0E14E3BB5D001B1980 /* GameBoard.m */,
+				E70AD9EB1536E78400057555 /* ScoreCalculator.h */,
+				E70AD9EC1536E78400057555 /* ScoreCalculator.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1328,6 +1338,8 @@
 				E74B4661150955CF0099ABAC /* HomeScene.m in Sources */,
 				E74B466815095B7B0099ABAC /* HomeLayer.m in Sources */,
 				E7C19C72152C18600039A419 /* HudLayer.m in Sources */,
+				E70AD9ED1536E78400057555 /* ScoreCalculator.m in Sources */,
+				E70AD9F41536EB5500057555 /* GameObjectCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

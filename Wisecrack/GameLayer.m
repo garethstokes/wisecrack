@@ -7,10 +7,12 @@
 //
 
 #import "GameLayer.h"
+#import "GameObjectCache.h"
 
 @implementation GameLayer
 @synthesize board;
 @synthesize buttons;
+@synthesize score;
 
 - (id) initWithBoard:(GameBoard *)b
 {
@@ -35,6 +37,9 @@
         
         menu = [CCMenu menuWithItems: nil];
         [menu setPosition:CGPointMake(-8, -12)];
+        
+        // init score
+        score = 0;
 
         [self drawButtons];
         [self addChild:menu z:10];
@@ -181,6 +186,12 @@
             }
         }
     }
+    
+    // find score;
+    ScoreCalculator *scoreCalculator = [[[ScoreCalculator alloc] init] autorelease];
+    score += [scoreCalculator calculate:[matches allValues]];
+    
+    [[[GameObjectCache sharedGameObjectCache] hudLayer] updateScoreLabel:score];
 }
 
 - (void) removeButton:(id)sender

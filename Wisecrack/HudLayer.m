@@ -58,6 +58,11 @@
     
 }
 
+- (void) updateScoreLabel:(int)number
+{
+    [_score setString:[NSString stringWithFormat:@"%d", number]];
+}
+
 - (void) dealloc
 {
     CCLOG(@"Dealloc HUD");

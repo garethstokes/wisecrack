@@ -10,20 +10,22 @@
 #import "GameBoard.h"
 #import "SpriteHelperLoader.h"
 #import "GameItem.h"
+#import "ScoreCalculator.h"
 
 @interface GameLayer : CCLayer {
     GameBoard* board;
     SpriteHelperLoader* loader;
     NSMutableArray *buttons;
     CCMenu* menu;
+    int score;
 }
 
 @property (nonatomic, retain) GameBoard* board;
 @property (nonatomic, retain) NSMutableArray* buttons;
+@property (nonatomic) int score;
 
 - (id) initWithBoard:(GameBoard *)board;
 - (void) wordClick:(id) sender;
-- (void) testClick:(id) sender;
 - (void) drawButtons;
 - (void) clearButtons;
 

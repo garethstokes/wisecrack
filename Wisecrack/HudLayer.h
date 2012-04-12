@@ -15,5 +15,6 @@
 }
 
 - (void) openOptions:(id)sender;
+- (void) updateScoreLabel:(int)number;
 
 @end
