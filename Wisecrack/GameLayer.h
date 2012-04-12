@@ -19,6 +19,7 @@
     CCMenu* menu;
     int score;
     BOOL ready;
+    ccTime delta_;
 }
 
 @property (nonatomic, retain) GameBoard* board;
@@ -29,5 +30,6 @@
 - (void) wordClick:(id) sender;
 - (void) drawButtons;
 - (void) clearButtons;
+- (void) step:(ccTime) delta;
 
 @end

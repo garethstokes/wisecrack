@@ -46,12 +46,13 @@
         
         [self schedule:@selector(step:) interval:3.0];
         ready = YES;
+        delta_ = 0;
     }
     
     return self;
 }
 
-- (void) step:(id) sender
+- (void) step:(ccTime) delta
 {
     //NSLog(@"stepping");
     
@@ -60,9 +61,45 @@
     //[self clearButtons];
     [self drawButtons];
     
-    
     // check to see if there are any valid moves
+    if ((delta_ - delta) > 30) // check every 5 seconds
+    {
+        NSLog(@"checking for valid moves");
+        BOOL valid = NO;
+        if (ready)
+        {
+            for (CCMenuItemImage *button in buttons)
+            {
+                NSMutableDictionary *matches = [NSMutableDictionary dictionary];
+                GameItem *word = [button word];
+            
+                // initial word
+                [matches setValue:word forKey:[word hash]];
+            
+                // ask the board for all the matching colours 
+                [board matchingColours:word result:matches];
+            
+                // ask the board for all the matching words 
+                [board matchingWords:word result:matches];
+            
+                // we need more than 2 matches to continue. 
+                if ([matches.allKeys count] <= kGroupMinSize) 
+                {
+                    valid = YES;
+                    break;
+                }
+            }
+        }
+        
+        if (!valid)
+        {
+            NSLog(@"INVALID BOARD DUDE");
+        }
+        delta_ = 0;
+    }
+    
     ready = YES;
+    delta_ += delta;
 }
 
 - (void) clearButtons
