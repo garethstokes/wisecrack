@@ -191,10 +191,12 @@
 		E76B1B0714ED0F2600CBEA83 /* backgrounds.pshs in Resources */ = {isa = PBXBuildFile; fileRef = E76B1B0414ED0F2500CBEA83 /* backgrounds.pshs */; };
 		E76E8BC615259B1300E240D7 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = E76E8BC515259B1300E240D7 /* Icon-Small.png */; };
 		E76E8BC815259B1900E240D7 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E76E8BC715259B1900E240D7 /* Icon-Small@2x.png */; };
+		E7BB318515371AED00C77145 /* starburst.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7BB318415371AED00C77145 /* starburst.plist */; };
 		E7C19C72152C18600039A419 /* HudLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C19C71152C18600039A419 /* HudLayer.m */; };
 		E7C19C76152C194F0039A419 /* pause_btn_off.png in Resources */ = {isa = PBXBuildFile; fileRef = E7C19C73152C194F0039A419 /* pause_btn_off.png */; };
 		E7C19C77152C194F0039A419 /* pause_btn_on.png in Resources */ = {isa = PBXBuildFile; fileRef = E7C19C74152C194F0039A419 /* pause_btn_on.png */; };
 		E7C19C78152C194F0039A419 /* score_numerals.png in Resources */ = {isa = PBXBuildFile; fileRef = E7C19C75152C194F0039A419 /* score_numerals.png */; };
+		E7F03114153720B4005DFB5B /* explosion.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7F03113153720B4005DFB5B /* explosion.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -551,11 +553,13 @@
 		E76B1B0414ED0F2500CBEA83 /* backgrounds.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = backgrounds.pshs; path = Resources/backgrounds.pshs; sourceTree = "<group>"; };
 		E76E8BC515259B1300E240D7 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
 		E76E8BC715259B1900E240D7 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		E7BB318415371AED00C77145 /* starburst.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = starburst.plist; path = Resources/starburst.plist; sourceTree = "<group>"; };
 		E7C19C70152C18600039A419 /* HudLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudLayer.h; sourceTree = "<group>"; };
 		E7C19C71152C18600039A419 /* HudLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HudLayer.m; sourceTree = "<group>"; };
 		E7C19C73152C194F0039A419 /* pause_btn_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause_btn_off.png; path = Resources/pause_btn_off.png; sourceTree = "<group>"; };
 		E7C19C74152C194F0039A419 /* pause_btn_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause_btn_on.png; path = Resources/pause_btn_on.png; sourceTree = "<group>"; };
 		E7C19C75152C194F0039A419 /* score_numerals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = score_numerals.png; path = Resources/score_numerals.png; sourceTree = "<group>"; };
+		E7F03113153720B4005DFB5B /* explosion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = explosion.plist; path = Resources/explosion.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -655,6 +659,8 @@
 		E73EC83414E3B7F9001B1980 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E7F03113153720B4005DFB5B /* explosion.plist */,
+				E7BB318415371AED00C77145 /* starburst.plist */,
 				E70ADA2C153700B400057555 /* options-hd.png */,
 				E70ADA2D153700B400057555 /* options.png */,
 				E70ADA2E153700B400057555 /* options.pshs */,
@@ -1202,6 +1208,8 @@
 				E70ADA2F153700B500057555 /* options-hd.png in Resources */,
 				E70ADA30153700B500057555 /* options.png in Resources */,
 				E70ADA31153700B500057555 /* options.pshs in Resources */,
+				E7BB318515371AED00C77145 /* starburst.plist in Resources */,
+				E7F03114153720B4005DFB5B /* explosion.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,6 +18,7 @@
     NSMutableArray *buttons;
     CCMenu* menu;
     int score;
+    BOOL ready;
 }
 
 @property (nonatomic, retain) GameBoard* board;

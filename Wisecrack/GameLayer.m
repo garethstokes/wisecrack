@@ -44,7 +44,8 @@
         [self drawButtons];
         [self addChild:menu z:10];
         
-        [self schedule:@selector(step:) interval:0.5];
+        [self schedule:@selector(step:) interval:3.0];
+        ready = YES;
     }
     
     return self;
@@ -58,6 +59,10 @@
     [board fill];
     //[self clearButtons];
     [self drawButtons];
+    
+    
+    // check to see if there are any valid moves
+    ready = YES;
 }
 
 - (void) clearButtons
@@ -153,6 +158,8 @@
 
 - (void) wordClick:(id) sender
 {
+    if (!ready) return;
+    
     NSLog(@"click");
     NSMutableDictionary *matches = [NSMutableDictionary dictionary];
 
@@ -203,6 +210,11 @@
             {
                 NSLog(@"fading out... %@", [word hash]);
                 
+                CCParticleSystemQuad *sparkle = [CCParticleSystemQuad particleWithFile:@"starburst.plist"];
+                
+                [sparkle setPosition:[button position]];
+                [self addChild:sparkle z:101];
+                
                 NSString *key_down = [NSString stringWithFormat:@"%@_%d_down", 
                                       [button.word colour], 
                                       (int)button.word.size.width];
@@ -222,6 +234,8 @@
     score += [scoreCalculator calculate:[matches allValues]];
     
     [[[GameObjectCache sharedGameObjectCache] hudLayer] updateScoreLabel:score];
+    
+    ready = NO;
 }
 
 - (void) removeButton:(id)sender
