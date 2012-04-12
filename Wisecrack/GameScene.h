@@ -9,6 +9,7 @@
 #import "cocos2d.h"
 #import "GameBoard.h"
 #import "GameLayer.h"
+#import "HudLayer.h"
 
 #import "PrototypeGame.h"
 

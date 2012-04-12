@@ -1,0 +1,69 @@
+//
+//  HudLayer.m
+//  Wisecrack
+//
+//  Created by Gareth Stokes on 4/04/12.
+//  Copyright (c) 2012 digital five. All rights reserved.
+//
+
+#import "HudLayer.h"
+
+@implementation HudLayer
+
+- (id) init
+{
+    if( (self=[super init]))
+    {
+        // POSITION
+        CGSize size = [[CCDirector sharedDirector] winSize];
+        [self setPosition:ccp(0, size.height - 46)];
+        [self setContentSize:CGSizeMake(size.width, 50)];
+
+        // SCORE
+        _score = [[CCLabelAtlas labelWithString:@"0" 
+                                    charMapFile:@"score_numerals.png" 
+                                      itemWidth:11
+                                     itemHeight:25 
+                                   startCharMap:'0'] retain];
+        [_score setAnchorPoint: ccp(1, 0.5f)]; // align right
+        [_score setPosition:ccp(314, 25)];
+        [self addChild:_score];
+        
+        // OPTIONS BUTTON
+        loader = [[SpriteHelperLoader alloc] initWithContentOfFile:@"hud"];
+
+        CCSprite *pauseOn = [loader spriteWithUniqueName:@"pause_btn_on" atPosition:ccp(0, 0) inLayer:nil];
+        CCSprite *pauseOff = [loader spriteWithUniqueName:@"pause_btn_off" atPosition:ccp(0, 0) inLayer:nil];
+        
+        CCMenuItemImage *button = [CCMenuItemImage 
+                                   itemFromNormalSprite: pauseOn
+                                   selectedSprite: pauseOff
+                                   target:self 
+                                   selector:@selector(openOptions:)];
+        
+        
+        CCMenu *menu = [CCMenu menuWithItems: button, nil];
+        [menu setPosition:CGPointMake(32, 25)];
+        
+        //[self addChild:menu z:10];
+        
+    }
+    
+    return self;
+}
+
+- (void) openOptions:(id)sender
+{
+    // open options screen here.
+    
+}
+
+- (void) dealloc
+{
+    CCLOG(@"Dealloc HUD");
+    [_score release];
+    [self removeAllChildrenWithCleanup:YES];
+    [super dealloc];
+}
+
+@end

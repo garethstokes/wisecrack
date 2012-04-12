@@ -10,7 +10,6 @@
 #import "GameBoard.h"
 #import "SpriteHelperLoader.h"
 #import "GameItem.h"
-#import "WCButton.h"
 
 @interface GameLayer : CCLayer {
     GameBoard* board;

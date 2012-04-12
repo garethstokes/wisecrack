@@ -25,6 +25,13 @@
     [scene setGame:gameLayer];
     [scene addChild:gameLayer z:10];
     [gameLayer release];
+    
+    // HUD
+    HudLayer * hud = [[HudLayer alloc] init];
+    [scene setHud:hud];
+    [scene addChild:hud z:20];
+    [hud release];
+    
     return scene;
 }
 
