@@ -52,7 +52,7 @@
 
 - (void) step:(id) sender
 {
-    NSLog(@"stepping");
+    //NSLog(@"stepping");
     
     // refill the board;
     [board fill];
@@ -104,7 +104,7 @@
                              [word colour], 
                              (int)word.size.width];
             
-            NSString *key_down = [NSString stringWithFormat:@"%@_%d_up", 
+            NSString *key_down = [NSString stringWithFormat:@"%@_%d_down", 
                                 [word colour], 
                                 (int)word.size.width];
             
@@ -200,6 +200,12 @@
             {
                 NSLog(@"fading out... %@", [word hash]);
                 
+                NSString *key_down = [NSString stringWithFormat:@"%@_%d_down", 
+                                      [button.word colour], 
+                                      (int)button.word.size.width];
+                CCSprite *sprite2 = [loader spriteWithUniqueName:key_down atPosition:CGPointMake(0,0) inLayer:nil];
+                
+                [button setNormalImage:sprite2];
                 [button runAction:[CCSequence actions:
                                    [CCFadeOut actionWithDuration:0.5],
                                    [CCCallFuncO actionWithTarget:self selector:@selector(removeButton:) object:button], 
