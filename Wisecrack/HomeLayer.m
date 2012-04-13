@@ -37,8 +37,8 @@
         CCSprite *playOff = [loader spriteWithUniqueName:@"play_off" atPosition:ccp(0, 0) inLayer:nil];
         
         CCMenuItemImage *button = [CCMenuItemImage 
-                                   itemFromNormalSprite: playOn
-                                   selectedSprite: playOff
+                                   itemFromNormalSprite: playOff
+                                   selectedSprite: playOn
                                    target:self 
                                    selector:@selector(play:)];
         
@@ -54,7 +54,7 @@
 
 - (void) play:(id) sender
 {
-    [[CCDirector sharedDirector] replaceScene: [GameScene create]];
+    [[CCDirector sharedDirector] replaceScene: [CCTransitionFlipX transitionWithDuration:0.3 scene:[GameScene create]]];
 }
 
 - (void) dealloc

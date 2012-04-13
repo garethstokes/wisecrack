@@ -63,7 +63,7 @@
     }
     
     // right
-    if ((word.offset) + word.size.width < kBoardColumns)
+    if ((word.offset) + word.size.width <= kBoardColumns)
     {
         GameItem *right = [self wordAtPosition:CGPointMake(word.offset + word.size.width, word.row)];
         [words setValue:right forKey:[right hash]];

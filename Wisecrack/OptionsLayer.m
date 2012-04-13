@@ -8,6 +8,9 @@
 
 #import "OptionsLayer.h"
 #import "GameScene.h"
+#import "ScoreCard.h"
+#import "GameObjectCache.h"
+#import "GameLayer.h"
 
 @implementation OptionsLayer
 
@@ -16,7 +19,6 @@
     if( (self=[super init]))
     {
         SpriteHelperLoader *loader = [[[SpriteHelperLoader alloc] initWithContentOfFile:@"options"] autorelease];
-        CGSize size = [[CCDirector sharedDirector] winSize];
         
         
         CCSprite *background = [loader spriteWithUniqueName:@"options_bg" 
@@ -63,12 +65,41 @@
 
 - (void) cont:(id) sender
 {
+    [self runAction:[CCFadeOut actionWithDuration:0.3]];
     [self removeFromParentAndCleanup:YES];
 }
 
 - (void) replay:(id) sender
 {
-    [[CCDirector sharedDirector] replaceScene: [GameScene create]];
+    //TODO: put this line back in after testing the scorecard
+    //[[CCDirector sharedDirector] replaceScene: [GameScene create]];
+    
+    GameLayer *gameLayer = [[GameObjectCache sharedGameObjectCache] gameLayer];
+    ScoreCard *card = [[[ScoreCard alloc] init] autorelease];
+    [card updateScore:[gameLayer score]];
+    [[[GameObjectCache sharedGameObjectCache] gameScene] addChild:card z:100];
+    [card runAction:[CCSequence actions:[CCFadeIn actionWithDuration:0.3], nil]];
+    
+    /*
+    [gameLayer runAction:[CCSequence actions: 
+                          [CCFadeOutTRTiles actionWithSize:ccg(40, 40) duration:1.5],
+                          //[[CCFadeOutTRTiles actionWithSize:ccg(40, 40) duration:1.5] reverse],
+                          //[CCStopGrid action],
+                          nil]];
+    */
+    [[[GameObjectCache sharedGameObjectCache] gameScene] removeChild:self cleanup:YES];
+}
+
+// Set the opacity of all of our children that support it
+-(void) setOpacity: (GLubyte) opacity
+{
+    for( CCNode *node in [self children] )
+    {
+        if( [node conformsToProtocol:@protocol(CCRGBAProtocol)] )
+        {
+            [(id<CCRGBAProtocol>) node setOpacity: opacity];
+        }
+    }
 }
 
 @end

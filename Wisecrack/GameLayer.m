@@ -8,6 +8,7 @@
 
 #import "GameLayer.h"
 #import "GameObjectCache.h"
+#import "ScoreCard.h"
 
 @implementation GameLayer
 @synthesize board;
@@ -94,6 +95,9 @@
         if (!valid)
         {
             NSLog(@"INVALID BOARD DUDE");
+            ScoreCard * scoreCard = [[[ScoreCard alloc] init] autorelease];
+            [scoreCard updateScore:score];
+            //[[[GameObjectCache sharedGameObjectCache] gameScene] addChild:scoreCard z:200];
         }
         delta_ = 0;
     }
@@ -212,7 +216,7 @@
     [board matchingColours:word result:matches];
     
     // ask the board for all the matching words 
-    [board matchingWords:word result:matches];
+    //[board matchingWords:word result:matches];
     
     // we need more than 2 matches to continue. 
     if ([matches.allKeys count] <= kGroupMinSize) 

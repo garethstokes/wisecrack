@@ -62,6 +62,7 @@
     CGSize size = [[CCDirector sharedDirector] winSize];
     [options setPosition:ccp(size.width /2, size.height /2)];
     [[[GameObjectCache sharedGameObjectCache] gameScene] addChild:options z:200];
+    [options runAction:[CCFadeIn actionWithDuration:0.3]];
 }
 
 - (void) updateScoreLabel:(int)number

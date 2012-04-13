@@ -197,6 +197,13 @@
 		E7C19C77152C194F0039A419 /* pause_btn_on.png in Resources */ = {isa = PBXBuildFile; fileRef = E7C19C74152C194F0039A419 /* pause_btn_on.png */; };
 		E7C19C78152C194F0039A419 /* score_numerals.png in Resources */ = {isa = PBXBuildFile; fileRef = E7C19C75152C194F0039A419 /* score_numerals.png */; };
 		E7F03114153720B4005DFB5B /* explosion.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7F03113153720B4005DFB5B /* explosion.plist */; };
+		E7F0311815379207005DFB5B /* ScoreCard.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0311715379207005DFB5B /* ScoreCard.m */; };
+		E7F0311C153792EE005DFB5B /* scorecard-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F03119153792EE005DFB5B /* scorecard-hd.png */; };
+		E7F0311D153792EE005DFB5B /* scorecard.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F0311A153792EE005DFB5B /* scorecard.png */; };
+		E7F0311E153792EE005DFB5B /* scorecard.pshs in Resources */ = {isa = PBXBuildFile; fileRef = E7F0311B153792EE005DFB5B /* scorecard.pshs */; };
+		E7F03121153794D8005DFB5B /* big_score_numerals-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F0311F153794D8005DFB5B /* big_score_numerals-hd.png */; };
+		E7F03122153794D8005DFB5B /* big_score_numerals.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F03120153794D8005DFB5B /* big_score_numerals.png */; };
+		E7F0312915379A5A005DFB5B /* SettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0312815379A5A005DFB5B /* SettingsManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -560,6 +567,15 @@
 		E7C19C74152C194F0039A419 /* pause_btn_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause_btn_on.png; path = Resources/pause_btn_on.png; sourceTree = "<group>"; };
 		E7C19C75152C194F0039A419 /* score_numerals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = score_numerals.png; path = Resources/score_numerals.png; sourceTree = "<group>"; };
 		E7F03113153720B4005DFB5B /* explosion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = explosion.plist; path = Resources/explosion.plist; sourceTree = "<group>"; };
+		E7F0311615379207005DFB5B /* ScoreCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreCard.h; sourceTree = "<group>"; };
+		E7F0311715379207005DFB5B /* ScoreCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreCard.m; sourceTree = "<group>"; };
+		E7F03119153792EE005DFB5B /* scorecard-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "scorecard-hd.png"; path = "Resources/scorecard-hd.png"; sourceTree = "<group>"; };
+		E7F0311A153792EE005DFB5B /* scorecard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scorecard.png; path = Resources/scorecard.png; sourceTree = "<group>"; };
+		E7F0311B153792EE005DFB5B /* scorecard.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = scorecard.pshs; path = Resources/scorecard.pshs; sourceTree = "<group>"; };
+		E7F0311F153794D8005DFB5B /* big_score_numerals-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "big_score_numerals-hd.png"; path = "Resources/big_score_numerals-hd.png"; sourceTree = "<group>"; };
+		E7F03120153794D8005DFB5B /* big_score_numerals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = big_score_numerals.png; path = Resources/big_score_numerals.png; sourceTree = "<group>"; };
+		E7F0312715379A5A005DFB5B /* SettingsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsManager.h; sourceTree = "<group>"; };
+		E7F0312815379A5A005DFB5B /* SettingsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -592,6 +608,8 @@
 				E7C19C71152C18600039A419 /* HudLayer.m */,
 				E70ADA32153701D100057555 /* OptionsLayer.h */,
 				E70ADA33153701D100057555 /* OptionsLayer.m */,
+				E7F0311615379207005DFB5B /* ScoreCard.h */,
+				E7F0311715379207005DFB5B /* ScoreCard.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -659,6 +677,11 @@
 		E73EC83414E3B7F9001B1980 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E7F0311F153794D8005DFB5B /* big_score_numerals-hd.png */,
+				E7F03120153794D8005DFB5B /* big_score_numerals.png */,
+				E7F03119153792EE005DFB5B /* scorecard-hd.png */,
+				E7F0311A153792EE005DFB5B /* scorecard.png */,
+				E7F0311B153792EE005DFB5B /* scorecard.pshs */,
 				E7F03113153720B4005DFB5B /* explosion.plist */,
 				E7BB318415371AED00C77145 /* starburst.plist */,
 				E70ADA2C153700B400057555 /* options-hd.png */,
@@ -1102,6 +1125,8 @@
 		E73ECA0914E3B9F2001B1980 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E7F0312715379A5A005DFB5B /* SettingsManager.h */,
+				E7F0312815379A5A005DFB5B /* SettingsManager.m */,
 				E70AD9F21536EB5500057555 /* GameObjectCache.h */,
 				E70AD9F31536EB5500057555 /* GameObjectCache.m */,
 				E73ECA0A14E3BA20001B1980 /* GameItem.h */,
@@ -1210,6 +1235,11 @@
 				E70ADA31153700B500057555 /* options.pshs in Resources */,
 				E7BB318515371AED00C77145 /* starburst.plist in Resources */,
 				E7F03114153720B4005DFB5B /* explosion.plist in Resources */,
+				E7F0311C153792EE005DFB5B /* scorecard-hd.png in Resources */,
+				E7F0311D153792EE005DFB5B /* scorecard.png in Resources */,
+				E7F0311E153792EE005DFB5B /* scorecard.pshs in Resources */,
+				E7F03121153794D8005DFB5B /* big_score_numerals-hd.png in Resources */,
+				E7F03122153794D8005DFB5B /* big_score_numerals.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1366,6 +1396,8 @@
 				E70AD9ED1536E78400057555 /* ScoreCalculator.m in Sources */,
 				E70AD9F41536EB5500057555 /* GameObjectCache.m in Sources */,
 				E70ADA34153701D100057555 /* OptionsLayer.m in Sources */,
+				E7F0311815379207005DFB5B /* ScoreCard.m in Sources */,
+				E7F0312915379A5A005DFB5B /* SettingsManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
