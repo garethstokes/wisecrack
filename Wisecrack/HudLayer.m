@@ -48,7 +48,7 @@
         [menu setPosition:CGPointMake(32, 25)];
         
         [self addChild:menu z:10];
-        
+        score = 0;
     }
     
     return self;
@@ -67,7 +67,9 @@
 
 - (void) updateScoreLabel:(int)number
 {
-    [_score setString:[NSString stringWithFormat:@"%d", number]];
+    if (score >= number) return;
+    score = score + 1;
+    [_score setString:[NSString stringWithFormat:@"%d", score]];
 }
 
 - (void) dealloc

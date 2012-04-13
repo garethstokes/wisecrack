@@ -31,5 +31,6 @@
 - (void) drawButtons;
 - (void) clearButtons;
 - (void) step:(ccTime) delta;
+- (void) checkForStuff:(ccTime) delta;
 
 @end

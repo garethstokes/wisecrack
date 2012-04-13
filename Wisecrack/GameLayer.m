@@ -45,7 +45,8 @@
         [self drawButtons];
         [self addChild:menu z:10];
         
-        [self schedule:@selector(step:) interval:3.0];
+        [self schedule:@selector(step:)];
+        [self schedule:@selector(checkForStuff:) interval:3.0];
         ready = YES;
         delta_ = 0;
     }
@@ -53,7 +54,12 @@
     return self;
 }
 
-- (void) step:(ccTime) delta
+- (void) step:(ccTime)delta
+{
+    [[[GameObjectCache sharedGameObjectCache] hudLayer] updateScoreLabel:score];
+}
+
+- (void) checkForStuff:(ccTime) delta
 {
     //NSLog(@"stepping");
     
@@ -63,6 +69,7 @@
     [self drawButtons];
     
     // check to see if there are any valid moves
+    
     if ((delta_ - delta) > 30) // check every 5 seconds
     {
         NSLog(@"checking for valid moves");
@@ -216,7 +223,7 @@
     [board matchingColours:word result:matches];
     
     // ask the board for all the matching words 
-    //[board matchingWords:word result:matches];
+    [board matchingWords:word result:matches];
     
     // we need more than 2 matches to continue. 
     if ([matches.allKeys count] <= kGroupMinSize) 
@@ -273,8 +280,6 @@
     // find score;
     ScoreCalculator *scoreCalculator = [[[ScoreCalculator alloc] init] autorelease];
     score += [scoreCalculator calculate:[matches allValues]];
-    
-    [[[GameObjectCache sharedGameObjectCache] hudLayer] updateScoreLabel:score];
     
     ready = NO;
 }

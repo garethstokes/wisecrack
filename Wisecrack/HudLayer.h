@@ -12,6 +12,7 @@
 @interface HudLayer : CCLayer {
     CCLabelAtlas * _score;
     SpriteHelperLoader *loader;
+    int score;
 }
 
 - (void) openOptions:(id)sender;
