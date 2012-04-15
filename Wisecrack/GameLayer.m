@@ -188,14 +188,17 @@
     [board matchingColours:word result:matches];
     
     // ask the board for all the matching words 
-    NSMutableDictionary * matchedMatches = [matches copy];
-    for (GameItem * matchedWord in [matchedMatches allValues])
+    NSMutableArray * matchedMatches = [NSMutableArray array];
+    for (GameItem * matchedWord in [[matches copy] allValues])
     {
-        [board matchingWords:matchedWord result:matches];
+        NSMutableDictionary * matchedWords = [NSMutableDictionary dictionary];
+        [board matchingWords:matchedWord result:matchedWords];
+        if ([matchedWords.allKeys count] >= multiplier)
+            [matchedMatches addObject:matchedWords];
     }
     
     // we need more than N matches to continue. 
-    if ([matches.allKeys count] < multiplier) 
+    if ([matches.allKeys count] < multiplier && [matchedMatches count] == 0) 
     {
         // remove 50 points;
         score -= 50;
@@ -218,33 +221,36 @@
         return;
     }
     
-    // remove all the matched words. 
-    for (GameItem *w in [matches allValues]) 
+    // remove all the matched colours. 
+    for (GameItem *w in [matches allValues]) // loop through all the matches
     {
-        for (CCMenuItemImage *button in [menu children]) 
+        for (CCMenuItemImage *button in [menu children]) // loop through the ui buttons
         {
-            if ([[button.word hash] isEqualToString:[w hash]])
+            if ([[button.word hash] isEqualToString:[w hash]]) // find the matching button to the matched word
             {
-                NSLog(@"fading out... %@", [word hash]);
-                
-                CCParticleSystemQuad *sparkle = [CCParticleSystemQuad particleWithFile:@"starburst.plist"];
-                
-                [sparkle setPosition:[button position]];
-                [self addChild:sparkle z:101];
-                
-                NSString *key_down = [NSString stringWithFormat:@"%@_%@_%d_down", 
-                                      [button.word colour], 
-                                      [button.word name],
-                                      (int)button.word.size.width];
-                CCSprite *sprite2 = [loader spriteWithUniqueName:key_down atPosition:CGPointMake(0,0) inLayer:nil];
-                
-                [button setNormalImage:sprite2];
-                [button runAction:[CCSequence actions:
-                                   [CCFadeOut actionWithDuration:0.5],
-                                   [CCCallFuncO actionWithTarget:self selector:@selector(removeButton:) object:button], 
-                                   nil]];
+                // and remove it. 
+                [self removeButton:button withDelay:0];
             }
         }
+    }
+    
+    // remove matched words
+    ccTime delay = 1;
+    for (NSDictionary * wordMatches in matchedMatches)
+    {
+        for (GameItem *w in [wordMatches allValues]) // loop through all the matches
+        {
+            for (CCMenuItemImage *button in [menu children]) // loop through the ui buttons
+            {
+                if ([button isDirty]) continue;
+                if ([[button.word hash] isEqualToString:[w hash]]) // find the matching button to the matched word
+                {
+                    // and remove it. 
+                    [self removeButton:button withDelay:delay];
+                }
+            }
+        }
+        delay += 1;
     }
     
     // find score;
@@ -255,11 +261,34 @@
     [board setDirty:YES];
 }
 
-- (void) removeButton:(id)sender
+- (void) removeButton:(CCMenuItemImage *)button withDelay:(ccTime)delay
+{
+    NSLog(@"fading out... %@", [button.word hash]);
+    [button setIsDirty:YES];
+    
+    CCParticleSystemQuad *sparkle = [CCParticleSystemQuad particleWithFile:@"starburst.plist"];
+    
+    [sparkle setPosition:[button position]];
+    [self addChild:sparkle z:101];
+    
+    NSString *key_down = [NSString stringWithFormat:@"%@_%@_%d_down", 
+                          [button.word colour], 
+                          [button.word name],
+                          (int)button.word.size.width];
+    CCSprite *sprite2 = [loader spriteWithUniqueName:key_down atPosition:CGPointMake(0,0) inLayer:nil];
+    
+    [button setNormalImage:sprite2];
+    [button runAction:[CCSequence actions:
+                       [CCDelayTime actionWithDuration:delay],
+                       [CCFadeOut actionWithDuration:2.5],
+                       [CCCallFuncO actionWithTarget:self selector:@selector(endRemoveButton:) object:button], 
+                       nil]];
+}
+
+- (void) endRemoveButton:(id)sender
 {
     CCMenuItemImage * button = (CCMenuItemImage *)sender;
     NSLog(@"removing button: %@", [button.word hash]);
-    
     
     [button setVisible:NO];
     [buttons removeObject:button];

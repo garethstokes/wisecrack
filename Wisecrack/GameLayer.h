@@ -34,5 +34,7 @@
 - (void) step:(ccTime) delta;
 - (void) updateBoard:(ccTime) delta;
 - (void) updateMultiplier:(ccTime) delta;
+- (void) removeButton:(CCMenuItemImage *) button withDelay:(ccTime)delay;
+- (void) endRemoveButton:(id) sender;
 
 @end

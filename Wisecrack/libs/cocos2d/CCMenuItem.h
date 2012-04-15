@@ -305,9 +305,11 @@
     // GD: i know this is a hack... but inheritence is
     // the root of all evil
     GameItem *word;
+    BOOL isDirty;
 }
 
 @property (nonatomic, retain) GameItem *word;
+@property BOOL isDirty;
 
 /** creates a menu item with a normal and selected image*/
 +(id) itemFromNormalImage: (NSString*)value selectedImage:(NSString*) value2;

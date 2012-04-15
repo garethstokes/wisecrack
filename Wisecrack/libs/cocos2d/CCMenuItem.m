@@ -599,6 +599,7 @@ const uint32_t	kZoomActionTag = 0xc0c05002;
 
 @implementation CCMenuItemImage
 @synthesize word;
+@synthesize isDirty;
 
 +(id) itemFromNormalImage: (NSString*)value selectedImage:(NSString*) value2
 {
@@ -622,6 +623,7 @@ const uint32_t	kZoomActionTag = 0xc0c05002;
 
 -(id) initFromNormalImage: (NSString*) normalI selectedImage:(NSString*)selectedI disabledImage: (NSString*) disabledI target:(id)t selector:(SEL)sel
 {
+    isDirty = NO;
 	CCNode<CCRGBAProtocol> *normalImage = [CCSprite spriteWithFile:normalI];
 	CCNode<CCRGBAProtocol> *selectedImage = nil;
 	CCNode<CCRGBAProtocol> *disabledImage = nil;
