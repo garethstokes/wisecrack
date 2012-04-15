@@ -11,10 +11,10 @@
 @implementation BaseGame
 @synthesize words;
 @synthesize numberOfWords;
+@synthesize wisecrackLength;
 
 - (void)shuffle
 {
-    
     static BOOL seeded = NO;
     if(!seeded)
     {

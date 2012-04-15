@@ -14,6 +14,7 @@
 @synthesize board;
 @synthesize buttons;
 @synthesize score;
+@synthesize multiplier;
 
 - (id) initWithBoard:(GameBoard *)b
 {
@@ -34,16 +35,18 @@
         menu = [CCMenu menuWithItems: nil];
         [menu setPosition:CGPointMake(-8, -12)];
         
-        // init score
+        // init score and multiplier
         score = 0;
+        multiplier = kGroupMinSize +1;
+        [[[GameObjectCache sharedGameObjectCache] hudLayer] updateMultiplier:multiplier];
 
         [self drawButtons];
         [self addChild:menu z:10];
         
         [self schedule:@selector(step:)];
-        [self schedule:@selector(checkForStuff:) interval:3.0];
+        [self schedule:@selector(updateBoard:) interval:3.0];
+        [self schedule:@selector(updateMultiplier:) interval:60.0];
         ready = YES;
-        delta_ = 0;
     }
     
     return self;
@@ -54,58 +57,24 @@
     [[[GameObjectCache sharedGameObjectCache] hudLayer] updateScoreLabel:score withAnim:YES];
 }
 
-- (void) checkForStuff:(ccTime) delta
+- (void) updateBoard:(ccTime) delta
 {
-    //NSLog(@"stepping");
+    if (![board dirty]) return;
     
     // refill the board;
     [board fill];
-    //[self clearButtons];
     [self drawButtons];
     
-    // check to see if there are any valid moves
-    
-    if ((delta_ - delta) > 30) // check every 5 seconds
-    {
-        NSLog(@"checking for valid moves");
-        BOOL valid = NO;
-        if (ready)
-        {
-            for (CCMenuItemImage *button in buttons)
-            {
-                NSMutableDictionary *matches = [NSMutableDictionary dictionary];
-                GameItem *word = [button word];
-            
-                // initial word
-                [matches setValue:word forKey:[word hash]];
-            
-                // ask the board for all the matching colours 
-                [board matchingColours:word result:matches];
-            
-                // ask the board for all the matching words 
-                [board matchingWords:word result:matches];
-            
-                // we need more than 2 matches to continue. 
-                if ([matches.allKeys count] <= kGroupMinSize) 
-                {
-                    valid = YES;
-                    break;
-                }
-            }
-        }
-        
-        if (!valid)
-        {
-            NSLog(@"INVALID BOARD DUDE");
-            ScoreCard * scoreCard = [[[ScoreCard alloc] init] autorelease];
-            [scoreCard updateScore:score];
-            //[[[GameObjectCache sharedGameObjectCache] gameScene] addChild:scoreCard z:200];
-        }
-        delta_ = 0;
-    }
-    
     ready = YES;
-    delta_ += delta;
+}
+
+- (void) updateMultiplier:(ccTime)delta
+{
+    if (multiplier <= 5)
+    {
+        multiplier++;
+        [[[GameObjectCache sharedGameObjectCache] hudLayer] updateMultiplier:multiplier];
+    }
 }
 
 - (void) clearButtons
@@ -128,8 +97,6 @@
 - (void) drawButtons
 {
     int count = 1;
-    
-    //[self clearButtons];
     
     NSLog(@"iterating through rows now: %d", [board.rows count]);
     for (NSArray *row in [board rows])
@@ -226,8 +193,8 @@
         [board matchingWords:matchedWord result:matches];
     }
     
-    // we need more than 2 matches to continue. 
-    if ([matches.allKeys count] <= kGroupMinSize) 
+    // we need more than N matches to continue. 
+    if ([matches.allKeys count] < multiplier) 
     {
         // remove 50 points;
         score -= 50;
@@ -284,6 +251,7 @@
     score += [scoreCalculator calculate:[matches allValues]];
     
     ready = NO;
+    [board setDirty:YES];
 }
 
 - (void) removeButton:(id)sender

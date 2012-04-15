@@ -21,6 +21,13 @@
     GameScene* scene = [[[GameScene alloc] init] autorelease];
     [[GameObjectCache sharedGameObjectCache] addGameScene:scene];
     
+    // HUD
+    HudLayer * hud = [[HudLayer alloc] init];
+    [scene setHud:hud];
+    [scene addChild:hud z:20];
+    [[GameObjectCache sharedGameObjectCache] addHudLayer:hud];
+    [hud release];
+    
     // GameLayer
     GameBoard * board = [[[GameBoard alloc] init] autorelease];
     [board fill];
@@ -30,13 +37,6 @@
     [scene addChild:gameLayer z:10];
     [[GameObjectCache sharedGameObjectCache] addGameLayer:gameLayer];
     [gameLayer release];
-    
-    // HUD
-    HudLayer * hud = [[HudLayer alloc] init];
-    [scene setHud:hud];
-    [scene addChild:hud z:20];
-    [[GameObjectCache sharedGameObjectCache] addHudLayer:hud];
-    [hud release];
     
     return scene;
 }

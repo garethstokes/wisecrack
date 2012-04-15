@@ -10,10 +10,15 @@
 
 @implementation TrueFriendsGame
 
-- (id) init
+- (id) initTo:(int)fillCount
 {
     if( (self=[super init]))
     {
+        wisecrackLength = 7;
+        
+        // otherwise it will fuck with our word count.
+        if (fillCount > wisecrackLength) fillCount = wisecrackLength;
+        
         NSMutableArray* w = [[NSMutableArray alloc] init];
         numberOfWords = 0;
         
@@ -27,27 +32,35 @@
             if (i == 4) colour = @"grey";
             
             // true
-            [w addObject:[GameItem wordWith:@"true" andColour:colour andSize:@"medium"]];
+            if (fillCount >= 1)
+                [w addObject:[GameItem wordWith:@"true" andColour:colour andSize:@"medium"]];
             
             // friends
-            [w addObject:[GameItem wordWith:@"friends" andColour:colour andSize:@"large"]];
-            
-            // stab
-            [w addObject:[GameItem wordWith:@"stab" andColour:colour andSize:@"medium"]];            
+            if (fillCount >= 2)
+                [w addObject:[GameItem wordWith:@"friends" andColour:colour andSize:@"large"]];
             
             // you
-            [w addObject:[GameItem wordWith:@"you" andColour:colour andSize:@"small"]];            
+            if (fillCount >= 3)
+                [w addObject:[GameItem wordWith:@"you" andColour:colour andSize:@"small"]];             
+            
+            // stab
+            if (fillCount >= 4)
+                [w addObject:[GameItem wordWith:@"stab" andColour:colour andSize:@"medium"]];
             
             // in
-            [w addObject:[GameItem wordWith:@"in" andColour:colour andSize:@"small"]];
+            if (fillCount >= 5)
+                [w addObject:[GameItem wordWith:@"in" andColour:colour andSize:@"small"]];
             
             // the
-            [w addObject:[GameItem wordWith:@"the" andColour:colour andSize:@"small"]];
+            if (fillCount >= 6)
+                    [w addObject:[GameItem wordWith:@"the" andColour:colour andSize:@"small"]];
             
             // front
-            [w addObject:[GameItem wordWith:@"front" andColour:colour andSize:@"medium"]];
+            if (fillCount >= 7)
+                [w addObject:[GameItem wordWith:@"front" andColour:colour andSize:@"medium"]];
             
-            numberOfWords += 7;
+            NSLog(@"fill count: %d", fillCount);
+            numberOfWords += fillCount;
         }
         
         words = w;

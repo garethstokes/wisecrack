@@ -11,7 +11,9 @@
 
 @implementation GameBoard
 @synthesize size;
+@synthesize dirty;
 @synthesize name;
+@synthesize wisecrackLength;
 
 @synthesize rows;
 @synthesize columns;
@@ -29,6 +31,9 @@
             [rows addObject:row];
             [row release];
         }
+        
+        fillCount = 2;
+        dirty = NO;
     }
     
     return self;
@@ -147,8 +152,12 @@
 
 - (void) fill
 {
+    fillCount++;
+    
     int x = 1;
-    BaseGame* game = [[TrueFriendsGame alloc] init];
+    BaseGame* game = [[TrueFriendsGame alloc] initTo:fillCount];
+    wisecrackLength = [game wisecrackLength];
+    
     // loop through all the rows
     for (int i = 0; i < kBoardRows; i++) 
     {
@@ -196,12 +205,8 @@
             }
         }
         x = 1;
-        //[rows addObject:row];
-        //[row release];
     }
 
-    //[self setRows:rows];
-    //[rows release];
     [game release];
 }
 

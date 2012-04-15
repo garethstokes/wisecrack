@@ -18,19 +18,21 @@
     NSMutableArray *buttons;
     CCMenu* menu;
     int score;
+    int multiplier;
     BOOL ready;
-    ccTime delta_;
 }
 
 @property (nonatomic, retain) GameBoard* board;
 @property (nonatomic, retain) NSMutableArray* buttons;
 @property (nonatomic) int score;
+@property (nonatomic) int multiplier;
 
 - (id) initWithBoard:(GameBoard *)board;
 - (void) wordClick:(id) sender;
 - (void) drawButtons;
 - (void) clearButtons;
 - (void) step:(ccTime) delta;
-- (void) checkForStuff:(ccTime) delta;
+- (void) updateBoard:(ccTime) delta;
+- (void) updateMultiplier:(ccTime) delta;
 
 @end

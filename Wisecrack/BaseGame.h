@@ -11,12 +11,14 @@
 #import "GameItem.h"
 
 @interface BaseGame : NSObject {
-    NSArray *words;
+    NSMutableArray *words;
     int numberOfWords;
+    int wisecrackLength;
 }
 
-@property (nonatomic, retain) NSArray* words;
+@property (nonatomic, retain) NSMutableArray* words;
 @property (nonatomic) int numberOfWords;
+@property (nonatomic) int wisecrackLength;
 
 - (void) shuffle;
 

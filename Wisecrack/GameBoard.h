@@ -16,10 +16,17 @@
     NSString* name;
     
     NSMutableArray* rows; 
-    NSMutableArray* columns; 
+    NSMutableArray* columns;
+    
+    int wisecrackLength;
+    int fillCount;
+    BOOL dirty;
 }
 
-@property (nonatomic) CGSize size;
+@property CGSize size;
+@property BOOL dirty;
+@property int wisecrackLength;
+
 @property (nonatomic, retain) NSString *name;
 
 @property (nonatomic, retain) NSMutableArray* rows;
