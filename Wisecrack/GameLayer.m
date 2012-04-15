@@ -60,6 +60,7 @@
 - (void) updateBoard:(ccTime) delta
 {
     if (![board dirty]) return;
+    ready = NO;
     
     // refill the board;
     [board fill];
@@ -70,7 +71,7 @@
 
 - (void) updateMultiplier:(ccTime)delta
 {
-    if (multiplier <= 5)
+    if (multiplier < 5)
     {
         multiplier++;
         [[[GameObjectCache sharedGameObjectCache] hudLayer] updateMultiplier:multiplier];
