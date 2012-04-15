@@ -164,9 +164,13 @@
             [menu addChild:button];
             [buttons addObject:button];
             [button setOpacity:0];
+            
+            int max = 2;
+            float randomNum = (((float) (arc4random() % ((unsigned)RAND_MAX + 1)) / RAND_MAX) * max) + 0;
+            NSLog(@"randomNum: %f", randomNum);
             [button runAction:[CCSequence actions:
-                               [CCDelayTime actionWithDuration:arc4random() % 5], 
-                               [CCFadeIn actionWithDuration:3.0f],
+                               [CCDelayTime actionWithDuration:randomNum], 
+                               [CCFadeIn actionWithDuration:2.0f],
                                nil]];
         }
         
@@ -240,7 +244,7 @@
     }
     
     // remove matched words
-    ccTime delay = 1;
+    ccTime delay = 1.5;
     for (NSDictionary * wordMatches in matchedMatches)
     {
         for (GameItem *w in [wordMatches allValues]) // loop through all the matches
@@ -255,7 +259,7 @@
                 }
             }
         }
-        delay += 1;
+        delay += 1.5;
     }
     
     // find score;
