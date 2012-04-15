@@ -65,10 +65,18 @@
     [options runAction:[CCFadeIn actionWithDuration:0.3]];
 }
 
-- (void) updateScoreLabel:(int)number
+- (void) updateScoreLabel:(int)number withAnim:(BOOL)anim
 {
-    if (score >= number) return;
-    score = score + 1;
+    if (anim)
+    {
+        if (score >= number) return;
+        score = score + 1;
+    }
+    else
+    {
+        score = number;
+    }
+    
     [_score setString:[NSString stringWithFormat:@"%d", score]];
 }
 

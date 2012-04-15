@@ -7,19 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "GameConfig.h"
-#import "GameItem.h"
+#import "BaseGame.h"
 
-@interface PrototypeGame : NSObject {
-    NSArray *words;
-    int numberOfWords;
-}
-
-@property (nonatomic, retain) NSArray* words;
-@property (nonatomic) int numberOfWords;
-
-//- (void) fill:(GameBoard *)board;
-
-- (void) shuffle;
+@interface PrototypeGame : BaseGame
 
 @end

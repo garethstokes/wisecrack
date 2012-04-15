@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E70A94FF153A47BB00F6293E /* true_friends-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E70A94FC153A47BB00F6293E /* true_friends-hd.png */; };
+		E70A9500153A47BB00F6293E /* true_friends.png in Resources */ = {isa = PBXBuildFile; fileRef = E70A94FD153A47BB00F6293E /* true_friends.png */; };
+		E70A9501153A47BB00F6293E /* true_friends.pshs in Resources */ = {isa = PBXBuildFile; fileRef = E70A94FE153A47BB00F6293E /* true_friends.pshs */; };
+		E70A9505153A484F00F6293E /* TrueFriendsGame.m in Sources */ = {isa = PBXBuildFile; fileRef = E70A9504153A484F00F6293E /* TrueFriendsGame.m */; };
+		E70A9508153A488400F6293E /* BaseGame.m in Sources */ = {isa = PBXBuildFile; fileRef = E70A9507153A488400F6293E /* BaseGame.m */; };
 		E70AD9B21536C94700057555 /* score_numerals-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E70AD9B11536C94700057555 /* score_numerals-hd.png */; };
 		E70AD9ED1536E78400057555 /* ScoreCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = E70AD9EC1536E78400057555 /* ScoreCalculator.m */; };
 		E70AD9F41536EB5500057555 /* GameObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E70AD9F31536EB5500057555 /* GameObjectCache.m */; };
@@ -207,6 +212,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E70A94FC153A47BB00F6293E /* true_friends-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "true_friends-hd.png"; path = "Resources/true_friends-hd.png"; sourceTree = "<group>"; };
+		E70A94FD153A47BB00F6293E /* true_friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = true_friends.png; path = Resources/true_friends.png; sourceTree = "<group>"; };
+		E70A94FE153A47BB00F6293E /* true_friends.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = true_friends.pshs; path = Resources/true_friends.pshs; sourceTree = "<group>"; };
+		E70A9503153A484F00F6293E /* TrueFriendsGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrueFriendsGame.h; sourceTree = "<group>"; };
+		E70A9504153A484F00F6293E /* TrueFriendsGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrueFriendsGame.m; sourceTree = "<group>"; };
+		E70A9506153A488400F6293E /* BaseGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGame.h; sourceTree = "<group>"; };
+		E70A9507153A488400F6293E /* BaseGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGame.m; sourceTree = "<group>"; };
 		E70AD9B11536C94700057555 /* score_numerals-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "score_numerals-hd.png"; path = "Resources/score_numerals-hd.png"; sourceTree = "<group>"; };
 		E70AD9EB1536E78400057555 /* ScoreCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreCalculator.h; sourceTree = "<group>"; };
 		E70AD9EC1536E78400057555 /* ScoreCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreCalculator.m; sourceTree = "<group>"; };
@@ -677,6 +689,9 @@
 		E73EC83414E3B7F9001B1980 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E70A94FC153A47BB00F6293E /* true_friends-hd.png */,
+				E70A94FD153A47BB00F6293E /* true_friends.png */,
+				E70A94FE153A47BB00F6293E /* true_friends.pshs */,
 				E7F0311F153794D8005DFB5B /* big_score_numerals-hd.png */,
 				E7F03120153794D8005DFB5B /* big_score_numerals.png */,
 				E7F03119153792EE005DFB5B /* scorecard-hd.png */,
@@ -1144,6 +1159,10 @@
 			children = (
 				E73ECA1114E3BE8F001B1980 /* PrototypeGame.h */,
 				E73ECA1214E3BE8F001B1980 /* PrototypeGame.m */,
+				E70A9503153A484F00F6293E /* TrueFriendsGame.h */,
+				E70A9504153A484F00F6293E /* TrueFriendsGame.m */,
+				E70A9506153A488400F6293E /* BaseGame.h */,
+				E70A9507153A488400F6293E /* BaseGame.m */,
 			);
 			name = Games;
 			sourceTree = "<group>";
@@ -1240,6 +1259,9 @@
 				E7F0311E153792EE005DFB5B /* scorecard.pshs in Resources */,
 				E7F03121153794D8005DFB5B /* big_score_numerals-hd.png in Resources */,
 				E7F03122153794D8005DFB5B /* big_score_numerals.png in Resources */,
+				E70A94FF153A47BB00F6293E /* true_friends-hd.png in Resources */,
+				E70A9500153A47BB00F6293E /* true_friends.png in Resources */,
+				E70A9501153A47BB00F6293E /* true_friends.pshs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1398,6 +1420,8 @@
 				E70ADA34153701D100057555 /* OptionsLayer.m in Sources */,
 				E7F0311815379207005DFB5B /* ScoreCard.m in Sources */,
 				E7F0312915379A5A005DFB5B /* SettingsManager.m in Sources */,
+				E70A9505153A484F00F6293E /* TrueFriendsGame.m in Sources */,
+				E70A9508153A488400F6293E /* BaseGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,4 +29,6 @@
 + (GameItem *) medium;
 + (GameItem *) large;
 
++ (GameItem *) wordWith:(NSString *)name andColour:(NSString *)colour andSize:(NSString *)size;
+
 @end

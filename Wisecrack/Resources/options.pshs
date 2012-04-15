@@ -89,9 +89,9 @@
 				<key>Frame-HD</key>
 				<string>{{0, 0}, {640, 960}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0}, {0.546075, 1}}</string>
+				<string>{{0, 0}, {0.544218, 1}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1172, 960}</string>
+				<string>{1176, 960}</string>
 				<key>Image</key>
 				<string>options.png</string>
 				<key>Image-HD</key>
@@ -105,7 +105,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{586, 480}</string>
+				<string>{588, 480}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -169,13 +169,13 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{323, 0}, {262, 215}}</string>
+				<string>{{323, 0}, {265, 227}}</string>
 				<key>Frame-HD</key>
-				<string>{{646, 0}, {524, 430}}</string>
+				<string>{{646, 0}, {530, 454}}</string>
 				<key>FrameUV</key>
-				<string>{{0.551195, 0}, {0.998294, 0.447917}}</string>
+				<string>{{0.54932, 0}, {1, 0.472917}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1172, 960}</string>
+				<string>{1176, 960}</string>
 				<key>Image</key>
 				<string>options.png</string>
 				<key>Image-HD</key>
@@ -189,7 +189,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{586, 480}</string>
+				<string>{588, 480}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -253,13 +253,13 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{323, 218}, {122, 57}}</string>
+				<string>{{323, 230}, {122, 57}}</string>
 				<key>Frame-HD</key>
-				<string>{{646, 436}, {244, 114}}</string>
+				<string>{{646, 460}, {244, 114}}</string>
 				<key>FrameUV</key>
-				<string>{{0.551195, 0.454167}, {0.759386, 0.572917}}</string>
+				<string>{{0.54932, 0.479167}, {0.756803, 0.597917}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1172, 960}</string>
+				<string>{1176, 960}</string>
 				<key>Image</key>
 				<string>options.png</string>
 				<key>Image-HD</key>
@@ -273,7 +273,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{586, 480}</string>
+				<string>{588, 480}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -337,13 +337,13 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{447, 218}, {122, 57}}</string>
+				<string>{{447, 230}, {122, 57}}</string>
 				<key>Frame-HD</key>
-				<string>{{894, 436}, {244, 114}}</string>
+				<string>{{894, 460}, {244, 114}}</string>
 				<key>FrameUV</key>
-				<string>{{0.762799, 0.454167}, {0.97099, 0.572917}}</string>
+				<string>{{0.760204, 0.479167}, {0.967687, 0.597917}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1172, 960}</string>
+				<string>{1176, 960}</string>
 				<key>Image</key>
 				<string>options.png</string>
 				<key>Image-HD</key>
@@ -357,7 +357,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{586, 480}</string>
+				<string>{588, 480}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -421,13 +421,13 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{323, 277}, {122, 57}}</string>
+				<string>{{323, 289}, {122, 57}}</string>
 				<key>Frame-HD</key>
-				<string>{{646, 554}, {244, 114}}</string>
+				<string>{{646, 578}, {244, 114}}</string>
 				<key>FrameUV</key>
-				<string>{{0.551195, 0.577083}, {0.759386, 0.695833}}</string>
+				<string>{{0.54932, 0.602083}, {0.756803, 0.720833}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1172, 960}</string>
+				<string>{1176, 960}</string>
 				<key>Image</key>
 				<string>options.png</string>
 				<key>Image-HD</key>
@@ -441,7 +441,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{586, 480}</string>
+				<string>{588, 480}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -505,13 +505,13 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{447, 277}, {122, 57}}</string>
+				<string>{{323, 349}, {122, 57}}</string>
 				<key>Frame-HD</key>
-				<string>{{894, 554}, {244, 114}}</string>
+				<string>{{646, 698}, {244, 114}}</string>
 				<key>FrameUV</key>
-				<string>{{0.762799, 0.577083}, {0.97099, 0.695833}}</string>
+				<string>{{0.54932, 0.727083}, {0.756803, 0.845833}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1172, 960}</string>
+				<string>{1176, 960}</string>
 				<key>Image</key>
 				<string>options.png</string>
 				<key>Image-HD</key>
@@ -525,7 +525,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{586, 480}</string>
+				<string>{588, 480}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>

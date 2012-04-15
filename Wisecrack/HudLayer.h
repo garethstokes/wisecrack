@@ -16,6 +16,6 @@
 }
 
 - (void) openOptions:(id)sender;
-- (void) updateScoreLabel:(int)number;
+- (void) updateScoreLabel:(int)number withAnim:(BOOL)anim;
 
 @end

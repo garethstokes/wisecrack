@@ -30,12 +30,7 @@
         
         [self addChild:background z:0];
         
-        //[loader spriteWithUniqueName:@"green_words_1_unit_test" atPosition:CGPointMake(100, 100) inLayer:self];
-        //CCSprite *medium = [loader spriteWithUniqueName:@"green_words_2_unit_test" atPosition:CGPointMake(100, 130) inLayer:self];
-        //[medium setAnchorPoint:CGPointMake(0.27, 0.5)];
-        //CCSprite *large = [loader spriteWithUniqueName:@"green_words_3_unit_test" atPosition:CGPointMake(100, 160) inLayer:nil];
-        //[large setAnchorPoint:CGPointMake(0.19, 0.5)];
-        
+        // container for the buttons
         menu = [CCMenu menuWithItems: nil];
         [menu setPosition:CGPointMake(-8, -12)];
         
@@ -56,7 +51,7 @@
 
 - (void) step:(ccTime)delta
 {
-    [[[GameObjectCache sharedGameObjectCache] hudLayer] updateScoreLabel:score];
+    [[[GameObjectCache sharedGameObjectCache] hudLayer] updateScoreLabel:score withAnim:YES];
 }
 
 - (void) checkForStuff:(ccTime) delta
@@ -223,7 +218,11 @@
     [board matchingColours:word result:matches];
     
     // ask the board for all the matching words 
-    [board matchingWords:word result:matches];
+    NSMutableDictionary * matchedMatches = [matches copy];
+    for (GameItem * matchedWord in [matchedMatches allValues])
+    {
+        [board matchingWords:matchedWord result:matches];
+    }
     
     // we need more than 2 matches to continue. 
     if ([matches.allKeys count] <= kGroupMinSize) 
@@ -232,7 +231,7 @@
         score -= 50;
         if (score < 0) score = 0;
         
-        [[[GameObjectCache sharedGameObjectCache] hudLayer] updateScoreLabel:score];
+        [[[GameObjectCache sharedGameObjectCache] hudLayer] updateScoreLabel:score withAnim:NO];
         
         id myShake = [CCShaky3D actionWithRange:5 shakeZ:NO grid:ccg(2,2) duration:0.1];
         [self runAction: [CCSequence actions: myShake, [myShake reverse], [CCStopGrid action], nil]];

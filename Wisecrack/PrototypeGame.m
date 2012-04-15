@@ -10,8 +10,6 @@
 #import "GameConfig.h"
 
 @implementation PrototypeGame
-@synthesize words;
-@synthesize numberOfWords;
 
 - (id) init
 {
@@ -32,16 +30,19 @@
             // small;
             GameItem* small = [GameItem small];
             [small setColour:colour];
+            [small setName:@"of"];
             [w addObject:small];
             
             // medium;
             GameItem *medium = [GameItem medium];
             [medium setColour:colour];
+            [medium setName:@"hall"];
             [w addObject:medium];
             
             // large;
             GameItem *large = [GameItem large];
             [large setColour:colour];
+            [large setName:@"legends"];
             [w addObject:large];
             
             numberOfWords += 3;
@@ -51,25 +52,6 @@
     }
     
     return self;
-}
-
-- (void)shuffle
-{
-    
-    static BOOL seeded = NO;
-    if(!seeded)
-    {
-        seeded = YES;
-        srandom(time(NULL));
-    }
-    
-    NSUInteger count = [words count];
-    for (NSUInteger i = 0; i < count; ++i) {
-        // Select a random element between i and end of array to swap with.
-        int nElements = count - i;
-        int n = (random() % nElements) + i;
-        [words exchangeObjectAtIndex:i withObjectAtIndex:n];
-    }
 }
 
 @end

@@ -58,4 +58,22 @@
     return item;
 }
 
++ (GameItem *) wordWith:(NSString *)name andColour:(NSString *)colour andSize:(NSString *)size
+{
+    GameItem * word;
+    if ([@"large" isEqualToString:size]) {
+        word = [GameItem large];
+    }
+    else if ([@"medium" isEqualToString:size]) {
+        word = [GameItem medium];
+    }
+    else if ([@"small" isEqualToString:size]) {
+        word = [GameItem small];
+    } else return NULL;
+
+    [word setColour:colour];
+    [word setName:name];
+    return word;
+}
+
 @end
