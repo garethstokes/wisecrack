@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>angle</key>
-	<real>0.0</real>
+	<real>0</real>
 	<key>angleVariance</key>
-	<real>0.0</real>
+	<real>0</real>
 	<key>blendFuncDestination</key>
 	<integer>1</integer>
 	<key>blendFuncSource</key>
@@ -13,9 +13,9 @@
 	<key>duration</key>
 	<real>1.5</real>
 	<key>emitterType</key>
-	<real>0.0</real>
+	<real>0</real>
 	<key>finishColorAlpha</key>
-	<real>0.60416668653488159</real>
+	<real>0.6041666865348816</real>
 	<key>finishColorBlue</key>
 	<real>1</real>
 	<key>finishColorGreen</key>
@@ -23,13 +23,13 @@
 	<key>finishColorRed</key>
 	<real>1</real>
 	<key>finishColorVarianceAlpha</key>
-	<real>0.28846153616905212</real>
+	<real>0.2884615361690521</real>
 	<key>finishColorVarianceBlue</key>
-	<real>0.0</real>
+	<real>0</real>
 	<key>finishColorVarianceGreen</key>
-	<real>0.0</real>
+	<real>0</real>
 	<key>finishColorVarianceRed</key>
-	<real>0.0</real>
+	<real>0</real>
 	<key>finishParticleSize</key>
 	<real>20</real>
 	<key>finishParticleSizeVariance</key>
@@ -43,27 +43,27 @@
 	<key>maxRadius</key>
 	<real>100</real>
 	<key>maxRadiusVariance</key>
-	<real>0.0</real>
+	<real>0</real>
 	<key>minRadius</key>
-	<real>0.0</real>
+	<real>0</real>
 	<key>particleLifespan</key>
-	<real>0.40000000596046448</real>
+	<real>0.4000000059604645</real>
 	<key>particleLifespanVariance</key>
-	<real>0.20000000298023224</real>
+	<real>0.2000000029802322</real>
 	<key>radialAccelVariance</key>
-	<real>0.0</real>
+	<real>0</real>
 	<key>radialAcceleration</key>
-	<real>0.0</real>
+	<real>0</real>
 	<key>rotatePerSecond</key>
-	<real>0.0</real>
+	<real>0</real>
 	<key>rotatePerSecondVariance</key>
-	<real>0.0</real>
+	<real>0</real>
 	<key>rotationEnd</key>
-	<real>0.0</real>
+	<real>0</real>
 	<key>rotationEndVariance</key>
 	<real>20</real>
 	<key>rotationStart</key>
-	<real>0.0</real>
+	<real>0</real>
 	<key>rotationStartVariance</key>
 	<real>20</real>
 	<key>sourcePositionVariancex</key>
@@ -71,9 +71,9 @@
 	<key>sourcePositionVariancey</key>
 	<real>40</real>
 	<key>sourcePositionx</key>
-	<real>157.16999816894531</real>
+	<real>157.1699981689453</real>
 	<key>sourcePositiony</key>
-	<real>247.05999755859375</real>
+	<real>247.0599975585938</real>
 	<key>speed</key>
 	<real>5</real>
 	<key>speedVariance</key>
@@ -87,23 +87,23 @@
 	<key>startColorRed</key>
 	<real>1</real>
 	<key>startColorVarianceAlpha</key>
-	<real>0.0</real>
+	<real>0</real>
 	<key>startColorVarianceBlue</key>
-	<real>0.0</real>
+	<real>0</real>
 	<key>startColorVarianceGreen</key>
-	<real>0.0</real>
+	<real>0</real>
 	<key>startColorVarianceRed</key>
-	<real>0.0</real>
+	<real>0</real>
 	<key>startParticleSize</key>
 	<real>10</real>
 	<key>startParticleSizeVariance</key>
 	<real>30</real>
 	<key>tangentialAccelVariance</key>
-	<real>0.0</real>
+	<real>0</real>
 	<key>tangentialAcceleration</key>
-	<real>0.0</real>
+	<real>0</real>
 	<key>textureFileName</key>
-	<string>starburst_3-hd.png</string>
+	<string>starburst.tiff</string>
 	<key>textureImageData</key>
 	<string>H4sIAAAAAAAAAwE3A8j8iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAC/klEQVRoBe2YgXGbQBBFhRoIJZAOSAU+d6BUEDqI04FSgUuQOrBTAXIFkitAqSDqQHnrgRliHeifOIg04535c6e7vb/7DxZOJMfjcfZhPTvABuVgC97bioGsZ+n1TFmi4A/osip2tvPYhDXfgjbt4TahRc988NRYQu6ETDLBR3YZS0jf1ZCTC3EcS0hIDlF8P4RE2caIJGNdkTxijhLVWEKUYv8kZSg6RRfC+0G9GqqfJCW6EKI6KbLuJ9JFduOKVEC1InL4OHRkv1QV1H4VrVJPWoJGBp5AYyWdB5BpDLNZ7U8TbCs1xlk/QvuO201GJZ0CeHeOcTsAlmCIlSyWNg0/B5ZgVaMwgQk/rKPuyg5fw29gj08HchDDDpCswa8kSTa0M3JLaYzfATuIWuuztQnZMhMrGV+QScZMyHGSSCMHmY/MPxm9CbF78+bNhPy4eRUImPOEWNPegw24WUvamVP39vT6BhYgA7dge5L8+Y+QdtaIcvz+DkzUtdmGhF7AM3fUTkrOBIG+Nz/To5t9I3sETkq6ywkCO4uV4H+YCUi7cgseNzJQgSmtCE5UWYCCxYQq1PPfW+qdxd4lDCEVc1nXfMTxL3IhE/SSI4r2lBioKESEhbpEyOvAHJXle8Wp7XOJkKifcdrJtPqHVl/qXlIjk/x/4dYKyi3oilDoOdtjGN3qWHKcICGwPsrMwx3dcAoPAztUgCnNHvNxjexzYOedqa1QlZwtKDJPISvBJLXxLvEDvz9T99b2miLkCYZFL8vp5J6hZ/ACLIkU3AHjyUCI2VH9a8iCE1+uRmhd2O33cELUGrB5EGquRRHeJVoVENFE5EoU8wMhNXd54RMoA6rJIhqhENsfthBzzVpf2/ceOfgWdIzdcx/vOua8w/hvmAj5guO8RMog27UStqxQuLp84C+FGOYi3bbeOCxOwdZYOmzwmx5ei3GuXlbeBEMHCbT0CBksoskD7r56iRbnLR7BrPgLYI/PrEkiVgvnAlSgsZKOU/nta7zqe9V+fwGq0t/DrLE3pQAAAABJRU5ErkJggvsY2Lg3AwAA</string>
 </dict>

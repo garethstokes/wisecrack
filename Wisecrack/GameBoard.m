@@ -7,6 +7,7 @@
 //
 
 #import "GameBoard.h"
+#import "TrueFriendsGame.h"
 
 @implementation GameBoard
 @synthesize size;
@@ -147,7 +148,7 @@
 - (void) fill
 {
     int x = 1;
-    PrototypeGame* game = [[PrototypeGame alloc] init];
+    BaseGame* game = [[TrueFriendsGame alloc] init];
     // loop through all the rows
     for (int i = 0; i < kBoardRows; i++) 
     {

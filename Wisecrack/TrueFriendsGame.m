@@ -45,7 +45,7 @@
             [w addObject:[GameItem wordWith:@"the" andColour:colour andSize:@"small"]];
             
             // front
-            [w addObject:[GameItem wordWith:@"front" andColour:colour andSize:@"large"]];
+            [w addObject:[GameItem wordWith:@"front" andColour:colour andSize:@"medium"]];
             
             numberOfWords += 7;
         }

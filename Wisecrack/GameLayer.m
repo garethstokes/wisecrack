@@ -20,7 +20,7 @@
     if( (self=[super init]))
     {
         [self setBoard:b];
-        loader = [[SpriteHelperLoader alloc] initWithContentOfFile:@"hall_of_legends"];
+        loader = [[SpriteHelperLoader alloc] initWithContentOfFile:@"true_friends"];
         SpriteHelperLoader *bgloader = [[[SpriteHelperLoader alloc] initWithContentOfFile:@"backgrounds"] autorelease];
         buttons = [[NSMutableArray array] retain];
         
@@ -148,12 +148,14 @@
             }
             if (hasBeenFound) continue;
             
-            NSString *key_up = [NSString stringWithFormat:@"%@_%d_up", 
+            NSString *key_up = [NSString stringWithFormat:@"%@_%@_%d_up", 
                              [word colour], 
+                             [word name],
                              (int)word.size.width];
             
-            NSString *key_down = [NSString stringWithFormat:@"%@_%d_down", 
+            NSString *key_down = [NSString stringWithFormat:@"%@_%@_%d_down", 
                                 [word colour], 
+                                [word name],
                                 (int)word.size.width];
             
             //NSLog(@"%@", key);
@@ -262,8 +264,9 @@
                 [sparkle setPosition:[button position]];
                 [self addChild:sparkle z:101];
                 
-                NSString *key_down = [NSString stringWithFormat:@"%@_%d_down", 
+                NSString *key_down = [NSString stringWithFormat:@"%@_%@_%d_down", 
                                       [button.word colour], 
+                                      [button.word name],
                                       (int)button.word.size.width];
                 CCSprite *sprite2 = [loader spriteWithUniqueName:key_down atPosition:CGPointMake(0,0) inLayer:nil];
                 
