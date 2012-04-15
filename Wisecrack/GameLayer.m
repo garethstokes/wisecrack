@@ -163,6 +163,11 @@
             [button retain];
             [menu addChild:button];
             [buttons addObject:button];
+            [button setOpacity:0];
+            [button runAction:[CCSequence actions:
+                               [CCDelayTime actionWithDuration:arc4random() % 5], 
+                               [CCFadeIn actionWithDuration:3.0f],
+                               nil]];
         }
         
         count++;
@@ -171,7 +176,7 @@
 
 - (void) wordClick:(id) sender
 {
-    if (!ready) return;
+    //if (!ready) return;
     
     NSLog(@"click");
     NSMutableDictionary *matches = [NSMutableDictionary dictionary];
@@ -280,7 +285,7 @@
     [button setNormalImage:sprite2];
     [button runAction:[CCSequence actions:
                        [CCDelayTime actionWithDuration:delay],
-                       [CCFadeOut actionWithDuration:2.5],
+                       [CCFadeOut actionWithDuration:1.5],
                        [CCCallFuncO actionWithTarget:self selector:@selector(endRemoveButton:) object:button], 
                        nil]];
 }

@@ -65,14 +65,16 @@
     if (word.offset > 1)
     {
         GameItem *left = [self wordAtPosition:CGPointMake(word.offset -1, word.row)];
-        [words setValue:left forKey:[left hash]];
+        if (left)
+            [words setValue:left forKey:[left hash]];
     }
     
     // right
     if ((word.offset) + word.size.width <= kBoardColumns)
     {
         GameItem *right = [self wordAtPosition:CGPointMake(word.offset + word.size.width, word.row)];
-        [words setValue:right forKey:[right hash]];
+        if (right)
+            [words setValue:right forKey:[right hash]];
     }
     
     // top
@@ -82,7 +84,8 @@
         
         CGPoint p = CGPointMake(word.offset +i, word.row +1);
         GameItem *w = [self wordAtPosition:p];
-        [words setValue:w forKey:[w hash]];
+        if (w)
+            [words setValue:w forKey:[w hash]];
     }
     
     // bottom
@@ -92,7 +95,8 @@
         
         CGPoint p = CGPointMake(word.offset +i, word.row -1);
         GameItem *w = [self wordAtPosition:p];
-        [words setValue:w forKey:[w hash]];
+        if (w)
+            [words setValue:w forKey:[w hash]];
     }
     
     NSArray *result = [words allValues];
