@@ -67,10 +67,12 @@
 {
     [self runAction:[CCFadeOut actionWithDuration:0.3]];
     [self removeFromParentAndCleanup:YES];
+    [[CCDirector sharedDirector] resume];
 }
 
 - (void) replay:(id) sender
 {
+    [[CCDirector sharedDirector] resume];
     //TODO: put this line back in after testing the scorecard
     //[[CCDirector sharedDirector] replaceScene: [GameScene create]];
     

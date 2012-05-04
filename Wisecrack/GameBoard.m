@@ -32,7 +32,7 @@
             [row release];
         }
         
-        fillCount = 2;
+        fillCount = 8;
         dirty = NO;
     }
     
@@ -101,6 +101,36 @@
     
     NSArray *result = [words allValues];
     return result;
+}
+
+- (BOOL) matches:(GameItem *)word resultSet:(NSMutableArray *)results matchSize:(int)matchSize
+{
+    NSLog(@"matchSize: %d", matchSize);
+    NSMutableDictionary * colourMatches = [NSMutableDictionary dictionary];
+    [self matchingColours:word result:colourMatches];
+    if ([[colourMatches allKeys] count] >= matchSize)
+        [results addObject:colourMatches];
+    
+    // ask the board for all the matching words 
+    BOOL wordMatchesOnOriginalButtonClicked = NO;
+    NSMutableDictionary * matchedWords = [NSMutableDictionary dictionary];
+    [self matchingWords:word result:matchedWords];
+    if ([matchedWords.allKeys count] >= matchSize)
+    {
+        [results addObject:matchedWords];
+        wordMatchesOnOriginalButtonClicked = YES;
+    }
+    
+    for (GameItem * matchedWord in [[colourMatches copy] allValues])
+    {
+        matchedWords = [NSMutableDictionary dictionary];
+        [self matchingWords:matchedWord result:matchedWords];
+        if ([matchedWords.allKeys count] >= matchSize)
+            [results addObject:matchedWords];
+    }
+    
+    // we need more than N matches to continue. 
+    return [results count] > 0; //([colourMatches.allKeys count] > matchSize && wordMatchesOnOriginalButtonClicked == NO);
 }
 
 - (void) matchingColours:(GameItem *)item result:(NSMutableDictionary *)d

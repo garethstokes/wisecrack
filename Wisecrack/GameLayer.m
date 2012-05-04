@@ -46,6 +46,7 @@
         [self schedule:@selector(step:)];
         [self schedule:@selector(updateBoard:) interval:3.0];
         [self schedule:@selector(updateMultiplier:) interval:60.0];
+        [self schedule:@selector(checkForEndGame:) interval:10.0];
         ready = YES;
     }
     
@@ -71,11 +72,28 @@
 
 - (void) updateMultiplier:(ccTime)delta
 {
-    if (multiplier < 5)
+    if (multiplier < 3)
     {
         multiplier++;
         [[[GameObjectCache sharedGameObjectCache] hudLayer] updateMultiplier:multiplier];
     }
+}
+
+- (void) checkForEndGame:(ccTime)delta
+{
+    for (NSArray *row in [board rows])
+    {
+        for (GameItem *word in row)
+        {
+            NSMutableArray * matches = [NSMutableArray array];
+            if ([board matches:word resultSet:matches matchSize:multiplier])
+            {
+                return;
+            }
+        }
+    }
+    
+    NSLog(@"NO MATCH FOUND~!!!!");
 }
 
 - (void) clearButtons
@@ -183,7 +201,8 @@
     //if (!ready) return;
     
     NSLog(@"click");
-    NSMutableDictionary *matches = [NSMutableDictionary dictionary];
+    //NSMutableDictionary *matches = [NSMutableDictionary dictionary];
+    NSMutableArray * matches = [NSMutableArray array];
 
     // map buttons to words
     
@@ -191,61 +210,32 @@
     NSLog(@"word: %@", [word hash]);
     
     // initial word
-    [matches setValue:word forKey:[word hash]];
+    //[matches setValue:word forKey:[word hash]];
     
     // ask the board for all the matching colours 
-    [board matchingColours:word result:matches];
-    
-    // ask the board for all the matching words 
-    NSMutableArray * matchedMatches = [NSMutableArray array];
-    for (GameItem * matchedWord in [[matches copy] allValues])
-    {
-        NSMutableDictionary * matchedWords = [NSMutableDictionary dictionary];
-        [board matchingWords:matchedWord result:matchedWords];
-        if ([matchedWords.allKeys count] >= multiplier)
-            [matchedMatches addObject:matchedWords];
-    }
-    
-    // we need more than N matches to continue. 
-    if ([matches.allKeys count] < multiplier && [matchedMatches count] == 0) 
+    if (![board matches:word resultSet:matches matchSize:multiplier])
     {
         // remove 50 points;
-        score -= 50;
-        if (score < 0) score = 0;
-        
-        [[[GameObjectCache sharedGameObjectCache] hudLayer] updateScoreLabel:score withAnim:NO];
-        
-        id myShake = [CCShaky3D actionWithRange:5 shakeZ:NO grid:ccg(2,2) duration:0.1];
-        [self runAction: [CCSequence actions: myShake, [myShake reverse], [CCStopGrid action], nil]];
-        
-        SpriteHelperLoader *bgloader = [[[SpriteHelperLoader alloc] initWithContentOfFile:@"backgrounds"] autorelease];
-        
-        CGSize size = [[CCDirector sharedDirector] winSize];
-        CCSprite * minus = [bgloader spriteWithUniqueName:@"minus50" atPosition:CGPointMake((size.width /2) + 5, size.height /2) inLayer:nil];
-        
-        [self addChild:minus z:100];
-        
-        [minus runAction:[CCFadeOut actionWithDuration:1.5]];
-        
+        [self unsuccessfulClick];
         return;
     }
     
-    // remove all the matched colours. 
-    for (GameItem *w in [matches allValues]) // loop through all the matches
+    // remove all the matched colours.
+    for (GameItem *w in [[matches objectAtIndex:0] allValues]) // loop through all the matches
     {
         for (CCMenuItemImage *button in [menu children]) // loop through the ui buttons
         {
             if ([[button.word hash] isEqualToString:[w hash]]) // find the matching button to the matched word
             {
                 // and remove it. 
-                [self removeButton:button withDelay:0];
+                [self removeButton:button withDelay:1];
             }
         }
     }
     
     // remove matched words
     ccTime delay = 1.5;
-    for (NSDictionary * wordMatches in matchedMatches)
+    for (NSDictionary * wordMatches in matches)
     {
         for (GameItem *w in [wordMatches allValues]) // loop through all the matches
         {
@@ -263,11 +253,36 @@
     }
     
     // find score;
+    NSMutableDictionary * uniqueWords = [NSMutableDictionary dictionary];
+    for (NSMutableDictionary * words in matches)
+    {
+        [uniqueWords addEntriesFromDictionary:words];
+    }
+    
     ScoreCalculator *scoreCalculator = [[[ScoreCalculator alloc] init] autorelease];
-    score += [scoreCalculator calculate:[matches allValues]];
+    score += [scoreCalculator calculate:[uniqueWords allValues]];
     
     ready = NO;
     [board setDirty:YES];
+}
+
+- (void) unsuccessfulClick
+{
+    score -= 50;
+    if (score < 0) score = 0;
+    
+    [[[GameObjectCache sharedGameObjectCache] hudLayer] updateScoreLabel:score withAnim:NO];
+    
+    id myShake = [CCShaky3D actionWithRange:5 shakeZ:NO grid:ccg(2,2) duration:0.1];
+    [self runAction: [CCSequence actions: myShake, [myShake reverse], [CCStopGrid action], nil]];
+    
+    SpriteHelperLoader *bgloader = [[[SpriteHelperLoader alloc] initWithContentOfFile:@"backgrounds"] autorelease];
+    
+    CGSize size = [[CCDirector sharedDirector] winSize];
+    CCSprite * minus = [bgloader spriteWithUniqueName:@"minus50" atPosition:CGPointMake((size.width /2) + 5, size.height /2) inLayer:nil];
+    
+    [self addChild:minus z:100];
+    [minus runAction:[CCFadeOut actionWithDuration:1.5]];
 }
 
 - (void) removeButton:(CCMenuItemImage *)button withDelay:(ccTime)delay

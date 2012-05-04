@@ -66,6 +66,8 @@
 
 - (void) openOptions:(id)sender
 {
+    [[CCDirector sharedDirector] pause];
+    
     // open options screen here.
     OptionsLayer *options = [[[OptionsLayer alloc] init] autorelease];
     

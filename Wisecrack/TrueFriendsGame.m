@@ -14,7 +14,7 @@
 {
     if( (self=[super init]))
     {
-        wisecrackLength = 7;
+        wisecrackLength = 18;
         
         // otherwise it will fuck with our word count.
         if (fillCount > wisecrackLength) fillCount = wisecrackLength;
@@ -53,11 +53,44 @@
             
             // the
             if (fillCount >= 6)
-                    [w addObject:[GameItem wordWith:@"the" andColour:colour andSize:@"small"]];
+                [w addObject:[GameItem wordWith:@"the" andColour:colour andSize:@"small"]];
             
             // front
             if (fillCount >= 7)
                 [w addObject:[GameItem wordWith:@"front" andColour:colour andSize:@"medium"]];
+            
+            if (fillCount >= 8)
+                [w addObject:[GameItem wordWith:@"legend" andColour:colour andSize:@"large"]];
+    
+            if (fillCount >= 9)
+                [w addObject:[GameItem wordWith:@"you" andColour:colour andSize:@"small"]];
+            
+            if (fillCount >= 10)
+                [w addObject:[GameItem wordWith:@"it" andColour:colour andSize:@"small"]];
+            
+            if (fillCount >= 11)
+                [w addObject:[GameItem wordWith:@"is" andColour:colour andSize:@"small"]];
+            
+            if (fillCount >= 12)
+                [w addObject:[GameItem wordWith:@"of" andColour:colour andSize:@"small"]];
+            
+            if (fillCount >= 13)
+                [w addObject:[GameItem wordWith:@"dog" andColour:colour andSize:@"small"]];
+            
+            if (fillCount >= 14)
+                [w addObject:[GameItem wordWith:@"be" andColour:colour andSize:@"small"]];
+            
+            if (fillCount >= 15)
+                [w addObject:[GameItem wordWith:@"am" andColour:colour andSize:@"small"]];
+            
+            if (fillCount >= 16)
+                [w addObject:[GameItem wordWith:@"tip" andColour:colour andSize:@"small"]];
+            
+            if (fillCount >= 17)
+                [w addObject:[GameItem wordWith:@"tea" andColour:colour andSize:@"small"]];
+            
+            if (fillCount >= 18)
+                [w addObject:[GameItem wordWith:@"hall" andColour:colour andSize:@"medium"]];
             
             NSLog(@"fill count: %d", fillCount);
             numberOfWords += fillCount;

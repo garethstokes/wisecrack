@@ -34,6 +34,7 @@
 
 - (GameItem *) wordAtPosition:(CGPoint)p;
 - (NSArray *) neighbours:(GameItem *)word;
+- (BOOL) matches:(GameItem *)word resultSet:(NSMutableArray *)results matchSize:(int)matchSize;
 - (void) matchingColours:(GameItem *)item result:(NSMutableDictionary *)d;
 - (void) matchingWords:(GameItem *)item result:(NSMutableDictionary *)d;
 - (BOOL) fits:(GameItem* )word offset:(int)offset row:(int)row;
