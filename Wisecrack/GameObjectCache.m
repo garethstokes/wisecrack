@@ -94,6 +94,36 @@ static GameObjectCache *sharedGameObjectCache_=nil;
     return gameScene_;
 }
 
+- (SpriteHelperLoader *)smallSprites
+{
+    if (smallSprites_ == nil)
+    {
+        smallSprites_ =  [[SpriteHelperLoader alloc] initWithContentOfFile:@"1x1_words"];
+    }
+    
+    return smallSprites_;
+}
+
+- (SpriteHelperLoader *)mediumSprites
+{
+    if (mediumSprites_ == nil)
+    {
+        mediumSprites_ =  [[SpriteHelperLoader alloc] initWithContentOfFile:@"2x1_words"];
+    }
+    
+    return mediumSprites_;
+}
+
+- (SpriteHelperLoader *)largeSprites
+{
+    if (largeSprites_ == nil)
+    {
+        largeSprites_ =  [[SpriteHelperLoader alloc] initWithContentOfFile:@"1x3_words"];
+    }
+    
+    return largeSprites_;
+}
+
 - (id)init
 {
   CCLOG(@"GameObjectCache Init");
@@ -101,6 +131,10 @@ static GameObjectCache *sharedGameObjectCache_=nil;
         gameLayer_ = nil;
         hudLayer_ = nil;
         gameScene_ = nil;
+        
+        smallSprites_ = nil;
+        mediumSprites_ = nil;
+        largeSprites_ = nil;
     }
 	
 	return self;
@@ -111,6 +145,10 @@ static GameObjectCache *sharedGameObjectCache_=nil;
   [gameLayer_ release];
   [hudLayer_ release];
   [gameScene_ release];
+    
+    [smallSprites_ release];
+    [mediumSprites_ release];
+    [largeSprites_ release];
   
   [super dealloc];
 }

@@ -13,10 +13,9 @@
 #import "ScoreCalculator.h"
 
 @interface GameLayer : CCLayer {
-    GameBoard* board;
-    SpriteHelperLoader* loader;
-    NSMutableArray *buttons;
-    CCMenu* menu;
+    GameBoard * board;
+    NSMutableArray * buttons;
+    CCMenu * menu;
     int score;
     int multiplier;
     BOOL ready;
@@ -31,7 +30,7 @@
 - (void) wordClick:(id) sender;
 - (void) drawButtons;
 - (void) clearButtons;
-- (void) step:(ccTime) delta;
+- (void) stepScoreTimer:(ccTime) delta;
 - (void) updateBoard:(ccTime) delta;
 - (void) updateMultiplier:(ccTime) delta;
 - (void) checkForEndGame:(ccTime) delta;

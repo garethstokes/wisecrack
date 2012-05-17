@@ -21,7 +21,6 @@
     if( (self=[super init]))
     {
         [self setBoard:b];
-        loader = [[SpriteHelperLoader alloc] initWithContentOfFile:@"true_friends"];
         SpriteHelperLoader *bgloader = [[[SpriteHelperLoader alloc] initWithContentOfFile:@"backgrounds"] autorelease];
         buttons = [[NSMutableArray array] retain];
         
@@ -43,7 +42,7 @@
         [self drawButtons];
         [self addChild:menu z:10];
         
-        [self schedule:@selector(step:)];
+        [self schedule:@selector(stepScoreTimer:)];
         [self schedule:@selector(updateBoard:) interval:3.0];
         [self schedule:@selector(updateMultiplier:) interval:60.0];
         [self schedule:@selector(checkForEndGame:) interval:10.0];
@@ -53,7 +52,7 @@
     return self;
 }
 
-- (void) step:(ccTime)delta
+- (void) stepScoreTimer:(ccTime)delta
 {
     [[[GameObjectCache sharedGameObjectCache] hudLayer] updateScoreLabel:score withAnim:YES];
 }
@@ -134,48 +133,12 @@
             }
             if (hasBeenFound) continue;
             
-            NSString *key_up = [NSString stringWithFormat:@"%@_%@_%d_up", 
-                             [word colour], 
-                             [word name],
-                             (int)word.size.width];
+            CCMenuItemImage * button = [CCMenuItemImage itemFromWord:word target:self selector:@selector(wordClick:)];
             
-            NSString *key_down = [NSString stringWithFormat:@"%@_%@_%d_down", 
-                                [word colour], 
-                                [word name],
-                                (int)word.size.width];
-            
-            //NSLog(@"%@", key);
-            //NSLog(@"x => %d, width => %d", word.offset, (int)word.size.width);
-            //NSLog(@"%@", [word hash]);
             CGPoint position;
-            
             position.y = count * kUnitHeight;
             position.x = word.offset * kUnitWidth;
-            
-            //NSLog(@"position( x=>%d, y=>%d )", (int)position.x, (int)position.y);
-            CCSprite *sprite = [loader spriteWithUniqueName:key_up atPosition:CGPointMake(0,0) inLayer:nil];
-            CCSprite *sprite2 = [loader spriteWithUniqueName:key_down atPosition:CGPointMake(0,0) inLayer:nil];
-            
-            CCMenuItemImage *button = [CCMenuItemImage 
-                                       itemFromNormalSprite:sprite
-                                       selectedSprite:sprite2
-                                       target:self 
-                                       selector:@selector(wordClick:)];
-            
-            if (word.size.width == 3)
-            {
-                //[sprite setAnchorPoint:CGPointMake(0.19, 0.5)];
-                [button setAnchorPoint:CGPointMake(0.19, 0.5)];
-            }
-            
-            if (word.size.width == 2)
-            {
-                //[sprite setAnchorPoint:CGPointMake(0.27, 0.5)];
-                [button setAnchorPoint:CGPointMake(0.27, 0.5)];
-            }
-            
-            //[button setWord:[word duplicate]];
-            [button setWord:word];
+                    
             NSLog(@"word being set: %@", [word hash]);
             [button setPosition:position];
             [button retain];
@@ -299,6 +262,8 @@
                           [button.word colour], 
                           [button.word name],
                           (int)button.word.size.width];
+    
+    SpriteHelperLoader * loader = [SpriteHelperLoader loaderFromWord:[button word]];
     CCSprite *sprite2 = [loader spriteWithUniqueName:key_down atPosition:CGPointMake(0,0) inLayer:nil];
     
     [button setNormalImage:sprite2];
@@ -324,7 +289,6 @@
 
 - (void) dealloc
 {   
-    [loader release];
     [super dealloc];
 }
 

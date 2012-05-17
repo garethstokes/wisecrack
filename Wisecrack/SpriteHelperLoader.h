@@ -94,7 +94,7 @@ animAction = [pLoader runAnimationWithUniqueName:@"PlayerJump"
                      endNotificationSEL:(SEL)notifSEL
                      endNotificationObj:(id)notifObj;
 
++ (id) loaderFromWord:(GameItem *)word;
 
-////////////////////////////////////////////////////////////////////////////////
 @end
 

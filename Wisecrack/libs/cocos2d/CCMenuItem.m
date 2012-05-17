@@ -32,6 +32,7 @@
 #import "Support/CGPointExtension.h"
 #import "CCBlockSupport.h"
 #import "CCActionInstant.h"
+#import "GameObjectCache.h"
 
 	static NSUInteger _fontSize = kCCItemSize;
 static NSString *_fontName = @"Marker Felt";
@@ -600,6 +601,50 @@ const uint32_t	kZoomActionTag = 0xc0c05002;
 @implementation CCMenuItemImage
 @synthesize word;
 @synthesize isDirty;
+
++ (id) itemFromWord:(GameItem *)word target:(id)target selector:(SEL)selector
+{
+    NSString *key_up = [NSString stringWithFormat:@"%@_%@_%d_up", 
+                        [word colour], 
+                        [word name],
+                        (int)word.size.width];
+    
+    NSString *key_down = [NSString stringWithFormat:@"%@_%@_%d_down", 
+                          [word colour], 
+                          [word name],
+                          (int)word.size.width];
+    
+    //NSLog(@"%@", key);
+    //NSLog(@"x => %d, width => %d", word.offset, (int)word.size.width);
+    //NSLog(@"%@", [word hash]);
+    
+    //NSLog(@"position( x=>%d, y=>%d )", (int)position.x, (int)position.y);
+    SpriteHelperLoader * loader = [SpriteHelperLoader loaderFromWord:word];
+    
+    CCSprite *sprite = [loader spriteWithUniqueName:key_up atPosition:CGPointMake(0,0) inLayer:nil];
+    CCSprite *sprite2 = [loader spriteWithUniqueName:key_down atPosition:CGPointMake(0,0) inLayer:nil];
+    
+    CCMenuItemImage *button = [CCMenuItemImage 
+                               itemFromNormalSprite:sprite
+                               selectedSprite:sprite2
+                               target:target 
+                               selector:selector];
+    
+    if (word.size.width == 3)
+    {
+        //[sprite setAnchorPoint:CGPointMake(0.19, 0.5)];
+        [button setAnchorPoint:CGPointMake(0.19, 0.5)];
+    }
+    
+    if (word.size.width == 2)
+    {
+        //[sprite setAnchorPoint:CGPointMake(0.27, 0.5)];
+        [button setAnchorPoint:CGPointMake(0.27, 0.5)];
+    }
+    
+    [button setWord:word];
+    return button;
+}
 
 +(id) itemFromNormalImage: (NSString*)value selectedImage:(NSString*) value2
 {

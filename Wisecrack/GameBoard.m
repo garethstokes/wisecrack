@@ -13,7 +13,6 @@
 @synthesize size;
 @synthesize dirty;
 @synthesize name;
-@synthesize wisecrackLength;
 
 @synthesize rows;
 @synthesize columns;
@@ -189,8 +188,7 @@
     fillCount++;
     
     int x = 1;
-    BaseGame* game = [[TrueFriendsGame alloc] initTo:fillCount];
-    wisecrackLength = [game wisecrackLength];
+    BaseGame* game = [[TrueFriendsGame alloc] init];
     
     // loop through all the rows
     for (int i = 0; i < kBoardRows; i++) 
@@ -202,16 +200,10 @@
             // pick a random word and see if it fits. 
             // and keep doing this until the row has 
             // been filled. 
-            int index = arc4random() % [game numberOfWords];
-            GameItem *word = [[[game words] objectAtIndex:index] duplicate];
-            
-            // extra randomness
-            [game shuffle];
+            GameItem * word = [[game pickWordAtRandom] duplicate];
             
             word.offset = x;
             word.row = i+1;
-            
-            //NSLog(@"offset +g: %d, row: %d", x, i+1);
             
             if ([self fits:word offset:x row:i +1]) 
             {

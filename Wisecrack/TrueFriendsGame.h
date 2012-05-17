@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "BaseGame.h"
 
-@interface TrueFriendsGame : BaseGame
-
-- (id) initTo:(int)fillCount;
+@interface TrueFriendsGame : BaseGame {
+    NSMutableArray * unpickedWords;
+}
 
 @end

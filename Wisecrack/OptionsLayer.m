@@ -73,8 +73,9 @@
 - (void) replay:(id) sender
 {
     [[CCDirector sharedDirector] resume];
+
     //TODO: put this line back in after testing the scorecard
-    //[[CCDirector sharedDirector] replaceScene: [GameScene create]];
+    [[CCDirector sharedDirector] replaceScene: [GameScene create]];
     
     GameLayer *gameLayer = [[GameObjectCache sharedGameObjectCache] gameLayer];
     ScoreCard *card = [[[ScoreCard alloc] init] autorelease];

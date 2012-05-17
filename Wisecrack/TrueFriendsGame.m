@@ -10,93 +10,90 @@
 
 @implementation TrueFriendsGame
 
-- (id) initTo:(int)fillCount
+- (id) init
 {
     if( (self=[super init]))
     {
-        wisecrackLength = 18;
+        NSMutableArray * sw = [NSMutableArray arrayWithCapacity:14];
+        NSMutableArray * mw = [NSMutableArray arrayWithCapacity:17];
+        NSMutableArray * lw = [NSMutableArray arrayWithCapacity:17];
         
-        // otherwise it will fuck with our word count.
-        if (fillCount > wisecrackLength) fillCount = wisecrackLength;
+        // small words
+        [sw addObject:@"am:small"];
+        [sw addObject:@"be:small"];
+        [sw addObject:@"dog:small"];
+        [sw addObject:@"i:small"];
+        [sw addObject:@"in:small"];
         
-        NSMutableArray* w = [[NSMutableArray alloc] init];
-        numberOfWords = 0;
+        [sw addObject:@"is:small"];
+        [sw addObject:@"it:small"];
+        [sw addObject:@"my:small"];
+        [sw addObject:@"of:small"];
+        [sw addObject:@"tea:small"];
         
-        for (int i = 0; i < 5; i++)
-        {
-            NSString* colour; 
-            if (i == 0) colour = @"green";
-            if (i == 1) colour = @"red";
-            if (i == 2) colour = @"blue";
-            if (i == 3) colour = @"yellow";
-            if (i == 4) colour = @"grey";
-            
-            // true
-            if (fillCount >= 1)
-                [w addObject:[GameItem wordWith:@"true" andColour:colour andSize:@"medium"]];
-            
-            // friends
-            if (fillCount >= 2)
-                [w addObject:[GameItem wordWith:@"friends" andColour:colour andSize:@"large"]];
-            
-            // you
-            if (fillCount >= 3)
-                [w addObject:[GameItem wordWith:@"you" andColour:colour andSize:@"small"]];             
-            
-            // stab
-            if (fillCount >= 4)
-                [w addObject:[GameItem wordWith:@"stab" andColour:colour andSize:@"medium"]];
-            
-            // in
-            if (fillCount >= 5)
-                [w addObject:[GameItem wordWith:@"in" andColour:colour andSize:@"small"]];
-            
-            // the
-            if (fillCount >= 6)
-                [w addObject:[GameItem wordWith:@"the" andColour:colour andSize:@"small"]];
-            
-            // front
-            if (fillCount >= 7)
-                [w addObject:[GameItem wordWith:@"front" andColour:colour andSize:@"medium"]];
-            
-            if (fillCount >= 8)
-                [w addObject:[GameItem wordWith:@"legend" andColour:colour andSize:@"large"]];
-    
-            if (fillCount >= 9)
-                [w addObject:[GameItem wordWith:@"you" andColour:colour andSize:@"small"]];
-            
-            if (fillCount >= 10)
-                [w addObject:[GameItem wordWith:@"it" andColour:colour andSize:@"small"]];
-            
-            if (fillCount >= 11)
-                [w addObject:[GameItem wordWith:@"is" andColour:colour andSize:@"small"]];
-            
-            if (fillCount >= 12)
-                [w addObject:[GameItem wordWith:@"of" andColour:colour andSize:@"small"]];
-            
-            if (fillCount >= 13)
-                [w addObject:[GameItem wordWith:@"dog" andColour:colour andSize:@"small"]];
-            
-            if (fillCount >= 14)
-                [w addObject:[GameItem wordWith:@"be" andColour:colour andSize:@"small"]];
-            
-            if (fillCount >= 15)
-                [w addObject:[GameItem wordWith:@"am" andColour:colour andSize:@"small"]];
-            
-            if (fillCount >= 16)
-                [w addObject:[GameItem wordWith:@"tip" andColour:colour andSize:@"small"]];
-            
-            if (fillCount >= 17)
-                [w addObject:[GameItem wordWith:@"tea" andColour:colour andSize:@"small"]];
-            
-            if (fillCount >= 18)
-                [w addObject:[GameItem wordWith:@"hall" andColour:colour andSize:@"medium"]];
-            
-            NSLog(@"fill count: %d", fillCount);
-            numberOfWords += fillCount;
-        }
+        [sw addObject:@"the:small"];
+        [sw addObject:@"tip:small"];
+        [sw addObject:@"to:small"];
+        [sw addObject:@"you:small"];
         
-        words = w;
+        // medium words
+        [mw addObject:@"work:medium"];
+        [mw addObject:@"balls:medium"];
+        [mw addObject:@"cave:medium"];
+        [mw addObject:@"curse:medium"];
+        [mw addObject:@"feel:medium"];
+        
+        [mw addObject:@"hate:medium"];
+        [mw addObject:@"have:medium"];
+        [mw addObject:@"love:medium"];
+        [mw addObject:@"lick:medium"];
+        [mw addObject:@"poet:medium"];
+        
+        [mw addObject:@"shaft:medium"];
+        [mw addObject:@"stab:medium"];
+        [mw addObject:@"saucy:medium"];
+        [mw addObject:@"laugh:medium"];
+        [mw addObject:@"hall:medium"];
+        
+        [mw addObject:@"touch:medium"];
+        [mw addObject:@"work:medium"];
+        
+        // large words
+        [lw addObject:@"bespoke:large"];
+        [lw addObject:@"bottom:large"];
+        [lw addObject:@"classes:large"];
+        [lw addObject:@"danger:large"];
+        [lw addObject:@"declare:large"];
+        
+        [lw addObject:@"enemies:large"];
+        [lw addObject:@"except:large"];
+        [lw addObject:@"friends:large"];
+        [lw addObject:@"drinking:large"];
+        [lw addObject:@"unique:large"];
+        
+        [lw addObject:@"coffee:large"];
+        [lw addObject:@"nothing:large"];
+        [lw addObject:@"legend:large"];
+        [lw addObject:@"genius:large"];
+        [lw addObject:@"front:large"];
+        
+        [lw addObject:@"reading:large"];
+        [lw addObject:@"stroke:large"];
+
+        [self shuffle:sw];
+        [self shuffle:mw];
+        [self shuffle:lw];
+        
+        wordsInPlay = [NSMutableArray array];
+        
+        NSIndexSet * indexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, 2)];
+        [wordsInPlay addObjectsFromArray:[sw objectsAtIndexes:indexSet]];
+        [wordsInPlay addObjectsFromArray:[mw objectsAtIndexes:indexSet]];
+        [wordsInPlay addObjectsFromArray:[lw objectsAtIndexes:indexSet]];
+
+        [sw removeObjectsAtIndexes:indexSet];
+        [mw removeObjectsAtIndexes:indexSet];
+        [lw removeObjectsAtIndexes:indexSet];
     }
     
     return self;

@@ -18,14 +18,12 @@
     NSMutableArray* rows; 
     NSMutableArray* columns;
     
-    int wisecrackLength;
     int fillCount;
     BOOL dirty;
 }
 
 @property CGSize size;
 @property BOOL dirty;
-@property int wisecrackLength;
 
 @property (nonatomic, retain) NSString *name;
 

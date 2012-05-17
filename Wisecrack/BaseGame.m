@@ -9,11 +9,14 @@
 #import "BaseGame.h"
 
 @implementation BaseGame
-@synthesize words;
-@synthesize numberOfWords;
-@synthesize wisecrackLength;
+@synthesize wordsInPlay;
 
 - (void)shuffle
+{
+    [self shuffle:wordsInPlay];
+}
+
+- (void)shuffle:(NSMutableArray *)w
 {
     static BOOL seeded = NO;
     if(!seeded)
@@ -22,13 +25,34 @@
         srandom(time(NULL));
     }
     
-    NSUInteger count = [words count];
+    NSUInteger count = [w count];
     for (NSUInteger i = 0; i < count; ++i) {
         // Select a random element between i and end of array to swap with.
         int nElements = count - i;
         int n = (random() % nElements) + i;
-        [words exchangeObjectAtIndex:i withObjectAtIndex:n];
+        [w exchangeObjectAtIndex:i withObjectAtIndex:n];
     }
+}
+
+- (GameItem *)pickWordAtRandom
+{
+    [self shuffle];
+    
+    NSString * key = [wordsInPlay objectAtIndex:0];
+    
+    NSRange range = [key rangeOfString:@":"];
+    NSString * name = [key substringToIndex:range.location];
+    NSString * size = [key substringFromIndex:range.location +1];
+    
+    int i = random() % kNumberOfColours;
+    NSString* colour; 
+    if (i == 0) colour = @"green";
+    if (i == 1) colour = @"red";
+    if (i == 2) colour = @"blue";
+    if (i == 3) colour = @"yellow";
+    if (i == 4) colour = @"grey";
+    
+    return [GameItem wordWith:name andColour:colour andSize:size];
 }
 
 @end

@@ -20,6 +20,9 @@
     HudLayer* hudLayer_;
     GameScene* gameScene_;
     
+    SpriteHelperLoader * smallSprites_;
+    SpriteHelperLoader * mediumSprites_;
+    SpriteHelperLoader * largeSprites_;
 }
 
 /** Retruns ths shared instance of the Game Object cache */
@@ -36,5 +39,9 @@
 -(GameLayer*) gameLayer;
 -(HudLayer*) hudLayer;
 -(GameScene*) gameScene;
+
+- (SpriteHelperLoader *)smallSprites;
+- (SpriteHelperLoader *)mediumSprites;
+- (SpriteHelperLoader *)largeSprites;
 
 @end

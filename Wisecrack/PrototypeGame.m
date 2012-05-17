@@ -48,7 +48,7 @@
             numberOfWords += 3;
         }
         
-        words = w;
+        wordsInPlay = w;
     }
     
     return self;
