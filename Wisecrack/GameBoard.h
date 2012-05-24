@@ -20,10 +20,12 @@
     
     int fillCount;
     BOOL dirty;
+    BOOL chain;
 }
 
 @property CGSize size;
 @property BOOL dirty;
+@property BOOL chain;
 
 @property (nonatomic, retain) NSString *name;
 

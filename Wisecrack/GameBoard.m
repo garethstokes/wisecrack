@@ -12,6 +12,7 @@
 @implementation GameBoard
 @synthesize size;
 @synthesize dirty;
+@synthesize chain;
 @synthesize name;
 
 @synthesize rows;
@@ -33,6 +34,7 @@
         
         fillCount = 8;
         dirty = NO;
+        chain = NO;
     }
     
     return self;
@@ -111,21 +113,21 @@
         [results addObject:colourMatches];
     
     // ask the board for all the matching words 
-    BOOL wordMatchesOnOriginalButtonClicked = NO;
-    NSMutableDictionary * matchedWords = [NSMutableDictionary dictionary];
-    [self matchingWords:word result:matchedWords];
-    if ([matchedWords.allKeys count] >= matchSize)
+    NSMutableDictionary * wordMatches = [NSMutableDictionary dictionary];
+    [self matchingWords:word result:wordMatches];
+    if ([wordMatches.allKeys count] >= matchSize)
     {
-        [results addObject:matchedWords];
-        wordMatchesOnOriginalButtonClicked = YES;
+        [results addObject:wordMatches];
     }
+    
+    return [results count] > 0;
     
     for (GameItem * matchedWord in [[colourMatches copy] allValues])
     {
-        matchedWords = [NSMutableDictionary dictionary];
-        [self matchingWords:matchedWord result:matchedWords];
-        if ([matchedWords.allKeys count] >= matchSize)
-            [results addObject:matchedWords];
+        wordMatches = [NSMutableDictionary dictionary];
+        [self matchingWords:matchedWord result:wordMatches];
+        if ([wordMatches.allKeys count] >= matchSize)
+            [results addObject:wordMatches];
     }
     
     // we need more than N matches to continue. 
@@ -138,6 +140,8 @@
     
     for (GameItem *word in neighbours) 
     {
+        NSLog(@"%@", [word hash]);
+        
         if (word.colour == item.colour) 
         {
             if ([d objectForKey:[word hash]] == nil)

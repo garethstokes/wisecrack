@@ -45,7 +45,7 @@
         [self schedule:@selector(stepScoreTimer:)];
         [self schedule:@selector(updateBoard:) interval:3.0];
         [self schedule:@selector(updateMultiplier:) interval:60.0];
-        [self schedule:@selector(checkForEndGame:) interval:10.0];
+        //[self schedule:@selector(checkForEndGame:) interval:10.0];
         ready = YES;
     }
     
