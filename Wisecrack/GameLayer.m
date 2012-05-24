@@ -36,25 +36,42 @@
         
         // init score and multiplier
         score = 0;
-        multiplier = kGroupMinSize +1;
+        multiplier = kTimeout;
         [[[GameObjectCache sharedGameObjectCache] hudLayer] updateMultiplier:multiplier];
 
         [self drawButtons];
         [self addChild:menu z:10];
         
-        [self schedule:@selector(stepScoreTimer:)];
+        [self schedule:@selector(step:)];
+        [self schedule:@selector(stepScoreTimer:) interval:1];
         [self schedule:@selector(updateBoard:) interval:3.0];
-        [self schedule:@selector(updateMultiplier:) interval:60.0];
-        //[self schedule:@selector(checkForEndGame:) interval:10.0];
+        //[self schedule:@selector(updateMultiplier:) interval:60.0];
         ready = YES;
     }
     
     return self;
 }
 
-- (void) stepScoreTimer:(ccTime)delta
+- (void) step:(ccTime)delta
 {
     [[[GameObjectCache sharedGameObjectCache] hudLayer] updateScoreLabel:score withAnim:YES];
+}
+
+- (void) stepScoreTimer:(ccTime)delta
+{
+    multiplier--;
+    if (multiplier == 0)
+    {
+        GameLayer *gameLayer = [[GameObjectCache sharedGameObjectCache] gameLayer];
+        ScoreCard *card = [[[ScoreCard alloc] init] autorelease];
+        [card updateScore:[gameLayer score]];
+        [[[GameObjectCache sharedGameObjectCache] gameScene] addChild:card z:100];
+        [card runAction:[CCSequence actions:[CCFadeIn actionWithDuration:0.3], nil]];
+        
+        [[[GameObjectCache sharedGameObjectCache] gameScene] removeChild:self cleanup:YES];
+    }
+    
+    [[[GameObjectCache sharedGameObjectCache] hudLayer] updateMultiplier:multiplier];
 }
 
 - (void) updateBoard:(ccTime) delta
@@ -176,12 +193,15 @@
     //[matches setValue:word forKey:[word hash]];
     
     // ask the board for all the matching colours 
-    if (![board matches:word resultSet:matches matchSize:multiplier])
+    if (![board matches:word resultSet:matches matchSize:3])
     {
         // remove 50 points;
         [self unsuccessfulClick];
         return;
     }
+    
+    multiplier = kTimeout;
+    [[[GameObjectCache sharedGameObjectCache] hudLayer] updateMultiplier:multiplier];
     
     // remove all the matched colours.
     for (GameItem *w in [[matches objectAtIndex:0] allValues]) // loop through all the matches
@@ -197,7 +217,7 @@
     }
     
     // remove matched words
-    ccTime delay = 1.5;
+    ccTime delay = 0.5;
     for (NSDictionary * wordMatches in matches)
     {
         for (GameItem *w in [wordMatches allValues]) // loop through all the matches
@@ -212,7 +232,7 @@
                 }
             }
         }
-        delay += 1.5;
+        delay += 0.5;
     }
     
     // find score;

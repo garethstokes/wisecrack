@@ -16,7 +16,7 @@
     {
         NSMutableArray * sw = [NSMutableArray arrayWithCapacity:14];
         NSMutableArray * mw = [NSMutableArray arrayWithCapacity:17];
-        NSMutableArray * lw = [NSMutableArray arrayWithCapacity:17];
+        NSMutableArray * lw = [NSMutableArray arrayWithCapacity:16];
         
         // small words
         [sw addObject:@"am:small"];
@@ -75,7 +75,7 @@
         [lw addObject:@"nothing:large"];
         [lw addObject:@"legend:large"];
         [lw addObject:@"genius:large"];
-        [lw addObject:@"front:large"];
+        //[lw addObject:@"front:large"];
         
         [lw addObject:@"reading:large"];
         [lw addObject:@"stroke:large"];

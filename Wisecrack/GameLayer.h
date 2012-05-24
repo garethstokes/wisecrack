@@ -30,7 +30,7 @@
 - (void) wordClick:(id) sender;
 - (void) drawButtons;
 - (void) clearButtons;
-- (void) stepScoreTimer:(ccTime) delta;
+- (void) step:(ccTime) delta;
 - (void) updateBoard:(ccTime) delta;
 - (void) updateMultiplier:(ccTime) delta;
 - (void) checkForEndGame:(ccTime) delta;
