@@ -8,16 +8,17 @@
 
 #import "cocos2d.h"
 #import "SpriteHelperLoader.h"
+#import "InkWell.h"
 
 @interface HudLayer : CCLayer {
     CCLabelAtlas * _score;
-    CCLabelAtlas * _multiplier;
     SpriteHelperLoader *loader;
+    InkWell * inkwell;
     int score;
 }
 
 - (void) openOptions:(id)sender;
 - (void) updateScoreLabel:(int)number withAnim:(BOOL)anim;
-- (void) updateMultiplier:(int)muliplier;
+- (void) updateInk:(int)value;
 
 @end

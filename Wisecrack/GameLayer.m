@@ -14,7 +14,6 @@
 @synthesize board;
 @synthesize buttons;
 @synthesize score;
-@synthesize multiplier;
 
 - (id) initWithBoard:(GameBoard *)b
 {
@@ -36,8 +35,8 @@
         
         // init score and multiplier
         score = 0;
-        multiplier = kTimeout;
-        [[[GameObjectCache sharedGameObjectCache] hudLayer] updateMultiplier:multiplier];
+        ink = kTimeout;
+        [[[GameObjectCache sharedGameObjectCache] hudLayer] updateInk:ink];
 
         [self drawButtons];
         [self addChild:menu z:10];
@@ -45,7 +44,6 @@
         [self schedule:@selector(step:)];
         [self schedule:@selector(stepScoreTimer:) interval:1];
         [self schedule:@selector(updateBoard:) interval:3.0];
-        //[self schedule:@selector(updateMultiplier:) interval:60.0];
         ready = YES;
     }
     
@@ -59,8 +57,8 @@
 
 - (void) stepScoreTimer:(ccTime)delta
 {
-    multiplier--;
-    if (multiplier == 0)
+    ink--;
+    if (ink == 0)
     {
         GameLayer *gameLayer = [[GameObjectCache sharedGameObjectCache] gameLayer];
         ScoreCard *card = [[[ScoreCard alloc] init] autorelease];
@@ -71,7 +69,7 @@
         [[[GameObjectCache sharedGameObjectCache] gameScene] removeChild:self cleanup:YES];
     }
     
-    [[[GameObjectCache sharedGameObjectCache] hudLayer] updateMultiplier:multiplier];
+    [[[GameObjectCache sharedGameObjectCache] hudLayer] updateInk:ink];
 }
 
 - (void) updateBoard:(ccTime) delta
@@ -84,32 +82,6 @@
     [self drawButtons];
     
     ready = YES;
-}
-
-- (void) updateMultiplier:(ccTime)delta
-{
-    if (multiplier < 3)
-    {
-        multiplier++;
-        [[[GameObjectCache sharedGameObjectCache] hudLayer] updateMultiplier:multiplier];
-    }
-}
-
-- (void) checkForEndGame:(ccTime)delta
-{
-    for (NSArray *row in [board rows])
-    {
-        for (GameItem *word in row)
-        {
-            NSMutableArray * matches = [NSMutableArray array];
-            if ([board matches:word resultSet:matches matchSize:multiplier])
-            {
-                return;
-            }
-        }
-    }
-    
-    NSLog(@"NO MATCH FOUND~!!!!");
 }
 
 - (void) clearButtons
@@ -200,8 +172,8 @@
         return;
     }
     
-    multiplier = kTimeout;
-    [[[GameObjectCache sharedGameObjectCache] hudLayer] updateMultiplier:multiplier];
+    ink = kTimeout;
+    [[[GameObjectCache sharedGameObjectCache] hudLayer] updateInk:ink];
     
     // remove all the matched colours.
     for (GameItem *w in [[matches objectAtIndex:0] allValues]) // loop through all the matches

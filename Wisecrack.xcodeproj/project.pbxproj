@@ -188,6 +188,7 @@
 		E74B465D1509559A0099ABAC /* home.pshs in Resources */ = {isa = PBXBuildFile; fileRef = E74B46581509559A0099ABAC /* home.pshs */; };
 		E74B4661150955CF0099ABAC /* HomeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E74B4660150955CF0099ABAC /* HomeScene.m */; };
 		E74B466815095B7B0099ABAC /* HomeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E74B466715095B7B0099ABAC /* HomeLayer.m */; };
+		E76594E2156E54DB00B2EFFC /* GDMaskTo.m in Sources */ = {isa = PBXBuildFile; fileRef = E76594E1156E54DB00B2EFFC /* GDMaskTo.m */; };
 		E766438E152D79450065E64A /* hud-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E766438B152D79450065E64A /* hud-hd.png */; };
 		E766438F152D79450065E64A /* hud.png in Resources */ = {isa = PBXBuildFile; fileRef = E766438C152D79450065E64A /* hud.png */; };
 		E7664390152D79450065E64A /* hud.pshs in Resources */ = {isa = PBXBuildFile; fileRef = E766438D152D79450065E64A /* hud.pshs */; };
@@ -196,6 +197,8 @@
 		E76B1B0714ED0F2600CBEA83 /* backgrounds.pshs in Resources */ = {isa = PBXBuildFile; fileRef = E76B1B0414ED0F2500CBEA83 /* backgrounds.pshs */; };
 		E76E8BC615259B1300E240D7 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = E76E8BC515259B1300E240D7 /* Icon-Small.png */; };
 		E76E8BC815259B1900E240D7 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E76E8BC715259B1900E240D7 /* Icon-Small@2x.png */; };
+		E778CDC6156E3AF3006AA82A /* InkWell.m in Sources */ = {isa = PBXBuildFile; fileRef = E778CDC5156E3AF3006AA82A /* InkWell.m */; };
+		E778CDCA156E43AB006AA82A /* ClippingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E778CDC9156E43AB006AA82A /* ClippingNode.m */; };
 		E778F4C31565277D00AB5876 /* 1x1_words-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E778F4BA1565277D00AB5876 /* 1x1_words-hd.png */; };
 		E778F4C41565277D00AB5876 /* 1x1_words.png in Resources */ = {isa = PBXBuildFile; fileRef = E778F4BB1565277D00AB5876 /* 1x1_words.png */; };
 		E778F4C51565277D00AB5876 /* 1x1_words.pshs in Resources */ = {isa = PBXBuildFile; fileRef = E778F4BC1565277D00AB5876 /* 1x1_words.pshs */; };
@@ -573,6 +576,8 @@
 		E74B4660150955CF0099ABAC /* HomeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScene.m; sourceTree = "<group>"; };
 		E74B466615095B7A0099ABAC /* HomeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeLayer.h; sourceTree = "<group>"; };
 		E74B466715095B7B0099ABAC /* HomeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeLayer.m; sourceTree = "<group>"; };
+		E76594E0156E54DB00B2EFFC /* GDMaskTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDMaskTo.h; sourceTree = "<group>"; };
+		E76594E1156E54DB00B2EFFC /* GDMaskTo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDMaskTo.m; sourceTree = "<group>"; };
 		E766438B152D79450065E64A /* hud-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hud-hd.png"; path = "Resources/hud-hd.png"; sourceTree = "<group>"; };
 		E766438C152D79450065E64A /* hud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hud.png; path = Resources/hud.png; sourceTree = "<group>"; };
 		E766438D152D79450065E64A /* hud.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = hud.pshs; path = Resources/hud.pshs; sourceTree = "<group>"; };
@@ -581,6 +586,10 @@
 		E76B1B0414ED0F2500CBEA83 /* backgrounds.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = backgrounds.pshs; path = Resources/backgrounds.pshs; sourceTree = "<group>"; };
 		E76E8BC515259B1300E240D7 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
 		E76E8BC715259B1900E240D7 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		E778CDC4156E3AF3006AA82A /* InkWell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InkWell.h; sourceTree = "<group>"; };
+		E778CDC5156E3AF3006AA82A /* InkWell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InkWell.m; sourceTree = "<group>"; };
+		E778CDC8156E43AB006AA82A /* ClippingNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClippingNode.h; sourceTree = "<group>"; };
+		E778CDC9156E43AB006AA82A /* ClippingNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClippingNode.m; sourceTree = "<group>"; };
 		E778F4BA1565277D00AB5876 /* 1x1_words-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1x1_words-hd.png"; path = "Resources/1x1_words-hd.png"; sourceTree = "<group>"; };
 		E778F4BB1565277D00AB5876 /* 1x1_words.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1x1_words.png; path = Resources/1x1_words.png; sourceTree = "<group>"; };
 		E778F4BC1565277D00AB5876 /* 1x1_words.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = 1x1_words.pshs; path = Resources/1x1_words.pshs; sourceTree = "<group>"; };
@@ -1177,6 +1186,12 @@
 				E73ECA0E14E3BB5D001B1980 /* GameBoard.m */,
 				E70AD9EB1536E78400057555 /* ScoreCalculator.h */,
 				E70AD9EC1536E78400057555 /* ScoreCalculator.m */,
+				E778CDC4156E3AF3006AA82A /* InkWell.h */,
+				E778CDC5156E3AF3006AA82A /* InkWell.m */,
+				E778CDC8156E43AB006AA82A /* ClippingNode.h */,
+				E778CDC9156E43AB006AA82A /* ClippingNode.m */,
+				E76594E0156E54DB00B2EFFC /* GDMaskTo.h */,
+				E76594E1156E54DB00B2EFFC /* GDMaskTo.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1458,6 +1473,9 @@
 				E7F0312915379A5A005DFB5B /* SettingsManager.m in Sources */,
 				E70A9505153A484F00F6293E /* TrueFriendsGame.m in Sources */,
 				E70A9508153A488400F6293E /* BaseGame.m in Sources */,
+				E778CDC6156E3AF3006AA82A /* InkWell.m in Sources */,
+				E778CDCA156E43AB006AA82A /* ClippingNode.m in Sources */,
+				E76594E2156E54DB00B2EFFC /* GDMaskTo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

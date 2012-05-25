@@ -31,16 +31,6 @@
         [_score setPosition:ccp(314, 25)];
         [self addChild:_score];
         
-        // SCORE
-        _multiplier = [[CCLabelAtlas labelWithString:@"0" 
-                                         charMapFile:@"score_numerals.png" 
-                                           itemWidth:11
-                                          itemHeight:25 
-                                        startCharMap:'0'] retain];
-        [_multiplier setAnchorPoint: ccp(0.5f, 0.5f)]; // align center
-        [_multiplier setPosition:ccp(160, 25)];
-        [self addChild:_multiplier];
-        
         // OPTIONS BUTTON
         loader = [[SpriteHelperLoader alloc] initWithContentOfFile:@"hud"];
 
@@ -58,6 +48,12 @@
         [menu setPosition:CGPointMake(32, 25)];
         
         [self addChild:menu z:10];
+        
+        // INKWELL
+        inkwell = [[InkWell alloc] init:loader];
+        [inkwell setPosition:ccp(85, 26)];
+        [self addChild:inkwell];
+        
         score = 0;
     }
     
@@ -92,16 +88,16 @@
     [_score setString:[NSString stringWithFormat:@"%d", score]];
 }
 
-- (void) updateMultiplier:(int)muliplier
+- (void) updateInk:(int)value
 {
-    [_multiplier setString:[NSString stringWithFormat:@"%d", muliplier]];
+    [inkwell fillPot:12 - value];
 }
 
 - (void) dealloc
 {
     CCLOG(@"Dealloc HUD");
     [_score release];
-    [_multiplier release];
+    [inkwell dealloc];
     [self removeAllChildrenWithCleanup:YES];
     [super dealloc];
 }

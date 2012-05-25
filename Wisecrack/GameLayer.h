@@ -17,14 +17,13 @@
     NSMutableArray * buttons;
     CCMenu * menu;
     int score;
-    int multiplier;
+    int ink;
     BOOL ready;
 }
 
 @property (nonatomic, retain) GameBoard* board;
 @property (nonatomic, retain) NSMutableArray* buttons;
 @property (nonatomic) int score;
-@property (nonatomic) int multiplier;
 
 - (id) initWithBoard:(GameBoard *)board;
 - (void) wordClick:(id) sender;
@@ -33,7 +32,6 @@
 - (void) step:(ccTime) delta;
 - (void) updateBoard:(ccTime) delta;
 - (void) updateMultiplier:(ccTime) delta;
-- (void) checkForEndGame:(ccTime) delta;
 - (void) removeButton:(CCMenuItemImage *) button withDelay:(ccTime)delay;
 - (void) endRemoveButton:(id) sender;
 - (void) unsuccessfulClick;
