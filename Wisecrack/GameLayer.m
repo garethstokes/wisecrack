@@ -41,10 +41,14 @@
         [self drawButtons];
         [self addChild:menu z:10];
         
+        self.isAccelerometerEnabled = YES;
+        [[UIAccelerometer sharedAccelerometer] setUpdateInterval:1/60];
+        
         [self schedule:@selector(step:)];
         [self schedule:@selector(stepScoreTimer:) interval:1];
         [self schedule:@selector(updateBoard:) interval:3.0];
         ready = YES;
+        shake_once = false;
     }
     
     return self;
@@ -122,7 +126,8 @@
             }
             if (hasBeenFound) continue;
             
-            CCMenuItemImage * button = [CCMenuItemImage itemFromWord:word target:self selector:@selector(wordClick:)];
+           
+            CCMenuItemImage * button = [word buttonWithTarget:self selector:@selector(wordClick:)];
             
             CGPoint position;
             position.y = count * kUnitHeight;
@@ -161,8 +166,13 @@
     GameItem *word = ((CCMenuItemImage *)sender).word;
     NSLog(@"word: %@", [word hash]);
     
-    // initial word
-    //[matches setValue:word forKey:[word hash]];
+    if ([word bonus])
+    {
+        [self removeGameItem:word withDelay:0.5];
+        ink = kTimeout;
+        [[[GameObjectCache sharedGameObjectCache] hudLayer] updateInk:ink];
+        return;
+    }
     
     // ask the board for all the matching colours 
     if (![board matches:word resultSet:matches matchSize:3])
@@ -178,14 +188,7 @@
     // remove all the matched colours.
     for (GameItem *w in [[matches objectAtIndex:0] allValues]) // loop through all the matches
     {
-        for (CCMenuItemImage *button in [menu children]) // loop through the ui buttons
-        {
-            if ([[button.word hash] isEqualToString:[w hash]]) // find the matching button to the matched word
-            {
-                // and remove it. 
-                [self removeButton:button withDelay:1];
-            }
-        }
+        [self removeGameItem:w withDelay:0.5];
     }
     
     // remove matched words
@@ -194,16 +197,9 @@
     {
         for (GameItem *w in [wordMatches allValues]) // loop through all the matches
         {
-            for (CCMenuItemImage *button in [menu children]) // loop through the ui buttons
-            {
-                if ([button isDirty]) continue;
-                if ([[button.word hash] isEqualToString:[w hash]]) // find the matching button to the matched word
-                {
-                    // and remove it. 
-                    [self removeButton:button withDelay:delay];
-                }
-            }
+            [self removeGameItem:w withDelay:delay];
         }
+        
         delay += 0.5;
     }
     
@@ -219,6 +215,26 @@
     
     ready = NO;
     [board setDirty:YES];
+}
+
+- (void) removeGameItem:(GameItem *)item withDelay:(ccTime)delay
+{
+    for (CCMenuItemImage *button in [menu children]) // loop through the ui buttons
+    {
+        if ([button isDirty]) continue;
+        
+        // find the matching button to the matched word
+        if ([[button.word hash] isEqualToString:[item hash]]) 
+        {
+            // and remove it. 
+            [self removeButton:button withDelay:delay];
+            if ([button.word bonus])
+            {
+                Bonus * bonus = (Bonus *)button.word;
+                [bonus activate];
+            }
+        }
+    }
 }
 
 - (void) unsuccessfulClick
@@ -250,18 +266,15 @@
     [sparkle setPosition:[button position]];
     [self addChild:sparkle z:101];
     
-    NSString *key_down = [NSString stringWithFormat:@"%@_%@_%d_down", 
-                          [button.word colour], 
-                          [button.word name],
-                          (int)button.word.size.width];
-    
-    SpriteHelperLoader * loader = [SpriteHelperLoader loaderFromWord:[button word]];
-    CCSprite *sprite2 = [loader spriteWithUniqueName:key_down atPosition:CGPointMake(0,0) inLayer:nil];
+    SpriteHelperLoader * loader = [button.word loader];
+    CCSprite *sprite2 = [loader spriteWithUniqueName:[button.word key_down] 
+                                          atPosition:ccp(0,0) 
+                                             inLayer:nil];
     
     [button setNormalImage:sprite2];
     [button runAction:[CCSequence actions:
                        [CCDelayTime actionWithDuration:delay],
-                       [CCFadeOut actionWithDuration:1.5],
+                       [CCFadeOut actionWithDuration:0.5],
                        [CCCallFuncO actionWithTarget:self selector:@selector(endRemoveButton:) object:button], 
                        nil]];
 }
@@ -277,6 +290,46 @@
      
     NSMutableArray *boardRow = [board.rows objectAtIndex:([button.word row] -1)];
     [boardRow removeObject:[button word]];
+}
+
+- (void) shakeDelay
+{
+    [self unschedule:@selector(shakeDelay)];
+    shake_once = false;
+}
+
+-(void) accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration {
+    
+    float THRESHOLD = 2;
+    
+    if (acceleration.x > THRESHOLD || acceleration.x < -THRESHOLD || 
+        acceleration.y > THRESHOLD || acceleration.y < -THRESHOLD ||
+        acceleration.z > THRESHOLD || acceleration.z < -THRESHOLD) {
+        
+        if (!shake_once) {
+            //int derp = 22/7;
+            shake_once = true;
+            NSLog(@"HULK SMASH!");
+            
+            BonusManager * bm = [[GameObjectCache sharedGameObjectCache] bonusManager];
+            [bm removeShakeIfAvailable];
+            [self wipe];
+            [self schedule:@selector(shakeDelay) interval:5];
+            
+            ink = kTimeout;
+            [[[GameObjectCache sharedGameObjectCache] hudLayer] updateInk:ink];
+        }
+        
+    }
+}
+
+- (void) wipe
+{
+    for (CCMenuItemImage *button in [menu children]) // loop through the ui buttons
+    {
+        if ([button isDirty]) continue;
+        [self removeButton:button withDelay:0.2];
+    }
 }
 
 - (void) dealloc

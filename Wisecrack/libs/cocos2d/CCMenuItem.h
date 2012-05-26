@@ -300,6 +300,9 @@
  
  For best results try that all images are of the same size
  */
+
+@class GameItem;
+
 @interface CCMenuItemImage : CCMenuItemSprite
 {
     // GD: i know this is a hack... but inheritence is
@@ -310,9 +313,6 @@
 
 @property (nonatomic, retain) GameItem *word;
 @property BOOL isDirty;
-
-// GD: i put this here. 
-+ (id) itemFromWord:(GameItem *)word target:(id)target selector:(SEL)selector;
 
 /** creates a menu item with a normal and selected image*/
 +(id) itemFromNormalImage: (NSString*)value selectedImage:(NSString*) value2;

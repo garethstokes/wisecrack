@@ -93,11 +93,60 @@
     [inkwell fillPot:12 - value];
 }
 
+- (void) clearBonus
+{
+    if (bonus1 != nil) [self removeChild:bonus1 cleanup:YES];
+    if (bonus2 != nil) [self removeChild:bonus2 cleanup:YES];
+    if (bonus3 != nil) [self removeChild:bonus3 cleanup:YES];
+    if (bonus4 != nil) [self removeChild:bonus4 cleanup:YES];
+}
+
+- (void) updateBonus
+{
+    BonusManager * bm = [[GameObjectCache sharedGameObjectCache] bonusManager];
+    Bonus * bonus; 
+    
+    [self clearBonus];
+    
+    // 1
+    if ( [bm bonusCount] < 1 ) return;
+    bonus = [[bm activeBonusItems] objectAtIndex:0];
+    
+    bonus1 = [loader spriteWithUniqueName:[bonus key]
+                               atPosition:ccp(125, 26) 
+                                  inLayer:self];
+    
+    // 2
+    if ( [bm bonusCount] < 2 ) return;
+    bonus = [[bm activeBonusItems] objectAtIndex:1];
+    
+    bonus2 = [loader spriteWithUniqueName:[bonus key]
+                               atPosition:ccp(155, 26) 
+                                  inLayer:self];
+    
+    // 3
+    if ( [bm bonusCount] < 3 ) return;
+    bonus = [[bm activeBonusItems] objectAtIndex:2];
+    
+    bonus3 = [loader spriteWithUniqueName:[bonus key]
+                               atPosition:ccp(185, 26) 
+                                  inLayer:self];
+    
+    // 4
+    if ( [bm bonusCount] < 4 ) return;
+    bonus = [[bm activeBonusItems] objectAtIndex:3];
+    
+    bonus4 = [loader spriteWithUniqueName:[bonus key]
+                               atPosition:ccp(215, 26) 
+                                  inLayer:self];
+}
+
 - (void) dealloc
 {
     CCLOG(@"Dealloc HUD");
     [_score release];
     [inkwell dealloc];
+    
     [self removeAllChildrenWithCleanup:YES];
     [super dealloc];
 }

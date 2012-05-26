@@ -35,6 +35,7 @@
         fillCount = 8;
         dirty = NO;
         chain = NO;
+        withBonus = YES;
     }
     
     return self;
@@ -187,6 +188,30 @@
     return YES;
 }
 
+- (bool) hasUnactivatedBonus:(Bonus *)bonus
+{
+    for (int i = 0; i < kBoardRows; i++) 
+    {
+        NSMutableArray* row = [rows objectAtIndex:i];
+        for (GameItem * word in row)
+        {
+            if ( [[word name] isEqualToString:[bonus name]] )
+            {
+                // yep, found one. 
+                return true;
+            }
+        }
+    }
+    
+    return false;
+}
+
+- (void) enable_power_ups
+{
+    [self unschedule:@selector(enable_power_ups)];
+    withBonus = YES;
+}
+
 - (void) fill
 {
     fillCount++;
@@ -204,7 +229,17 @@
             // pick a random word and see if it fits. 
             // and keep doing this until the row has 
             // been filled. 
-            GameItem * word = [[game pickWordAtRandom] duplicate];
+            GameItem * word = [[game pickWordAtRandom:withBonus] duplicate];
+            
+            if ([word bonus])
+            {
+                // check if we already have a bunch of bonuses
+                // on the board already.
+                withBonus = NO;
+                [self schedule:@selector(enable_power_ups) interval:60];
+                if ([self hasUnactivatedBonus:(Bonus *)word])
+                    continue;
+            }
             
             word.offset = x;
             word.row = i+1;

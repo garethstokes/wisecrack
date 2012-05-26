@@ -47,6 +47,9 @@ enum {
  *  - You can add MenuItem objects in runtime using addChild:
  *  - But the only accecpted children are MenuItem objects
  */
+
+@class CCMenuItem;
+
 @interface CCMenu : CCLayer <CCRGBAProtocol>
 {
 	tCCMenuState state_;

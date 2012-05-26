@@ -15,10 +15,18 @@
     SpriteHelperLoader *loader;
     InkWell * inkwell;
     int score;
+    
+    CCSprite * bonus1;
+    CCSprite * bonus2;
+    CCSprite * bonus3;
+    CCSprite * bonus4;
 }
 
 - (void) openOptions:(id)sender;
 - (void) updateScoreLabel:(int)number withAnim:(BOOL)anim;
+
 - (void) updateInk:(int)value;
+- (void) updateBonus;
+- (void) clearBonus;
 
 @end

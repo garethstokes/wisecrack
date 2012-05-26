@@ -10,7 +10,7 @@
 #import "GameConfig.h"
 #import "GameItem.h"
 
-@interface BaseGame : NSObject {
+@interface BaseGame : CCNode {
     NSMutableArray *wordsInPlay;
     int numberOfWords;
     int wisecrackLength;
@@ -21,6 +21,6 @@
 - (void) shuffle;
 - (void) shuffle:(NSMutableArray *)w;
 
-- (GameItem *)pickWordAtRandom;
+- (GameItem *)pickWordAtRandom:(BOOL)withBonus;
 
 @end

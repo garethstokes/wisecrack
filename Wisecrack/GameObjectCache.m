@@ -94,6 +94,16 @@ static GameObjectCache *sharedGameObjectCache_=nil;
     return gameScene_;
 }
 
+- (BonusManager *) bonusManager
+{
+    if (bonusManager_ == nil)
+    {
+        bonusManager_ = [[BonusManager alloc] init];
+    }
+    
+    return bonusManager_;
+}
+
 - (SpriteHelperLoader *)smallSprites
 {
     if (smallSprites_ == nil)
@@ -124,6 +134,16 @@ static GameObjectCache *sharedGameObjectCache_=nil;
     return largeSprites_;
 }
 
+- (SpriteHelperLoader *)bonusSprites
+{
+    if (bonusSprites_ == nil)
+    {
+        bonusSprites_ =  [[SpriteHelperLoader alloc] initWithContentOfFile:@"bonus_shake"];
+    }
+    
+    return bonusSprites_;
+}
+
 - (id)init
 {
   CCLOG(@"GameObjectCache Init");
@@ -145,6 +165,8 @@ static GameObjectCache *sharedGameObjectCache_=nil;
   [gameLayer_ release];
   [hudLayer_ release];
   [gameScene_ release];
+    
+    [bonusManager_ release];
     
     [smallSprites_ release];
     [mediumSprites_ release];

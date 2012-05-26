@@ -10,8 +10,9 @@
 #import "GameConfig.h"
 #import "GameItem.h"
 #import "PrototypeGame.h"
+#import "BonusManager.h"
 
-@interface GameBoard : NSObject {
+@interface GameBoard : CCNode {
     CGSize size;
     NSString* name;
     
@@ -21,6 +22,7 @@
     int fillCount;
     BOOL dirty;
     BOOL chain;
+    BOOL withBonus;
 }
 
 @property CGSize size;
@@ -39,5 +41,8 @@
 - (void) matchingWords:(GameItem *)item result:(NSMutableDictionary *)d;
 - (BOOL) fits:(GameItem* )word offset:(int)offset row:(int)row;
 - (void) fill;
+
+- (bool) hasUnactivatedBonus:(Bonus *)bonus;
+- (void) enable_power_ups;
 
 @end

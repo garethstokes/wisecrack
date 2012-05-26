@@ -7,10 +7,20 @@
 //
 
 #import "BaseGame.h"
+#import "BonusManager.h"
 
 @implementation BaseGame
 @synthesize wordsInPlay;
 
+- (id) init
+{
+    if( (self=[super init]) )
+    {
+
+    }
+    
+    return self;
+}
 - (void)shuffle
 {
     [self shuffle:wordsInPlay];
@@ -34,7 +44,7 @@
     }
 }
 
-- (GameItem *)pickWordAtRandom
+- (GameItem *)pickWordAtRandom:(BOOL)withBonus
 {
     [self shuffle];
     
@@ -52,7 +62,14 @@
     if (i == 3) colour = @"yellow";
     if (i == 4) colour = @"grey";
     
-    return [GameItem wordWith:name andColour:colour andSize:size];
+    int powerup = random() % 100;
+    if (withBonus && powerup < kPowerUpChance)
+    {
+        NSLog(@"BONUS!!");
+        return [Bonus shake:colour];
+    }
+    
+    return [Word wordWith:name andColour:colour andSize:size];
 }
 
 @end

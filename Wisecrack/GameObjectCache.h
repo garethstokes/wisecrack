@@ -10,6 +10,7 @@
 #import "GameLayer.h"
 #import "HudLayer.h"
 #import "GameScene.h"
+#import "BonusManager.h"
 
 #define sharedGameLayer  [[GameObjectCache sharedGameObjectCache] gameLayer]
 #define sharedHudLayer  [[GameObjectCache sharedGameObjectCache] hudLayer]
@@ -20,9 +21,13 @@
     HudLayer* hudLayer_;
     GameScene* gameScene_;
     
+    BonusManager * bonusManager_;
+    
     SpriteHelperLoader * smallSprites_;
     SpriteHelperLoader * mediumSprites_;
     SpriteHelperLoader * largeSprites_;
+    
+    SpriteHelperLoader * bonusSprites_;
 }
 
 /** Retruns ths shared instance of the Game Object cache */
@@ -40,8 +45,12 @@
 -(HudLayer*) hudLayer;
 -(GameScene*) gameScene;
 
+- (BonusManager *) bonusManager;
+
 - (SpriteHelperLoader *)smallSprites;
 - (SpriteHelperLoader *)mediumSprites;
 - (SpriteHelperLoader *)largeSprites;
+
+- (SpriteHelperLoader *)bonusSprites;
 
 @end

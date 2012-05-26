@@ -10,7 +10,17 @@
 #import "cocos2d.h"
 #import "SpriteHelperLoader.h"
 
-@interface Bonus : GameItem 
+@protocol BonusProtocol
+
+- (void) activate;
+
+@end
+
+@interface Bonus : GameItem <BonusProtocol>
+
+- (id) init:(NSString *)name colour:(NSString *)colour size:(CGSize)size;
+
+- (NSString *) key;
 
 + (Bonus *) shake:(NSString *)colour;
 + (Bonus *) swipe:(NSString *)colour;
@@ -20,7 +30,12 @@
 @end
 
 @interface BonusManager : NSObject {
-
+    NSMutableArray * bonusItems_;
 }
+
+- (NSUInteger) bonusCount;
+- (void) addBonus:(Bonus *)bonus;
+- (NSArray *) activeBonusItems;
+- (void) removeShakeIfAvailable;
 
 @end

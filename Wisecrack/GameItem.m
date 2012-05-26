@@ -7,6 +7,7 @@
 //
 
 #import "GameItem.h"
+#import "GameObjectCache.h"
 
 @implementation GameItem
 @synthesize name;
@@ -14,63 +15,137 @@
 @synthesize size;
 @synthesize offset;
 @synthesize row;
+@synthesize key_up;
+@synthesize key_down;
+@synthesize loader;
+@synthesize bonus;
+
+- (id) init
+{
+    if( (self=[super init]) )
+    {
+        //[self doesNotRecognizeSelector:_cmd];
+        //[self release];
+        //return nil;
+    }
+    
+    return self;
+}
 
 - (GameItem *) duplicate
 {
-    GameItem *copy = [[[GameItem alloc] init] autorelease];
-    [copy setName:name];
-    [copy setColour:colour];
-    [copy setSize:size];
-    [copy setOffset:offset];
+    GameItem * copy;
+    if (bonus)
+    {
+        copy = [[Bonus alloc] init:name colour:colour size:size];
+    }
+    else 
+    {
+        copy = [[Word alloc] init:name colour:colour size:size];
+    }
+
+    [copy autorelease];
     return copy;
 }
 
 - (NSString *) hash
 {
-    NSString *x = [NSString stringWithFormat:@"[ offset => %d, row => %d, width => %f ]", offset, row, size.width];
+    NSString *x = [NSString stringWithFormat:@"[ name => %@, offset => %d, row => %d, width => %f ]", name, offset, row, size.width];
     return x;
 }
 
-+ (GameItem *) small
+- (CCMenuItemImage *) buttonWithTarget:(id)target selector:(SEL)selector
 {
-    GameItem* item = [[[GameItem alloc] init] autorelease];
-    [item setSize:CGSizeMake(1, 1)];
-    [item setName:@"small"];
-    [item setColour:@"green"];
-    return item;
-}
-
-+ (GameItem *) medium
-{
-    GameItem* item = [[[GameItem alloc] init] autorelease];
-    [item setSize:CGSizeMake(2, 1)];
-    [item setName:@"medium"];
-    [item setColour:@"green"];
-    return item;    
-}
-
-+ (GameItem *) large
-{
-    GameItem* item = [[[GameItem alloc] init] autorelease];
-    [item setSize:CGSizeMake(3, 1)];
-    [item setName:@"large"];
-    [item setColour:@"green"];
-    return item;
-}
-
-+ (GameItem *) wordWith:(NSString *)name andColour:(NSString *)colour andSize:(NSString *)size
-{
-    GameItem * word;
-    if ([@"large" isEqualToString:size]) {
-        word = [GameItem large];
+    CCSprite * upimage = [loader spriteWithUniqueName:key_up atPosition:CGPointMake(0,0) inLayer:nil];
+    
+    CCSprite * downimage = [loader spriteWithUniqueName:key_down atPosition:CGPointMake(0,0) inLayer:nil];
+    
+    CCMenuItemImage *button = [CCMenuItemImage 
+                               itemFromNormalSprite:upimage
+                               selectedSprite:downimage
+                               target:target 
+                               selector:selector];
+    
+    if (size.width == 3)
+    {
+        [button setAnchorPoint:CGPointMake(0.19, 0.5)];
     }
-    else if ([@"medium" isEqualToString:size]) {
-        word = [GameItem medium];
+    
+    if (size.width == 2)
+    {
+        [button setAnchorPoint:CGPointMake(0.27, 0.5)];
     }
-    else if ([@"small" isEqualToString:size]) {
-        word = [GameItem small];
-    } else return NULL;
+    
+    [button setWord:self];
+    return button;
+}
 
+- (void) dealloc
+{
+    //if (upimage != nil)
+        //[upimage dealloc];
+    
+    //if (downimage != nil)
+        //[downimage dealloc];
+    
+    [super dealloc];
+}
+
+@end
+
+@implementation Word
+
+- (id) init:(NSString *)n colour:(NSString *)c size:(CGSize)s
+{
+    if( (self=[super init]) )
+    {
+        [self setName:n];
+        [self setColour:c];
+        [self setSize:s];
+        
+        [self setKey_up: [NSString stringWithFormat:@"%@_%@_%d_up", 
+                             [self colour], 
+                             [self name],
+                             (int)size.width] ];
+        
+        [self setKey_down: [NSString stringWithFormat:@"%@_%@_%d_down", 
+                               [self colour], 
+                               [self name],
+                               (int)size.width] ];
+        
+        if (size.width == 1) loader = [[GameObjectCache sharedGameObjectCache] smallSprites];
+        if (size.width == 2) loader = [[GameObjectCache sharedGameObjectCache] mediumSprites];
+        if (size.width == 3) loader = [[GameObjectCache sharedGameObjectCache] largeSprites];
+        
+        bonus = NO;
+    }
+    
+    return self;
+}
+
++ (Word *) wordWith:(NSString *)name andColour:(NSString *)colour andSize:(NSString *)size
+{
+    Word * word;
+    if ([@"large" isEqualToString:size]) 
+    {
+        word = [[[Word alloc] init:name 
+                            colour:colour 
+                              size:CGSizeMake(3, 1)] autorelease];
+    }
+    else if ([@"medium" isEqualToString:size]) 
+    {
+        word = [[[Word alloc] init:name 
+                            colour:colour 
+                              size:CGSizeMake(2, 1)] autorelease];
+    }
+    else if ([@"small" isEqualToString:size]) 
+    {
+        word = [[[Word alloc] init:name 
+                            colour:colour 
+                              size:CGSizeMake(1, 1)] autorelease];
+    } else 
+        return NULL;
+    
     [word setColour:colour];
     [word setName:name];
     return word;

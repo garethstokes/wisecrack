@@ -11,6 +11,7 @@
 #import "SpriteHelperLoader.h"
 #import "GameItem.h"
 #import "ScoreCalculator.h"
+#import "BonusManager.h"
 
 @interface GameLayer : CCLayer {
     GameBoard * board;
@@ -19,6 +20,7 @@
     int score;
     int ink;
     BOOL ready;
+    bool shake_once;
 }
 
 @property (nonatomic, retain) GameBoard* board;
@@ -31,9 +33,11 @@
 - (void) clearButtons;
 - (void) step:(ccTime) delta;
 - (void) updateBoard:(ccTime) delta;
-- (void) updateMultiplier:(ccTime) delta;
 - (void) removeButton:(CCMenuItemImage *) button withDelay:(ccTime)delay;
+- (void) removeGameItem:(GameItem *)item withDelay:(ccTime)delay;
 - (void) endRemoveButton:(id) sender;
 - (void) unsuccessfulClick;
+- (void) shakeDelay;
+- (void) wipe;
 
 @end
