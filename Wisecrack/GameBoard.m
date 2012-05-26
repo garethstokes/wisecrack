@@ -137,13 +137,19 @@
 
 - (void) matchingColours:(GameItem *)item result:(NSMutableDictionary *)d
 {
+    // don't keep going if we are brick
+    if ([item.name isEqualToString:@"brick"])
+    {
+        return;
+    }
+    
     NSArray *neighbours = [self neighbours:item];
     
     for (GameItem *word in neighbours) 
     {
         NSLog(@"%@", [word hash]);
         
-        if (word.colour == item.colour) 
+        if (word.colour == item.colour || [word.name isEqualToString:@"brick"]) 
         {
             if ([d objectForKey:[word hash]] == nil)
             {
@@ -156,11 +162,17 @@
 
 - (void) matchingWords:(GameItem *)item result:(NSMutableDictionary *)d
 {
+    // don't keep going if we are brick
+    if ([item.name isEqualToString:@"brick"])
+    {
+        return;
+    }
+    
     NSArray *neighbours = [self neighbours:item];
     
     for (GameItem *word in neighbours) 
     {
-        if ([word.name isEqualToString:[item name]])
+        if ([word.name isEqualToString:[item name]] || [word.name isEqualToString:@"brick"])
         {
             if ([d objectForKey:[word hash]] == nil)
             {

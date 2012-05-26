@@ -16,16 +16,23 @@
 
 @end
 
-@interface Bonus : GameItem <BonusProtocol>
+@interface Bonus : GameItem <BonusProtocol> {
+    int durability;
+}
+
+@property (nonatomic) int durability;
 
 - (id) init:(NSString *)name colour:(NSString *)colour size:(CGSize)size;
 
 - (NSString *) key;
+- (void) decreaseDurability;
 
++ (Bonus *) random:(NSString *)colour;
 + (Bonus *) shake:(NSString *)colour;
 + (Bonus *) swipe:(NSString *)colour;
 + (Bonus *) multiplier:(NSString *)colour;
 + (Bonus *) chain;
++ (Bonus *) brick;
 
 @end
 

@@ -21,6 +21,8 @@
     int ink;
     BOOL ready;
     bool shake_once;
+    
+    bool mutex;
 }
 
 @property (nonatomic, retain) GameBoard* board;

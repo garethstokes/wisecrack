@@ -168,10 +168,27 @@
     
     if ([word bonus])
     {
-        [self removeGameItem:word withDelay:0.5];
-        ink = kTimeout;
-        [[[GameObjectCache sharedGameObjectCache] hudLayer] updateInk:ink];
-        return;
+        // can't click on brick, douchbag
+        if ( [[word name] isEqualToString:@"brick"] ) return;
+        
+        Bonus * bonus = (Bonus *)word;
+        [bonus decreaseDurability];
+        
+        if (bonus.durability < 0)
+        {
+            [self removeGameItem:word withDelay:0.5];
+            ink = kTimeout;
+            [[[GameObjectCache sharedGameObjectCache] hudLayer] updateInk:ink];
+            return;
+        }
+        else 
+        {
+            CCMenuItemImage * selectedButton = (CCMenuItemImage *)sender;
+            CCSprite * img = [[word loader] spriteWithUniqueName:[word key_up] 
+                                                      atPosition:ccp(0,0) 
+                                                         inLayer:nil];
+            [selectedButton setSelectedImage:img];
+        }
     }
     
     // ask the board for all the matching colours 
@@ -182,8 +199,28 @@
         return;
     }
     
+    // find score;
+    NSMutableDictionary * uniqueWords = [NSMutableDictionary dictionary];
+    for (NSMutableDictionary * words in matches)
+    {
+        [uniqueWords addEntriesFromDictionary:words];
+    }
+    
+    if ( [uniqueWords count] == 3 )
+    {
+        for ( GameItem * word in [uniqueWords allValues] )
+        {
+            if ( [[word name] isEqualToString:@"brick"] )
+            {
+                return;
+            }
+        }
+    }
+    
     ink = kTimeout;
     [[[GameObjectCache sharedGameObjectCache] hudLayer] updateInk:ink];
+    
+    mutex = true;
     
     // remove all the matched colours.
     for (GameItem *w in [[matches objectAtIndex:0] allValues]) // loop through all the matches
@@ -203,12 +240,7 @@
         delay += 0.5;
     }
     
-    // find score;
-    NSMutableDictionary * uniqueWords = [NSMutableDictionary dictionary];
-    for (NSMutableDictionary * words in matches)
-    {
-        [uniqueWords addEntriesFromDictionary:words];
-    }
+    mutex = true;
     
     ScoreCalculator *scoreCalculator = [[[ScoreCalculator alloc] init] autorelease];
     score += [scoreCalculator calculate:[uniqueWords allValues]];
@@ -258,6 +290,21 @@
 
 - (void) removeButton:(CCMenuItemImage *)button withDelay:(ccTime)delay
 {
+    if ( [[button.word name] isEqualToString:@"brick"] )
+    {
+        if (!mutex) return; 
+        
+        Bonus * bonus = (Bonus *)[button word];
+        [bonus decreaseDurability];
+        CCSprite * img = [[bonus loader] spriteWithUniqueName:[bonus key_up] 
+                                                   atPosition:ccp(0,0) 
+                                                      inLayer:nil];
+        [button setNormalImage:img];
+        mutex = false;
+        
+        if ( [bonus durability] >= 0 ) return;
+    }
+    
     NSLog(@"fading out... %@", [button.word hash]);
     [button setIsDirty:YES];
     

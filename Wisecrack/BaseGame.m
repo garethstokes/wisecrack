@@ -66,7 +66,7 @@
     if (withBonus && powerup < kPowerUpChance)
     {
         NSLog(@"BONUS!!");
-        return [Bonus shake:colour];
+        return [Bonus random:colour];
     }
     
     return [Word wordWith:name andColour:colour andSize:size];
