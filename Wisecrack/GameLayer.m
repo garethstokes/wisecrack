@@ -174,6 +174,12 @@
         Bonus * bonus = (Bonus *)word;
         [bonus decreaseDurability];
         
+        CCMenuItemImage * selectedButton = (CCMenuItemImage *)sender;
+        CCSprite * img = [[word loader] spriteWithUniqueName:[word key_up] 
+                                                  atPosition:ccp(0,0) 
+                                                     inLayer:nil];
+        [selectedButton setSelectedImage:img];
+        
         if (bonus.durability < 0)
         {
             [self removeGameItem:word withDelay:0.5];
@@ -181,18 +187,11 @@
             [[[GameObjectCache sharedGameObjectCache] hudLayer] updateInk:ink];
             return;
         }
-        else 
-        {
-            CCMenuItemImage * selectedButton = (CCMenuItemImage *)sender;
-            CCSprite * img = [[word loader] spriteWithUniqueName:[word key_up] 
-                                                      atPosition:ccp(0,0) 
-                                                         inLayer:nil];
-            [selectedButton setSelectedImage:img];
-        }
     }
     
     // ask the board for all the matching colours 
-    if (![board matches:word resultSet:matches matchSize:3])
+    BOOL hasMatches = [board matches:word resultSet:matches matchSize:3];
+    if (hasMatches == NO && [word bonus] == NO)
     {
         // remove 50 points;
         [self unsuccessfulClick];
@@ -223,10 +222,12 @@
     mutex = true;
     
     // remove all the matched colours.
+    /*
     for (GameItem *w in [[matches objectAtIndex:0] allValues]) // loop through all the matches
     {
         [self removeGameItem:w withDelay:0.5];
     }
+    */
     
     // remove matched words
     ccTime delay = 0.5;
@@ -288,6 +289,12 @@
     [minus runAction:[CCFadeOut actionWithDuration:1.5]];
 }
 
+- (void) enable_power_ups
+{
+    [self unschedule:@selector(enable_power_ups)];
+    [board enablePowerUps];
+}
+
 - (void) removeButton:(CCMenuItemImage *)button withDelay:(ccTime)delay
 {
     if ( [[button.word name] isEqualToString:@"brick"] )
@@ -303,6 +310,12 @@
         mutex = false;
         
         if ( [bonus durability] >= 0 ) return;
+    }
+    
+    if ([button.word bonus]) 
+    {
+        NSLog(@"scheduling enabling powerups in 45 seconds");
+        [self schedule:@selector(enable_power_ups) interval:45];
     }
     
     NSLog(@"fading out... %@", [button.word hash]);

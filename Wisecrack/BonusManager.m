@@ -21,7 +21,7 @@
         [self setColour:c];
         [self setSize:s];
         
-        durability = 1;
+        durability = 0;
         
         if ( [name isEqualToString:@"shake"] )
         {
@@ -116,14 +116,13 @@
 
 + (Bonus *) random:(NSString *)colour
 {
-    return [Bonus brick]; 
-    
     int value = random() % 100;
-    if (value <= 50)
+    if (value <= 0)
     {
         return [Bonus brick];
     }
-    else {
+    else 
+    {
         return [Bonus shake:colour];
     }
 }

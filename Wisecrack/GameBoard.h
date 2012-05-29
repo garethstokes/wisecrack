@@ -28,6 +28,7 @@
 @property CGSize size;
 @property BOOL dirty;
 @property BOOL chain;
+@property BOOL withBonus;
 
 @property (nonatomic, retain) NSString *name;
 
@@ -43,6 +44,5 @@
 - (void) fill;
 
 - (bool) hasUnactivatedBonus:(Bonus *)bonus;
-- (void) enable_power_ups;
-
+- (void) enablePowerUps;
 @end

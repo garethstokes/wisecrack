@@ -41,5 +41,6 @@
 - (void) unsuccessfulClick;
 - (void) shakeDelay;
 - (void) wipe;
+- (void) enable_power_ups;
 
 @end

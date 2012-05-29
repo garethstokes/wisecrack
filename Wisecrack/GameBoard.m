@@ -14,6 +14,7 @@
 @synthesize dirty;
 @synthesize chain;
 @synthesize name;
+@synthesize withBonus;
 
 @synthesize rows;
 @synthesize columns;
@@ -121,6 +122,12 @@
         [results addObject:wordMatches];
     }
     
+    if ([results count] == 0)
+    {
+        NSMutableDictionary * singleItem = [NSMutableDictionary dictionary];
+        [singleItem setValue:word forKey:[word hash]];
+    }
+    
     return [results count] > 0;
     
     for (GameItem * matchedWord in [[colourMatches copy] allValues])
@@ -218,10 +225,9 @@
     return false;
 }
 
-- (void) enable_power_ups
+- (void) enablePowerUps
 {
-    [self unschedule:@selector(enable_power_ups)];
-    withBonus = YES;
+    [self setWithBonus:YES];
 }
 
 - (void) fill
@@ -247,8 +253,6 @@
             {
                 // check if we already have a bunch of bonuses
                 // on the board already.
-                withBonus = NO;
-                [self schedule:@selector(enable_power_ups) interval:60];
                 if ([self hasUnactivatedBonus:(Bonus *)word])
                     continue;
             }
@@ -259,9 +263,13 @@
             if ([self fits:word offset:x row:i +1]) 
             {
                 NSLog(@"fits: %@", [word hash]);
+                if ([word bonus])
+                    [self setWithBonus:NO];
             }
             else 
             { 
+                // i want you to think about this code
+                // because i was very drunk when i wrote it. 
                 GameItem *w = [[GameItem alloc] init];
                 [w setSize:CGSizeMake(1, 1)];
                 if ([self fits:w offset:x row:i +1]) continue;
