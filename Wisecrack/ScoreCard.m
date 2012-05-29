@@ -56,7 +56,16 @@
                                       target:self 
                                       selector:@selector(openTwitter)];
         
-        socialMenu = [CCMenu menuWithItems:gcButton, fbButton, twButton, nil];
+        //socialMenu = [CCMenu menuWithItems:gcButton, fbButton, twButton, nil];
+        socialMenu = [CCMenu menuWithItems:nil];
+        
+        NSString * gc = [[SettingsManager sharedSettingsManager] getString:@"GameCenter" withDefault:@"NO"];
+        if ([gc isEqualToString:@"YES"])
+            [socialMenu addChild:gcButton];
+        
+        [socialMenu addChild:fbButton];
+        [socialMenu addChild:twButton];
+        
         [socialMenu setPosition:CGPointMake(160, 120)];
         [socialMenu alignItemsHorizontallyWithPadding:20];
         [self addChild:socialMenu z:9];
@@ -128,6 +137,17 @@
 
 - (void) openGameCenter
 {
+    NSString * gc = [[SettingsManager sharedSettingsManager] getString:@"GameCenter" withDefault:@"NO"];
+    
+    if ([gc isEqualToString:@"YES"] == NO)
+    {
+        GameKitHelper * gk = [GameKitHelper sharedGameKitHelper];
+        gk.delegate = self;
+        [gk authenticateLocalPlayer];
+
+        return;
+    }
+    
     GameKitHelper * gk = [GameKitHelper sharedGameKitHelper];
     [gk showLeaderboard];
 }
@@ -140,6 +160,99 @@
 - (void) openTwitter
 {
     
+}
+
+-(void) onLocalPlayerAuthenticationChanged
+{
+    GKLocalPlayer* localPlayer = [GKLocalPlayer localPlayer];
+    CCLOG(@"LocalPlayer isAuthenticated changed to: %@", localPlayer.authenticated ? @"YES" : @"NO");
+    
+    if (localPlayer.authenticated)
+    {
+        GameKitHelper * gk = [GameKitHelper sharedGameKitHelper];
+        [gk showLeaderboard];
+    }   
+}
+-(void) onFriendListReceived:(NSArray*)friends
+{
+    CCLOG(@"onFriendListReceived: %@", [friends description]);
+    GameKitHelper* gkHelper = [GameKitHelper sharedGameKitHelper];
+    [gkHelper getPlayerInfo:friends];
+}
+-(void) onPlayerInfoReceived:(NSArray*)players
+{
+    CCLOG(@"onPlayerInfoReceived: %@", [players description]);
+    
+    
+}
+-(void) onScoresSubmitted:(bool)success
+{
+    CCLOG(@"onScoresSubmitted: %@", success ? @"YES" : @"NO");
+}
+-(void) onScoresReceived:(NSArray*)scores
+{
+    CCLOG(@"onScoresReceived: %@", [scores description]);
+    GameKitHelper* gkHelper = [GameKitHelper sharedGameKitHelper];
+    [gkHelper showAchievements];
+}
+-(void) onAchievementReported:(GKAchievement*)achievement
+{
+    CCLOG(@"onAchievementReported: %@", achievement);
+}
+-(void) onAchievementsLoaded:(NSDictionary*)achievements
+{
+    CCLOG(@"onLocalPlayerAchievementsLoaded: %@", [achievements description]);
+}
+-(void) onResetAchievements:(bool)success
+{
+    CCLOG(@"onResetAchievements: %@", success ? @"YES" : @"NO");
+}
+-(void) onLeaderboardViewDismissed
+{
+    CCLOG(@"onLeaderboardViewDismissed");
+    
+    GameKitHelper* gkHelper = [GameKitHelper sharedGameKitHelper];
+    [gkHelper retrieveTopTenAllTimeGlobalScores];
+}
+-(void) onAchievementsViewDismissed
+{
+    CCLOG(@"onAchievementsViewDismissed");
+}
+-(void) onReceivedMatchmakingActivity:(NSInteger)activity
+{
+    CCLOG(@"receivedMatchmakingActivity: %i", activity);
+}
+-(void) onMatchFound:(GKMatch*)match
+{
+    CCLOG(@"onMatchFound: %@", match);
+}
+-(void) onPlayersAddedToMatch:(bool)success
+{
+    CCLOG(@"onPlayersAddedToMatch: %@", success ? @"YES" : @"NO");
+}
+-(void) onMatchmakingViewDismissed
+{
+    CCLOG(@"onMatchmakingViewDismissed");
+}
+-(void) onMatchmakingViewError
+{
+    CCLOG(@"onMatchmakingViewError");
+}
+-(void) onPlayerConnected:(NSString*)playerID
+{
+    CCLOG(@"onPlayerConnected: %@", playerID);
+}
+-(void) onPlayerDisconnected:(NSString*)playerID
+{
+    CCLOG(@"onPlayerDisconnected: %@", playerID);
+}
+-(void) onStartMatch
+{
+    CCLOG(@"onStartMatch");
+}
+-(void) onReceivedData:(NSData*)data fromPlayer:(NSString*)playerID
+{
+    CCLOG(@"onReceivedData: %@ fromPlayer: %@", data, playerID);
 }
 
 // Set the opacity of all of our children that support it

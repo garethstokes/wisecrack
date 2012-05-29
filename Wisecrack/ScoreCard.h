@@ -10,7 +10,7 @@
 #import "SpriteHelperLoader.h"
 #import "GameKitHelper.h"
 
-@interface ScoreCard : CCLayer {
+@interface ScoreCard : CCLayer<GameKitHelperProtocol> {
     CCLabelAtlas * scoreLabel;
     SpriteHelperLoader * loader;
     SpriteHelperLoader * highScoreLoader;

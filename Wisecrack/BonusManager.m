@@ -117,7 +117,7 @@
 + (Bonus *) random:(NSString *)colour
 {
     int value = random() % 100;
-    if (value <= 0)
+    if (value <= 70)
     {
         return [Bonus brick];
     }
