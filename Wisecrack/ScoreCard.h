@@ -12,7 +12,8 @@
 
 @interface ScoreCard : CCLayer {
     CCLabelAtlas * scoreLabel;
-    SpriteHelperLoader *loader;
+    SpriteHelperLoader * loader;
+    SpriteHelperLoader * highScoreLoader;
     
     CCMenu * socialMenu;
 }

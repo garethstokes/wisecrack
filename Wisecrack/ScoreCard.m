@@ -17,6 +17,7 @@
     if( (self=[super init]))
     {
         loader = [[SpriteHelperLoader alloc] initWithContentOfFile:@"scorecard"];
+        highScoreLoader = [[SpriteHelperLoader alloc] initWithContentOfFile:@"highscore"];
         CGSize size = [[CCDirector sharedDirector] winSize];
         
         CCSprite *background = [loader spriteWithUniqueName:@"end_of_game_bg" 
@@ -102,9 +103,18 @@
     if (score > highScore)
     {
         CGSize size = [[CCDirector sharedDirector] winSize];
-        [loader spriteWithUniqueName:@"highscore_badge" atPosition:ccp(size.width /2, size.height /2) inLayer:self];
+        
+        // run animation
+        CCSprite * highscore = [highScoreLoader 
+                                spriteWithUniqueName:@"highscore_badge_anim_01" 
+                                atPosition:ccp(size.width /2, size.height /2) 
+                                inLayer:self];
+        [highScoreLoader runAnimationWithUniqueName:@"HighScoreAnim" onSprite:highscore];
+        
+        // save score in db.
         [[SettingsManager sharedSettingsManager] setValue:@"HighScore" newInt:score];
         
+        // contact game center and tell them what's up. 
         NSString * gc = [[SettingsManager sharedSettingsManager] getString:@"GameCenter" withDefault:@"NO"];
         if ([gc isEqualToString:@"YES"])
         {
