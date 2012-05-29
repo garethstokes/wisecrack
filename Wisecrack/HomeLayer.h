@@ -8,8 +8,10 @@
 
 #import "CCLayer.h"
 #import "SpriteHelperLoader.h"
+#import "GameKitHelper.h"
+#import "SettingsManager.h"
 
-@interface HomeLayer : CCLayer {
+@interface HomeLayer : CCLayer<GameKitHelperProtocol> {
     SpriteHelperLoader *loader;
     SpriteHelperLoader *backgroundLoader;
 }

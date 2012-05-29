@@ -25,6 +25,41 @@
         
         [self addChild:background z:0];
         
+        // game center
+        CCSprite * gcUp = [loader spriteWithUniqueName:@"social_gamec_up" atPosition:ccp(0,0) inLayer:nil];
+        CCSprite * gcDown = [loader spriteWithUniqueName:@"social_gamec_down" atPosition:ccp(0,0) inLayer:nil];
+        
+        CCMenuItemImage * gcButton = [CCMenuItemImage 
+                                      itemFromNormalSprite:gcUp 
+                                      selectedSprite:gcDown
+                                      target:self 
+                                      selector:@selector(openGameCenter)];
+        
+        // facebook
+        CCSprite * fbUp = [loader spriteWithUniqueName:@"social_fb_up" atPosition:ccp(0,0) inLayer:nil];
+        CCSprite * fbDown = [loader spriteWithUniqueName:@"social_fb_down" atPosition:ccp(0,0) inLayer:nil];
+        
+        CCMenuItemImage * fbButton = [CCMenuItemImage 
+                                      itemFromNormalSprite:fbUp 
+                                      selectedSprite:fbDown 
+                                      target:self 
+                                      selector:@selector(openFacebook)];
+        
+        // twitter
+        CCSprite * twUp = [loader spriteWithUniqueName:@"social_twitter_up" atPosition:ccp(0,0) inLayer:nil];
+        CCSprite * twDown = [loader spriteWithUniqueName:@"social_twitter_down" atPosition:ccp(0,0) inLayer:nil];
+        
+        CCMenuItemImage * twButton = [CCMenuItemImage 
+                                      itemFromNormalSprite:twUp 
+                                      selectedSprite:twDown 
+                                      target:self 
+                                      selector:@selector(openTwitter)];
+        
+        socialMenu = [CCMenu menuWithItems:gcButton, fbButton, twButton, nil];
+        [socialMenu setPosition:CGPointMake(160, 120)];
+        [socialMenu alignItemsHorizontallyWithPadding:20];
+        [self addChild:socialMenu z:9];
+        
         // button
         CCSprite *playOn = [loader spriteWithUniqueName:@"play_on" atPosition:ccp(0, 0) inLayer:nil];
         CCSprite *playOff = [loader spriteWithUniqueName:@"play_off" atPosition:ccp(0, 0) inLayer:nil];
@@ -69,9 +104,32 @@
         CGSize size = [[CCDirector sharedDirector] winSize];
         [loader spriteWithUniqueName:@"highscore_badge" atPosition:ccp(size.width /2, size.height /2) inLayer:self];
         [[SettingsManager sharedSettingsManager] setValue:@"HighScore" newInt:score];
+        
+        NSString * gc = [[SettingsManager sharedSettingsManager] getString:@"GameCenter" withDefault:@"NO"];
+        if ([gc isEqualToString:@"YES"])
+        {
+            GameKitHelper * gk = [GameKitHelper sharedGameKitHelper];
+            [gk submitScore:score category:@"com.fallingshards.most.wise.crackers"];
+        }
     }
     
     [scoreLabel setString:[NSString stringWithFormat:@"%d", score]];
+}
+
+- (void) openGameCenter
+{
+    GameKitHelper * gk = [GameKitHelper sharedGameKitHelper];
+    [gk showLeaderboard];
+}
+
+- (void) openFacebook
+{
+    
+}
+
+- (void) openTwitter
+{
+    
 }
 
 // Set the opacity of all of our children that support it
@@ -96,3 +154,4 @@
 }
 
 @end
+

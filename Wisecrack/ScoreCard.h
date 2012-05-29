@@ -8,13 +8,20 @@
 
 #import "cocos2d.h"
 #import "SpriteHelperLoader.h"
+#import "GameKitHelper.h"
 
 @interface ScoreCard : CCLayer {
     CCLabelAtlas * scoreLabel;
     SpriteHelperLoader *loader;
+    
+    CCMenu * socialMenu;
 }
 
 - (void) finish:(id) sender;
 - (void) updateScore:(int)score;
+
+- (void) openGameCenter;
+- (void) openFacebook;
+- (void) openTwitter;
 
 @end

@@ -9,12 +9,16 @@
 #import "HomeScene.h"
 #import "HomeLayer.h"
 
+#import "ScoreCard.h"
+
 @implementation HomeScene
 
 + (CCScene *) create
 {
     HomeScene* scene = [[[HomeScene alloc] init] autorelease];
     HomeLayer* ui = [[[HomeLayer alloc] init] autorelease];
+    
+//    ScoreCard * ui = [[[ScoreCard alloc] init] autorelease];
     
     [scene addChild:ui];
     
