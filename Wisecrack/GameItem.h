@@ -40,6 +40,7 @@
 @property (nonatomic, retain) SpriteHelperLoader * loader;
 
 @property (nonatomic) bool bonus;
+
 - (GameItem *) duplicate;
 - (NSString *) hash;
 - (CCMenuItemImage *) buttonWithTarget:(id)target selector:(SEL)selector;

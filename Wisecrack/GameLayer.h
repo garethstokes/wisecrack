@@ -23,6 +23,7 @@
     bool shake_once;
     
     bool mutex;
+    ccTime gameTime; 
 }
 
 @property (nonatomic, retain) GameBoard* board;

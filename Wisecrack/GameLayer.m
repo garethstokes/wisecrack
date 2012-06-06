@@ -53,6 +53,7 @@
         
         [board disablePowerUps];
         
+        gameTime = 0;
         ready = YES;
         shake_once = false;
     }
@@ -62,7 +63,41 @@
 
 - (void) step:(ccTime)delta
 {
+    gameTime += delta;
     [[[GameObjectCache sharedGameObjectCache] hudLayer] updateScoreLabel:score withAnim:YES];
+    
+    NSMutableArray * cache = [NSMutableArray array];
+    
+    BonusManager * bm = [[GameObjectCache sharedGameObjectCache] bonusManager];
+    for (Bonus * bonus in [bm activeBonusItems]) 
+    {
+        if ( [bonus.name isEqualToString:@"multiplier"] )
+        {
+            ccTime bonusTime = [bonus activatedTime];
+            
+            // warn the user that it's about to run out. 
+            if ( (gameTime - bonusTime) > 50 && [bonus runningOut] == false )
+            {
+                [bonus setRunningOut:YES];
+                [[[GameObjectCache sharedGameObjectCache] hudLayer] updateBonus];
+            }
+            
+            // we timeout after a minute. 
+            if ( (gameTime - bonusTime) > 60 )
+            {
+                // we can't remove directly because we're
+                // looping through active bonus items. 
+                [cache addObject:bonus];
+            }
+            
+            continue;
+        }
+    }
+    
+    for ( Bonus * bonus in cache )
+    {
+        [bm removeMultipler:bonus];
+    }
 }
 
 - (void) stepScoreTimer:(ccTime)delta
@@ -249,7 +284,7 @@
     
     mutex = true;
     
-    ScoreCalculator *scoreCalculator = [[[ScoreCalculator alloc] init] autorelease];
+    ScoreCalculator * scoreCalculator = [[[ScoreCalculator alloc] init] autorelease];
     score += [scoreCalculator calculate:[uniqueWords allValues]];
     
     ready = NO;
@@ -270,6 +305,7 @@
             if ([button.word bonus])
             {
                 Bonus * bonus = (Bonus *)button.word;
+                [bonus setActivatedTime:gameTime];
                 [bonus activate];
             }
         }
@@ -324,6 +360,12 @@
     CCParticleSystemQuad *sparkle = [CCParticleSystemQuad particleWithFile:@"starburst.plist"];
     
     [sparkle setPosition:[button position]];
+    ccColor4F endColour = [sparkle endColor];
+    endColour.r = 0;
+    endColour.g = 1;
+    endColour.b = 0;
+    //[sparkle setEndColor:endColour];
+    
     [self addChild:sparkle z:101];
     
     SpriteHelperLoader * loader = [button.word loader];
@@ -372,8 +414,11 @@
             NSLog(@"HULK SMASH!");
             
             BonusManager * bm = [[GameObjectCache sharedGameObjectCache] bonusManager];
-            [bm removeShakeIfAvailable];
-            [self wipe];
+            if ( [bm removeShakeIfAvailable] )
+            {
+                [self wipe];
+            }
+            
             [self schedule:@selector(shakeDelay) interval:5];
         }
         
@@ -385,7 +430,9 @@
     NSMutableArray * words = [NSMutableArray array];
     for (CCMenuItemImage *button in [menu children]) // loop through the ui buttons
     {
+        if ([button.word.name isEqualToString:@"brick"]) continue;
         if ([button isDirty]) continue;
+        
         [self removeButton:button withDelay:0.2];
         [words addObject:button.word];
     }

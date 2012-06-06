@@ -111,34 +111,41 @@
     // 1
     if ( [bm bonusCount] < 1 ) return;
     bonus = [[bm activeBonusItems] objectAtIndex:0];
-    
-    bonus1 = [loader spriteWithUniqueName:[bonus key]
-                               atPosition:ccp(125, 26) 
-                                  inLayer:self];
+    bonus1 = [self addBonus:bonus at:ccp(125, 26)];
     
     // 2
     if ( [bm bonusCount] < 2 ) return;
     bonus = [[bm activeBonusItems] objectAtIndex:1];
-    
-    bonus2 = [loader spriteWithUniqueName:[bonus key]
-                               atPosition:ccp(155, 26) 
-                                  inLayer:self];
+    bonus2 = [self addBonus:bonus at:ccp(155, 26)];
     
     // 3
     if ( [bm bonusCount] < 3 ) return;
     bonus = [[bm activeBonusItems] objectAtIndex:2];
-    
-    bonus3 = [loader spriteWithUniqueName:[bonus key]
-                               atPosition:ccp(185, 26) 
-                                  inLayer:self];
+    bonus3 = [self addBonus:bonus at:ccp(185, 26)];
     
     // 4
     if ( [bm bonusCount] < 4 ) return;
     bonus = [[bm activeBonusItems] objectAtIndex:3];
+    bonus4 = [self addBonus:bonus at:ccp(215, 26)];
+}
+
+- (CCSprite *) addBonus:(Bonus *)bonus at:(CGPoint)position
+{
+    CCSprite * sprite = [loader spriteWithUniqueName:[bonus key]
+                                          atPosition:position 
+                                             inLayer:self];
     
-    bonus4 = [loader spriteWithUniqueName:[bonus key]
-                               atPosition:ccp(215, 26) 
-                                  inLayer:self];
+    if ( [bonus runningOut] )
+    {
+        CCFadeTo *fadeIn = [CCFadeTo actionWithDuration:0.3 opacity:127];
+        CCFadeTo *fadeOut = [CCFadeTo actionWithDuration:0.3 opacity:255];
+        
+        CCSequence *pulseSequence = [CCSequence actionOne:fadeIn two:fadeOut];
+        CCRepeatForever *repeat = [CCRepeatForever actionWithAction:pulseSequence];
+        [sprite runAction:repeat];
+    }
+    
+    return sprite;
 }
 
 - (void) dealloc

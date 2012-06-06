@@ -21,6 +21,8 @@
 }
 
 @property (nonatomic) int durability;
+@property (nonatomic) ccTime activatedTime;
+@property (nonatomic) BOOL runningOut;
 
 - (id) init:(NSString *)name colour:(NSString *)colour size:(CGSize)size;
 
@@ -43,6 +45,8 @@
 - (NSUInteger) bonusCount;
 - (void) addBonus:(Bonus *)bonus;
 - (NSArray *) activeBonusItems;
-- (void) removeShakeIfAvailable;
+- (BOOL) removeShakeIfAvailable;
+- (int) activeMultiplier;
+- (void) removeMultipler:(Bonus *)bonus;
 
 @end

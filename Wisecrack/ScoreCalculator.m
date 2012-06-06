@@ -7,6 +7,8 @@
 //
 
 #import "ScoreCalculator.h"
+#import "GameObjectCache.h"
+#import "BonusManager.h"
 
 @implementation ScoreCalculator
 
@@ -16,6 +18,10 @@
     for (GameItem * word in words) {
         score += word.size.width * 10;
     }
+    
+    GameObjectCache * sharedCache = [GameObjectCache sharedGameObjectCache];
+    BonusManager * bm = [sharedCache bonusManager];
+    score *= [bm activeMultiplier];
     
     return score;
 }

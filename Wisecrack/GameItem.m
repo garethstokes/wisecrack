@@ -37,7 +37,14 @@
     GameItem * copy;
     if (bonus)
     {
-        copy = [[Bonus alloc] init:name colour:colour size:size];
+        Bonus * bc = [[Bonus alloc] init:name colour:colour size:size];
+        Bonus * b = (Bonus *)self;
+        
+        [bc setRunningOut:[b runningOut]];
+        [bc setDurability:[b durability]];
+        [bc setActivatedTime:[b activatedTime]];
+        
+        copy = bc;        
     }
     else 
     {
