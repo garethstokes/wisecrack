@@ -50,7 +50,7 @@ static int kGroupMinSize = 2;
 
 static int kNumberOfColours = 5;
 static int kTimeout = 12;
-static int kPowerUpChance = 5;
+static int kPowerUpChance = 20;
 
 #endif // __GAME_CONFIG_H
 

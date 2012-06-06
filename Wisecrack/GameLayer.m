@@ -47,6 +47,12 @@
         [self schedule:@selector(step:)];
         [self schedule:@selector(stepScoreTimer:) interval:1];
         [self schedule:@selector(updateBoard:) interval:3.0];
+        
+        NSLog(@"scheduling enabling powerups in 45 seconds");
+        [self schedule:@selector(enable_power_ups) interval:30];
+        
+        [board disablePowerUps];
+        
         ready = YES;
         shake_once = false;
     }
@@ -291,7 +297,7 @@
 
 - (void) enable_power_ups
 {
-    [self unschedule:@selector(enable_power_ups)];
+    //[self unschedule:@selector(enable_power_ups)];
     [board enablePowerUps];
 }
 
@@ -310,12 +316,6 @@
         mutex = false;
         
         if ( [bonus durability] >= 0 ) return;
-    }
-    
-    if ([button.word bonus]) 
-    {
-        NSLog(@"scheduling enabling powerups in 45 seconds");
-        [self schedule:@selector(enable_power_ups) interval:45];
     }
     
     NSLog(@"fading out... %@", [button.word hash]);
@@ -375,9 +375,6 @@
             [bm removeShakeIfAvailable];
             [self wipe];
             [self schedule:@selector(shakeDelay) interval:5];
-            
-            ink = kTimeout;
-            [[[GameObjectCache sharedGameObjectCache] hudLayer] updateInk:ink];
         }
         
     }
@@ -385,11 +382,19 @@
 
 - (void) wipe
 {
+    NSMutableArray * words = [NSMutableArray array];
     for (CCMenuItemImage *button in [menu children]) // loop through the ui buttons
     {
         if ([button isDirty]) continue;
         [self removeButton:button withDelay:0.2];
+        [words addObject:button.word];
     }
+    
+    ScoreCalculator *scoreCalculator = [[[ScoreCalculator alloc] init] autorelease];
+    score += [scoreCalculator calculate:words];
+    
+    ink = kTimeout;
+    [[[GameObjectCache sharedGameObjectCache] hudLayer] updateInk:ink];
 }
 
 - (void) dealloc

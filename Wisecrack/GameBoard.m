@@ -209,6 +209,7 @@
 
 - (bool) hasUnactivatedBonus:(Bonus *)bonus
 {
+    int count = 0;
     for (int i = 0; i < kBoardRows; i++) 
     {
         NSMutableArray* row = [rows objectAtIndex:i];
@@ -217,17 +218,22 @@
             if ( [[word name] isEqualToString:[bonus name]] )
             {
                 // yep, found one. 
-                return true;
+                count++;
             }
         }
     }
     
-    return false;
+    return count > 3;
 }
 
 - (void) enablePowerUps
 {
     [self setWithBonus:YES];
+}
+
+- (void) disablePowerUps
+{
+    [self setWithBonus:NO];
 }
 
 - (void) fill

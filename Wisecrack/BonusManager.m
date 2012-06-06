@@ -39,8 +39,8 @@
         }
         else if ( [name isEqualToString:@"brick"] )
         {
-            [self setKey_up: @"bricks_2_units_a" ];
-            [self setKey_down: @"bricks_2_units_a" ];
+            [self setKey_up: [NSString stringWithFormat: @"bricks_%d_units_a", (int)size.width] ];
+            [self setKey_down: [NSString stringWithFormat: @"bricks_%d_units_a", (int)size.width] ];
             
             loader = [[SpriteHelperLoader alloc] initWithContentOfFile:@"bonus_brick"];
             
@@ -59,13 +59,13 @@
     {
         if ( durability == 2 )
         {
-            [self setKey_up: @"bricks_2_units_b" ];
-            [self setKey_down: @"bricks_2_units_b" ];
+            [self setKey_up: [NSString stringWithFormat: @"bricks_%d_units_b", (int)size.width] ];
+            [self setKey_down: [NSString stringWithFormat: @"bricks_%d_units_b", (int)size.width] ];
         }
         else if ( durability == 1 )
         {
-            [self setKey_up: @"bricks_2_units_c" ];
-            [self setKey_down: @"bricks_2_units_c" ];
+            [self setKey_up: [NSString stringWithFormat: @"bricks_%d_units_c", (int)size.width] ];
+            [self setKey_down: [NSString stringWithFormat: @"bricks_%d_units_c", (int)size.width] ];
         }
     }
     
@@ -137,9 +137,11 @@
 
 + (Bonus *) brick
 {
+    int width = random() % 3;
+    if (width == 0) width = 1;
     Bonus * b = [[[Bonus alloc] init:@"brick" 
                               colour:@"double rainbow"
-                                size:CGSizeMake(2, 1)] autorelease];
+                                size:CGSizeMake(width, 1)] autorelease];
     return b;
 }
 

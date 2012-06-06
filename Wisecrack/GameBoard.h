@@ -45,4 +45,5 @@
 
 - (bool) hasUnactivatedBonus:(Bonus *)bonus;
 - (void) enablePowerUps;
+- (void) disablePowerUps;
 @end

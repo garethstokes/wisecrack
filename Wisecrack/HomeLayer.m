@@ -35,6 +35,21 @@
         GameKitHelper * gk = [GameKitHelper sharedGameKitHelper];
         gk.delegate = self;
         [gk authenticateLocalPlayer];
+        
+        // button
+        CCSprite *playOn = [loader spriteWithUniqueName:@"play_on" atPosition:ccp(0, 0) inLayer:nil];
+        CCSprite *playOff = [loader spriteWithUniqueName:@"play_off" atPosition:ccp(0, 0) inLayer:nil];
+        
+        CCMenuItemImage *button = [CCMenuItemImage 
+                                   itemFromNormalSprite: playOff
+                                   selectedSprite: playOn
+                                   target:self 
+                                   selector:@selector(play:)];
+        
+        
+        CCMenu *menu = [CCMenu menuWithItems: button, nil];
+        [menu setPosition:CGPointMake(160, 80)];
+        [self addChild:menu z:10];
     }
     
     return self;
@@ -58,21 +73,6 @@
 
         [[SettingsManager sharedSettingsManager] setValue:@"GameCenter" newString:@"YES"];
     }   
-    
-    // button
-    CCSprite *playOn = [loader spriteWithUniqueName:@"play_on" atPosition:ccp(0, 0) inLayer:nil];
-    CCSprite *playOff = [loader spriteWithUniqueName:@"play_off" atPosition:ccp(0, 0) inLayer:nil];
-    
-    CCMenuItemImage *button = [CCMenuItemImage 
-                               itemFromNormalSprite: playOff
-                               selectedSprite: playOn
-                               target:self 
-                               selector:@selector(play:)];
-    
-    
-    CCMenu *menu = [CCMenu menuWithItems: button, nil];
-    [menu setPosition:CGPointMake(160, 80)];
-    [self addChild:menu z:10];
 }
 
 -(void) onFriendListReceived:(NSArray*)friends
