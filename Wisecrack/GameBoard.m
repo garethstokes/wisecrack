@@ -276,7 +276,7 @@
             { 
                 // i want you to think about this code
                 // because i was very drunk when i wrote it. 
-                GameItem *w = [[GameItem alloc] init];
+                GameItem *w = [[[GameItem alloc] init] autorelease];
                 [w setSize:CGSizeMake(1, 1)];
                 if ([self fits:w offset:x row:i +1]) continue;
                 

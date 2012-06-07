@@ -9,6 +9,7 @@
 #import "ScoreCard.h"
 #import "HomeScene.h"
 #import "SettingsManager.h"
+#import "MetricMonster.h"
 
 @implementation ScoreCard
 
@@ -96,6 +97,7 @@
         [scoreLabel setPosition:ccp(size.width /2, (size.height /2) + 125)];
         [self addChild:scoreLabel];
         
+        [[MetricMonster monster] queue:@"ScoreCard"];
     }
     return self;
 }

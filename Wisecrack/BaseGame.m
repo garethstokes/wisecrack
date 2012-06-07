@@ -55,7 +55,7 @@
     NSString * size = [key substringFromIndex:range.location +1];
     
     int i = random() % kNumberOfColours;
-    NSString* colour; 
+    NSString* colour = @"green"; 
     if (i == 0) colour = @"green";
     if (i == 1) colour = @"red";
     if (i == 2) colour = @"blue";

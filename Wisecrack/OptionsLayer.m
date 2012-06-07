@@ -11,6 +11,7 @@
 #import "ScoreCard.h"
 #import "GameObjectCache.h"
 #import "GameLayer.h"
+#import "MetricMonster.h"
 
 @implementation OptionsLayer
 
@@ -59,6 +60,7 @@
         [menu alignItemsHorizontallyWithPadding:16];
         
         [self addChild:menu z:10];
+        [[MetricMonster monster] queue:@"OptionsLayer"];
     }
     return self;
 }
@@ -88,6 +90,7 @@
                           nil]];
     */
     [[[GameObjectCache sharedGameObjectCache] gameScene] removeChild:self cleanup:YES];
+    [[MetricMonster monster] queue:@"Replay"];
 }
 
 // Set the opacity of all of our children that support it

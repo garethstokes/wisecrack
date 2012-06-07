@@ -8,6 +8,7 @@
 
 #import "GameScene.h"
 #import "GameObjectCache.h"
+#import "MetricMonster.h"
 
 @implementation GameScene
 @synthesize background;
@@ -37,6 +38,8 @@
     [scene addChild:gameLayer z:10];
     [[GameObjectCache sharedGameObjectCache] addGameLayer:gameLayer];
     [gameLayer release];
+    
+    [[MetricMonster monster] queue:@"GameScene"];
     
     return scene;
 }
