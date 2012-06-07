@@ -13,6 +13,7 @@
 }
 
 @property (atomic, retain) NSMutableArray * keys;
+@property (nonatomic, copy) NSString *monsterFilePath;
 
 - (void) queue:(NSString *)key;
 - (void) send;

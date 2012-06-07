@@ -11,13 +11,17 @@
 
 @implementation MetricMonster
 
-@synthesize keys;
+@synthesize keys, monsterFilePath;
 
 - (id) init
 {
     if ( [super init] != nil )
     {
         [self setKeys:[NSMutableArray array]];
+        
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+        NSString *libraryDirectory = [paths objectAtIndex:0];
+        [self setMonsterFilePath:[libraryDirectory stringByAppendingPathComponent:@"MonsterInfo.plist"]];
     }
     
     return self;
@@ -71,12 +75,51 @@
     [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
 }
 
+- (void) registerForNotifications
+{
+    // setup a bunch of details on load
+    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithContentsOfFile:[self monsterFilePath]];
+    if(dict == nil){
+        dict = [NSMutableDictionary dictionary];
+    }
+    
+    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+    [center addObserver:self 
+               selector:@selector(applicationEnteredBackground:) 
+                   name:UIApplicationDidEnterBackgroundNotification object:nil];
+    
+    [center addObserver:self 
+               selector:@selector(applicationWillEnterForeground:) 
+                   name:UIApplicationWillEnterForegroundNotification object:nil];
+    
+    [center addObserver:self 
+               selector:@selector(applicationWillTerminate:) 
+                   name:UIApplicationWillTerminateNotification object:nil];
+}
+
+- (void) applicationEnteredBackground:(NSNotification*)notification
+{
+    [self queue:@"EnteringBackground"];
+    [self send];
+}
+
+- (void) applicationWillEnterForeground:(NSNotification*)notification
+{
+    
+}
+
+- (void) applicationWillTerminate:(NSNotification*)notification
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 + (MetricMonster *) monster {
     static dispatch_once_t pred;
     static MetricMonster * shared = nil;
     
     dispatch_once(&pred, ^{
         shared = [[MetricMonster alloc] init];
+        [shared registerForNotifications];
         [shared startTimer];
     });
     return shared;
