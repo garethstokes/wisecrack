@@ -12,6 +12,7 @@
 #import "GameItem.h"
 #import "ScoreCalculator.h"
 #import "BonusManager.h"
+#import "SettingsManager.h"
 
 @interface GameLayer : CCLayer {
     GameBoard * board;
@@ -23,7 +24,7 @@
     bool shake_once;
     
     bool mutex;
-    ccTime gameTime; 
+    ccTime gameTime;
 }
 
 @property (nonatomic, retain) GameBoard* board;
@@ -43,5 +44,6 @@
 - (void) shakeDelay;
 - (void) wipe;
 - (void) enable_power_ups;
+- (void) removeChain;
 
 @end

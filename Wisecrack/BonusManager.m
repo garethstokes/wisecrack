@@ -57,6 +57,13 @@
             
             loader = [[SpriteHelperLoader alloc] initWithContentOfFile:@"bonus_multiply"];
         }
+        else if ( [name isEqualToString:@"chain"] )
+        {
+            [self setKey_up: [NSString stringWithFormat: @"%@_bonus_chaining_1_up", colour] ];
+            [self setKey_down: [NSString stringWithFormat: @"%@_bonus_chaining_1_down", colour] ];
+            
+            loader = [[SpriteHelperLoader alloc] initWithContentOfFile:@"bonus_chaining"];
+        }
         
         bonus = YES;
     }
@@ -95,6 +102,9 @@
     
     if ( [[self name] isEqualToString:@"multiplier"] )
         return [NSString stringWithFormat:@"top_bar_x2_%@_icon", colour];
+    
+    if ( [[self name] isEqualToString:@"chain"] )
+        return @"top_bar_chain_icon_";
     
     //TODO: keep going with other types, this default will do
     //      for now. 
@@ -143,8 +153,6 @@
 
 + (Bonus *) random:(NSString *)colour
 {
-    //return [Bonus multiplier:colour];
-    
     int value = random() % 100;
     if (value <= 50)
     {
@@ -152,9 +160,10 @@
     }
     else 
     {
-        int i = random() % 2;
+        int i = random() % 3;
         if (i == 1) return [Bonus shake:colour];
         if (i == 2) return [Bonus multiplier:colour];
+        if (i == 3) return [Bonus chain:colour];
         
         // default
         return [Bonus multiplier:colour];
@@ -196,12 +205,11 @@
     return b;
 }
 
-+ (Bonus *) chain
++ (Bonus *) chain:(NSString *)colour
 {
-    Bonus * b = [[[Bonus alloc] init] autorelease];
-    [b setSize:CGSizeMake(1, 1)];
-    [b setName:@"chain"];
-    [b setColour:@"double rainbow"];
+    Bonus * b = [[[Bonus alloc] init:@"chain" 
+                              colour:colour 
+                                size:CGSizeMake(1, 1)] autorelease];
     return b;
 }
 

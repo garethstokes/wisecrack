@@ -8,6 +8,7 @@
 
 #import "GameBoard.h"
 #import "TrueFriendsGame.h"
+#import "SettingsManager.h"
 
 @implementation GameBoard
 @synthesize size;
@@ -128,7 +129,11 @@
         [singleItem setValue:word forKey:[word hash]];
     }
     
-    return [results count] > 0;
+    NSString * chaining = [[SettingsManager sharedSettingsManager] getString:@"Chain" withDefault:@"NO"];
+    if ([chaining isEqualToString:@"NO"])
+    {
+        return [results count] > 0;
+    }
     
     for (GameItem * matchedWord in [[colourMatches copy] allValues])
     {

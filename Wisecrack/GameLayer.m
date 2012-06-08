@@ -71,7 +71,8 @@
     BonusManager * bm = [[GameObjectCache sharedGameObjectCache] bonusManager];
     for (Bonus * bonus in [bm activeBonusItems]) 
     {
-        if ( [bonus.name isEqualToString:@"multiplier"] )
+        if ( [bonus.name isEqualToString:@"multiplier"] ||
+             [bonus.name isEqualToString:@"chain"] )
         {
             ccTime bonusTime = [bonus activatedTime];
             
@@ -307,9 +308,21 @@
                 Bonus * bonus = (Bonus *)button.word;
                 [bonus setActivatedTime:gameTime];
                 [bonus activate];
+                
+                if ( [bonus.name isEqualToString:@"chain"] )
+                {
+                    [[SettingsManager sharedSettingsManager] setValue:@"YES" newString:@"Chain"];
+                    [self schedule:@selector(removeChain) interval:60];
+                }
             }
         }
     }
+}
+
+- (void) removeChain
+{
+    [self unschedule:@selector(removeChain)];
+    [[SettingsManager sharedSettingsManager] setValue:@"NO" newString:@"Chain"];
 }
 
 - (void) unsuccessfulClick

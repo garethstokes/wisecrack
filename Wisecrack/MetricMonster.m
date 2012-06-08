@@ -66,7 +66,7 @@
     }
 
     _timer = [[NSTimer alloc] initWithFireDate:[NSDate date] 
-                                      interval:10 
+                                      interval:60 
                                         target:self 
                                       selector:@selector(send) 
                                       userInfo:nil 

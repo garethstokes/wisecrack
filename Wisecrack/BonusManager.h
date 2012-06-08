@@ -33,7 +33,7 @@
 + (Bonus *) shake:(NSString *)colour;
 + (Bonus *) swipe:(NSString *)colour;
 + (Bonus *) multiplier:(NSString *)colour;
-+ (Bonus *) chain;
++ (Bonus *) chain:(NSString *)colour;
 + (Bonus *) brick;
 
 @end
