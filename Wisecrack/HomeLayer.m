@@ -10,6 +10,7 @@
 #import "SpriteHelperLoader.h"
 #import "GameScene.h"
 #import "HomeScene.h"
+#import "WisecrackConfig.h"
 
 @implementation HomeLayer
 
@@ -50,9 +51,26 @@
         CCMenu *menu = [CCMenu menuWithItems: button, nil];
         [menu setPosition:CGPointMake(160, 80)];
         [self addChild:menu z:10];
+        
+        // CONFIG VERSION
+        _version = [[CCLabelAtlas labelWithString:@"" 
+                                      charMapFile:@"orange_numbers.png" 
+                                        itemWidth:10 
+                                       itemHeight:16 
+                                     startCharMap:'.'] retain];
+        [_version setPosition:ccp(200, 20)];
+        [self addChild:_version z:20];
+        
+        [self schedule:@selector(updateVersion) interval:0.5];
     }
     
     return self;
+}
+
+- (void) updateVersion
+{
+    int version = [[WisecrackConfig config] version];
+    [_version setString:[NSString stringWithFormat:@"version: %d", version]];
 }
 
 - (void) play:(id) sender
@@ -159,7 +177,8 @@
 
 - (void) dealloc
 {
-    //[loader release];
+    //if (_version) [_version dealloc];
+
     [super dealloc];
 }
 

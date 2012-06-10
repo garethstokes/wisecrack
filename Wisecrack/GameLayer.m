@@ -9,6 +9,7 @@
 #import "GameLayer.h"
 #import "GameObjectCache.h"
 #import "ScoreCard.h"
+#import "WisecrackConfig.h"
 
 @implementation GameLayer
 @synthesize board;
@@ -56,6 +57,7 @@
         gameTime = 0;
         ready = YES;
         shake_once = false;
+        [[SettingsManager sharedSettingsManager] setValue:@"NO" newString:@"Chain"];
     }
     
     return self;
@@ -182,12 +184,12 @@
             [buttons addObject:button];
             [button setOpacity:0];
             
-            int max = 2;
+            int max = [[WisecrackConfig config] buttonLoadDelay];
             float randomNum = (((float) (arc4random() % ((unsigned)RAND_MAX + 1)) / RAND_MAX) * max) + 0;
             NSLog(@"randomNum: %f", randomNum);
             [button runAction:[CCSequence actions:
                                [CCDelayTime actionWithDuration:randomNum], 
-                               [CCFadeIn actionWithDuration:2.0f],
+                               [CCFadeIn actionWithDuration:[[WisecrackConfig config] buttonLoadDuration]],
                                nil]];
         }
         
@@ -224,7 +226,7 @@
         
         if (bonus.durability < 0)
         {
-            [self removeGameItem:word withDelay:0.5];
+            [self removeGameItem:word withDelay:[[WisecrackConfig config] buttonLoadDelay]];
             ink = kTimeout;
             [[[GameObjectCache sharedGameObjectCache] hudLayer] updateInk:ink];
             return;
@@ -272,7 +274,7 @@
     */
     
     // remove matched words
-    ccTime delay = 0.5;
+    ccTime delay = [[WisecrackConfig config] buttonLoadDelay];
     for (NSDictionary * wordMatches in matches)
     {
         for (GameItem *w in [wordMatches allValues]) // loop through all the matches
@@ -280,7 +282,7 @@
             [self removeGameItem:w withDelay:delay];
         }
         
-        delay += 0.5;
+        delay += [[WisecrackConfig config] buttonLoadDelay];
     }
     
     mutex = true;
@@ -388,8 +390,8 @@
     
     [button setNormalImage:sprite2];
     [button runAction:[CCSequence actions:
-                       [CCDelayTime actionWithDuration:delay],
-                       [CCFadeOut actionWithDuration:0.5],
+                       [CCDelayTime actionWithDuration:[[WisecrackConfig config] buttonRemoveDelay] ],
+                       [CCFadeOut actionWithDuration:[[WisecrackConfig config] buttonRemoveDuration] ],
                        [CCCallFuncO actionWithTarget:self selector:@selector(endRemoveButton:) object:button], 
                        nil]];
 }

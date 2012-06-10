@@ -38,6 +38,18 @@ static SettingsManager* _sharedSettingsManager = nil;
     return withDefault;
 }
 
+-(float)getFloat:(NSString*)value {
+	return [[settings objectForKey:value] floatValue];
+}
+
+-(float)getFloat:(NSString*)value withDefault:(float)withDefault{
+    NSString *storedString = [settings objectForKey:value];
+    if (storedString != nil)
+        return [storedString floatValue];
+    else
+        return withDefault;
+}
+
 -(void)setValue:(NSString*)value newString:(NSString *)aValue {	
 	[settings setObject:aValue forKey:value];
 }
@@ -46,15 +58,19 @@ static SettingsManager* _sharedSettingsManager = nil;
 	[settings setObject:[NSString stringWithFormat:@"%i",aValue] forKey:value];
 }
 
+-(void)setValue:(NSString*)value newFloat:(float)aValue {
+	[settings setObject:[NSString stringWithFormat:@"%f",aValue] forKey:value];
+}
+
 -(void)save
 {
-	[[NSUserDefaults standardUserDefaults] setObject:settings forKey:@"Greedy"];
+	[[NSUserDefaults standardUserDefaults] setObject:settings forKey:@"Wisecrack"];
 	[[NSUserDefaults standardUserDefaults] synchronize];	
 }
 
 -(void)load
 {
-	[settings addEntriesFromDictionary:[[NSUserDefaults standardUserDefaults] objectForKey:@"Greedy"]];
+	[settings addEntriesFromDictionary:[[NSUserDefaults standardUserDefaults] objectForKey:@"Wisecrack"]];
 }
 
 -(void)logSettings
@@ -71,7 +87,9 @@ static SettingsManager* _sharedSettingsManager = nil;
 	{
 		if (!_sharedSettingsManager)
 			[[[self alloc] init] autorelease];
-    
+        
+        [_sharedSettingsManager load];
+        [_sharedSettingsManager logSettings];
 		return _sharedSettingsManager;
 	}
   

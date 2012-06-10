@@ -14,6 +14,8 @@
 @interface HomeLayer : CCLayer<GameKitHelperProtocol> {
     SpriteHelperLoader *loader;
     SpriteHelperLoader *backgroundLoader;
+    
+    CCLabelAtlas * _version;
 }
 
 @end

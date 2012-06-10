@@ -189,6 +189,7 @@
 		E73ECA0C14E3BA20001B1980 /* GameItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E73ECA0B14E3BA20001B1980 /* GameItem.m */; };
 		E73ECA0F14E3BB5D001B1980 /* GameBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = E73ECA0E14E3BB5D001B1980 /* GameBoard.m */; };
 		E73ECA1314E3BE8F001B1980 /* PrototypeGame.m in Sources */ = {isa = PBXBuildFile; fileRef = E73ECA1214E3BE8F001B1980 /* PrototypeGame.m */; };
+		E73F745415824DC200F779B1 /* WisecrackConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E73F745315824DC200F779B1 /* WisecrackConfig.m */; };
 		E7458731156F43BB00F11275 /* BonusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7458730156F43BB00F11275 /* BonusManager.m */; };
 		E7458736156F563500F11275 /* bonus_shake-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E7458733156F563500F11275 /* bonus_shake-hd.png */; };
 		E7458737156F563500F11275 /* bonus_shake.png in Resources */ = {isa = PBXBuildFile; fileRef = E7458734156F563500F11275 /* bonus_shake.png */; };
@@ -203,6 +204,8 @@
 		E750DCD9157F58AE004166F1 /* bonus_multiply-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E750DCD6157F58AE004166F1 /* bonus_multiply-hd.png */; };
 		E750DCDA157F58AE004166F1 /* bonus_multiply.png in Resources */ = {isa = PBXBuildFile; fileRef = E750DCD7157F58AE004166F1 /* bonus_multiply.png */; };
 		E750DCDB157F58AE004166F1 /* bonus_multiply.pshs in Resources */ = {isa = PBXBuildFile; fileRef = E750DCD8157F58AE004166F1 /* bonus_multiply.pshs */; };
+		E76031651583860700FA92B2 /* orange_numbers-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E76031631583860700FA92B2 /* orange_numbers-hd.png */; };
+		E76031661583860700FA92B2 /* orange_numbers.png in Resources */ = {isa = PBXBuildFile; fileRef = E76031641583860700FA92B2 /* orange_numbers.png */; };
 		E76594E2156E54DB00B2EFFC /* GDMaskTo.m in Sources */ = {isa = PBXBuildFile; fileRef = E76594E1156E54DB00B2EFFC /* GDMaskTo.m */; };
 		E766438E152D79450065E64A /* hud-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E766438B152D79450065E64A /* hud-hd.png */; };
 		E766438F152D79450065E64A /* hud.png in Resources */ = {isa = PBXBuildFile; fileRef = E766438C152D79450065E64A /* hud.png */; };
@@ -606,6 +609,8 @@
 		E73ECA0E14E3BB5D001B1980 /* GameBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBoard.m; sourceTree = "<group>"; };
 		E73ECA1114E3BE8F001B1980 /* PrototypeGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypeGame.h; sourceTree = "<group>"; };
 		E73ECA1214E3BE8F001B1980 /* PrototypeGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrototypeGame.m; sourceTree = "<group>"; };
+		E73F745215824DC200F779B1 /* WisecrackConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WisecrackConfig.h; sourceTree = "<group>"; };
+		E73F745315824DC200F779B1 /* WisecrackConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WisecrackConfig.m; sourceTree = "<group>"; };
 		E745872F156F43BB00F11275 /* BonusManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BonusManager.h; sourceTree = "<group>"; };
 		E7458730156F43BB00F11275 /* BonusManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BonusManager.m; sourceTree = "<group>"; };
 		E7458733156F563500F11275 /* bonus_shake-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bonus_shake-hd.png"; path = "Resources/bonus_shake-hd.png"; sourceTree = "<group>"; };
@@ -623,6 +628,8 @@
 		E750DCD6157F58AE004166F1 /* bonus_multiply-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bonus_multiply-hd.png"; path = "Resources/bonus_multiply-hd.png"; sourceTree = "<group>"; };
 		E750DCD7157F58AE004166F1 /* bonus_multiply.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bonus_multiply.png; path = Resources/bonus_multiply.png; sourceTree = "<group>"; };
 		E750DCD8157F58AE004166F1 /* bonus_multiply.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = bonus_multiply.pshs; path = Resources/bonus_multiply.pshs; sourceTree = "<group>"; };
+		E76031631583860700FA92B2 /* orange_numbers-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "orange_numbers-hd.png"; path = "Resources/orange_numbers-hd.png"; sourceTree = "<group>"; };
+		E76031641583860700FA92B2 /* orange_numbers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = orange_numbers.png; path = Resources/orange_numbers.png; sourceTree = "<group>"; };
 		E76594E0156E54DB00B2EFFC /* GDMaskTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDMaskTo.h; sourceTree = "<group>"; };
 		E76594E1156E54DB00B2EFFC /* GDMaskTo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDMaskTo.m; sourceTree = "<group>"; };
 		E766438B152D79450065E64A /* hud-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hud-hd.png"; path = "Resources/hud-hd.png"; sourceTree = "<group>"; };
@@ -801,6 +808,8 @@
 		E73EC83414E3B7F9001B1980 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E76031631583860700FA92B2 /* orange_numbers-hd.png */,
+				E76031641583860700FA92B2 /* orange_numbers.png */,
 				E7B4007515808206006B6DE8 /* bonus_chaining-hd.png */,
 				E7B4007615808206006B6DE8 /* bonus_chaining.png */,
 				E7B4007715808206006B6DE8 /* bonus_chaining.pshs */,
@@ -1299,6 +1308,8 @@
 				E76594E1156E54DB00B2EFFC /* GDMaskTo.m */,
 				E7B4003E15802BF9006B6DE8 /* MetricMonster.h */,
 				E7B4003F15802BF9006B6DE8 /* MetricMonster.m */,
+				E73F745215824DC200F779B1 /* WisecrackConfig.h */,
+				E73F745315824DC200F779B1 /* WisecrackConfig.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1491,6 +1502,8 @@
 				E7B4007815808206006B6DE8 /* bonus_chaining-hd.png in Resources */,
 				E7B4007915808206006B6DE8 /* bonus_chaining.png in Resources */,
 				E7B4007A15808206006B6DE8 /* bonus_chaining.pshs in Resources */,
+				E76031651583860700FA92B2 /* orange_numbers-hd.png in Resources */,
+				E76031661583860700FA92B2 /* orange_numbers.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1667,6 +1680,7 @@
 				E7B4006D1580399C006B6DE8 /* NSArray+MessagePack.m in Sources */,
 				E7B4006E1580399C006B6DE8 /* NSData+MessagePack.m in Sources */,
 				E7B4006F1580399C006B6DE8 /* NSDictionary+MessagePack.m in Sources */,
+				E73F745415824DC200F779B1 /* WisecrackConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

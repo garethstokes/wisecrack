@@ -8,6 +8,7 @@
 
 #import "BonusManager.h"
 #import "GameObjectCache.h"
+#import "WisecrackConfig.h"
 
 @implementation Bonus
 
@@ -154,7 +155,7 @@
 + (Bonus *) random:(NSString *)colour
 {
     int value = random() % 100;
-    if (value <= 50)
+    if (value <= [[WisecrackConfig config] chanceBrick])
     {
         return [Bonus brick];
     }

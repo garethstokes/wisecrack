@@ -34,11 +34,16 @@ int myInt = [[SettingsManager sharedSettingsManager] getInt:@"challenges_won"];
 
 -(void)setValue:(NSString*)value newString:(NSString *)aValue;
 -(void)setValue:(NSString*)value newInt:(int)aValue;
+-(void)setValue:(NSString*)value newFloat:(float)aValue;
 
 -(NSString *)getString:(NSString*)value;
 -(NSString *)getString:(NSString*)value withDefault:(NSString *)withDefault;
+
 -(int)getInt:(NSString*)value;
 -(int)getInt:(NSString*)value withDefault:(int)withDefault;
+
+-(float)getFloat:(NSString*)value;
+-(float)getFloat:(NSString*)value withDefault:(float)withDefault;
 
 -(void)save;
 -(void)load;

@@ -8,6 +8,7 @@
 
 #import "BaseGame.h"
 #import "BonusManager.h"
+#import "WisecrackConfig.h"
 
 @implementation BaseGame
 @synthesize wordsInPlay;
@@ -54,7 +55,7 @@
     NSString * name = [key substringToIndex:range.location];
     NSString * size = [key substringFromIndex:range.location +1];
     
-    int i = random() % kNumberOfColours;
+    int i = random() % [[WisecrackConfig config] gameColours];
     NSString* colour = @"green"; 
     if (i == 0) colour = @"green";
     if (i == 1) colour = @"red";
@@ -63,7 +64,7 @@
     if (i == 4) colour = @"grey";
     
     int powerup = random() % 100;
-    if (withBonus && powerup < kPowerUpChance)
+    if (withBonus && powerup < [[WisecrackConfig config] chanceBonus])
     {
         NSLog(@"BONUS!!");
         return [Bonus random:colour];
