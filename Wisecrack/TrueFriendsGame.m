@@ -7,6 +7,7 @@
 //
 
 #import "TrueFriendsGame.h"
+#import "WisecrackConfig.h"
 
 @implementation TrueFriendsGame
 
@@ -86,14 +87,31 @@
         
         wordsInPlay = [NSMutableArray array];
         
-        NSIndexSet * indexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, 2)];
-        [wordsInPlay addObjectsFromArray:[sw objectsAtIndexes:indexSet]];
-        [wordsInPlay addObjectsFromArray:[mw objectsAtIndexes:indexSet]];
+        int gameWords = [[WisecrackConfig config] gameWords];
+        int count = 0;
+        
+        gameWords /= 3;
+        
+        NSIndexSet * indexSet;
+        indexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, gameWords)];
         [wordsInPlay addObjectsFromArray:[lw objectsAtIndexes:indexSet]];
-
-        [sw removeObjectsAtIndexes:indexSet];
-        [mw removeObjectsAtIndexes:indexSet];
         [lw removeObjectsAtIndexes:indexSet];
+        count += gameWords;
+        
+        [wordsInPlay addObjectsFromArray:[mw objectsAtIndexes:indexSet]];
+        [mw removeObjectsAtIndexes:indexSet];
+        count += gameWords;
+        
+        [wordsInPlay addObjectsFromArray:[sw objectsAtIndexes:indexSet]];
+        [sw removeObjectsAtIndexes:indexSet];
+        count += gameWords;
+        if (count < [[WisecrackConfig config] gameWords])
+        {
+            gameWords = [[WisecrackConfig config] gameWords] - count;
+            indexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, gameWords)];
+            [wordsInPlay addObjectsFromArray:[sw objectsAtIndexes:indexSet]];
+            [sw removeObjectsAtIndexes:indexSet];
+        }    
     }
     
     return self;

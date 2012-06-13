@@ -7,7 +7,6 @@
 //
 
 #import "InkWell.h"
-#import "GDMaskTo.h"
 
 @implementation InkWell
 

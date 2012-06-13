@@ -12,11 +12,14 @@
     NSMutableData *_receivedData;
 }
 
+@property (nonatomic) int order;
 @property (nonatomic) int version;
 
+@property (nonatomic) int waveLength;
 @property (nonatomic) int gameWords;
 @property (nonatomic) int gameColours;
 
+@property (nonatomic) int bonusRespawn;
 @property (nonatomic) int chanceBonus;
 @property (nonatomic) int chanceBrick;
 
@@ -26,10 +29,28 @@
 @property (nonatomic) float buttonRemoveDelay;
 @property (nonatomic) float buttonRemoveDuration;
 
+- (id) init:(int)o;
 - (void) parse:(NSData *)data;
-- (void) update;
 - (void) persist;
 
 + (WisecrackConfig *) config;
+@end
+
+@interface WisecrackConfigSet : NSObject {
+    NSMutableData * _receivedData;
+}
+
+@property (nonatomic) int wave;
+@property (nonatomic) int version;
+
+@property (nonatomic, retain) WisecrackConfig * one;
+@property (nonatomic, retain) WisecrackConfig * two;
+@property (nonatomic, retain) WisecrackConfig * three;
+
+- (WisecrackConfig *) current;
+- (void) updateFromServer;
+- (void) incrementWave;
+
++ (WisecrackConfigSet *) configSet;
 
 @end

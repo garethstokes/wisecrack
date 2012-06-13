@@ -46,7 +46,6 @@ static int kBoardColumns = 9;
 static int kBoardRows = 12;
 static int kUnitWidth = 34;
 static int kUnitHeight = 36;
-static int kGroupMinSize = 2;
 
 static int kTimeout = 12;
 

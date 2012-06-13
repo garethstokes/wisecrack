@@ -206,7 +206,6 @@
 		E750DCDB157F58AE004166F1 /* bonus_multiply.pshs in Resources */ = {isa = PBXBuildFile; fileRef = E750DCD8157F58AE004166F1 /* bonus_multiply.pshs */; };
 		E76031651583860700FA92B2 /* orange_numbers-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E76031631583860700FA92B2 /* orange_numbers-hd.png */; };
 		E76031661583860700FA92B2 /* orange_numbers.png in Resources */ = {isa = PBXBuildFile; fileRef = E76031641583860700FA92B2 /* orange_numbers.png */; };
-		E76594E2156E54DB00B2EFFC /* GDMaskTo.m in Sources */ = {isa = PBXBuildFile; fileRef = E76594E1156E54DB00B2EFFC /* GDMaskTo.m */; };
 		E766438E152D79450065E64A /* hud-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E766438B152D79450065E64A /* hud-hd.png */; };
 		E766438F152D79450065E64A /* hud.png in Resources */ = {isa = PBXBuildFile; fileRef = E766438C152D79450065E64A /* hud.png */; };
 		E7664390152D79450065E64A /* hud.pshs in Resources */ = {isa = PBXBuildFile; fileRef = E766438D152D79450065E64A /* hud.pshs */; };
@@ -630,8 +629,6 @@
 		E750DCD8157F58AE004166F1 /* bonus_multiply.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = bonus_multiply.pshs; path = Resources/bonus_multiply.pshs; sourceTree = "<group>"; };
 		E76031631583860700FA92B2 /* orange_numbers-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "orange_numbers-hd.png"; path = "Resources/orange_numbers-hd.png"; sourceTree = "<group>"; };
 		E76031641583860700FA92B2 /* orange_numbers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = orange_numbers.png; path = Resources/orange_numbers.png; sourceTree = "<group>"; };
-		E76594E0156E54DB00B2EFFC /* GDMaskTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDMaskTo.h; sourceTree = "<group>"; };
-		E76594E1156E54DB00B2EFFC /* GDMaskTo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDMaskTo.m; sourceTree = "<group>"; };
 		E766438B152D79450065E64A /* hud-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hud-hd.png"; path = "Resources/hud-hd.png"; sourceTree = "<group>"; };
 		E766438C152D79450065E64A /* hud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hud.png; path = Resources/hud.png; sourceTree = "<group>"; };
 		E766438D152D79450065E64A /* hud.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = hud.pshs; path = Resources/hud.pshs; sourceTree = "<group>"; };
@@ -1304,8 +1301,6 @@
 				E778CDC5156E3AF3006AA82A /* InkWell.m */,
 				E778CDC8156E43AB006AA82A /* ClippingNode.h */,
 				E778CDC9156E43AB006AA82A /* ClippingNode.m */,
-				E76594E0156E54DB00B2EFFC /* GDMaskTo.h */,
-				E76594E1156E54DB00B2EFFC /* GDMaskTo.m */,
 				E7B4003E15802BF9006B6DE8 /* MetricMonster.h */,
 				E7B4003F15802BF9006B6DE8 /* MetricMonster.m */,
 				E73F745215824DC200F779B1 /* WisecrackConfig.h */,
@@ -1666,7 +1661,6 @@
 				E70A9508153A488400F6293E /* BaseGame.m in Sources */,
 				E778CDC6156E3AF3006AA82A /* InkWell.m in Sources */,
 				E778CDCA156E43AB006AA82A /* ClippingNode.m in Sources */,
-				E76594E2156E54DB00B2EFFC /* GDMaskTo.m in Sources */,
 				E7458731156F43BB00F11275 /* BonusManager.m in Sources */,
 				E70920B61574B88700BE3D6D /* GameKitHelper.m in Sources */,
 				E7B4004015802BF9006B6DE8 /* MetricMonster.m in Sources */,

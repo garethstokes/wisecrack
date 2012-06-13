@@ -166,6 +166,8 @@
         if (i == 2) return [Bonus multiplier:colour];
         if (i == 3) return [Bonus chain:colour];
         
+        //NSLog(@"random mod: %d", i);
+        
         // default
         return [Bonus multiplier:colour];
     }
@@ -313,7 +315,7 @@
         }
     }
     
-    NSLog(@"multipler: %d", multipler);
+    //NSLog(@"multipler: %d", multipler);
     return multipler;
 }
 

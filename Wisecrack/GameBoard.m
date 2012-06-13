@@ -109,7 +109,7 @@
 
 - (BOOL) matches:(GameItem *)word resultSet:(NSMutableArray *)results matchSize:(int)matchSize
 {
-    NSLog(@"matchSize: %d", matchSize);
+    //NSLog(@"matchSize: %d", matchSize);
     NSMutableDictionary * colourMatches = [NSMutableDictionary dictionary];
     [self matchingColours:word result:colourMatches];
     if ([[colourMatches allKeys] count] >= matchSize)
@@ -159,7 +159,7 @@
     
     for (GameItem *word in neighbours) 
     {
-        NSLog(@"%@", [word hash]);
+        //NSLog(@"%@", [word hash]);
         
         if (word.colour == item.colour || [word.name isEqualToString:@"brick"]) 
         {
@@ -273,7 +273,7 @@
             
             if ([self fits:word offset:x row:i +1]) 
             {
-                NSLog(@"fits: %@", [word hash]);
+                //NSLog(@"fits: %@", [word hash]);
                 if ([word bonus])
                     [self setWithBonus:NO];
             }
@@ -297,7 +297,7 @@
                 //len -= word.size.width;
                 [row addObject:word];
                 //NSLog(@"[ x => %d, width => %d, row => %d ]", word.offset, (int)word.size.width, word.row);
-                NSLog(@"adding: %@, x: %d", [word hash], x);
+                //NSLog(@"adding: %@, x: %d", [word hash], x);
             }
         }
         x = 1;

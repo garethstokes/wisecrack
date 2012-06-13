@@ -49,8 +49,13 @@
         [self schedule:@selector(stepScoreTimer:) interval:1];
         [self schedule:@selector(updateBoard:) interval:3.0];
         
+        int waveLength = [[WisecrackConfig config] waveLength];
+        NSLog(@"WaveLength: %d", waveLength);
+        [self schedule:@selector(nextWave) interval:waveLength];
+        
         NSLog(@"scheduling enabling powerups in 45 seconds");
-        [self schedule:@selector(enable_power_ups) interval:30];
+        int bonusRespawn = [[SettingsManager sharedSettingsManager] getInt:@"config.bonusRespawn" withDefault:30];
+        [self schedule:@selector(enable_power_ups) interval:bonusRespawn];
         
         [board disablePowerUps];
         
@@ -144,7 +149,7 @@
     
     for (CCMenuItemImage *button in itemsToDelete) 
     {
-        NSLog(@"clearButtons: %@", [button.word hash]);;
+        //NSLog(@"clearButtons: %@", [button.word hash]);;
         [menu removeChild:button cleanup:YES];
     }
 }
@@ -153,7 +158,7 @@
 {
     int count = 1;
     
-    NSLog(@"iterating through rows now: %d", [board.rows count]);
+    //NSLog(@"iterating through rows now: %d", [board.rows count]);
     for (NSArray *row in [board rows])
     {
         //NSLog(@"row number: %d", count);
@@ -177,7 +182,7 @@
             position.y = count * kUnitHeight;
             position.x = word.offset * kUnitWidth;
                     
-            NSLog(@"word being set: %@", [word hash]);
+            //NSLog(@"word being set: %@", [word hash]);
             [button setPosition:position];
             [button retain];
             [menu addChild:button];
@@ -186,7 +191,7 @@
             
             int max = [[WisecrackConfig config] buttonLoadDelay];
             float randomNum = (((float) (arc4random() % ((unsigned)RAND_MAX + 1)) / RAND_MAX) * max) + 0;
-            NSLog(@"randomNum: %f", randomNum);
+            //NSLog(@"randomNum: %f", randomNum);
             [button runAction:[CCSequence actions:
                                [CCDelayTime actionWithDuration:randomNum], 
                                [CCFadeIn actionWithDuration:[[WisecrackConfig config] buttonLoadDuration]],
@@ -369,7 +374,7 @@
         if ( [bonus durability] >= 0 ) return;
     }
     
-    NSLog(@"fading out... %@", [button.word hash]);
+    //NSLog(@"fading out... %@", [button.word hash]);
     [button setIsDirty:YES];
     
     CCParticleSystemQuad *sparkle = [CCParticleSystemQuad particleWithFile:@"starburst.plist"];
@@ -399,7 +404,7 @@
 - (void) endRemoveButton:(id)sender
 {
     CCMenuItemImage * button = (CCMenuItemImage *)sender;
-    NSLog(@"removing button: %@", [button.word hash]);
+    //NSLog(@"removing button: %@", [button.word hash]);
     
     [button setVisible:NO];
     [buttons removeObject:button];
@@ -457,6 +462,16 @@
     
     ink = kTimeout;
     [[[GameObjectCache sharedGameObjectCache] hudLayer] updateInk:ink];
+}
+
+- (void) nextWave
+{
+    [self unschedule:@selector(nextWave)];
+    [[WisecrackConfigSet configSet] incrementWave];
+    int waveLength = [[WisecrackConfig config] waveLength];
+    
+    NSLog(@"UPWAVE: %d", waveLength);
+    [self schedule:@selector(nextWave) interval:waveLength];
 }
 
 - (void) dealloc

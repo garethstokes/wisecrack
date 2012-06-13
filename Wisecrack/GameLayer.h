@@ -45,5 +45,6 @@
 - (void) wipe;
 - (void) enable_power_ups;
 - (void) removeChain;
+- (void) nextWave;
 
 @end

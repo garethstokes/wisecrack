@@ -124,6 +124,7 @@
         
         // save score in db.
         [[SettingsManager sharedSettingsManager] setValue:@"HighScore" newInt:score];
+        [[SettingsManager sharedSettingsManager] save];
         
         // contact game center and tell them what's up. 
         NSString * gc = [[SettingsManager sharedSettingsManager] getString:@"GameCenter" withDefault:@"NO"];
@@ -152,16 +153,18 @@
     
     GameKitHelper * gk = [GameKitHelper sharedGameKitHelper];
     [gk showLeaderboard];
+    
+    [[MetricMonster monster] queue:@"OpenGameCenter"];
 }
 
 - (void) openFacebook
 {
-    
+    [[MetricMonster monster] queue:@"OpenFacebook"];
 }
 
 - (void) openTwitter
 {
-    
+    [[MetricMonster monster] queue:@"OpenTwitter"];
 }
 
 -(void) onLocalPlayerAuthenticationChanged

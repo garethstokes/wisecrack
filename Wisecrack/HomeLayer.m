@@ -69,7 +69,7 @@
 
 - (void) updateVersion
 {
-    int version = [[WisecrackConfig config] version];
+    int version = [[WisecrackConfigSet configSet] version];
     [_version setString:[NSString stringWithFormat:@"version: %d", version]];
 }
 
