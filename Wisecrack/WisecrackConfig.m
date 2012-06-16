@@ -153,9 +153,9 @@
         [self setVersion:-1];
         [self setWave:1];
         
-        [self setOne:[[WisecrackConfig alloc] init:1]];
-        [self setTwo:[[WisecrackConfig alloc] init:2]];
-        [self setThree:[[WisecrackConfig alloc] init:3]];
+        [self setOne:[[[WisecrackConfig alloc] init:1] autorelease]];
+        [self setTwo:[[[WisecrackConfig alloc] init:2] autorelease]];
+        [self setThree:[[[WisecrackConfig alloc] init:3] autorelease]];
         
         version = [one version] + [two version] + [three version];
     }

@@ -134,7 +134,8 @@
         return [results count] > 0;
     }
     
-    for (GameItem * matchedWord in [[colourMatches copy] allValues])
+    NSMutableDictionary * copiedColourMatches = [[colourMatches copy] autorelease];
+    for (GameItem * matchedWord in [copiedColourMatches allValues])
     {
         wordMatches = [NSMutableDictionary dictionary];
         [self matchingWords:matchedWord result:wordMatches];

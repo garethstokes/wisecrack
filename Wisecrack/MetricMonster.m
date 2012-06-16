@@ -78,11 +78,7 @@
 - (void) registerForNotifications
 {
     // setup a bunch of details on load
-    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithContentsOfFile:[self monsterFilePath]];
-    if(dict == nil){
-        dict = [NSMutableDictionary dictionary];
-    }
-    
+  
     NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
     [center addObserver:self 
                selector:@selector(applicationEnteredBackground:) 
