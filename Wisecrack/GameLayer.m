@@ -10,6 +10,7 @@
 #import "GameObjectCache.h"
 #import "ScoreCard.h"
 #import "WisecrackConfig.h"
+#import "SimpleAudioEngine.h"
 
 @implementation GameLayer
 @synthesize board;
@@ -39,7 +40,8 @@
         ink = kTimeout;
         [[[GameObjectCache sharedGameObjectCache] hudLayer] updateInk:ink];
 
-        [self drawButtons];
+        [self animateButtonsIn];
+        //[self drawButtons];
         [self addChild:menu z:10];
         
         self.isAccelerometerEnabled = YES;
@@ -66,6 +68,73 @@
     }
     
     return self;
+}
+
+- (void) animateButtonsIn
+{
+    int count = 1;
+    float lag = 0.2;
+    
+    //NSLog(@"iterating through rows now: %d", [board.rows count]);
+    for (NSArray *row in [board rows])
+    {
+        //NSLog(@"row number: %d", count);
+        for (GameItem *word in row)
+        {
+            BOOL hasBeenFound = NO;
+            for (CCMenuItemImage *button in buttons)
+            {
+                if ([[button.word hash] isEqualToString:[word hash]])
+                {
+                    hasBeenFound = YES;
+                    break;
+                }
+            }
+            if (hasBeenFound) continue;
+            
+            
+            CCMenuItemImage * button = [word buttonWithTarget:self selector:@selector(wordClick:)];
+            
+            CGPoint position;
+            position.y = count * kUnitHeight;
+            position.x = word.offset * kUnitWidth;
+            
+            //NSLog(@"word being set: %@", [word hash]);
+            [button setPosition:ccp(-500,position.y)];
+            [button retain];
+            [menu addChild:button];
+            [buttons addObject:button];
+            //[button setOpacity:0];
+            
+            int max = [[WisecrackConfig config] buttonLoadDelay];
+            float randomNum = (((float) (arc4random() % ((unsigned)RAND_MAX + 1)) / RAND_MAX) * max) + 0;
+            //NSLog(@"randomNum: %f", randomNum);
+            [button runAction:[CCSequence actions:
+                               [CCDelayTime actionWithDuration:lag + randomNum],
+                               [CCMoveTo actionWithDuration:[[WisecrackConfig config] buttonLoadDuration] position:position],
+                               //[CCFadeIn actionWithDuration:[[WisecrackConfig config] buttonLoadDuration]],
+                               nil]];
+        }
+        
+        count++;
+        lag += 0.2;
+    }
+}
+
+- (void) animateButtonsOut
+{
+    id myShake = [CCShaky3D actionWithRange:2 shakeZ:NO grid:ccg(2,1) duration:4];
+    [self runAction: [CCSequence actions: myShake, [myShake reverse], [CCStopGrid action], nil]];
+    
+    for (CCMenuItemImage *button in [menu children]) // loop through the ui buttons
+    {
+        int max = 2; // we actually want to hardcode this :: [[WisecrackConfig config] buttonRemoveDelay];
+        float randomNum = (((float) (arc4random() % ((unsigned)RAND_MAX + 1)) / RAND_MAX) * max) + 0;
+        [button runAction:[CCSequence actions:
+                           [CCDelayTime actionWithDuration:randomNum],
+                           [CCFadeOut actionWithDuration:0.7],
+                           nil]];
+    }
 }
 
 - (void) step:(ccTime)delta
@@ -104,8 +173,28 @@
     
     for ( Bonus * bonus in cache )
     {
-        [bm removeMultipler:bonus];
+        if ( [bonus.name isEqualToString:@"multiplier"] )
+        {
+            [bm removeMultipler:bonus];
+        }
+        else if ( [bonus.name isEqualToString:@"chain"] )
+        {
+            [bm removeChain:bonus];
+        }
     }
+}
+
+- (void) showScoreCard
+{
+    [self unschedule:@selector(showScoreCard)];
+    
+    GameLayer *gameLayer = [[GameObjectCache sharedGameObjectCache] gameLayer];
+    ScoreCard *card = [[[ScoreCard alloc] init] autorelease];
+    [card updateScore:[gameLayer score]];
+    [[[GameObjectCache sharedGameObjectCache] gameScene] addChild:card z:100];
+    [card runAction:[CCSequence actions:[CCFadeIn actionWithDuration:0.3], nil]];
+    
+    [[[GameObjectCache sharedGameObjectCache] gameScene] removeChild:self cleanup:YES];
 }
 
 - (void) stepScoreTimer:(ccTime)delta
@@ -113,13 +202,8 @@
     ink--;
     if (ink == 0)
     {
-        GameLayer *gameLayer = [[GameObjectCache sharedGameObjectCache] gameLayer];
-        ScoreCard *card = [[[ScoreCard alloc] init] autorelease];
-        [card updateScore:[gameLayer score]];
-        [[[GameObjectCache sharedGameObjectCache] gameScene] addChild:card z:100];
-        [card runAction:[CCSequence actions:[CCFadeIn actionWithDuration:0.3], nil]];
-        
-        [[[GameObjectCache sharedGameObjectCache] gameScene] removeChild:self cleanup:YES];
+        [self animateButtonsOut];
+        [self schedule:@selector(showScoreCard) interval:3.0];
     }
     
     [[[GameObjectCache sharedGameObjectCache] hudLayer] updateInk:ink];
@@ -207,6 +291,7 @@
     //if (!ready) return;
     
     NSLog(@"click");
+    
     //NSMutableDictionary *matches = [NSMutableDictionary dictionary];
     NSMutableArray * matches = [NSMutableArray array];
 
@@ -219,6 +304,8 @@
     {
         // can't click on brick, douchbag
         if ( [[word name] isEqualToString:@"brick"] ) return;
+     
+        [[SimpleAudioEngine sharedEngine] playEffect:@"bonus_noise.m4a" pitch:1 pan:1 gain:0.2];
         
         Bonus * bonus = (Bonus *)word;
         [bonus decreaseDurability];
@@ -270,14 +357,6 @@
     
     mutex = true;
     
-    // remove all the matched colours.
-    /*
-    for (GameItem *w in [[matches objectAtIndex:0] allValues]) // loop through all the matches
-    {
-        [self removeGameItem:w withDelay:0.5];
-    }
-    */
-    
     // remove matched words
     ccTime delay = [[WisecrackConfig config] buttonLoadDelay];
     for (NSDictionary * wordMatches in matches)
@@ -315,21 +394,9 @@
                 Bonus * bonus = (Bonus *)button.word;
                 [bonus setActivatedTime:gameTime];
                 [bonus activate];
-                
-                if ( [bonus.name isEqualToString:@"chain"] )
-                {
-                    [[SettingsManager sharedSettingsManager] setValue:@"YES" newString:@"Chain"];
-                    [self schedule:@selector(removeChain) interval:60];
-                }
             }
         }
     }
-}
-
-- (void) removeChain
-{
-    [self unschedule:@selector(removeChain)];
-    [[SettingsManager sharedSettingsManager] setValue:@"NO" newString:@"Chain"];
 }
 
 - (void) unsuccessfulClick
@@ -412,6 +479,16 @@
      
     NSMutableArray *boardRow = [board.rows objectAtIndex:([button.word row] -1)];
     [boardRow removeObject:[button word]];
+    
+    if ([button.word.name isEqualToString:@"brick"])
+    {
+        [[SimpleAudioEngine sharedEngine] playEffect:@"brick_diminish_effects.m4a" pitch:1 pan:1 gain:0.2];
+        
+        CCParticleSystemQuad *puff = [CCParticleSystemQuad particleWithFile:@"brick_puff.plist"];
+        [puff setPosition:[button position]];
+        
+        [self addChild:puff z:102];
+    }
 }
 
 - (void) shakeDelay
@@ -470,7 +547,7 @@
     [[WisecrackConfigSet configSet] incrementWave];
     int waveLength = [[WisecrackConfig config] waveLength];
     
-    NSLog(@"UPWAVE: %d", waveLength);
+    NSLog(@"UPWAVE: %d  ", waveLength);
     [self schedule:@selector(nextWave) interval:waveLength];
 }
 

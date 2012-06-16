@@ -11,6 +11,7 @@
 #import "GameScene.h"
 #import "HomeScene.h"
 #import "WisecrackConfig.h"
+#import "SimpleAudioEngine.h"
 
 @implementation HomeLayer
 
@@ -62,6 +63,8 @@
         [self addChild:_version z:20];
         
         [self schedule:@selector(updateVersion) interval:0.5];
+        
+        [[SimpleAudioEngine sharedEngine] playEffect:@"logo_effects.m4a" pitch:1 pan:1 gain:0.2];
     }
     
     return self;

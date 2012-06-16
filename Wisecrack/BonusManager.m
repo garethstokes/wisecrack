@@ -162,9 +162,9 @@
     else 
     {
         int i = random() % 3;
-        if (i == 1) return [Bonus shake:colour];
-        if (i == 2) return [Bonus multiplier:colour];
-        if (i == 3) return [Bonus chain:colour];
+        if (i == 0) return [Bonus shake:colour];
+        if (i == 1) return [Bonus multiplier:colour];
+        if (i == 2) return [Bonus chain:colour];
         
         //NSLog(@"random mod: %d", i);
         
@@ -184,7 +184,7 @@
 + (Bonus *) brick
 {
     int width = random() % 3;
-    if (width == 0) width = 1;
+    width++;
     Bonus * b = [[[Bonus alloc] init:@"brick" 
                               colour:@"double rainbow"
                                 size:CGSizeMake(width, 1)] autorelease];
@@ -244,7 +244,7 @@
 - (void) addBonus:(Bonus *)bonus
 {
     Bonus * copy = (Bonus *)[bonus duplicate];
-    if ([self bonusCount] <= 4)
+    if ([self bonusCount] < 4)
     {
         [bonusItems_ addObject:copy];
         return;
@@ -277,6 +277,31 @@
     HudLayer * hud = [[GameObjectCache sharedGameObjectCache] hudLayer];
     [hud updateBonus];
     return YES;
+}
+
+- (void) removeChain:(Bonus *)chain
+{
+    if ( [chain.name isEqualToString:@"chain"] == false )
+    {
+        return;
+    }
+    
+    Bonus * theChosenOne = nil;
+    for ( Bonus * bonus in bonusItems_ )
+    {
+        if ( [[bonus name] isEqualToString:@"chain"] && 
+            [bonus activatedTime] == [chain activatedTime] )
+        {
+            theChosenOne = bonus;
+            break;
+        }
+    }
+    
+    if (theChosenOne == nil) return;
+    [bonusItems_ removeObject:theChosenOne];
+    
+    HudLayer * hud = [[GameObjectCache sharedGameObjectCache] hudLayer];
+    [hud updateBonus];
 }
 
 - (void) removeMultipler:(Bonus *)multiplier

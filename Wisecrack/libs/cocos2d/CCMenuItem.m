@@ -33,6 +33,7 @@
 #import "CCBlockSupport.h"
 #import "CCActionInstant.h"
 #import "GameObjectCache.h"
+#import "SimpleAudioEngine.h"
 
 	static NSUInteger _fontSize = kCCItemSize;
 static NSString *_fontName = @"Marker Felt";
@@ -601,6 +602,15 @@ const uint32_t	kZoomActionTag = 0xc0c05002;
 @implementation CCMenuItemImage
 @synthesize word;
 @synthesize isDirty;
+
+- (void) selected
+{
+    [super selected];
+    [[SimpleAudioEngine sharedEngine] playEffect:[word key_sound] 
+                                           pitch:1 
+                                             pan:1 
+                                            gain:0.2];
+}
 
 +(id) itemFromNormalImage: (NSString*)value selectedImage:(NSString*) value2
 {

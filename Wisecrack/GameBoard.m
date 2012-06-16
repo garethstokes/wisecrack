@@ -34,7 +34,6 @@
             [row release];
         }
         
-        fillCount = 8;
         dirty = NO;
         chain = NO;
         withBonus = YES;
@@ -243,8 +242,6 @@
 
 - (void) fill
 {
-    fillCount++;
-    
     int x = 1;
     BaseGame* game = [[TrueFriendsGame alloc] init];
     
@@ -260,12 +257,12 @@
             // been filled. 
             GameItem * word = [[game pickWordAtRandom:withBonus] duplicate];
             
-            if ([word bonus])
+            if ([word bonus] && false)
             {
                 // check if we already have a bunch of bonuses
                 // on the board already.
-                if ([self hasUnactivatedBonus:(Bonus *)word])
-                    continue;
+                //if ([self hasUnactivatedBonus:(Bonus *)word])
+                    //continue;
             }
             
             word.offset = x;
@@ -274,8 +271,8 @@
             if ([self fits:word offset:x row:i +1]) 
             {
                 //NSLog(@"fits: %@", [word hash]);
-                if ([word bonus])
-                    [self setWithBonus:NO];
+                //if ([word bonus])
+                    //[self setWithBonus:NO];
             }
             else 
             { 

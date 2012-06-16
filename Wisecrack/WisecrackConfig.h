@@ -50,6 +50,7 @@
 - (WisecrackConfig *) current;
 - (void) updateFromServer;
 - (void) incrementWave;
+- (void) resetWave;
 
 + (WisecrackConfigSet *) configSet;
 

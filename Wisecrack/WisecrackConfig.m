@@ -189,7 +189,7 @@
     @synchronized(self)
     {
         //NSURL * url = [NSURL URLWithString:@"http:/t.fallingshards.com:8008/wisecrack/config"];
-        NSString * surl = [NSString stringWithFormat:@"http://localhost/config/%d", version];
+        NSString * surl = [NSString stringWithFormat:@"http://t.fallingshards.com/config/%d", version];
         NSURL * url = [NSURL URLWithString:surl];
         NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:url];
         
@@ -209,6 +209,11 @@
 {
     if (wave > 10) return;
     wave++;
+}
+
+- (void) resetWave
+{
+    wave = 1;
 }
 
 - (void) dealloc

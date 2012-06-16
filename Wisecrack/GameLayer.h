@@ -32,6 +32,8 @@
 @property (nonatomic) int score;
 
 - (id) initWithBoard:(GameBoard *)board;
+- (void) animateButtonsIn;
+- (void) animateButtonsOut;
 - (void) wordClick:(id) sender;
 - (void) drawButtons;
 - (void) clearButtons;
@@ -44,7 +46,6 @@
 - (void) shakeDelay;
 - (void) wipe;
 - (void) enable_power_ups;
-- (void) removeChain;
 - (void) nextWave;
 
 @end

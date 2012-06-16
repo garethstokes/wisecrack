@@ -48,5 +48,6 @@
 - (BOOL) removeShakeIfAvailable;
 - (int) activeMultiplier;
 - (void) removeMultipler:(Bonus *)bonus;
+- (void) removeChain:(Bonus *)bonus;
 
 @end

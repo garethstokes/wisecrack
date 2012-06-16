@@ -34,6 +34,7 @@
         [self fillPot:0];
         
         danger = false;
+        _sound = -1;
     }
     
     return self;
@@ -62,6 +63,8 @@
         if (danger) return;
         danger = YES;
         
+        _sound = [[SimpleAudioEngine sharedEngine] playEffect:@"end_of_time_noise.m4a" pitch:1 pan:1 gain:0.2];
+        
         [self removeChild:base_bg cleanup:YES];
         base_bg = [loader spriteWithUniqueName:@"z_2_ink_timer_bg_red_overlay" 
                                     atPosition:ccp(0,0) 
@@ -89,6 +92,12 @@
                                     atPosition:ccp(0,0) 
                                        inLayer:nil];
         [self addChild:base_bg z:0];
+        
+        if (_sound != -1)
+        {
+            [[SimpleAudioEngine sharedEngine] stopEffect:_sound];
+            _sound = -1;
+        }
     }
 }
 

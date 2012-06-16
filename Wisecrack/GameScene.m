@@ -9,6 +9,7 @@
 #import "GameScene.h"
 #import "GameObjectCache.h"
 #import "MetricMonster.h"
+#import "WisecrackConfig.h"
 
 @implementation GameScene
 @synthesize background;
@@ -30,6 +31,7 @@
     [hud release];
     
     // GameLayer
+    [[WisecrackConfigSet configSet] resetWave];
     GameBoard * board = [[[GameBoard alloc] init] autorelease];
     [board fill];
     

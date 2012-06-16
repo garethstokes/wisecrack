@@ -61,6 +61,16 @@
     return x;
 }
 
+- (NSString *) key_sound
+{
+    //@"base_12_c.m4a
+    NSString * note = @"a";
+    if (offset < 9) note = @"c";
+    if (offset < 3) note = @"b";
+    
+    return [NSString stringWithFormat:@"base_%d_%@.m4a", row, note];
+}
+
 - (CCMenuItemImage *) buttonWithTarget:(id)target selector:(SEL)selector
 {
     CCSprite * upimage = [loader spriteWithUniqueName:key_up atPosition:CGPointMake(0,0) inLayer:nil];

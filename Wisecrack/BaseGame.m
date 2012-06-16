@@ -49,11 +49,17 @@
 {
     [self shuffle];
     
+    
+    NSLog(@"words in play: %d", [wordsInPlay count]);
+    
     NSString * key = [wordsInPlay objectAtIndex:0];
     
     NSRange range = [key rangeOfString:@":"];
     NSString * name = [key substringToIndex:range.location];
     NSString * size = [key substringFromIndex:range.location +1];
+    
+    //int gc = [[WisecrackConfig config] gameColours];
+    //NSLog(@"GameColours: %d", gc);
     
     int i = random() % [[WisecrackConfig config] gameColours];
     NSString* colour = @"green"; 

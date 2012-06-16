@@ -37,12 +37,14 @@
 
 @property (nonatomic, retain) NSString * key_up;
 @property (nonatomic, retain) NSString * key_down;
+
 @property (nonatomic, retain) SpriteHelperLoader * loader;
 
 @property (nonatomic) bool bonus;
 
 - (GameItem *) duplicate;
 - (NSString *) hash;
+- (NSString *) key_sound;
 - (CCMenuItemImage *) buttonWithTarget:(id)target selector:(SEL)selector;
 
 @end

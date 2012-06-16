@@ -89,7 +89,7 @@ static SettingsManager* _sharedSettingsManager = nil;
 			[[[self alloc] init] autorelease];
         
         [_sharedSettingsManager load];
-        [_sharedSettingsManager logSettings];
+        //[_sharedSettingsManager logSettings];
 		return _sharedSettingsManager;
 	}
   
