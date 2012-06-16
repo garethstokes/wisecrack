@@ -261,8 +261,8 @@
             {
                 // check if we already have a bunch of bonuses
                 // on the board already.
-                //if ([self hasUnactivatedBonus:(Bonus *)word])
-                    //continue;
+                if ([self hasUnactivatedBonus:(Bonus *)word])
+                    continue;
             }
             
             word.offset = x;
@@ -271,8 +271,8 @@
             if ([self fits:word offset:x row:i +1]) 
             {
                 //NSLog(@"fits: %@", [word hash]);
-                //if ([word bonus])
-                    //[self setWithBonus:NO];
+                if ([word bonus])
+                    [self setWithBonus:NO];
             }
             else 
             { 

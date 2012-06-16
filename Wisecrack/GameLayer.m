@@ -101,7 +101,6 @@
             
             //NSLog(@"word being set: %@", [word hash]);
             [button setPosition:ccp(-500,position.y)];
-            [button retain];
             [menu addChild:button];
             [buttons addObject:button];
             //[button setOpacity:0];
