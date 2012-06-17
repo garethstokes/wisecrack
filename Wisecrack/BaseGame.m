@@ -73,6 +73,7 @@
     if (withBonus && powerup < [[WisecrackConfig config] chanceBonus])
     {
         NSLog(@"BONUS!!");
+        return [Bonus multiplier:colour];
         return [Bonus random:colour];
     }
     

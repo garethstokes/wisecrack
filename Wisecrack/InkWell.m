@@ -46,33 +46,6 @@
 {
     if (level >= kTimeout) return;
     
-    if (level >= 11)
-    {
-        if (danger_red) return;
-        danger_red = YES;
-        
-        [self removeChild:bottle_bg cleanup:YES];
-        bottle_bg = [loader spriteWithUniqueName:@"z_3_5_ink_timer_bottle_bg_red" 
-                                      atPosition:ccp(0,0) 
-                                         inLayer:nil];
-        [bottle_bg setOpacity:1.0];
-        CCFadeTo *fadeIn = [CCFadeTo actionWithDuration:0.1 opacity:255];
-        CCFadeTo *fadeOut = [CCFadeTo actionWithDuration:0.1 opacity:127];
-        
-        CCSequence *pulseSequence = [CCSequence actionOne:fadeIn two:fadeOut];
-        CCRepeatForever *repeat = [CCRepeatForever actionWithAction:pulseSequence];
-        [bottle_bg runAction:repeat];
-        
-        [self addChild:bottle_bg z:0];
-        
-        [self removeChild:timer_ink cleanup:YES];
-        timer_ink = [loader spriteWithUniqueName:@"z_4_ink_timer_ink_anim_0"
-                                      atPosition:ccp(0,0) 
-                                         inLayer:nil];
-        [self addChild:timer_ink z:3];
-        return;
-    }
-    
     NSString * key = [NSString stringWithFormat:@"z_4_ink_timer_ink_anim_%d", level];
     
     if (timer_ink != nil)
@@ -86,6 +59,28 @@
                                      inLayer:nil];
     
     [self addChild:timer_ink z:3];
+    
+    if (level >= 11)
+    {
+        if (danger_red) return;
+        danger_red = YES;
+        
+        [self removeChild:bottle_bg cleanup:YES];
+        bottle_bg = [loader spriteWithUniqueName:@"z_3_5_ink_timer_bottle_bg_red" 
+                                      atPosition:ccp(0,0) 
+                                         inLayer:nil];
+        [bottle_bg setOpacity:1.0];
+        CCFadeTo *fadeIn = [CCFadeTo actionWithDuration:0.2 opacity:255];
+        CCFadeTo *fadeOut = [CCFadeTo actionWithDuration:0.2 opacity:127];
+        
+        CCSequence *pulseSequence = [CCSequence actionOne:fadeIn two:fadeOut];
+        CCRepeatForever *repeat = [CCRepeatForever actionWithAction:pulseSequence];
+        [bottle_bg runAction:repeat];
+        
+        [self addChild:bottle_bg z:0];
+        
+        return;
+    }
     
     if (level >= 9)
     {

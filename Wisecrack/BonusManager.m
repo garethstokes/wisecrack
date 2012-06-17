@@ -138,7 +138,7 @@
         [popup runAction:[CCFadeOut actionWithDuration:2.5]];
     }
     
-    if ( [name isEqualToString:@"multipler"] )
+    if ( [name isEqualToString:@"multiplier"] )
     {
         GameLayer * gl = [[GameObjectCache sharedGameObjectCache] gameLayer];
         
