@@ -12,11 +12,11 @@
 	<string>SpriteHelper</string>
 	<key>ImportedImages</key>
 	<array>
-		<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+		<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 	</array>
 	<key>ImportedImages-HD</key>
 	<array>
-		<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+		<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 	</array>
 	<key>ImportedImages-HD_relative</key>
 	<array>
@@ -89,23 +89,23 @@
 				<key>Frame-HD</key>
 				<string>{{0, 0}, {88, 80}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0}, {0.20952381, 0.19047619}}</string>
+				<string>{{0, 0}, {0.20952381, 0.16949153}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
 				<string>z_4_ink_timer_ink_anim_0</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -173,23 +173,23 @@
 				<key>Frame-HD</key>
 				<string>{{94, 0}, {88, 80}}</string>
 				<key>FrameUV</key>
-				<string>{{0.22380953, 0}, {0.43333334, 0.19047619}}</string>
+				<string>{{0.22380953, 0}, {0.43333334, 0.16949153}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
-				<string>z_4_ink_timer_ink_anim_1</string>
+				<string>z_1_ink_timer_base_bg</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -257,23 +257,23 @@
 				<key>Frame-HD</key>
 				<string>{{186, 0}, {88, 80}}</string>
 				<key>FrameUV</key>
-				<string>{{0.44285715, 0}, {0.65238094, 0.19047619}}</string>
+				<string>{{0.44285715, 0}, {0.65238094, 0.16949153}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
-				<string>z_4_ink_timer_ink_anim_2</string>
+				<string>z_4_ink_timer_ink</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -341,23 +341,23 @@
 				<key>Frame-HD</key>
 				<string>{{280, 0}, {88, 80}}</string>
 				<key>FrameUV</key>
-				<string>{{0.66666669, 0}, {0.87619048, 0.19047619}}</string>
+				<string>{{0.66666669, 0}, {0.87619048, 0.16949153}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
-				<string>z_4_ink_timer_ink_anim_3</string>
+				<string>z_4_ink_timer_ink_anim_7</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -425,23 +425,23 @@
 				<key>Frame-HD</key>
 				<string>{{0, 86}, {88, 80}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0.20476191}, {0.20952381, 0.3952381}}</string>
+				<string>{{0, 0.1822034}, {0.20952381, 0.35169491}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
-				<string>z_4_ink_timer_ink_anim_4</string>
+				<string>z_2_ink_timer_bg_red_overlay</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -509,23 +509,23 @@
 				<key>Frame-HD</key>
 				<string>{{0, 170}, {88, 80}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0.40476191}, {0.20952381, 0.59523809}}</string>
+				<string>{{0, 0.3601695}, {0.20952381, 0.529661}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
-				<string>z_4_ink_timer_ink_anim_5</string>
+				<string>z_5_ink_timer_bottle_details</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -593,23 +593,23 @@
 				<key>Frame-HD</key>
 				<string>{{0, 256}, {88, 80}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0.60952383}, {0.20952381, 0.80000001}}</string>
+				<string>{{0, 0.54237288}, {0.20952381, 0.71186441}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
 				<string>z_4_ink_timer_ink_anim_6</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -677,23 +677,23 @@
 				<key>Frame-HD</key>
 				<string>{{0, 340}, {88, 80}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0.80952382}, {0.20952381, 1}}</string>
+				<string>{{0, 0.720339}, {0.20952381, 0.88983053}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
-				<string>z_4_ink_timer_ink_anim_7</string>
+				<string>z_3_5_ink_timer_bottle_bg_red</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -761,23 +761,23 @@
 				<key>Frame-HD</key>
 				<string>{{94, 86}, {88, 80}}</string>
 				<key>FrameUV</key>
-				<string>{{0.22380953, 0.20476191}, {0.43333334, 0.3952381}}</string>
+				<string>{{0.22380953, 0.1822034}, {0.43333334, 0.35169491}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
-				<string>z_4_ink_timer_ink_anim_8</string>
+				<string>z_3_ink_timer_bottle_bg</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -845,23 +845,23 @@
 				<key>Frame-HD</key>
 				<string>{{186, 86}, {88, 80}}</string>
 				<key>FrameUV</key>
-				<string>{{0.44285715, 0.20476191}, {0.65238094, 0.3952381}}</string>
+				<string>{{0.44285715, 0.1822034}, {0.65238094, 0.35169491}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
-				<string>z_4_ink_timer_ink_anim_9</string>
+				<string>z_4_ink_timer_ink_anim_11</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -929,23 +929,23 @@
 				<key>Frame-HD</key>
 				<string>{{280, 86}, {88, 80}}</string>
 				<key>FrameUV</key>
-				<string>{{0.66666669, 0.20476191}, {0.87619048, 0.3952381}}</string>
+				<string>{{0.66666669, 0.1822034}, {0.87619048, 0.35169491}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
-				<string>z_4_ink_timer_ink_anim_10</string>
+				<string>z_4_ink_timer_ink_anim_5</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1013,23 +1013,23 @@
 				<key>Frame-HD</key>
 				<string>{{94, 170}, {88, 80}}</string>
 				<key>FrameUV</key>
-				<string>{{0.22380953, 0.40476191}, {0.43333334, 0.59523809}}</string>
+				<string>{{0.22380953, 0.3601695}, {0.43333334, 0.529661}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
-				<string>z_4_ink_timer_ink_anim_11</string>
+				<string>z_4_ink_timer_ink_anim_10</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1097,23 +1097,23 @@
 				<key>Frame-HD</key>
 				<string>{{94, 256}, {88, 80}}</string>
 				<key>FrameUV</key>
-				<string>{{0.22380953, 0.60952383}, {0.43333334, 0.80000001}}</string>
+				<string>{{0.22380953, 0.54237288}, {0.43333334, 0.71186441}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
-				<string>z_1_ink_timer_base_bg</string>
+				<string>z_4_ink_timer_ink_anim_9</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1181,23 +1181,23 @@
 				<key>Frame-HD</key>
 				<string>{{94, 340}, {88, 80}}</string>
 				<key>FrameUV</key>
-				<string>{{0.22380953, 0.80952382}, {0.43333334, 1}}</string>
+				<string>{{0.22380953, 0.720339}, {0.43333334, 0.88983053}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
-				<string>z_2_ink_timer_bg_red_overlay</string>
+				<string>z_4_ink_timer_ink_anim_8</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1265,23 +1265,23 @@
 				<key>Frame-HD</key>
 				<string>{{186, 170}, {88, 80}}</string>
 				<key>FrameUV</key>
-				<string>{{0.44285715, 0.40476191}, {0.65238094, 0.59523809}}</string>
+				<string>{{0.44285715, 0.3601695}, {0.65238094, 0.529661}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
-				<string>z_3_ink_timer_bottle_bg</string>
+				<string>z_4_ink_timer_ink_anim_4</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1349,23 +1349,23 @@
 				<key>Frame-HD</key>
 				<string>{{280, 170}, {88, 80}}</string>
 				<key>FrameUV</key>
-				<string>{{0.66666669, 0.40476191}, {0.87619048, 0.59523809}}</string>
+				<string>{{0.66666669, 0.3601695}, {0.87619048, 0.529661}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
-				<string>z_4_ink_timer_ink</string>
+				<string>z_4_ink_timer_ink_anim_3</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1433,23 +1433,23 @@
 				<key>Frame-HD</key>
 				<string>{{186, 256}, {88, 80}}</string>
 				<key>FrameUV</key>
-				<string>{{0.44285715, 0.60952383}, {0.65238094, 0.80000001}}</string>
+				<string>{{0.44285715, 0.54237288}, {0.65238094, 0.71186441}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
-				<string>z_5_ink_timer_bottle_details</string>
+				<string>z_4_ink_timer_ink_anim_2</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1513,27 +1513,27 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{93, 170}, {44, 26}}</string>
+				<string>{{93, 170}, {44, 40}}</string>
 				<key>Frame-HD</key>
-				<string>{{186, 340}, {88, 52}}</string>
+				<string>{{186, 340}, {88, 80}}</string>
 				<key>FrameUV</key>
-				<string>{{0.44285715, 0.80952382}, {0.65238094, 0.93333334}}</string>
+				<string>{{0.44285715, 0.720339}, {0.65238094, 0.88983053}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
-				<string>pause_btn_off</string>
+				<string>z_4_ink_timer_ink_anim_1</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1601,23 +1601,107 @@
 				<key>Frame-HD</key>
 				<string>{{280, 256}, {88, 52}}</string>
 				<key>FrameUV</key>
-				<string>{{0.66666669, 0.60952383}, {0.87619048, 0.73333335}}</string>
+				<string>{{0.66666669, 0.54237288}, {0.87619048, 0.65254235}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
+				<key>Name</key>
+				<string>pause_btn_off</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{210, 236}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{140, 156}, {44, 26}}</string>
+				<key>Frame-HD</key>
+				<string>{{280, 312}, {88, 52}}</string>
+				<key>FrameUV</key>
+				<string>{{0.66666669, 0.66101694}, {0.87619048, 0.77118641}}</string>
+				<key>HD_ImageSize</key>
+				<string>{420, 472}</string>
+				<key>Image</key>
+				<string>hud.png</string>
+				<key>Image-HD</key>
+				<string>hud-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
 				<string>pause_btn_on</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1685,23 +1769,23 @@
 				<key>Frame-HD</key>
 				<string>{{372, 0}, {48, 48}}</string>
 				<key>FrameUV</key>
-				<string>{{0.88571429, 0}, {1, 0.11428571}}</string>
+				<string>{{0.88571429, 0}, {1, 0.10169491}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
-				<string>top_bar_x2_yellow_icon</string>
+				<string>top_bar_shake_icon_</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1769,23 +1853,23 @@
 				<key>Frame-HD</key>
 				<string>{{372, 86}, {48, 48}}</string>
 				<key>FrameUV</key>
-				<string>{{0.88571429, 0.20476191}, {1, 0.31904763}}</string>
+				<string>{{0.88571429, 0.1822034}, {1, 0.28389829}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
-				<string>top_bar_chain_icon_</string>
+				<string>top_bar_swipe_icon</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1853,23 +1937,23 @@
 				<key>Frame-HD</key>
 				<string>{{372, 170}, {48, 48}}</string>
 				<key>FrameUV</key>
-				<string>{{0.88571429, 0.40476191}, {1, 0.51904762}}</string>
+				<string>{{0.88571429, 0.3601695}, {1, 0.46186441}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
-				<string>top_bar_shake_icon_</string>
+				<string>top_bar_x2_blue_icon</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1937,275 +2021,23 @@
 				<key>Frame-HD</key>
 				<string>{{372, 256}, {48, 48}}</string>
 				<key>FrameUV</key>
-				<string>{{0.88571429, 0.60952383}, {1, 0.72380954}}</string>
+				<string>{{0.88571429, 0.54237288}, {1, 0.64406782}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
-				<key>Name</key>
-				<string>top_bar_swipe_icon</string>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
-				<key>Scale</key>
-				<string>{1, 1}</string>
-				<key>ZOrder</key>
-				<integer>0</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>PhysicProperties</key>
-			<dict>
-				<key>AngularDamping</key>
-				<real>0.0</real>
-				<key>AngularVelocity</key>
-				<real>0.0</real>
-				<key>CanSleep</key>
-				<true/>
-				<key>Category</key>
-				<integer>1</integer>
-				<key>Density</key>
-				<real>0.20000000298023224</real>
-				<key>Fixtures</key>
-				<array/>
-				<key>Friction</key>
-				<real>0.20000000298023224</real>
-				<key>Group</key>
-				<integer>0</integer>
-				<key>IsBullet</key>
-				<false/>
-				<key>IsCircle</key>
-				<false/>
-				<key>IsFixedRot</key>
-				<false/>
-				<key>IsSensor</key>
-				<false/>
-				<key>LinearDamping</key>
-				<real>0.0</real>
-				<key>LinearVelocityX</key>
-				<real>0.0</real>
-				<key>LinearVelocityY</key>
-				<real>0.0</real>
-				<key>Mask</key>
-				<integer>65535</integer>
-				<key>PhysicType</key>
-				<integer>0</integer>
-				<key>Restitution</key>
-				<real>0.20000000298023224</real>
-				<key>SHHolesPoints</key>
-				<array/>
-				<key>SHShapePoints</key>
-				<array/>
-				<key>ShapeBorderH</key>
-				<integer>0</integer>
-				<key>ShapeBorderW</key>
-				<integer>0</integer>
-				<key>ShapePositionOffsetX</key>
-				<integer>0</integer>
-				<key>ShapePositionOffsetY</key>
-				<integer>0</integer>
-			</dict>
-			<key>TextureProperties</key>
-			<dict>
-				<key>Color</key>
-				<string>{{1, 1}, {1, 0}}</string>
-				<key>Frame</key>
-				<string>{{140, 156}, {24, 24}}</string>
-				<key>Frame-HD</key>
-				<string>{{280, 312}, {48, 48}}</string>
-				<key>FrameUV</key>
-				<string>{{0.66666669, 0.74285716}, {0.78095239, 0.85714287}}</string>
-				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
-				<key>Image</key>
-				<string>hud.png</string>
-				<key>Image-HD</key>
-				<string>hud-hd.png</string>
-				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
-				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
-				<key>Name</key>
-				<string>top_bar_x2_blue_icon</string>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
-				<key>Scale</key>
-				<string>{1, 1}</string>
-				<key>ZOrder</key>
-				<integer>0</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>PhysicProperties</key>
-			<dict>
-				<key>AngularDamping</key>
-				<real>0.0</real>
-				<key>AngularVelocity</key>
-				<real>0.0</real>
-				<key>CanSleep</key>
-				<true/>
-				<key>Category</key>
-				<integer>1</integer>
-				<key>Density</key>
-				<real>0.20000000298023224</real>
-				<key>Fixtures</key>
-				<array/>
-				<key>Friction</key>
-				<real>0.20000000298023224</real>
-				<key>Group</key>
-				<integer>0</integer>
-				<key>IsBullet</key>
-				<false/>
-				<key>IsCircle</key>
-				<false/>
-				<key>IsFixedRot</key>
-				<false/>
-				<key>IsSensor</key>
-				<false/>
-				<key>LinearDamping</key>
-				<real>0.0</real>
-				<key>LinearVelocityX</key>
-				<real>0.0</real>
-				<key>LinearVelocityY</key>
-				<real>0.0</real>
-				<key>Mask</key>
-				<integer>65535</integer>
-				<key>PhysicType</key>
-				<integer>0</integer>
-				<key>Restitution</key>
-				<real>0.20000000298023224</real>
-				<key>SHHolesPoints</key>
-				<array/>
-				<key>SHShapePoints</key>
-				<array/>
-				<key>ShapeBorderH</key>
-				<integer>0</integer>
-				<key>ShapeBorderW</key>
-				<integer>0</integer>
-				<key>ShapePositionOffsetX</key>
-				<integer>0</integer>
-				<key>ShapePositionOffsetY</key>
-				<integer>0</integer>
-			</dict>
-			<key>TextureProperties</key>
-			<dict>
-				<key>Color</key>
-				<string>{{1, 1}, {1, 0}}</string>
-				<key>Frame</key>
-				<string>{{140, 183}, {24, 24}}</string>
-				<key>Frame-HD</key>
-				<string>{{280, 366}, {48, 48}}</string>
-				<key>FrameUV</key>
-				<string>{{0.66666669, 0.87142855}, {0.78095239, 0.98571426}}</string>
-				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
-				<key>Image</key>
-				<string>hud.png</string>
-				<key>Image-HD</key>
-				<string>hud-hd.png</string>
-				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
-				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
-				<key>Name</key>
-				<string>top_bar_x2_green_icon</string>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
-				<key>Scale</key>
-				<string>{1, 1}</string>
-				<key>ZOrder</key>
-				<integer>0</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>PhysicProperties</key>
-			<dict>
-				<key>AngularDamping</key>
-				<real>0.0</real>
-				<key>AngularVelocity</key>
-				<real>0.0</real>
-				<key>CanSleep</key>
-				<true/>
-				<key>Category</key>
-				<integer>1</integer>
-				<key>Density</key>
-				<real>0.20000000298023224</real>
-				<key>Fixtures</key>
-				<array/>
-				<key>Friction</key>
-				<real>0.20000000298023224</real>
-				<key>Group</key>
-				<integer>0</integer>
-				<key>IsBullet</key>
-				<false/>
-				<key>IsCircle</key>
-				<false/>
-				<key>IsFixedRot</key>
-				<false/>
-				<key>IsSensor</key>
-				<false/>
-				<key>LinearDamping</key>
-				<real>0.0</real>
-				<key>LinearVelocityX</key>
-				<real>0.0</real>
-				<key>LinearVelocityY</key>
-				<real>0.0</real>
-				<key>Mask</key>
-				<integer>65535</integer>
-				<key>PhysicType</key>
-				<integer>0</integer>
-				<key>Restitution</key>
-				<real>0.20000000298023224</real>
-				<key>SHHolesPoints</key>
-				<array/>
-				<key>SHShapePoints</key>
-				<array/>
-				<key>ShapeBorderH</key>
-				<integer>0</integer>
-				<key>ShapeBorderW</key>
-				<integer>0</integer>
-				<key>ShapePositionOffsetX</key>
-				<integer>0</integer>
-				<key>ShapePositionOffsetY</key>
-				<integer>0</integer>
-			</dict>
-			<key>TextureProperties</key>
-			<dict>
-				<key>Color</key>
-				<string>{{1, 1}, {1, 0}}</string>
-				<key>Frame</key>
-				<string>{{166, 156}, {24, 24}}</string>
-				<key>Frame-HD</key>
-				<string>{{332, 312}, {48, 48}}</string>
-				<key>FrameUV</key>
-				<string>{{0.7904762, 0.74285716}, {0.90476191, 0.85714287}}</string>
-				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
-				<key>Image</key>
-				<string>hud.png</string>
-				<key>Image-HD</key>
-				<string>hud-hd.png</string>
-				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
-				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
 				<string>top_bar_x2_red_icon</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -2269,27 +2101,279 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{166, 183}, {24, 24}}</string>
+				<string>{{186, 156}, {24, 24}}</string>
 				<key>Frame-HD</key>
-				<string>{{332, 366}, {48, 48}}</string>
+				<string>{{372, 312}, {48, 48}}</string>
 				<key>FrameUV</key>
-				<string>{{0.7904762, 0.87142855}, {0.90476191, 0.98571426}}</string>
+				<string>{{0.88571429, 0.66101694}, {1, 0.76271188}}</string>
 				<key>HD_ImageSize</key>
-				<string>{420, 420}</string>
+				<string>{420, 472}</string>
 				<key>Image</key>
 				<string>hud.png</string>
 				<key>Image-HD</key>
 				<string>hud-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/hud-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
 				<key>Name</key>
 				<string>top_bar_x2_white_icon</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{210, 210}</string>
+				<string>{210, 236}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{140, 185}, {24, 24}}</string>
+				<key>Frame-HD</key>
+				<string>{{280, 370}, {48, 48}}</string>
+				<key>FrameUV</key>
+				<string>{{0.66666669, 0.78389829}, {0.78095239, 0.88559324}}</string>
+				<key>HD_ImageSize</key>
+				<string>{420, 472}</string>
+				<key>Image</key>
+				<string>hud.png</string>
+				<key>Image-HD</key>
+				<string>hud-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
+				<key>Name</key>
+				<string>top_bar_x2_yellow_icon</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{210, 236}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{140, 211}, {24, 24}}</string>
+				<key>Frame-HD</key>
+				<string>{{280, 422}, {48, 48}}</string>
+				<key>FrameUV</key>
+				<string>{{0.66666669, 0.89406782}, {0.78095239, 0.99576271}}</string>
+				<key>HD_ImageSize</key>
+				<string>{420, 472}</string>
+				<key>Image</key>
+				<string>hud.png</string>
+				<key>Image-HD</key>
+				<string>hud-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
+				<key>Name</key>
+				<string>top_bar_chain_icon_</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{210, 236}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{166, 185}, {24, 24}}</string>
+				<key>Frame-HD</key>
+				<string>{{332, 370}, {48, 48}}</string>
+				<key>FrameUV</key>
+				<string>{{0.7904762, 0.78389829}, {0.90476191, 0.88559324}}</string>
+				<key>HD_ImageSize</key>
+				<string>{420, 472}</string>
+				<key>Image</key>
+				<string>hud.png</string>
+				<key>Image-HD</key>
+				<string>hud-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/game_screen/hud-hd.png</string>
+				<key>Name</key>
+				<string>top_bar_x2_green_icon</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{210, 236}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>

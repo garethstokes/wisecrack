@@ -18,6 +18,7 @@
     SpriteHelperLoader * loader;
     
     bool danger;
+    bool danger_red;
     
     ALuint _sound;
 }

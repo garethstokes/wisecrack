@@ -90,7 +90,7 @@
 
 - (void) updateInk:(int)value
 {
-    [inkwell fillPot:12 - value];
+    [inkwell fillPot:(kTimeout - value)];
 }
 
 - (void) clearBonus

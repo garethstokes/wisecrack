@@ -7,6 +7,7 @@
 //
 
 #import "InkWell.h"
+#import "GameConfig.h"
 
 @implementation InkWell
 
@@ -34,6 +35,7 @@
         [self fillPot:0];
         
         danger = false;
+        danger_red = false;
         _sound = -1;
     }
     
@@ -42,7 +44,34 @@
 
 - (void)fillPot:(int)level
 {
-    if (level >= 12) return;
+    if (level >= kTimeout) return;
+    
+    if (level >= 11)
+    {
+        if (danger_red) return;
+        danger_red = YES;
+        
+        [self removeChild:bottle_bg cleanup:YES];
+        bottle_bg = [loader spriteWithUniqueName:@"z_3_5_ink_timer_bottle_bg_red" 
+                                      atPosition:ccp(0,0) 
+                                         inLayer:nil];
+        [bottle_bg setOpacity:1.0];
+        CCFadeTo *fadeIn = [CCFadeTo actionWithDuration:0.1 opacity:255];
+        CCFadeTo *fadeOut = [CCFadeTo actionWithDuration:0.1 opacity:127];
+        
+        CCSequence *pulseSequence = [CCSequence actionOne:fadeIn two:fadeOut];
+        CCRepeatForever *repeat = [CCRepeatForever actionWithAction:pulseSequence];
+        [bottle_bg runAction:repeat];
+        
+        [self addChild:bottle_bg z:0];
+        
+        [self removeChild:timer_ink cleanup:YES];
+        timer_ink = [loader spriteWithUniqueName:@"z_4_ink_timer_ink_anim_0"
+                                      atPosition:ccp(0,0) 
+                                         inLayer:nil];
+        [self addChild:timer_ink z:3];
+        return;
+    }
     
     NSString * key = [NSString stringWithFormat:@"z_4_ink_timer_ink_anim_%d", level];
     
@@ -98,6 +127,18 @@
             [[SimpleAudioEngine sharedEngine] stopEffect:_sound];
             _sound = -1;
         }
+    }
+    
+    if (danger_red)
+    {
+        // set the background back to normal
+        danger_red = NO;
+        
+        [self removeChild:bottle_bg cleanup:YES];
+        bottle_bg = [loader spriteWithUniqueName:@"z_3_ink_timer_bottle_bg" 
+                                    atPosition:ccp(0,0) 
+                                       inLayer:nil];
+        [self addChild:bottle_bg z:0];
     }
 }
 
