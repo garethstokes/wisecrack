@@ -10,6 +10,7 @@
 #import "HomeScene.h"
 #import "SettingsManager.h"
 #import "MetricMonster.h"
+#import "AppDelegate.h"
 
 @implementation ScoreCard
 
@@ -65,7 +66,10 @@
             [socialMenu addChild:gcButton];
         
         [socialMenu addChild:fbButton];
-        [socialMenu addChild:twButton];
+        
+        if ([TWTweetComposeViewController canSendTweet]) {
+            [socialMenu addChild:twButton];
+        }
         
         [socialMenu setPosition:CGPointMake(160, 120)];
         [socialMenu alignItemsHorizontallyWithPadding:20];
@@ -180,6 +184,28 @@
 - (void) openTwitter
 {
     [[MetricMonster monster] queue:@"OpenTwitter"];
+    
+    //Grab App Delegate so you can use rootviewcontroller
+    int highScore = [[SettingsManager sharedSettingsManager] getInt:@"HighScore" withDefault:0];
+    AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    //*** Prepare Your Tweet ***//
+    TWTweetComposeViewController *twitter = [[TWTweetComposeViewController alloc] init];
+    [twitter setInitialText:[NSString stringWithFormat:@"My wisecrack high score is %d, can you beat me?!", highScore]];
+    //[twitter addURL:[NSURL URLWithString:item.link]];
+    
+    //Using a picture from the web
+    //[twitter addImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:item.icon]]]];
+    
+    //Check to see if the phone can tweet (iOS 5)
+    if ([TWTweetComposeViewController canSendTweet]) {
+        //Use delegate viewController to present twitter controller
+        [delegate.viewController presentModalViewController:twitter animated:YES];
+    }else{
+        //Do anything here that is pre iOS 5 like a webview for twitter
+    }
+    
+    [twitter release];
 }
 
 -(void) onLocalPlayerAuthenticationChanged

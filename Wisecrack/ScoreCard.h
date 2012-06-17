@@ -10,6 +10,7 @@
 #import "SpriteHelperLoader.h"
 #import "GameKitHelper.h"
 #import "Facebook.h"
+#import <Twitter/Twitter.h>
 
 @interface ScoreCard : CCLayer<GameKitHelperProtocol, FBSessionDelegate, FBDialogDelegate> {
     CCLabelAtlas * scoreLabel;

@@ -36,6 +36,7 @@
 		E7184688158D8A950075C9D8 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E7184677158D8A950075C9D8 /* SBJsonBase.m */; };
 		E7184689158D8A950075C9D8 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E7184679158D8A950075C9D8 /* SBJsonParser.m */; };
 		E718468A158D8A950075C9D8 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = E718467B158D8A950075C9D8 /* SBJsonWriter.m */; };
+		E7184690158D92B00075C9D8 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E718468F158D92B00075C9D8 /* Twitter.framework */; };
 		E71AF2A11588B02B00CD68AA /* base_10_a.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E71AF2781588B02B00CD68AA /* base_10_a.m4a */; };
 		E71AF2A21588B02B00CD68AA /* base_10_b.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E71AF2791588B02B00CD68AA /* base_10_b.m4a */; };
 		E71AF2A31588B02B00CD68AA /* base_10_c.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E71AF27A1588B02B00CD68AA /* base_10_c.m4a */; };
@@ -371,6 +372,7 @@
 		E7184679158D8A950075C9D8 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
 		E718467A158D8A950075C9D8 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		E718467B158D8A950075C9D8 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		E718468F158D92B00075C9D8 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		E71AF2781588B02B00CD68AA /* base_10_a.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = base_10_a.m4a; sourceTree = "<group>"; };
 		E71AF2791588B02B00CD68AA /* base_10_b.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = base_10_b.m4a; sourceTree = "<group>"; };
 		E71AF27A1588B02B00CD68AA /* base_10_c.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = base_10_c.m4a; sourceTree = "<group>"; };
@@ -844,6 +846,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7184690158D92B00075C9D8 /* Twitter.framework in Frameworks */,
 				E70920B31574AEC900BE3D6D /* GameKit.framework in Frameworks */,
 				E73EC82414E3B7F9001B1980 /* QuartzCore.framework in Frameworks */,
 				E73EC82614E3B7F9001B1980 /* OpenGLES.framework in Frameworks */,
@@ -979,6 +982,7 @@
 		E73EC81414E3B7F9001B1980 = {
 			isa = PBXGroup;
 			children = (
+				E718468F158D92B00075C9D8 /* Twitter.framework */,
 				E70920B21574AEC900BE3D6D /* GameKit.framework */,
 				E76E8BC715259B1900E240D7 /* Icon-Small@2x.png */,
 				E76E8BC515259B1300E240D7 /* Icon-Small.png */,
