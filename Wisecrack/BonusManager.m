@@ -150,6 +150,19 @@
         [gl addChild:popup z:100];
         [popup runAction:[CCFadeOut actionWithDuration:2.5]];
     }
+    
+    if ( [name isEqualToString:@"chain"] )
+    {
+        GameLayer * gl = [[GameObjectCache sharedGameObjectCache] gameLayer];
+        
+        CGSize s = [[CCDirector sharedDirector] winSize];
+        CCSprite * popup = [loader spriteWithUniqueName:@"bonus_flag_chaining" 
+                                             atPosition:CGPointMake((s.width /2) + 5, s.height /2) 
+                                                inLayer:nil];
+        
+        [gl addChild:popup z:100];
+        [popup runAction:[CCFadeOut actionWithDuration:2.5]];
+    }
 }
 
 + (Bonus *) random:(NSString *)colour
