@@ -9,8 +9,9 @@
 #import "cocos2d.h"
 #import "SpriteHelperLoader.h"
 #import "GameKitHelper.h"
+#import "Facebook.h"
 
-@interface ScoreCard : CCLayer<GameKitHelperProtocol> {
+@interface ScoreCard : CCLayer<GameKitHelperProtocol, FBSessionDelegate, FBDialogDelegate> {
     CCLabelAtlas * scoreLabel;
     SpriteHelperLoader * loader;
     SpriteHelperLoader * highScoreLoader;

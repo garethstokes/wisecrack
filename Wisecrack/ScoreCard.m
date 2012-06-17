@@ -160,6 +160,21 @@
 - (void) openFacebook
 {
     [[MetricMonster monster] queue:@"OpenFacebook"];
+    
+    int highScore = [[SettingsManager sharedSettingsManager] getInt:@"HighScore" withDefault:0];
+    NSString * appId = @"406975956013328";
+    Facebook * fb = [[[Facebook alloc] initWithAppId:appId andDelegate:self] autorelease];
+    NSMutableDictionary * params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+                                    appId, @"app_id",
+                                    //@"http://developers.facebook.com/docs/reference/dialogs/", @"link",
+                                    //@"http://fbrell.com/f8.jpg", @"picture",
+                                    @"Wisecrack", @"name",
+                                    @"Can you make a wisecrack?", @"caption",
+                                    @"Have fun while keeping up your vocabulary", @"description",
+                                    [NSString stringWithFormat:@"New high score of %d, can you beat me?!", highScore],  @"message",
+                                    nil];
+    [fb dialog:@"feed" andParams:params andDelegate:self];
+    
 }
 
 - (void) openTwitter
