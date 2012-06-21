@@ -303,8 +303,6 @@
         // can't click on brick, douchbag
         if ( [[word name] isEqualToString:@"brick"] ) return;
      
-        [[SimpleAudioEngine sharedEngine] playEffect:@"bonus_noise.m4a" pitch:1 pan:1 gain:0.2];
-        
         Bonus * bonus = (Bonus *)word;
         [bonus decreaseDurability];
         
@@ -437,6 +435,11 @@
         mutex = false;
         
         if ( [bonus durability] >= 0 ) return;
+    }
+    
+    if ([button.word bonus])
+    {
+        [[SimpleAudioEngine sharedEngine] playEffect:@"bonus_noise.m4a" pitch:1 pan:1 gain:0.2];
     }
     
     //NSLog(@"fading out... %@", [button.word hash]);

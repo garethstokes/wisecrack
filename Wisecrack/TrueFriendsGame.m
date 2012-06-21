@@ -15,9 +15,9 @@
 {
     if( (self=[super init]))
     {
-        NSMutableArray * sw = [NSMutableArray arrayWithCapacity:14];
-        NSMutableArray * mw = [NSMutableArray arrayWithCapacity:17];
-        NSMutableArray * lw = [NSMutableArray arrayWithCapacity:16];
+        NSMutableArray * sw = [NSMutableArray arrayWithCapacity:16];
+        NSMutableArray * mw = [NSMutableArray arrayWithCapacity:21];
+        NSMutableArray * lw = [NSMutableArray arrayWithCapacity:20];
         
         // small words
         [sw addObject:@"am:small"];
@@ -36,6 +36,9 @@
         [sw addObject:@"tip:small"];
         [sw addObject:@"to:small"];
         [sw addObject:@"you:small"];
+        [sw addObject:@"let:small"];
+        
+        [sw addObject:@"eat:small"];
         
         // medium words
         [mw addObject:@"work:medium"];
@@ -58,6 +61,11 @@
         
         [mw addObject:@"touch:medium"];
         [mw addObject:@"work:medium"];
+        [mw addObject:@"cake:medium"];
+        [mw addObject:@"them:medium"];
+        [mw addObject:@"fire:medium"];
+        
+        [mw addObject:@"ring:medium"];
         
         // large words
         [lw addObject:@"bespoke:large"];
@@ -80,6 +88,11 @@
         
         [lw addObject:@"reading:large"];
         [lw addObject:@"stroke:large"];
+        [lw addObject:@"greedy:large"];
+        [lw addObject:@"pretty:large"];
+        [lw addObject:@"radical:large"];
+        
+        [lw addObject:@"burning:large"];
 
         [self shuffle:sw];
         [self shuffle:mw];

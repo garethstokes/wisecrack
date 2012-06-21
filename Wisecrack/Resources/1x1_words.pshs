@@ -89,9 +89,9 @@
 				<key>Frame-HD</key>
 				<string>{{0, 0}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0}, {0.0779817, 0.0782609}}</string>
+				<string>{{0, 0}, {0.072033897, 0.072289154}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -105,7 +105,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -173,9 +173,9 @@
 				<key>Frame-HD</key>
 				<string>{{74, 0}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.0848624, 0}, {0.162844, 0.0782609}}</string>
+				<string>{{0.078389831, 0}, {0.15042374, 0.072289154}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -189,7 +189,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -257,9 +257,9 @@
 				<key>Frame-HD</key>
 				<string>{{146, 0}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.167431, 0}, {0.245413, 0.0782609}}</string>
+				<string>{{0.15466101, 0}, {0.22669491, 0.072289154}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -273,7 +273,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -341,9 +341,9 @@
 				<key>Frame-HD</key>
 				<string>{{220, 0}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.252294, 0}, {0.330275, 0.0782609}}</string>
+				<string>{{0.23305085, 0}, {0.30508474, 0.072289154}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -357,7 +357,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -425,9 +425,9 @@
 				<key>Frame-HD</key>
 				<string>{{292, 0}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.334862, 0}, {0.412844, 0.0782609}}</string>
+				<string>{{0.30932203, 0}, {0.38135594, 0.072289154}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -441,7 +441,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -509,9 +509,9 @@
 				<key>Frame-HD</key>
 				<string>{{366, 0}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.419725, 0}, {0.497706, 0.0782609}}</string>
+				<string>{{0.38771185, 0}, {0.45974576, 0.072289154}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -525,7 +525,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -593,9 +593,9 @@
 				<key>Frame-HD</key>
 				<string>{{438, 0}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.502294, 0}, {0.580275, 0.0782609}}</string>
+				<string>{{0.46398306, 0}, {0.53601694, 0.072289154}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -609,7 +609,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -677,9 +677,9 @@
 				<key>Frame-HD</key>
 				<string>{{512, 0}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.587156, 0}, {0.665138, 0.0782609}}</string>
+				<string>{{0.54237288, 0}, {0.61440676, 0.072289154}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -693,7 +693,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -761,9 +761,9 @@
 				<key>Frame-HD</key>
 				<string>{{584, 0}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.669725, 0}, {0.747706, 0.0782609}}</string>
+				<string>{{0.61864406, 0}, {0.69067794, 0.072289154}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -777,7 +777,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -845,9 +845,9 @@
 				<key>Frame-HD</key>
 				<string>{{658, 0}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.754587, 0}, {0.832569, 0.0782609}}</string>
+				<string>{{0.69703388, 0}, {0.76906782, 0.072289154}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -861,7 +861,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -929,9 +929,9 @@
 				<key>Frame-HD</key>
 				<string>{{730, 0}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.837156, 0}, {0.915138, 0.0782609}}</string>
+				<string>{{0.77330506, 0}, {0.845339, 0.072289154}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -945,7 +945,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1013,9 +1013,9 @@
 				<key>Frame-HD</key>
 				<string>{{804, 0}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.922018, 0}, {1, 0.0782609}}</string>
+				<string>{{0.85169494, 0}, {0.92372882, 0.072289154}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -1029,7 +1029,91 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{438, 0}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{876, 0}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.92796612, 0}, {1, 0.072289154}}</string>
+				<key>HD_ImageSize</key>
+				<string>{944, 996}</string>
+				<key>Image</key>
+				<string>1x1_words.png</string>
+				<key>Image-HD</key>
+				<string>1x1_words-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
+				<key>Name</key>
+				<string>green_be_1_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1097,9 +1181,9 @@
 				<key>Frame-HD</key>
 				<string>{{0, 78}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0.0847826}, {0.0779817, 0.163043}}</string>
+				<string>{{0, 0.078313254}, {0.072033897, 0.15060242}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -1109,11 +1193,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_be_1_down</string>
+				<string>green_be_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1181,9 +1265,9 @@
 				<key>Frame-HD</key>
 				<string>{{0, 154}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0.167391}, {0.0779817, 0.245652}}</string>
+				<string>{{0, 0.15461847}, {0.072033897, 0.22690763}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -1193,11 +1277,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_be_1_up</string>
+				<string>grey_be_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1265,9 +1349,9 @@
 				<key>Frame-HD</key>
 				<string>{{0, 232}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0.252174}, {0.0779817, 0.330435}}</string>
+				<string>{{0, 0.23293173}, {0.072033897, 0.30522087}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -1277,11 +1361,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_be_1_down</string>
+				<string>grey_be_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1349,9 +1433,9 @@
 				<key>Frame-HD</key>
 				<string>{{0, 308}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0.334783}, {0.0779817, 0.413043}}</string>
+				<string>{{0, 0.30923694}, {0.072033897, 0.38152611}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -1361,11 +1445,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_be_1_up</string>
+				<string>red_be_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1433,9 +1517,9 @@
 				<key>Frame-HD</key>
 				<string>{{0, 386}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0.419565}, {0.0779817, 0.497826}}</string>
+				<string>{{0, 0.3875502}, {0.072033897, 0.45983934}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -1445,11 +1529,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_be_1_down</string>
+				<string>red_be_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1517,9 +1601,9 @@
 				<key>Frame-HD</key>
 				<string>{{0, 462}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0.502174}, {0.0779817, 0.580435}}</string>
+				<string>{{0, 0.46385542}, {0.072033897, 0.53614455}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -1529,11 +1613,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_be_1_up</string>
+				<string>yellow_be_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1601,9 +1685,9 @@
 				<key>Frame-HD</key>
 				<string>{{0, 540}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0.586957}, {0.0779817, 0.665217}}</string>
+				<string>{{0, 0.54216868}, {0.072033897, 0.61445785}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -1613,11 +1697,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_be_1_down</string>
+				<string>yellow_be_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1685,9 +1769,9 @@
 				<key>Frame-HD</key>
 				<string>{{0, 616}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0.669565}, {0.0779817, 0.747826}}</string>
+				<string>{{0, 0.61847389}, {0.072033897, 0.69076306}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -1697,11 +1781,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_be_1_up</string>
+				<string>blue_dog_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1769,9 +1853,9 @@
 				<key>Frame-HD</key>
 				<string>{{0, 694}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0.754348}, {0.0779817, 0.832609}}</string>
+				<string>{{0, 0.69678712}, {0.072033897, 0.76907629}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -1781,11 +1865,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_dog_1_down</string>
+				<string>blue_dog_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1853,9 +1937,9 @@
 				<key>Frame-HD</key>
 				<string>{{0, 770}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0.836957}, {0.0779817, 0.915217}}</string>
+				<string>{{0, 0.77309239}, {0.072033897, 0.8453815}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -1865,11 +1949,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_dog_1_up</string>
+				<string>green_dog_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1937,9 +2021,9 @@
 				<key>Frame-HD</key>
 				<string>{{0, 848}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0.921739}, {0.0779817, 1}}</string>
+				<string>{{0, 0.85140562}, {0.072033897, 0.92369479}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -1949,11 +2033,95 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_dog_1_down</string>
+				<string>green_dog_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{0, 462}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{0, 924}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0, 0.92771083}, {0.072033897, 1}}</string>
+				<key>HD_ImageSize</key>
+				<string>{944, 996}</string>
+				<key>Image</key>
+				<string>1x1_words.png</string>
+				<key>Image-HD</key>
+				<string>1x1_words-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
+				<key>Name</key>
+				<string>grey_dog_1_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -2021,9 +2189,9 @@
 				<key>Frame-HD</key>
 				<string>{{74, 78}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.0848624, 0.0847826}, {0.162844, 0.163043}}</string>
+				<string>{{0.078389831, 0.078313254}, {0.15042374, 0.15060242}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -2033,11 +2201,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_dog_1_up</string>
+				<string>grey_dog_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -2105,9 +2273,9 @@
 				<key>Frame-HD</key>
 				<string>{{146, 78}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.167431, 0.0847826}, {0.245413, 0.163043}}</string>
+				<string>{{0.15466101, 0.078313254}, {0.22669491, 0.15060242}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -2117,11 +2285,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_dog_1_down</string>
+				<string>red_dog_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -2189,9 +2357,9 @@
 				<key>Frame-HD</key>
 				<string>{{220, 78}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.252294, 0.0847826}, {0.330275, 0.163043}}</string>
+				<string>{{0.23305085, 0.078313254}, {0.30508474, 0.15060242}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -2201,11 +2369,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_dog_1_up</string>
+				<string>red_dog_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -2273,9 +2441,9 @@
 				<key>Frame-HD</key>
 				<string>{{292, 78}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.334862, 0.0847826}, {0.412844, 0.163043}}</string>
+				<string>{{0.30932203, 0.078313254}, {0.38135594, 0.15060242}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -2285,11 +2453,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_dog_1_down</string>
+				<string>yellow_dog_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -2357,9 +2525,9 @@
 				<key>Frame-HD</key>
 				<string>{{366, 78}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.419725, 0.0847826}, {0.497706, 0.163043}}</string>
+				<string>{{0.38771185, 0.078313254}, {0.45974576, 0.15060242}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -2369,11 +2537,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_dog_1_up</string>
+				<string>yellow_dog_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -2441,9 +2609,9 @@
 				<key>Frame-HD</key>
 				<string>{{438, 78}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.502294, 0.0847826}, {0.580275, 0.163043}}</string>
+				<string>{{0.46398306, 0.078313254}, {0.53601694, 0.15060242}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -2453,11 +2621,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_dog_1_down</string>
+				<string>blue_eat_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -2525,9 +2693,9 @@
 				<key>Frame-HD</key>
 				<string>{{512, 78}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.587156, 0.0847826}, {0.665138, 0.163043}}</string>
+				<string>{{0.54237288, 0.078313254}, {0.61440676, 0.15060242}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -2537,11 +2705,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_dog_1_up</string>
+				<string>blue_eat_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -2609,9 +2777,9 @@
 				<key>Frame-HD</key>
 				<string>{{584, 78}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.669725, 0.0847826}, {0.747706, 0.163043}}</string>
+				<string>{{0.61864406, 0.078313254}, {0.69067794, 0.15060242}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -2621,11 +2789,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_i_1_down</string>
+				<string>green_eat_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -2693,9 +2861,9 @@
 				<key>Frame-HD</key>
 				<string>{{658, 78}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.754587, 0.0847826}, {0.832569, 0.163043}}</string>
+				<string>{{0.69703388, 0.078313254}, {0.76906782, 0.15060242}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -2705,11 +2873,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_i_1_up</string>
+				<string>green_eat_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -2777,9 +2945,9 @@
 				<key>Frame-HD</key>
 				<string>{{730, 78}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.837156, 0.0847826}, {0.915138, 0.163043}}</string>
+				<string>{{0.77330506, 0.078313254}, {0.845339, 0.15060242}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -2789,11 +2957,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_i_1_down</string>
+				<string>grey_eat_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -2861,9 +3029,9 @@
 				<key>Frame-HD</key>
 				<string>{{804, 78}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.922018, 0.0847826}, {1, 0.163043}}</string>
+				<string>{{0.85169494, 0.078313254}, {0.92372882, 0.15060242}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -2873,11 +3041,95 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_i_1_up</string>
+				<string>grey_eat_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{438, 39}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{876, 78}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.92796612, 0.078313254}, {1, 0.15060242}}</string>
+				<key>HD_ImageSize</key>
+				<string>{944, 996}</string>
+				<key>Image</key>
+				<string>1x1_words.png</string>
+				<key>Image-HD</key>
+				<string>1x1_words-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
+				<key>Name</key>
+				<string>red_eat_1_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -2945,9 +3197,9 @@
 				<key>Frame-HD</key>
 				<string>{{74, 154}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.0848624, 0.167391}, {0.162844, 0.245652}}</string>
+				<string>{{0.078389831, 0.15461847}, {0.15042374, 0.22690763}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -2957,11 +3209,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_i_1_down</string>
+				<string>red_eat_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -3029,9 +3281,9 @@
 				<key>Frame-HD</key>
 				<string>{{74, 232}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.0848624, 0.252174}, {0.162844, 0.330435}}</string>
+				<string>{{0.078389831, 0.23293173}, {0.15042374, 0.30522087}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -3041,11 +3293,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_i_1_up</string>
+				<string>yellow_eat_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -3113,9 +3365,9 @@
 				<key>Frame-HD</key>
 				<string>{{74, 308}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.0848624, 0.334783}, {0.162844, 0.413043}}</string>
+				<string>{{0.078389831, 0.30923694}, {0.15042374, 0.38152611}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -3125,11 +3377,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_i_1_down</string>
+				<string>yellow_eat_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -3197,9 +3449,9 @@
 				<key>Frame-HD</key>
 				<string>{{74, 386}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.0848624, 0.419565}, {0.162844, 0.497826}}</string>
+				<string>{{0.078389831, 0.3875502}, {0.15042374, 0.45983934}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -3209,11 +3461,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_i_1_up</string>
+				<string>blue_i_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -3281,9 +3533,9 @@
 				<key>Frame-HD</key>
 				<string>{{74, 462}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.0848624, 0.502174}, {0.162844, 0.580435}}</string>
+				<string>{{0.078389831, 0.46385542}, {0.15042374, 0.53614455}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -3293,11 +3545,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_i_1_down</string>
+				<string>blue_i_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -3365,9 +3617,9 @@
 				<key>Frame-HD</key>
 				<string>{{74, 540}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.0848624, 0.586957}, {0.162844, 0.665217}}</string>
+				<string>{{0.078389831, 0.54216868}, {0.15042374, 0.61445785}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -3377,11 +3629,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_i_1_up</string>
+				<string>green_i_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -3449,9 +3701,9 @@
 				<key>Frame-HD</key>
 				<string>{{74, 616}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.0848624, 0.669565}, {0.162844, 0.747826}}</string>
+				<string>{{0.078389831, 0.61847389}, {0.15042374, 0.69076306}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -3461,11 +3713,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_in_1_down</string>
+				<string>green_i_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -3533,9 +3785,9 @@
 				<key>Frame-HD</key>
 				<string>{{74, 694}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.0848624, 0.754348}, {0.162844, 0.832609}}</string>
+				<string>{{0.078389831, 0.69678712}, {0.15042374, 0.76907629}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -3545,11 +3797,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_in_1_up</string>
+				<string>grey_i_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -3617,9 +3869,9 @@
 				<key>Frame-HD</key>
 				<string>{{74, 770}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.0848624, 0.836957}, {0.162844, 0.915217}}</string>
+				<string>{{0.078389831, 0.77309239}, {0.15042374, 0.8453815}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -3629,11 +3881,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_in_1_down</string>
+				<string>grey_i_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -3701,9 +3953,9 @@
 				<key>Frame-HD</key>
 				<string>{{74, 848}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.0848624, 0.921739}, {0.162844, 1}}</string>
+				<string>{{0.078389831, 0.85140562}, {0.15042374, 0.92369479}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -3713,11 +3965,95 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_in_1_up</string>
+				<string>red_i_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{37, 462}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{74, 924}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.078389831, 0.92771083}, {0.15042374, 1}}</string>
+				<key>HD_ImageSize</key>
+				<string>{944, 996}</string>
+				<key>Image</key>
+				<string>1x1_words.png</string>
+				<key>Image-HD</key>
+				<string>1x1_words-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
+				<key>Name</key>
+				<string>red_i_1_up</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -3785,9 +4121,9 @@
 				<key>Frame-HD</key>
 				<string>{{146, 154}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.167431, 0.167391}, {0.245413, 0.245652}}</string>
+				<string>{{0.15466101, 0.15461847}, {0.22669491, 0.22690763}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -3797,11 +4133,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_in_1_down</string>
+				<string>yellow_i_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -3869,9 +4205,9 @@
 				<key>Frame-HD</key>
 				<string>{{220, 154}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.252294, 0.167391}, {0.330275, 0.245652}}</string>
+				<string>{{0.23305085, 0.15461847}, {0.30508474, 0.22690763}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -3881,11 +4217,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_in_1_up</string>
+				<string>yellow_i_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -3953,9 +4289,9 @@
 				<key>Frame-HD</key>
 				<string>{{292, 154}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.334862, 0.167391}, {0.412844, 0.245652}}</string>
+				<string>{{0.30932203, 0.15461847}, {0.38135594, 0.22690763}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -3965,11 +4301,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_in_1_down</string>
+				<string>blue_in_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -4037,9 +4373,9 @@
 				<key>Frame-HD</key>
 				<string>{{366, 154}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.419725, 0.167391}, {0.497706, 0.245652}}</string>
+				<string>{{0.38771185, 0.15461847}, {0.45974576, 0.22690763}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -4049,11 +4385,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_in_1_up</string>
+				<string>blue_in_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -4121,9 +4457,9 @@
 				<key>Frame-HD</key>
 				<string>{{438, 154}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.502294, 0.167391}, {0.580275, 0.245652}}</string>
+				<string>{{0.46398306, 0.15461847}, {0.53601694, 0.22690763}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -4133,11 +4469,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_in_1_down</string>
+				<string>green_in_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -4205,9 +4541,9 @@
 				<key>Frame-HD</key>
 				<string>{{512, 154}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.587156, 0.167391}, {0.665138, 0.245652}}</string>
+				<string>{{0.54237288, 0.15461847}, {0.61440676, 0.22690763}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -4217,11 +4553,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_in_1_up</string>
+				<string>green_in_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -4289,9 +4625,9 @@
 				<key>Frame-HD</key>
 				<string>{{584, 154}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.669725, 0.167391}, {0.747706, 0.245652}}</string>
+				<string>{{0.61864406, 0.15461847}, {0.69067794, 0.22690763}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -4301,11 +4637,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_is_1_down</string>
+				<string>grey_in_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -4373,9 +4709,9 @@
 				<key>Frame-HD</key>
 				<string>{{658, 154}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.754587, 0.167391}, {0.832569, 0.245652}}</string>
+				<string>{{0.69703388, 0.15461847}, {0.76906782, 0.22690763}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -4385,11 +4721,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_is_1_up</string>
+				<string>grey_in_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -4457,9 +4793,9 @@
 				<key>Frame-HD</key>
 				<string>{{730, 154}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.837156, 0.167391}, {0.915138, 0.245652}}</string>
+				<string>{{0.77330506, 0.15461847}, {0.845339, 0.22690763}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -4469,11 +4805,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_is_1_down</string>
+				<string>red_in_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -4541,9 +4877,9 @@
 				<key>Frame-HD</key>
 				<string>{{804, 154}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.922018, 0.167391}, {1, 0.245652}}</string>
+				<string>{{0.85169494, 0.15461847}, {0.92372882, 0.22690763}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -4553,11 +4889,95 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_is_1_up</string>
+				<string>red_in_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{438, 77}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{876, 154}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.92796612, 0.15461847}, {1, 0.22690763}}</string>
+				<key>HD_ImageSize</key>
+				<string>{944, 996}</string>
+				<key>Image</key>
+				<string>1x1_words.png</string>
+				<key>Image-HD</key>
+				<string>1x1_words-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
+				<key>Name</key>
+				<string>yellow_in_1_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -4625,9 +5045,9 @@
 				<key>Frame-HD</key>
 				<string>{{146, 232}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.167431, 0.252174}, {0.245413, 0.330435}}</string>
+				<string>{{0.15466101, 0.23293173}, {0.22669491, 0.30522087}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -4637,11 +5057,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_is_1_down</string>
+				<string>yellow_in_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -4709,9 +5129,9 @@
 				<key>Frame-HD</key>
 				<string>{{146, 308}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.167431, 0.334783}, {0.245413, 0.413043}}</string>
+				<string>{{0.15466101, 0.30923694}, {0.22669491, 0.38152611}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -4721,11 +5141,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_is_1_up</string>
+				<string>blue_is_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -4793,9 +5213,9 @@
 				<key>Frame-HD</key>
 				<string>{{146, 386}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.167431, 0.419565}, {0.245413, 0.497826}}</string>
+				<string>{{0.15466101, 0.3875502}, {0.22669491, 0.45983934}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -4805,11 +5225,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_is_1_down</string>
+				<string>blue_is_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -4877,9 +5297,9 @@
 				<key>Frame-HD</key>
 				<string>{{146, 462}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.167431, 0.502174}, {0.245413, 0.580435}}</string>
+				<string>{{0.15466101, 0.46385542}, {0.22669491, 0.53614455}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -4889,11 +5309,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_is_1_up</string>
+				<string>green_is_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -4961,9 +5381,9 @@
 				<key>Frame-HD</key>
 				<string>{{146, 540}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.167431, 0.586957}, {0.245413, 0.665217}}</string>
+				<string>{{0.15466101, 0.54216868}, {0.22669491, 0.61445785}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -4973,11 +5393,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_is_1_down</string>
+				<string>green_is_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -5045,9 +5465,9 @@
 				<key>Frame-HD</key>
 				<string>{{146, 616}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.167431, 0.669565}, {0.245413, 0.747826}}</string>
+				<string>{{0.15466101, 0.61847389}, {0.22669491, 0.69076306}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -5057,11 +5477,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_is_1_up</string>
+				<string>grey_is_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -5129,9 +5549,9 @@
 				<key>Frame-HD</key>
 				<string>{{146, 694}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.167431, 0.754348}, {0.245413, 0.832609}}</string>
+				<string>{{0.15466101, 0.69678712}, {0.22669491, 0.76907629}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -5141,11 +5561,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_it_1_down</string>
+				<string>grey_is_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -5213,9 +5633,9 @@
 				<key>Frame-HD</key>
 				<string>{{146, 770}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.167431, 0.836957}, {0.245413, 0.915217}}</string>
+				<string>{{0.15466101, 0.77309239}, {0.22669491, 0.8453815}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -5225,11 +5645,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_it_1_up</string>
+				<string>red_is_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -5297,9 +5717,9 @@
 				<key>Frame-HD</key>
 				<string>{{146, 848}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.167431, 0.921739}, {0.245413, 1}}</string>
+				<string>{{0.15466101, 0.85140562}, {0.22669491, 0.92369479}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -5309,11 +5729,95 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_it_1_down</string>
+				<string>red_is_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{73, 462}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{146, 924}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.15466101, 0.92771083}, {0.22669491, 1}}</string>
+				<key>HD_ImageSize</key>
+				<string>{944, 996}</string>
+				<key>Image</key>
+				<string>1x1_words.png</string>
+				<key>Image-HD</key>
+				<string>1x1_words-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
+				<key>Name</key>
+				<string>yellow_is_1_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -5381,9 +5885,9 @@
 				<key>Frame-HD</key>
 				<string>{{220, 232}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.252294, 0.252174}, {0.330275, 0.330435}}</string>
+				<string>{{0.23305085, 0.23293173}, {0.30508474, 0.30522087}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -5393,11 +5897,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_it_1_up</string>
+				<string>yellow_is_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -5465,9 +5969,9 @@
 				<key>Frame-HD</key>
 				<string>{{292, 232}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.334862, 0.252174}, {0.412844, 0.330435}}</string>
+				<string>{{0.30932203, 0.23293173}, {0.38135594, 0.30522087}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -5477,11 +5981,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_it_1_down</string>
+				<string>blue_it_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -5549,9 +6053,9 @@
 				<key>Frame-HD</key>
 				<string>{{366, 232}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.419725, 0.252174}, {0.497706, 0.330435}}</string>
+				<string>{{0.38771185, 0.23293173}, {0.45974576, 0.30522087}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -5561,11 +6065,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_it_1_up</string>
+				<string>blue_it_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -5633,9 +6137,9 @@
 				<key>Frame-HD</key>
 				<string>{{438, 232}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.502294, 0.252174}, {0.580275, 0.330435}}</string>
+				<string>{{0.46398306, 0.23293173}, {0.53601694, 0.30522087}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -5645,11 +6149,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_it_1_down</string>
+				<string>green_it_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -5717,9 +6221,9 @@
 				<key>Frame-HD</key>
 				<string>{{512, 232}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.587156, 0.252174}, {0.665138, 0.330435}}</string>
+				<string>{{0.54237288, 0.23293173}, {0.61440676, 0.30522087}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -5729,11 +6233,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_it_1_up</string>
+				<string>green_it_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -5801,9 +6305,9 @@
 				<key>Frame-HD</key>
 				<string>{{584, 232}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.669725, 0.252174}, {0.747706, 0.330435}}</string>
+				<string>{{0.61864406, 0.23293173}, {0.69067794, 0.30522087}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -5813,11 +6317,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_it_1_down</string>
+				<string>grey_it_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -5885,9 +6389,9 @@
 				<key>Frame-HD</key>
 				<string>{{658, 232}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.754587, 0.252174}, {0.832569, 0.330435}}</string>
+				<string>{{0.69703388, 0.23293173}, {0.76906782, 0.30522087}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -5897,11 +6401,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_it_1_up</string>
+				<string>grey_it_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -5969,9 +6473,9 @@
 				<key>Frame-HD</key>
 				<string>{{730, 232}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.837156, 0.252174}, {0.915138, 0.330435}}</string>
+				<string>{{0.77330506, 0.23293173}, {0.845339, 0.30522087}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -5981,11 +6485,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_my_1_down</string>
+				<string>red_it_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -6053,9 +6557,9 @@
 				<key>Frame-HD</key>
 				<string>{{804, 232}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.922018, 0.252174}, {1, 0.330435}}</string>
+				<string>{{0.85169494, 0.23293173}, {0.92372882, 0.30522087}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -6065,11 +6569,95 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_my_1_up</string>
+				<string>red_it_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{438, 116}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{876, 232}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.92796612, 0.23293173}, {1, 0.30522087}}</string>
+				<key>HD_ImageSize</key>
+				<string>{944, 996}</string>
+				<key>Image</key>
+				<string>1x1_words.png</string>
+				<key>Image-HD</key>
+				<string>1x1_words-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
+				<key>Name</key>
+				<string>yellow_it_1_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -6137,9 +6725,9 @@
 				<key>Frame-HD</key>
 				<string>{{220, 308}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.252294, 0.334783}, {0.330275, 0.413043}}</string>
+				<string>{{0.23305085, 0.30923694}, {0.30508474, 0.38152611}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -6149,11 +6737,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_my_1_down</string>
+				<string>yellow_it_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -6221,9 +6809,9 @@
 				<key>Frame-HD</key>
 				<string>{{220, 386}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.252294, 0.419565}, {0.330275, 0.497826}}</string>
+				<string>{{0.23305085, 0.3875502}, {0.30508474, 0.45983934}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -6233,11 +6821,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_my_1_up</string>
+				<string>blue_let_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -6305,9 +6893,9 @@
 				<key>Frame-HD</key>
 				<string>{{220, 462}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.252294, 0.502174}, {0.330275, 0.580435}}</string>
+				<string>{{0.23305085, 0.46385542}, {0.30508474, 0.53614455}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -6317,11 +6905,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_my_1_down</string>
+				<string>blue_let_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -6389,9 +6977,9 @@
 				<key>Frame-HD</key>
 				<string>{{220, 540}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.252294, 0.586957}, {0.330275, 0.665217}}</string>
+				<string>{{0.23305085, 0.54216868}, {0.30508474, 0.61445785}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -6401,11 +6989,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_my_1_up</string>
+				<string>green_let_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -6473,9 +7061,9 @@
 				<key>Frame-HD</key>
 				<string>{{220, 616}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.252294, 0.669565}, {0.330275, 0.747826}}</string>
+				<string>{{0.23305085, 0.61847389}, {0.30508474, 0.69076306}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -6485,11 +7073,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_my_1_down</string>
+				<string>green_let_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -6557,9 +7145,9 @@
 				<key>Frame-HD</key>
 				<string>{{220, 694}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.252294, 0.754348}, {0.330275, 0.832609}}</string>
+				<string>{{0.23305085, 0.69678712}, {0.30508474, 0.76907629}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -6569,11 +7157,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_my_1_up</string>
+				<string>grey_let_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -6641,9 +7229,9 @@
 				<key>Frame-HD</key>
 				<string>{{220, 770}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.252294, 0.836957}, {0.330275, 0.915217}}</string>
+				<string>{{0.23305085, 0.77309239}, {0.30508474, 0.8453815}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -6653,11 +7241,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_my_1_down</string>
+				<string>grey_let_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -6725,9 +7313,9 @@
 				<key>Frame-HD</key>
 				<string>{{220, 848}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.252294, 0.921739}, {0.330275, 1}}</string>
+				<string>{{0.23305085, 0.85140562}, {0.30508474, 0.92369479}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -6737,11 +7325,95 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_my_1_up</string>
+				<string>red_let_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{110, 462}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{220, 924}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.23305085, 0.92771083}, {0.30508474, 1}}</string>
+				<key>HD_ImageSize</key>
+				<string>{944, 996}</string>
+				<key>Image</key>
+				<string>1x1_words.png</string>
+				<key>Image-HD</key>
+				<string>1x1_words-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
+				<key>Name</key>
+				<string>red_let_1_up</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -6809,9 +7481,9 @@
 				<key>Frame-HD</key>
 				<string>{{292, 308}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.334862, 0.334783}, {0.412844, 0.413043}}</string>
+				<string>{{0.30932203, 0.30923694}, {0.38135594, 0.38152611}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -6821,11 +7493,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_of_1_down</string>
+				<string>yellow_let_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -6893,9 +7565,9 @@
 				<key>Frame-HD</key>
 				<string>{{366, 308}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.419725, 0.334783}, {0.497706, 0.413043}}</string>
+				<string>{{0.38771185, 0.30923694}, {0.45974576, 0.38152611}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -6905,11 +7577,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_of_1_up</string>
+				<string>yellow_let_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -6977,9 +7649,9 @@
 				<key>Frame-HD</key>
 				<string>{{438, 308}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.502294, 0.334783}, {0.580275, 0.413043}}</string>
+				<string>{{0.46398306, 0.30923694}, {0.53601694, 0.38152611}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -6989,11 +7661,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_of_1_down</string>
+				<string>blue_my_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -7061,9 +7733,9 @@
 				<key>Frame-HD</key>
 				<string>{{512, 308}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.587156, 0.334783}, {0.665138, 0.413043}}</string>
+				<string>{{0.54237288, 0.30923694}, {0.61440676, 0.38152611}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -7073,11 +7745,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_of_1_up</string>
+				<string>blue_my_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -7145,9 +7817,9 @@
 				<key>Frame-HD</key>
 				<string>{{584, 308}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.669725, 0.334783}, {0.747706, 0.413043}}</string>
+				<string>{{0.61864406, 0.30923694}, {0.69067794, 0.38152611}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -7157,11 +7829,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_of_1_down</string>
+				<string>green_my_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -7229,9 +7901,9 @@
 				<key>Frame-HD</key>
 				<string>{{658, 308}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.754587, 0.334783}, {0.832569, 0.413043}}</string>
+				<string>{{0.69703388, 0.30923694}, {0.76906782, 0.38152611}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -7241,11 +7913,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_of_1_up</string>
+				<string>green_my_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -7313,9 +7985,9 @@
 				<key>Frame-HD</key>
 				<string>{{730, 308}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.837156, 0.334783}, {0.915138, 0.413043}}</string>
+				<string>{{0.77330506, 0.30923694}, {0.845339, 0.38152611}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -7325,11 +7997,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_of_1_down</string>
+				<string>grey_my_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -7397,9 +8069,9 @@
 				<key>Frame-HD</key>
 				<string>{{804, 308}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.922018, 0.334783}, {1, 0.413043}}</string>
+				<string>{{0.85169494, 0.30923694}, {0.92372882, 0.38152611}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -7409,11 +8081,95 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_of_1_up</string>
+				<string>grey_my_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{438, 154}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{876, 308}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.92796612, 0.30923694}, {1, 0.38152611}}</string>
+				<key>HD_ImageSize</key>
+				<string>{944, 996}</string>
+				<key>Image</key>
+				<string>1x1_words.png</string>
+				<key>Image-HD</key>
+				<string>1x1_words-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
+				<key>Name</key>
+				<string>red_my_1_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -7481,9 +8237,9 @@
 				<key>Frame-HD</key>
 				<string>{{292, 386}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.334862, 0.419565}, {0.412844, 0.497826}}</string>
+				<string>{{0.30932203, 0.3875502}, {0.38135594, 0.45983934}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -7493,11 +8249,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_of_1_down</string>
+				<string>red_my_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -7565,9 +8321,9 @@
 				<key>Frame-HD</key>
 				<string>{{292, 462}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.334862, 0.502174}, {0.412844, 0.580435}}</string>
+				<string>{{0.30932203, 0.46385542}, {0.38135594, 0.53614455}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -7577,11 +8333,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_of_1_up</string>
+				<string>yellow_my_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -7649,9 +8405,9 @@
 				<key>Frame-HD</key>
 				<string>{{292, 540}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.334862, 0.586957}, {0.412844, 0.665217}}</string>
+				<string>{{0.30932203, 0.54216868}, {0.38135594, 0.61445785}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -7661,11 +8417,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_tea_1_down</string>
+				<string>yellow_my_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -7733,9 +8489,9 @@
 				<key>Frame-HD</key>
 				<string>{{292, 616}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.334862, 0.669565}, {0.412844, 0.747826}}</string>
+				<string>{{0.30932203, 0.61847389}, {0.38135594, 0.69076306}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -7745,11 +8501,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_tea_1_up</string>
+				<string>blue_of_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -7817,9 +8573,9 @@
 				<key>Frame-HD</key>
 				<string>{{292, 694}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.334862, 0.754348}, {0.412844, 0.832609}}</string>
+				<string>{{0.30932203, 0.69678712}, {0.38135594, 0.76907629}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -7829,11 +8585,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_tea_1_down</string>
+				<string>blue_of_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -7901,9 +8657,9 @@
 				<key>Frame-HD</key>
 				<string>{{292, 770}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.334862, 0.836957}, {0.412844, 0.915217}}</string>
+				<string>{{0.30932203, 0.77309239}, {0.38135594, 0.8453815}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -7913,11 +8669,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_tea_1_up</string>
+				<string>green_of_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -7985,9 +8741,9 @@
 				<key>Frame-HD</key>
 				<string>{{292, 848}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.334862, 0.921739}, {0.412844, 1}}</string>
+				<string>{{0.30932203, 0.85140562}, {0.38135594, 0.92369479}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -7997,11 +8753,95 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_tea_1_down</string>
+				<string>green_of_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{146, 462}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{292, 924}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.30932203, 0.92771083}, {0.38135594, 1}}</string>
+				<key>HD_ImageSize</key>
+				<string>{944, 996}</string>
+				<key>Image</key>
+				<string>1x1_words.png</string>
+				<key>Image-HD</key>
+				<string>1x1_words-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
+				<key>Name</key>
+				<string>grey_of_1_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -8069,9 +8909,9 @@
 				<key>Frame-HD</key>
 				<string>{{366, 386}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.419725, 0.419565}, {0.497706, 0.497826}}</string>
+				<string>{{0.38771185, 0.3875502}, {0.45974576, 0.45983934}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -8081,11 +8921,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_tea_1_up</string>
+				<string>grey_of_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -8153,9 +8993,9 @@
 				<key>Frame-HD</key>
 				<string>{{438, 386}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.502294, 0.419565}, {0.580275, 0.497826}}</string>
+				<string>{{0.46398306, 0.3875502}, {0.53601694, 0.45983934}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -8165,11 +9005,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_tea_1_down</string>
+				<string>red_of_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -8237,9 +9077,9 @@
 				<key>Frame-HD</key>
 				<string>{{512, 386}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.587156, 0.419565}, {0.665138, 0.497826}}</string>
+				<string>{{0.54237288, 0.3875502}, {0.61440676, 0.45983934}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -8249,11 +9089,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_tea_1_up</string>
+				<string>red_of_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -8321,9 +9161,9 @@
 				<key>Frame-HD</key>
 				<string>{{584, 386}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.669725, 0.419565}, {0.747706, 0.497826}}</string>
+				<string>{{0.61864406, 0.3875502}, {0.69067794, 0.45983934}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -8333,11 +9173,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_tea_1_down</string>
+				<string>yellow_of_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -8405,9 +9245,9 @@
 				<key>Frame-HD</key>
 				<string>{{658, 386}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.754587, 0.419565}, {0.832569, 0.497826}}</string>
+				<string>{{0.69703388, 0.3875502}, {0.76906782, 0.45983934}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -8417,11 +9257,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_tea_1_up</string>
+				<string>yellow_of_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -8489,9 +9329,9 @@
 				<key>Frame-HD</key>
 				<string>{{730, 386}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.837156, 0.419565}, {0.915138, 0.497826}}</string>
+				<string>{{0.77330506, 0.3875502}, {0.845339, 0.45983934}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -8501,11 +9341,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_the_1_down</string>
+				<string>blue_tea_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -8573,9 +9413,9 @@
 				<key>Frame-HD</key>
 				<string>{{804, 386}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.922018, 0.419565}, {1, 0.497826}}</string>
+				<string>{{0.85169494, 0.3875502}, {0.92372882, 0.45983934}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -8585,11 +9425,95 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_the_1_up</string>
+				<string>blue_tea_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{438, 193}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{876, 386}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.92796612, 0.3875502}, {1, 0.45983934}}</string>
+				<key>HD_ImageSize</key>
+				<string>{944, 996}</string>
+				<key>Image</key>
+				<string>1x1_words.png</string>
+				<key>Image-HD</key>
+				<string>1x1_words-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
+				<key>Name</key>
+				<string>green_tea_1_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -8657,9 +9581,9 @@
 				<key>Frame-HD</key>
 				<string>{{366, 462}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.419725, 0.502174}, {0.497706, 0.580435}}</string>
+				<string>{{0.38771185, 0.46385542}, {0.45974576, 0.53614455}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -8669,11 +9593,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_the_1_down</string>
+				<string>green_tea_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -8741,9 +9665,9 @@
 				<key>Frame-HD</key>
 				<string>{{366, 540}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.419725, 0.586957}, {0.497706, 0.665217}}</string>
+				<string>{{0.38771185, 0.54216868}, {0.45974576, 0.61445785}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -8753,11 +9677,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_the_1_up</string>
+				<string>grey_tea_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -8825,9 +9749,9 @@
 				<key>Frame-HD</key>
 				<string>{{366, 616}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.419725, 0.669565}, {0.497706, 0.747826}}</string>
+				<string>{{0.38771185, 0.61847389}, {0.45974576, 0.69076306}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -8837,11 +9761,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_the_1_down</string>
+				<string>grey_tea_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -8909,9 +9833,9 @@
 				<key>Frame-HD</key>
 				<string>{{366, 694}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.419725, 0.754348}, {0.497706, 0.832609}}</string>
+				<string>{{0.38771185, 0.69678712}, {0.45974576, 0.76907629}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -8921,11 +9845,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_the_1_up</string>
+				<string>red_tea_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -8993,9 +9917,9 @@
 				<key>Frame-HD</key>
 				<string>{{366, 770}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.419725, 0.836957}, {0.497706, 0.915217}}</string>
+				<string>{{0.38771185, 0.77309239}, {0.45974576, 0.8453815}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -9005,11 +9929,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_the_1_down</string>
+				<string>red_tea_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -9077,9 +10001,9 @@
 				<key>Frame-HD</key>
 				<string>{{366, 848}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.419725, 0.921739}, {0.497706, 1}}</string>
+				<string>{{0.38771185, 0.85140562}, {0.45974576, 0.92369479}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -9089,11 +10013,95 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_the_1_up</string>
+				<string>yellow_tea_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{183, 462}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{366, 924}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.38771185, 0.92771083}, {0.45974576, 1}}</string>
+				<key>HD_ImageSize</key>
+				<string>{944, 996}</string>
+				<key>Image</key>
+				<string>1x1_words.png</string>
+				<key>Image-HD</key>
+				<string>1x1_words-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
+				<key>Name</key>
+				<string>yellow_tea_1_up</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -9161,9 +10169,9 @@
 				<key>Frame-HD</key>
 				<string>{{438, 462}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.502294, 0.502174}, {0.580275, 0.580435}}</string>
+				<string>{{0.46398306, 0.46385542}, {0.53601694, 0.53614455}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -9173,11 +10181,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_the_1_down</string>
+				<string>blue_the_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -9245,9 +10253,9 @@
 				<key>Frame-HD</key>
 				<string>{{512, 462}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.587156, 0.502174}, {0.665138, 0.580435}}</string>
+				<string>{{0.54237288, 0.46385542}, {0.61440676, 0.53614455}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -9257,11 +10265,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_the_1_up</string>
+				<string>blue_the_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -9329,9 +10337,9 @@
 				<key>Frame-HD</key>
 				<string>{{584, 462}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.669725, 0.502174}, {0.747706, 0.580435}}</string>
+				<string>{{0.61864406, 0.46385542}, {0.69067794, 0.53614455}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -9341,11 +10349,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_tip_1_down</string>
+				<string>green_the_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -9413,9 +10421,9 @@
 				<key>Frame-HD</key>
 				<string>{{658, 462}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.754587, 0.502174}, {0.832569, 0.580435}}</string>
+				<string>{{0.69703388, 0.46385542}, {0.76906782, 0.53614455}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -9425,11 +10433,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_tip_1_up</string>
+				<string>green_the_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -9497,9 +10505,9 @@
 				<key>Frame-HD</key>
 				<string>{{730, 462}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.837156, 0.502174}, {0.915138, 0.580435}}</string>
+				<string>{{0.77330506, 0.46385542}, {0.845339, 0.53614455}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -9509,11 +10517,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_tip_1_down</string>
+				<string>grey_the_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -9581,9 +10589,9 @@
 				<key>Frame-HD</key>
 				<string>{{804, 462}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.922018, 0.502174}, {1, 0.580435}}</string>
+				<string>{{0.85169494, 0.46385542}, {0.92372882, 0.53614455}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -9593,11 +10601,95 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_tip_1_up</string>
+				<string>grey_the_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{438, 231}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{876, 462}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.92796612, 0.46385542}, {1, 0.53614455}}</string>
+				<key>HD_ImageSize</key>
+				<string>{944, 996}</string>
+				<key>Image</key>
+				<string>1x1_words.png</string>
+				<key>Image-HD</key>
+				<string>1x1_words-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
+				<key>Name</key>
+				<string>red_the_1_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -9665,9 +10757,9 @@
 				<key>Frame-HD</key>
 				<string>{{438, 540}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.502294, 0.586957}, {0.580275, 0.665217}}</string>
+				<string>{{0.46398306, 0.54216868}, {0.53601694, 0.61445785}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -9677,11 +10769,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_tip_1_down</string>
+				<string>red_the_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -9749,9 +10841,9 @@
 				<key>Frame-HD</key>
 				<string>{{438, 616}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.502294, 0.669565}, {0.580275, 0.747826}}</string>
+				<string>{{0.46398306, 0.61847389}, {0.53601694, 0.69076306}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -9761,11 +10853,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_tip_1_up</string>
+				<string>yellow_the_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -9833,9 +10925,9 @@
 				<key>Frame-HD</key>
 				<string>{{438, 694}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.502294, 0.754348}, {0.580275, 0.832609}}</string>
+				<string>{{0.46398306, 0.69678712}, {0.53601694, 0.76907629}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -9845,11 +10937,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_tip_1_down</string>
+				<string>yellow_the_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -9917,9 +11009,9 @@
 				<key>Frame-HD</key>
 				<string>{{438, 770}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.502294, 0.836957}, {0.580275, 0.915217}}</string>
+				<string>{{0.46398306, 0.77309239}, {0.53601694, 0.8453815}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -9929,11 +11021,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_tip_1_up</string>
+				<string>blue_tip_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -10001,9 +11093,9 @@
 				<key>Frame-HD</key>
 				<string>{{438, 848}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.502294, 0.921739}, {0.580275, 1}}</string>
+				<string>{{0.46398306, 0.85140562}, {0.53601694, 0.92369479}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -10013,11 +11105,95 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_tip_1_down</string>
+				<string>blue_tip_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{219, 462}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{438, 924}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.46398306, 0.92771083}, {0.53601694, 1}}</string>
+				<key>HD_ImageSize</key>
+				<string>{944, 996}</string>
+				<key>Image</key>
+				<string>1x1_words.png</string>
+				<key>Image-HD</key>
+				<string>1x1_words-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
+				<key>Name</key>
+				<string>green_tip_1_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -10085,9 +11261,9 @@
 				<key>Frame-HD</key>
 				<string>{{512, 540}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.587156, 0.586957}, {0.665138, 0.665217}}</string>
+				<string>{{0.54237288, 0.54216868}, {0.61440676, 0.61445785}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -10097,11 +11273,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_tip_1_up</string>
+				<string>green_tip_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -10169,9 +11345,9 @@
 				<key>Frame-HD</key>
 				<string>{{584, 540}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.669725, 0.586957}, {0.747706, 0.665217}}</string>
+				<string>{{0.61864406, 0.54216868}, {0.69067794, 0.61445785}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -10181,11 +11357,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_to_1_down</string>
+				<string>grey_tip_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -10253,9 +11429,9 @@
 				<key>Frame-HD</key>
 				<string>{{658, 540}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.754587, 0.586957}, {0.832569, 0.665217}}</string>
+				<string>{{0.69703388, 0.54216868}, {0.76906782, 0.61445785}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -10265,11 +11441,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_to_1_up</string>
+				<string>grey_tip_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -10337,9 +11513,9 @@
 				<key>Frame-HD</key>
 				<string>{{730, 540}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.837156, 0.586957}, {0.915138, 0.665217}}</string>
+				<string>{{0.77330506, 0.54216868}, {0.845339, 0.61445785}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -10349,11 +11525,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_to_1_down</string>
+				<string>red_tip_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -10421,9 +11597,9 @@
 				<key>Frame-HD</key>
 				<string>{{804, 540}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.922018, 0.586957}, {1, 0.665217}}</string>
+				<string>{{0.85169494, 0.54216868}, {0.92372882, 0.61445785}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -10433,11 +11609,95 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_to_1_up</string>
+				<string>red_tip_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{438, 270}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{876, 540}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.92796612, 0.54216868}, {1, 0.61445785}}</string>
+				<key>HD_ImageSize</key>
+				<string>{944, 996}</string>
+				<key>Image</key>
+				<string>1x1_words.png</string>
+				<key>Image-HD</key>
+				<string>1x1_words-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
+				<key>Name</key>
+				<string>yellow_tip_1_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -10505,9 +11765,9 @@
 				<key>Frame-HD</key>
 				<string>{{512, 616}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.587156, 0.669565}, {0.665138, 0.747826}}</string>
+				<string>{{0.54237288, 0.61847389}, {0.61440676, 0.69076306}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -10517,11 +11777,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_to_1_down</string>
+				<string>yellow_tip_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -10589,9 +11849,9 @@
 				<key>Frame-HD</key>
 				<string>{{512, 694}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.587156, 0.754348}, {0.665138, 0.832609}}</string>
+				<string>{{0.54237288, 0.69678712}, {0.61440676, 0.76907629}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -10601,11 +11861,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_to_1_up</string>
+				<string>blue_to_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -10673,9 +11933,9 @@
 				<key>Frame-HD</key>
 				<string>{{512, 770}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.587156, 0.836957}, {0.665138, 0.915217}}</string>
+				<string>{{0.54237288, 0.77309239}, {0.61440676, 0.8453815}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -10685,11 +11945,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_to_1_down</string>
+				<string>blue_to_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -10757,9 +12017,9 @@
 				<key>Frame-HD</key>
 				<string>{{512, 848}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.587156, 0.921739}, {0.665138, 1}}</string>
+				<string>{{0.54237288, 0.85140562}, {0.61440676, 0.92369479}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -10769,11 +12029,95 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_to_1_up</string>
+				<string>green_to_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{256, 462}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{512, 924}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.54237288, 0.92771083}, {0.61440676, 1}}</string>
+				<key>HD_ImageSize</key>
+				<string>{944, 996}</string>
+				<key>Image</key>
+				<string>1x1_words.png</string>
+				<key>Image-HD</key>
+				<string>1x1_words-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
+				<key>Name</key>
+				<string>green_to_1_up</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -10841,9 +12185,9 @@
 				<key>Frame-HD</key>
 				<string>{{584, 616}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.669725, 0.669565}, {0.747706, 0.747826}}</string>
+				<string>{{0.61864406, 0.61847389}, {0.69067794, 0.69076306}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -10853,11 +12197,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_to_1_down</string>
+				<string>grey_to_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -10925,9 +12269,9 @@
 				<key>Frame-HD</key>
 				<string>{{658, 616}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.754587, 0.669565}, {0.832569, 0.747826}}</string>
+				<string>{{0.69703388, 0.61847389}, {0.76906782, 0.69076306}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -10937,11 +12281,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_to_1_up</string>
+				<string>grey_to_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -11009,9 +12353,9 @@
 				<key>Frame-HD</key>
 				<string>{{730, 616}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.837156, 0.669565}, {0.915138, 0.747826}}</string>
+				<string>{{0.77330506, 0.61847389}, {0.845339, 0.69076306}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -11021,11 +12365,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_you_1_down</string>
+				<string>red_to_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -11093,9 +12437,9 @@
 				<key>Frame-HD</key>
 				<string>{{804, 616}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.922018, 0.669565}, {1, 0.747826}}</string>
+				<string>{{0.85169494, 0.61847389}, {0.92372882, 0.69076306}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -11105,11 +12449,95 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>blue_you_1_up</string>
+				<string>red_to_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{438, 308}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{876, 616}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.92796612, 0.61847389}, {1, 0.69076306}}</string>
+				<key>HD_ImageSize</key>
+				<string>{944, 996}</string>
+				<key>Image</key>
+				<string>1x1_words.png</string>
+				<key>Image-HD</key>
+				<string>1x1_words-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
+				<key>Name</key>
+				<string>yellow_to_1_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -11177,9 +12605,9 @@
 				<key>Frame-HD</key>
 				<string>{{584, 694}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.669725, 0.754348}, {0.747706, 0.832609}}</string>
+				<string>{{0.61864406, 0.69678712}, {0.69067794, 0.76907629}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -11189,11 +12617,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_you_1_down</string>
+				<string>yellow_to_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -11261,9 +12689,9 @@
 				<key>Frame-HD</key>
 				<string>{{584, 770}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.669725, 0.836957}, {0.747706, 0.915217}}</string>
+				<string>{{0.61864406, 0.77309239}, {0.69067794, 0.8453815}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -11273,11 +12701,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>green_you_1_up</string>
+				<string>blue_you_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -11345,9 +12773,9 @@
 				<key>Frame-HD</key>
 				<string>{{584, 848}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.669725, 0.921739}, {0.747706, 1}}</string>
+				<string>{{0.61864406, 0.85140562}, {0.69067794, 0.92369479}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -11357,11 +12785,95 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_you_1_down</string>
+				<string>blue_you_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{292, 462}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{584, 924}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.61864406, 0.92771083}, {0.69067794, 1}}</string>
+				<key>HD_ImageSize</key>
+				<string>{944, 996}</string>
+				<key>Image</key>
+				<string>1x1_words.png</string>
+				<key>Image-HD</key>
+				<string>1x1_words-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
+				<key>Name</key>
+				<string>green_you_1_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -11429,9 +12941,9 @@
 				<key>Frame-HD</key>
 				<string>{{658, 694}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.754587, 0.754348}, {0.832569, 0.832609}}</string>
+				<string>{{0.69703388, 0.69678712}, {0.76906782, 0.76907629}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -11441,11 +12953,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>grey_you_1_up</string>
+				<string>green_you_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -11513,9 +13025,9 @@
 				<key>Frame-HD</key>
 				<string>{{730, 694}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.837156, 0.754348}, {0.915138, 0.832609}}</string>
+				<string>{{0.77330506, 0.69678712}, {0.845339, 0.76907629}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -11525,11 +13037,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_you_1_down</string>
+				<string>grey_you_1_down</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -11597,9 +13109,9 @@
 				<key>Frame-HD</key>
 				<string>{{804, 694}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.922018, 0.754348}, {1, 0.832609}}</string>
+				<string>{{0.85169494, 0.69678712}, {0.92372882, 0.76907629}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -11609,11 +13121,95 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>red_you_1_up</string>
+				<string>grey_you_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{438, 347}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{876, 694}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.92796612, 0.69678712}, {1, 0.76907629}}</string>
+				<key>HD_ImageSize</key>
+				<string>{944, 996}</string>
+				<key>Image</key>
+				<string>1x1_words.png</string>
+				<key>Image-HD</key>
+				<string>1x1_words-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
+				<key>Name</key>
+				<string>red_you_1_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -11681,9 +13277,9 @@
 				<key>Frame-HD</key>
 				<string>{{658, 770}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.754587, 0.836957}, {0.832569, 0.915217}}</string>
+				<string>{{0.69703388, 0.77309239}, {0.76906782, 0.8453815}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -11693,11 +13289,11 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
 				<key>Name</key>
-				<string>yellow_you_1_down</string>
+				<string>red_you_1_up</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -11765,9 +13361,93 @@
 				<key>Frame-HD</key>
 				<string>{{658, 848}, {68, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.754587, 0.921739}, {0.832569, 1}}</string>
+				<string>{{0.69703388, 0.85140562}, {0.76906782, 0.92369479}}</string>
 				<key>HD_ImageSize</key>
-				<string>{872, 920}</string>
+				<string>{944, 996}</string>
+				<key>Image</key>
+				<string>1x1_words.png</string>
+				<key>Image-HD</key>
+				<string>1x1_words-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/words_level_1/1x1_words-hd.png</string>
+				<key>Name</key>
+				<string>yellow_you_1_down</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{472, 498}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{329, 462}, {34, 36}}</string>
+				<key>Frame-HD</key>
+				<string>{{658, 924}, {68, 72}}</string>
+				<key>FrameUV</key>
+				<string>{{0.69703388, 0.92771083}, {0.76906782, 1}}</string>
+				<key>HD_ImageSize</key>
+				<string>{944, 996}</string>
 				<key>Image</key>
 				<string>1x1_words.png</string>
 				<key>Image-HD</key>
@@ -11781,7 +13461,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{436, 460}</string>
+				<string>{472, 498}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -11792,11 +13472,11 @@
 	<key>ScenePreference</key>
 	<dict>
 		<key>BackgroundColor</key>
-		<string>{{0.894, 0.894}, {0.894, 1}}</string>
+		<string>{{0.89399999, 0.89399999}, {0.89399999, 1}}</string>
 		<key>GridSize</key>
 		<integer>32</integer>
 	</dict>
 	<key>Version</key>
-	<string>1.7.2</string>
+	<string>1.7.5</string>
 </dict>
 </plist>
