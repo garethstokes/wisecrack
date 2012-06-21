@@ -102,6 +102,8 @@
         [self addChild:scoreLabel];
         
         [[MetricMonster monster] queue:@"ScoreCard"];
+        
+        _score = 0;
     }
     return self;
 }
@@ -140,6 +142,7 @@
     }
     
     [scoreLabel setString:[NSString stringWithFormat:@"%d", score]];
+    _score = score;
 }
 
 - (void) openGameCenter
@@ -165,17 +168,15 @@
 {
     [[MetricMonster monster] queue:@"OpenFacebook"];
     
-    int highScore = [[SettingsManager sharedSettingsManager] getInt:@"HighScore" withDefault:0];
     NSString * appId = @"406975956013328";
     Facebook * fb = [[[Facebook alloc] initWithAppId:appId andDelegate:self] autorelease];
     NSMutableDictionary * params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                     appId, @"app_id",
-                                    //@"http://developers.facebook.com/docs/reference/dialogs/", @"link",
-                                    //@"http://fbrell.com/f8.jpg", @"picture",
-                                    @"Wisecrack", @"name",
-                                    @"Can you make a wisecrack?", @"caption",
-                                    @"Have fun while keeping up your vocabulary", @"description",
-                                    [NSString stringWithFormat:@"New high score of %d, can you beat me?!", highScore],  @"message",
+                                    @"http://www.facebook.com/wisecrackapp", @"link",
+                                    @"http://screendirt.com/post_facebook_small.png", @"picture",
+                                    [NSString stringWithFormat:@"I've just scored %d on Wisecrack.", _score], @"name",
+                                    @"And I'm rather happy about it.", @"caption",
+                                    @"Wisecrack - The word game for people who can't read good. Available now on iPhone.", @"description",
                                     nil];
     [fb dialog:@"feed" andParams:params andDelegate:self];
     

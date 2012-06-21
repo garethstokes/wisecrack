@@ -18,6 +18,8 @@
     SpriteHelperLoader * highScoreLoader;
     
     CCMenu * socialMenu;
+    
+    int _score;
 }
 
 - (void) finish:(id) sender;
