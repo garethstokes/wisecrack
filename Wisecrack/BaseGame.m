@@ -50,7 +50,7 @@
     [self shuffle];
     
     
-    NSLog(@"words in play: %d", [wordsInPlay count]);
+    //NSLog(@"words in play: %d", [wordsInPlay count]);
     
     NSString * key = [wordsInPlay objectAtIndex:0];
     
@@ -73,7 +73,6 @@
     if (withBonus && powerup < [[WisecrackConfig config] chanceBonus])
     {
         NSLog(@"BONUS!!");
-        return [Bonus multiplier:colour];
         return [Bonus random:colour];
     }
     

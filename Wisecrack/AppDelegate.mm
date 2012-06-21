@@ -170,6 +170,7 @@
     [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_12_b.m4a"];
     [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_12_c.m4a"];
     
+    [[SimpleAudioEngine sharedEngine] setBackgroundMusicVolume:0.0];
 	
 	// Run the intro Scene
 	//[[CCDirector sharedDirector] runWithScene: [HelloWorldLayer scene]];
