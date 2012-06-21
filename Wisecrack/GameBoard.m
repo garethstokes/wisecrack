@@ -9,6 +9,7 @@
 #import "GameBoard.h"
 #import "TrueFriendsGame.h"
 #import "SettingsManager.h"
+#import "GameObjectCache.h"
 
 @implementation GameBoard
 @synthesize size;
@@ -128,8 +129,18 @@
         [singleItem setValue:word forKey:[word hash]];
     }
     
-    NSString * chaining = [[SettingsManager sharedSettingsManager] getString:@"Chain" withDefault:@"NO"];
-    if ([chaining isEqualToString:@"NO"])
+    BonusManager * bm = [[GameObjectCache sharedGameObjectCache] bonusManager];
+    bool hasChaining = NO;
+    
+    for (Bonus * bonus in [bm activeBonusItems]) 
+    {
+        if ( [bonus.name isEqualToString:@"chain"] )
+        {
+            hasChaining = YES;
+        }
+    }
+    
+    if (hasChaining == NO)
     {
         return [results count] > 0;
     }
