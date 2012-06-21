@@ -122,52 +122,52 @@
     [[SimpleAudioEngine sharedEngine] preloadEffect:@"end_of_time_noise.m4a"];
     [[SimpleAudioEngine sharedEngine] preloadEffect:@"found_wisecrack_noise.m4a"];
     
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_1_a.m4a"];
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_1_b.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_1_a.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_1_b.m4a"];
     [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_1_c.m4a"];
     
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_2_a.m4a"];
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_2_b.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_2_a.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_2_b.m4a"];
     [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_2_c.m4a"];
     
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_3_a.m4a"];
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_3_b.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_3_a.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_3_b.m4a"];
     [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_4_c.m4a"];
     
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_4_a.m4a"];
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_4_b.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_4_a.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_4_b.m4a"];
     [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_5_c.m4a"];
     
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_5_a.m4a"];
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_5_b.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_5_a.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_5_b.m4a"];
     [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_5_c.m4a"];
     
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_6_a.m4a"];
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_6_b.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_6_a.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_6_b.m4a"];
     [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_6_c.m4a"];
     
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_7_a.m4a"];
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_7_b.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_7_a.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_7_b.m4a"];
     [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_7_c.m4a"];
     
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_8_a.m4a"];
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_8_b.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_8_a.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_8_b.m4a"];
     [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_8_c.m4a"];
     
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_9_a.m4a"];
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_9_b.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_9_a.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_9_b.m4a"];
     [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_9_c.m4a"];
     
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_10_a.m4a"];
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_10_b.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_10_a.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_10_b.m4a"];
     [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_10_c.m4a"];
     
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_11_a.m4a"];
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_11_b.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_11_a.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_11_b.m4a"];
     [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_11_c.m4a"];
     
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_12_a.m4a"];
-    [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_12_b.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_12_a.m4a"];
+    //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_12_b.m4a"];
     [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_12_c.m4a"];
     
     [[SimpleAudioEngine sharedEngine] setBackgroundMusicVolume:0.0];

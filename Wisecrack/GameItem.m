@@ -67,6 +67,7 @@
     NSString * note = @"a";
     if (offset < 9) note = @"c";
     if (offset < 3) note = @"b";
+    note = @"c";
     
     return [NSString stringWithFormat:@"base_%d_%@.m4a", row, note];
 }
