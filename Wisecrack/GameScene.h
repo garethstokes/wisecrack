@@ -25,4 +25,6 @@
 
 + (GameScene *) create;
 
+- (void) mySceneEnd:(NSNotification *)notif;
+
 @end

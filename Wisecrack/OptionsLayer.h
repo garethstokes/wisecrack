@@ -13,5 +13,6 @@
 
 - (void) cont:(id) sender;
 - (void) replay:(id) sender;
+- (void) playTutorial;
 
 @end

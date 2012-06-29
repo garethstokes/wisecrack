@@ -105,7 +105,7 @@
     
     //if (downimage != nil)
         //[downimage dealloc];
-    
+        
     [super dealloc];
 }
 

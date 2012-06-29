@@ -606,6 +606,7 @@ const uint32_t	kZoomActionTag = 0xc0c05002;
 - (void) selected
 {
     [super selected];
+    if ([word.name isEqualToString:@"brick"]) return;
     [[SimpleAudioEngine sharedEngine] playEffect:[word key_sound] 
                                            pitch:1 
                                              pan:1 

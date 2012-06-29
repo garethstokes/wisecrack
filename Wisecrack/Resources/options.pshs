@@ -12,11 +12,11 @@
 	<string>SpriteHelper</string>
 	<key>ImportedImages</key>
 	<array>
-		<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options.png</string>
+		<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options_new/options.png</string>
 	</array>
 	<key>ImportedImages-HD</key>
 	<array>
-		<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options-hd.png</string>
+		<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options_new/options-hd.png</string>
 	</array>
 	<key>ImportedImages-HD_relative</key>
 	<array>
@@ -89,23 +89,23 @@
 				<key>Frame-HD</key>
 				<string>{{0, 0}, {640, 960}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0}, {0.544218, 1}}</string>
+				<string>{{0, 0}, {0.5714286, 1}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1176, 960}</string>
+				<string>{1120, 960}</string>
 				<key>Image</key>
 				<string>options.png</string>
 				<key>Image-HD</key>
 				<string>options-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options_new/options.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options_new/options-hd.png</string>
 				<key>Name</key>
-				<string>options_bg</string>
+				<string>options_bg-hd</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{588, 480}</string>
+				<string>{560, 480}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -169,27 +169,27 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{323, 0}, {265, 227}}</string>
+				<string>{{323, 0}, {236, 48}}</string>
 				<key>Frame-HD</key>
-				<string>{{646, 0}, {530, 454}}</string>
+				<string>{{646, 0}, {472, 96}}</string>
 				<key>FrameUV</key>
-				<string>{{0.54932, 0}, {1, 0.472917}}</string>
+				<string>{{0.57678574, 0}, {0.9982143, 0.1}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1176, 960}</string>
+				<string>{1120, 960}</string>
 				<key>Image</key>
 				<string>options.png</string>
 				<key>Image-HD</key>
 				<string>options-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options_new/options.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options_new/options-hd.png</string>
 				<key>Name</key>
-				<string>options_help_panel</string>
+				<string>play_btn_off</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{588, 480}</string>
+				<string>{560, 480}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -253,27 +253,27 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{323, 230}, {122, 57}}</string>
+				<string>{{323, 51}, {236, 48}}</string>
 				<key>Frame-HD</key>
-				<string>{{646, 460}, {244, 114}}</string>
+				<string>{{646, 102}, {472, 96}}</string>
 				<key>FrameUV</key>
-				<string>{{0.54932, 0.479167}, {0.756803, 0.597917}}</string>
+				<string>{{0.57678574, 0.10625}, {0.9982143, 0.20625}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1176, 960}</string>
+				<string>{1120, 960}</string>
 				<key>Image</key>
 				<string>options.png</string>
 				<key>Image-HD</key>
 				<string>options-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options_new/options.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options_new/options-hd.png</string>
 				<key>Name</key>
-				<string>btn_replay_off</string>
+				<string>play_btn_on</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{588, 480}</string>
+				<string>{560, 480}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -337,27 +337,27 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{447, 230}, {122, 57}}</string>
+				<string>{{323, 101}, {236, 48}}</string>
 				<key>Frame-HD</key>
-				<string>{{894, 460}, {244, 114}}</string>
+				<string>{{646, 202}, {472, 96}}</string>
 				<key>FrameUV</key>
-				<string>{{0.760204, 0.479167}, {0.967687, 0.597917}}</string>
+				<string>{{0.57678574, 0.21041666}, {0.9982143, 0.31041667}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1176, 960}</string>
+				<string>{1120, 960}</string>
 				<key>Image</key>
 				<string>options.png</string>
 				<key>Image-HD</key>
 				<string>options-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options_new/options.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options_new/options-hd.png</string>
 				<key>Name</key>
-				<string>btn_replay_on</string>
+				<string>restart_btn_off</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{588, 480}</string>
+				<string>{560, 480}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -421,27 +421,27 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{323, 289}, {122, 57}}</string>
+				<string>{{323, 152}, {236, 48}}</string>
 				<key>Frame-HD</key>
-				<string>{{646, 578}, {244, 114}}</string>
+				<string>{{646, 304}, {472, 96}}</string>
 				<key>FrameUV</key>
-				<string>{{0.54932, 0.602083}, {0.756803, 0.720833}}</string>
+				<string>{{0.57678574, 0.31666666}, {0.9982143, 0.41666666}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1176, 960}</string>
+				<string>{1120, 960}</string>
 				<key>Image</key>
 				<string>options.png</string>
 				<key>Image-HD</key>
 				<string>options-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options_new/options.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options_new/options-hd.png</string>
 				<key>Name</key>
-				<string>btn_continue_off</string>
+				<string>restart_btn_on</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{588, 480}</string>
+				<string>{560, 480}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -505,27 +505,279 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{323, 349}, {122, 57}}</string>
+				<string>{{323, 202}, {236, 48}}</string>
 				<key>Frame-HD</key>
-				<string>{{646, 698}, {244, 114}}</string>
+				<string>{{646, 404}, {472, 96}}</string>
 				<key>FrameUV</key>
-				<string>{{0.54932, 0.727083}, {0.756803, 0.845833}}</string>
+				<string>{{0.57678574, 0.42083332}, {0.9982143, 0.52083331}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1176, 960}</string>
+				<string>{1120, 960}</string>
 				<key>Image</key>
 				<string>options.png</string>
 				<key>Image-HD</key>
 				<string>options-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options_new/options.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options-hd.png</string>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options_new/options-hd.png</string>
 				<key>Name</key>
-				<string>btn_continue_on</string>
+				<string>tutorial_btn_on</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{588, 480}</string>
+				<string>{560, 480}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{323, 253}, {236, 48}}</string>
+				<key>Frame-HD</key>
+				<string>{{646, 506}, {472, 96}}</string>
+				<key>FrameUV</key>
+				<string>{{0.57678574, 0.52708334}, {0.9982143, 0.62708336}}</string>
+				<key>HD_ImageSize</key>
+				<string>{1120, 960}</string>
+				<key>Image</key>
+				<string>options.png</string>
+				<key>Image-HD</key>
+				<string>options-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options_new/options.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options_new/options-hd.png</string>
+				<key>Name</key>
+				<string>tutorial_btn_off</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{560, 480}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{323, 303}, {94, 27}}</string>
+				<key>Frame-HD</key>
+				<string>{{646, 606}, {188, 54}}</string>
+				<key>FrameUV</key>
+				<string>{{0.57678574, 0.63125002}, {0.74464285, 0.6875}}</string>
+				<key>HD_ImageSize</key>
+				<string>{1120, 960}</string>
+				<key>Image</key>
+				<string>options.png</string>
+				<key>Image-HD</key>
+				<string>options-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options_new/options.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options_new/options-hd.png</string>
+				<key>Name</key>
+				<string>sound_off</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{560, 480}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{419, 303}, {94, 27}}</string>
+				<key>Frame-HD</key>
+				<string>{{838, 606}, {188, 54}}</string>
+				<key>FrameUV</key>
+				<string>{{0.7482143, 0.63125002}, {0.91607141, 0.6875}}</string>
+				<key>HD_ImageSize</key>
+				<string>{1120, 960}</string>
+				<key>Image</key>
+				<string>options.png</string>
+				<key>Image-HD</key>
+				<string>options-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options_new/options.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/options/options_new/options-hd.png</string>
+				<key>Name</key>
+				<string>sound_on</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{560, 480}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -536,11 +788,11 @@
 	<key>ScenePreference</key>
 	<dict>
 		<key>BackgroundColor</key>
-		<string>{{0.894, 0.894}, {0.894, 1}}</string>
+		<string>{{0.89399999, 0.89399999}, {0.89399999, 1}}</string>
 		<key>GridSize</key>
 		<integer>32</integer>
 	</dict>
 	<key>Version</key>
-	<string>1.7.2</string>
+	<string>1.7.5</string>
 </dict>
 </plist>

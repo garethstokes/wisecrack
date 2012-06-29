@@ -110,8 +110,8 @@
 
 - (void) finish:(id) sender
 {
-    //[[CCDirector sharedDirector] replaceScene:[HomeScene create]];
-    [[CCDirector sharedDirector] replaceScene: [CCTransitionFlipX transitionWithDuration:0.3 scene:[HomeScene create]]];
+    [[CCDirector sharedDirector] replaceScene:[HomeScene create]];
+    //[[CCDirector sharedDirector] replaceScene: [CCTransitionFlipX transitionWithDuration:0.3 scene:[HomeScene create]]];
 }
 
 - (void) updateScore:(int)score
@@ -192,7 +192,7 @@
     
     //*** Prepare Your Tweet ***//
     TWTweetComposeViewController *twitter = [[TWTweetComposeViewController alloc] init];
-    [twitter setInitialText:[NSString stringWithFormat:@"My wisecrack high score is %d, can you beat me?!", highScore]];
+    [twitter setInitialText:[NSString stringWithFormat:@"I've just scored %d on Wisecrack.", _score]];
     //[twitter addURL:[NSURL URLWithString:item.link]];
     
     //Using a picture from the web

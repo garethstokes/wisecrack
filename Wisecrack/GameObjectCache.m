@@ -144,6 +144,28 @@ static GameObjectCache *sharedGameObjectCache_=nil;
     return bonusSprites_;
 }
 
+- (CCSprite *)upSprite:(NSString *)key loader:(SpriteHelperLoader *)loader;
+{
+    CCSprite * up = [spriteUpCache_ objectForKey:key];
+    if (up == NULL) {
+        up = [loader spriteWithUniqueName:key atPosition:CGPointMake(0,0) inLayer:nil];
+        [spriteUpCache_ setObject:up forKey:key];
+    }
+    
+    return up;
+}
+
+- (CCSprite *)downSprite:(NSString *)key loader:(SpriteHelperLoader *)loader;
+{
+    CCSprite * down = [spriteDownCache_ objectForKey:key];
+    if (down == NULL) {
+        down = [loader spriteWithUniqueName:key atPosition:CGPointMake(0,0) inLayer:nil];
+        [spriteDownCache_ setObject:down forKey:key];
+    }
+    
+    return down;
+}
+
 - (id)init
 {
   CCLOG(@"GameObjectCache Init");
@@ -171,7 +193,7 @@ static GameObjectCache *sharedGameObjectCache_=nil;
     [smallSprites_ release];
     [mediumSprites_ release];
     [largeSprites_ release];
-  
+    
   [super dealloc];
 }
 

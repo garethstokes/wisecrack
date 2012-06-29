@@ -25,6 +25,7 @@
     
     bool mutex;
     ccTime gameTime;
+    bool active;
 }
 
 @property (nonatomic, retain) GameBoard* board;

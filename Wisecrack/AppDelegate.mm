@@ -170,7 +170,13 @@
     //[[SimpleAudioEngine sharedEngine] preloadEffect:@"base_12_b.m4a"];
     [[SimpleAudioEngine sharedEngine] preloadEffect:@"base_12_c.m4a"];
     
-    [[SimpleAudioEngine sharedEngine] setBackgroundMusicVolume:0.0];
+    [[SimpleAudioEngine sharedEngine] preloadEffect:@"mistake_sound.m4a"];
+    [[SimpleAudioEngine sharedEngine] preloadEffect:@"wisecrack_play_1.m4a"];
+    [[SimpleAudioEngine sharedEngine] preloadEffect:@"wisecrack_play_2.m4a"];
+    
+    [[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:@"wisecrack_bg_music_low.m4a"];
+    
+    [[SimpleAudioEngine sharedEngine] setBackgroundMusicVolume:0.3];
 	
 	// Run the intro Scene
 	//[[CCDirector sharedDirector] runWithScene: [HelloWorldLayer scene]];
@@ -189,6 +195,7 @@
 
 - (void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
 	[[CCDirector sharedDirector] purgeCachedData];
+    NSLog(@"memory warning");
 }
 
 -(void) applicationDidEnterBackground:(UIApplication*)application {

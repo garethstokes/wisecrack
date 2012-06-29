@@ -111,7 +111,7 @@
 
 - (void) parse:(NSDictionary *)parsed
 {
-    NSLog(@"%@", [parsed description]);
+    //NSLog(@"%@", [parsed description]);
     
     int v = [[parsed valueForKey:@"version"] intValue];
     if (v <= [self version]) return;

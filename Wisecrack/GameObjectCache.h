@@ -28,6 +28,8 @@
     SpriteHelperLoader * largeSprites_;
     
     SpriteHelperLoader * bonusSprites_;
+    NSMutableDictionary * spriteUpCache_;
+    NSMutableDictionary * spriteDownCache_;
 }
 
 /** Retruns ths shared instance of the Game Object cache */
@@ -52,5 +54,7 @@
 - (SpriteHelperLoader *)largeSprites;
 
 - (SpriteHelperLoader *)bonusSprites;
+- (CCSprite *)upSprite:(NSString *)key loader:(SpriteHelperLoader *)loader;
+- (CCSprite *)downSprite:(NSString *)key loader:(SpriteHelperLoader *)loader;
 
 @end

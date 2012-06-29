@@ -12,6 +12,7 @@
 #import "HomeScene.h"
 #import "WisecrackConfig.h"
 #import "SimpleAudioEngine.h"
+#import "TutorialScene.h"
 
 @implementation HomeLayer
 
@@ -65,9 +66,17 @@
         [self schedule:@selector(updateVersion) interval:0.5];
         
         [[SimpleAudioEngine sharedEngine] playEffect:@"logo_effects.m4a" pitch:1 pan:1 gain:0.2];
+        
+        startTime = 0;
+        [self scheduleUpdate];
     }
     
     return self;
+}
+
+- (void) update:(ccTime)delta
+{
+    startTime += delta;
 }
 
 - (void) updateVersion
@@ -78,7 +87,27 @@
 
 - (void) play:(id) sender
 {
-    [[CCDirector sharedDirector] replaceScene: [CCTransitionFlipX transitionWithDuration:0.3 scene:[GameScene create]]];
+    NSString * playedTutorial = [[SettingsManager sharedSettingsManager] getString:@"HasPlayedTutorial" withDefault:@"YES"];
+    
+    NSLog(@"start time: %f", startTime);
+    
+    if (startTime > 1.2 && startTime < 1.4)
+    {
+        [[SimpleAudioEngine sharedEngine] playEffect:@"wisecrack_play_2.m4a" pitch:1 pan:1 gain:0.05];
+    }
+    else 
+    {
+        [[SimpleAudioEngine sharedEngine] playEffect:@"wisecrack_play_1.m4a" pitch:1 pan:1 gain:0.05];
+    }
+    
+    if ([playedTutorial isEqualToString:@"YES"])
+    {
+        //[[CCDirector sharedDirector] replaceScene: [CCTransitionFlipX transitionWithDuration:0.3 scene:[GameScene create]]];
+        [[CCDirector sharedDirector] replaceScene: [GameScene create]];
+        return;
+    }
+    
+    [[CCDirector sharedDirector] replaceScene: [TutorialScene create]];
 }
 
 -(void) onLocalPlayerAuthenticationChanged
@@ -182,6 +211,12 @@
 {
     //if (_version) [_version dealloc];
 
+    [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFrames];
+    [[CCSpriteFrameCache sharedSpriteFrameCache] removeUnusedSpriteFrames];
+    [[CCTextureCache sharedTextureCache] removeUnusedTextures];
+    [[CCTextureCache sharedTextureCache] removeAllTextures];
+    [[CCDirector sharedDirector] purgeCachedData];
+    
     [super dealloc];
 }
 

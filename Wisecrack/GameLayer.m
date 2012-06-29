@@ -31,43 +31,52 @@
         
         [self addChild:background z:0];
         
-        // container for the buttons
-        menu = [CCMenu menuWithItems: nil];
-        [menu setPosition:CGPointMake(-8, -12)];
         
-        // init score and multiplier
-        score = 0;
-        ink = kTimeout;
-        [[[GameObjectCache sharedGameObjectCache] hudLayer] updateInk:ink];
-
-        [self animateButtonsIn];
-        //[self drawButtons];
-        [self addChild:menu z:10];
-        
-        self.isAccelerometerEnabled = YES;
-        [[UIAccelerometer sharedAccelerometer] setUpdateInterval:1/60];
-        
-        [self schedule:@selector(step:)];
-        [self schedule:@selector(stepScoreTimer:) interval:1];
-        [self schedule:@selector(updateBoard:) interval:3.0];
-        
-        int waveLength = [[WisecrackConfig config] waveLength];
-        NSLog(@"WaveLength: %d", waveLength);
-        [self schedule:@selector(nextWave) interval:waveLength];
-        
-        NSLog(@"scheduling enabling powerups in 45 seconds");
-        int bonusRespawn = [[SettingsManager sharedSettingsManager] getInt:@"config.bonusRespawn" withDefault:30];
-        [self schedule:@selector(enable_power_ups) interval:bonusRespawn];
-        
-        [board disablePowerUps];
-        
-        gameTime = 0;
-        ready = YES;
-        shake_once = false;
-        [[SettingsManager sharedSettingsManager] setValue:@"NO" newString:@"Chain"];
     }
     
     return self;
+}
+
+- (void) onEnterTransitionDidFinish
+{
+    // container for the buttons
+    menu = [CCMenu menuWithItems: nil];
+    [menu setPosition:CGPointMake(-8, -12)];
+    
+    // init score and multiplier
+    score = 0;
+    ink = kTimeout;
+    [[[GameObjectCache sharedGameObjectCache] hudLayer] updateInk:ink];
+    
+    [self animateButtonsIn];
+    //[self drawButtons];
+    [self addChild:menu z:10];
+    
+    self.isAccelerometerEnabled = YES;
+    [[UIAccelerometer sharedAccelerometer] setUpdateInterval:1/60];
+    
+    [self schedule:@selector(step:)];
+    [self schedule:@selector(stepScoreTimer:) interval:1];
+    [self schedule:@selector(updateBoard:) interval:3.0];
+    
+    int waveLength = [[WisecrackConfig config] waveLength];
+    NSLog(@"WaveLength: %d", waveLength);
+    [self schedule:@selector(nextWave) interval:waveLength];
+    
+    NSLog(@"scheduling enabling powerups in 45 seconds");
+    int bonusRespawn = [[SettingsManager sharedSettingsManager] getInt:@"config.bonusRespawn" withDefault:30];
+    [self schedule:@selector(enable_power_ups) interval:bonusRespawn];
+    
+    [board disablePowerUps];
+    
+    gameTime = 0;
+    ready = YES;
+    shake_once = false;
+    [[SettingsManager sharedSettingsManager] setValue:@"NO" newString:@"Chain"];
+    
+    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"wisecrack_bg_music_low.m4a" loop:YES];
+    
+    active = YES;
 }
 
 - (void) animateButtonsIn
@@ -412,6 +421,8 @@
     
     [self addChild:minus z:100];
     [minus runAction:[CCFadeOut actionWithDuration:1.5]];
+    
+    [[SimpleAudioEngine sharedEngine] playEffect:@"mistake_sound.m4a" pitch:1 pan:1 gain:0.2];
 }
 
 - (void) enable_power_ups
@@ -437,7 +448,7 @@
         if ( [bonus durability] >= 0 ) return;
     }
     
-    if ([button.word bonus])
+    if ([button.word bonus] && [button.word.name isEqualToString:@"brick"] == NO)
     {
         [[SimpleAudioEngine sharedEngine] playEffect:@"bonus_noise.m4a" pitch:1 pan:1 gain:0.2];
     }
@@ -550,6 +561,18 @@
     
     NSLog(@"UPWAVE: %d  ", waveLength);
     [self schedule:@selector(nextWave) interval:waveLength];
+}
+
+- (void) onExit
+{
+    [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
+    
+    [buttons removeAllObjects];
+    [buttons release];
+    [self removeAllChildrenWithCleanup:YES];
+    [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFrames];
+    [[CCTextureCache sharedTextureCache] removeUnusedTextures];
+    [super onExit];
 }
 
 - (void) dealloc

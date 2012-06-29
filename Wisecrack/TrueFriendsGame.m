@@ -16,7 +16,7 @@
     if( (self=[super init]))
     {
         NSMutableArray * sw = [NSMutableArray arrayWithCapacity:16];
-        NSMutableArray * mw = [NSMutableArray arrayWithCapacity:21];
+        NSMutableArray * mw = [NSMutableArray arrayWithCapacity:20];
         NSMutableArray * lw = [NSMutableArray arrayWithCapacity:20];
         
         // small words
@@ -42,7 +42,7 @@
         
         // medium words
         [mw addObject:@"work:medium"];
-        [mw addObject:@"balls:medium"];
+        //[mw addObject:@"balls:medium"];
         [mw addObject:@"cave:medium"];
         [mw addObject:@"curse:medium"];
         [mw addObject:@"feel:medium"];

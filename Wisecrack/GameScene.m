@@ -43,7 +43,29 @@
     
     [[MetricMonster monster] queue:@"GameScene"];
     
+    /*
+    [[NSNotificationCenter defaultCenter] addObserver:scene 
+                                             selector:@selector(mySceneEnd:) 
+                                                 name:@"scene_ended" 
+                                               object:nil];
+    */
     return scene;
+}
+
+- (void) mySceneEnd:(NSNotification *)notif {   
+    return;
+    
+    CCDirector * director = [CCDirector sharedDirector];
+    
+    if ([director runningScene])
+        [director end];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+
+}
+
+- (void) dealloc
+{   
+    [super dealloc];
 }
 
 @end
