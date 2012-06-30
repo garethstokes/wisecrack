@@ -89,9 +89,9 @@
 				<key>Frame-HD</key>
 				<string>{{0, 0}, {640, 960}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0}, {0.567376, 1}}</string>
+				<string>{{0, 0}, {0.56939501, 0.86021507}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1128, 960}</string>
+				<string>{1124, 1116}</string>
 				<key>Image</key>
 				<string>scorecard.png</string>
 				<key>Image-HD</key>
@@ -105,7 +105,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{564, 480}</string>
+				<string>{562, 558}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -173,9 +173,261 @@
 				<key>Frame-HD</key>
 				<string>{{646, 0}, {478, 230}}</string>
 				<key>FrameUV</key>
-				<string>{{0.572695, 0}, {0.996454, 0.239583}}</string>
+				<string>{{0.57473308, 0}, {1, 0.20609319}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1128, 960}</string>
+				<string>{1124, 1116}</string>
+				<key>Image</key>
+				<string>scorecard.png</string>
+				<key>Image-HD</key>
+				<string>scorecard-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/end_of_game_screen/scorecard.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/end_of_game_screen/scorecard-hd.png</string>
+				<key>Name</key>
+				<string>end_of_game_loser_quotes_01</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{562, 558}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{323, 118}, {239, 115}}</string>
+				<key>Frame-HD</key>
+				<string>{{646, 236}, {478, 230}}</string>
+				<key>FrameUV</key>
+				<string>{{0.57473308, 0.21146953}, {1, 0.41756272}}</string>
+				<key>HD_ImageSize</key>
+				<string>{1124, 1116}</string>
+				<key>Image</key>
+				<string>scorecard.png</string>
+				<key>Image-HD</key>
+				<string>scorecard-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/end_of_game_screen/scorecard.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/end_of_game_screen/scorecard-hd.png</string>
+				<key>Name</key>
+				<string>end_of_game_loser_quotes_02</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{562, 558}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{323, 235}, {239, 115}}</string>
+				<key>Frame-HD</key>
+				<string>{{646, 470}, {478, 230}}</string>
+				<key>FrameUV</key>
+				<string>{{0.57473308, 0.42114696}, {1, 0.62724012}}</string>
+				<key>HD_ImageSize</key>
+				<string>{1124, 1116}</string>
+				<key>Image</key>
+				<string>scorecard.png</string>
+				<key>Image-HD</key>
+				<string>scorecard-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/end_of_game_screen/scorecard.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/garrydanger/Dropbox/wisecrack/prod/end_of_game_screen/scorecard-hd.png</string>
+				<key>Name</key>
+				<string>end_of_game_loser_quotes_03</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{562, 558}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{323, 353}, {239, 115}}</string>
+				<key>Frame-HD</key>
+				<string>{{646, 706}, {478, 230}}</string>
+				<key>FrameUV</key>
+				<string>{{0.57473308, 0.63261646}, {1, 0.83870965}}</string>
+				<key>HD_ImageSize</key>
+				<string>{1124, 1116}</string>
 				<key>Image</key>
 				<string>scorecard.png</string>
 				<key>Image-HD</key>
@@ -189,7 +441,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{564, 480}</string>
+				<string>{562, 558}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -253,13 +505,13 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{323, 118}, {149, 36}}</string>
+				<string>{{0, 483}, {149, 36}}</string>
 				<key>Frame-HD</key>
-				<string>{{646, 236}, {298, 72}}</string>
+				<string>{{0, 966}, {298, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.572695, 0.245833}, {0.836879, 0.320833}}</string>
+				<string>{{0, 0.86559141}, {0.26512456, 0.93010753}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1128, 960}</string>
+				<string>{1124, 1116}</string>
 				<key>Image</key>
 				<string>scorecard.png</string>
 				<key>Image-HD</key>
@@ -273,7 +525,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{564, 480}</string>
+				<string>{562, 558}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -337,13 +589,13 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{323, 156}, {149, 36}}</string>
+				<string>{{0, 521}, {149, 36}}</string>
 				<key>Frame-HD</key>
-				<string>{{646, 312}, {298, 72}}</string>
+				<string>{{0, 1042}, {298, 72}}</string>
 				<key>FrameUV</key>
-				<string>{{0.572695, 0.325}, {0.836879, 0.4}}</string>
+				<string>{{0, 0.93369174}, {0.26512456, 0.99820787}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1128, 960}</string>
+				<string>{1124, 1116}</string>
 				<key>Image</key>
 				<string>scorecard.png</string>
 				<key>Image-HD</key>
@@ -357,7 +609,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{564, 480}</string>
+				<string>{562, 558}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -421,13 +673,13 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{323, 195}, {46, 44}}</string>
+				<string>{{152, 483}, {46, 44}}</string>
 				<key>Frame-HD</key>
-				<string>{{646, 390}, {92, 88}}</string>
+				<string>{{304, 966}, {92, 88}}</string>
 				<key>FrameUV</key>
-				<string>{{0.572695, 0.40625}, {0.654255, 0.497917}}</string>
+				<string>{{0.27046263, 0.86559141}, {0.35231316, 0.94444442}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1128, 960}</string>
+				<string>{1124, 1116}</string>
 				<key>Image</key>
 				<string>scorecard.png</string>
 				<key>Image-HD</key>
@@ -441,7 +693,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{564, 480}</string>
+				<string>{562, 558}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -505,13 +757,13 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{371, 195}, {46, 44}}</string>
+				<string>{{200, 483}, {46, 44}}</string>
 				<key>Frame-HD</key>
-				<string>{{742, 390}, {92, 88}}</string>
+				<string>{{400, 966}, {92, 88}}</string>
 				<key>FrameUV</key>
-				<string>{{0.657801, 0.40625}, {0.739362, 0.497917}}</string>
+				<string>{{0.35587189, 0.86559141}, {0.43772241, 0.94444442}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1128, 960}</string>
+				<string>{1124, 1116}</string>
 				<key>Image</key>
 				<string>scorecard.png</string>
 				<key>Image-HD</key>
@@ -525,7 +777,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{564, 480}</string>
+				<string>{562, 558}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -589,13 +841,13 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{420, 195}, {46, 44}}</string>
+				<string>{{249, 483}, {46, 44}}</string>
 				<key>Frame-HD</key>
-				<string>{{840, 390}, {92, 88}}</string>
+				<string>{{498, 966}, {92, 88}}</string>
 				<key>FrameUV</key>
-				<string>{{0.744681, 0.40625}, {0.826241, 0.497917}}</string>
+				<string>{{0.44306049, 0.86559141}, {0.52491105, 0.94444442}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1128, 960}</string>
+				<string>{1124, 1116}</string>
 				<key>Image</key>
 				<string>scorecard.png</string>
 				<key>Image-HD</key>
@@ -609,7 +861,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{564, 480}</string>
+				<string>{562, 558}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -673,13 +925,13 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{468, 195}, {46, 44}}</string>
+				<string>{{323, 470}, {46, 44}}</string>
 				<key>Frame-HD</key>
-				<string>{{936, 390}, {92, 88}}</string>
+				<string>{{646, 940}, {92, 88}}</string>
 				<key>FrameUV</key>
-				<string>{{0.829787, 0.40625}, {0.911348, 0.497917}}</string>
+				<string>{{0.57473308, 0.84229392}, {0.65658361, 0.92114693}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1128, 960}</string>
+				<string>{1124, 1116}</string>
 				<key>Image</key>
 				<string>scorecard.png</string>
 				<key>Image-HD</key>
@@ -693,7 +945,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{564, 480}</string>
+				<string>{562, 558}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -757,13 +1009,13 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{517, 195}, {46, 44}}</string>
+				<string>{{371, 470}, {46, 44}}</string>
 				<key>Frame-HD</key>
-				<string>{{1034, 390}, {92, 88}}</string>
+				<string>{{742, 940}, {92, 88}}</string>
 				<key>FrameUV</key>
-				<string>{{0.916667, 0.40625}, {0.998227, 0.497917}}</string>
+				<string>{{0.66014236, 0.84229392}, {0.74199289, 0.92114693}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1128, 960}</string>
+				<string>{1124, 1116}</string>
 				<key>Image</key>
 				<string>scorecard.png</string>
 				<key>Image-HD</key>
@@ -777,7 +1029,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{564, 480}</string>
+				<string>{562, 558}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -841,13 +1093,13 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{323, 241}, {46, 44}}</string>
+				<string>{{420, 470}, {46, 44}}</string>
 				<key>Frame-HD</key>
-				<string>{{646, 482}, {92, 88}}</string>
+				<string>{{840, 940}, {92, 88}}</string>
 				<key>FrameUV</key>
-				<string>{{0.572695, 0.502083}, {0.654255, 0.59375}}</string>
+				<string>{{0.74733096, 0.84229392}, {0.82918149, 0.92114693}}</string>
 				<key>HD_ImageSize</key>
-				<string>{1128, 960}</string>
+				<string>{1124, 1116}</string>
 				<key>Image</key>
 				<string>scorecard.png</string>
 				<key>Image-HD</key>
@@ -861,7 +1113,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{564, 480}</string>
+				<string>{562, 558}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -872,11 +1124,11 @@
 	<key>ScenePreference</key>
 	<dict>
 		<key>BackgroundColor</key>
-		<string>{{0.894, 0.894}, {0.894, 1}}</string>
+		<string>{{0.89399999, 0.89399999}, {0.89399999, 1}}</string>
 		<key>GridSize</key>
 		<integer>32</integer>
 	</dict>
 	<key>Version</key>
-	<string>1.7.2</string>
+	<string>1.7.5</string>
 </dict>
 </plist>

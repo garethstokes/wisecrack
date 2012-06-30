@@ -116,11 +116,10 @@
 
 - (void) updateScore:(int)score
 {
+    CGSize size = [[CCDirector sharedDirector] winSize];
     int highScore = [[SettingsManager sharedSettingsManager] getInt:@"HighScore" withDefault:0];
     if (score > highScore)
     {
-        CGSize size = [[CCDirector sharedDirector] winSize];
-        
         // run animation
         CCSprite * highscore = [highScoreLoader 
                                 spriteWithUniqueName:@"highscore_badge_anim_01" 
@@ -139,6 +138,14 @@
             GameKitHelper * gk = [GameKitHelper sharedGameKitHelper];
             [gk submitScore:score category:@"com.fallingshards.most.wise.crackers"];
         }
+    }
+    else 
+    {
+        int i = random() % 3;
+        NSString * key = [NSString stringWithFormat:@"end_of_game_loser_quotes_0%d", i + 1];
+        CCSprite * loser = [loader spriteWithUniqueName:key atPosition:ccp(0, 0) inLayer:nil];
+        [loser setPosition:ccp(size.width /2, size.height /2)];
+        [self addChild:loser];
     }
     
     [scoreLabel setString:[NSString stringWithFormat:@"%d", score]];

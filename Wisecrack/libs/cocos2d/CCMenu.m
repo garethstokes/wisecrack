@@ -212,7 +212,7 @@ enum {
 	NSAssert(state_ == kCCMenuStateTrackingTouch, @"[Menu ccTouchMoved] -- invalid state");
 	
 	CCMenuItem *currentItem = [self itemForTouch:touch];
-	
+	if (currentItem == nil) return; 
 	if (currentItem != selectedItem_) {
 		[selectedItem_ unselected];
 		selectedItem_ = currentItem;

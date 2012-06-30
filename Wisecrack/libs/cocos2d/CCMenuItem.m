@@ -610,7 +610,7 @@ const uint32_t	kZoomActionTag = 0xc0c05002;
     [[SimpleAudioEngine sharedEngine] playEffect:[word key_sound] 
                                            pitch:1 
                                              pan:1 
-                                            gain:0.2];
+                                            gain:0.05];
 }
 
 +(id) itemFromNormalImage: (NSString*)value selectedImage:(NSString*) value2
