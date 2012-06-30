@@ -61,8 +61,10 @@
     
     
     //[CCVideoPlayer playMovieWithFile:@"first_time_user_anim_1_mov.mov"];
+    int soundEnabled = [[SettingsManager sharedSettingsManager] getInt:@"SoundEnabled" withDefault:1];
+    if (soundEnabled)
+        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"wisecrack_bg_music_low.m4a" loop:YES];
     
-    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"wisecrack_bg_music_low.m4a" loop:YES];
     [self schedule:@selector(stepZero) interval:2.0f];
 }
 

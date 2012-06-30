@@ -14,6 +14,7 @@
 #import "MetricMonster.h"
 #import "TutorialScene.h"
 #import "HomeScene.h"
+#import "SettingsManager.h"
 
 @implementation OptionsLayer
 
@@ -69,11 +70,50 @@
         //[menu alignItemsHorizontallyWithPadding:16];
         
         [self addChild:menu z:10];
-         
+        
+        
+        // slider
+        [self addSoundSlider];
+        
         [[MetricMonster monster] queue:@"OptionsLayer"];
     }
     return self;
 }
+
+- (void) addSoundSlider
+{
+    SpriteHelperLoader *loader = [[[SpriteHelperLoader alloc] initWithContentOfFile:@"options"] autorelease];
+    CCSprite * soundOn = [loader spriteWithUniqueName:@"sound_on" atPosition:ccp(0,0) inLayer:nil];
+    CCSprite * soundOff = [loader spriteWithUniqueName:@"sound_off" atPosition:ccp(0,0) inLayer:nil];
+    int soundEnabled = [[SettingsManager sharedSettingsManager] getInt:@"SoundEnabled" withDefault:1];
+    CCMenuItemImage * soundButton = [CCMenuItemImage itemFromNormalSprite:(soundEnabled) ? soundOn : soundOff
+                                                           selectedSprite:(soundEnabled) ? soundOff : soundOn
+                                                                   target:self 
+                                                                 selector:@selector(soundToggle)]; 
+    soundMenu = [CCMenu menuWithItems:soundButton, nil];
+    [soundMenu setPosition:CGPointMake(55, -31)];
+    [self addChild:soundMenu z:70];
+}
+
+- (void) soundToggle
+{
+    int soundEnabled = [[SettingsManager sharedSettingsManager] getInt:@"SoundEnabled" withDefault:1];
+    soundEnabled = (soundEnabled == 0) ? 1 : 0;
+    
+    if (soundEnabled) 
+    {
+        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"wisecrack_bg_music_low.m4a" loop:YES];
+    }
+    else {
+        [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
+    }
+    
+    [[SettingsManager sharedSettingsManager] setValue:@"SoundEnabled" newInt:soundEnabled];
+
+    [self removeChild:soundMenu cleanup:YES];
+    [self addSoundSlider];
+}
+
 
 - (void) playTutorial
 {

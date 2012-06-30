@@ -8,9 +8,13 @@
 
 #import "cocos2d.h"
 #import "SpriteHelperLoader.h"
+#import "CCSlider.h"
 
-@interface OptionsLayer : CCLayer
-
+@interface OptionsLayer : CCLayer {
+    CCMenu * soundMenu;
+}
+- (void) soundToggle;
+- (void) addSoundSlider;
 - (void) cont:(id) sender;
 - (void) replay:(id) sender;
 - (void) playTutorial;

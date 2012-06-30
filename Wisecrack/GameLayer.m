@@ -74,7 +74,9 @@
     shake_once = false;
     [[SettingsManager sharedSettingsManager] setValue:@"NO" newString:@"Chain"];
     
-    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"wisecrack_bg_music_low.m4a" loop:YES];
+    int soundEnabled = [[SettingsManager sharedSettingsManager] getInt:@"SoundEnabled" withDefault:1];
+    if (soundEnabled)
+        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"wisecrack_bg_music_low.m4a" loop:YES];
     
     active = YES;
 }
