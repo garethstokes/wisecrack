@@ -190,6 +190,8 @@
     [sw release];
     [mw release];
     [lw release];
+    
+    [super dealloc];
 }
 
 @end

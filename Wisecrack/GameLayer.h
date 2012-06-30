@@ -49,4 +49,7 @@
 - (void) enable_power_ups;
 - (void) nextWave;
 
+- (void) deactiveGame;
+- (void) activeGame;
+
 @end

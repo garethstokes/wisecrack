@@ -75,6 +75,9 @@
         // slider
         [self addSoundSlider];
         
+        GameLayer * gameLayer = [[GameObjectCache sharedGameObjectCache] gameLayer];
+        [gameLayer deactiveGame];
+        
         [[MetricMonster monster] queue:@"OptionsLayer"];
     }
     return self;
@@ -135,13 +138,18 @@
     [self runAction:[CCFadeOut actionWithDuration:0.3]];
     [self removeFromParentAndCleanup:YES];
     [[CCDirector sharedDirector] resume];
+    
+    GameLayer * gameLayer = [[GameObjectCache sharedGameObjectCache] gameLayer];
+    [gameLayer activeGame]; 
 }
 
 - (void) replay:(id) sender
 {
     [[CCDirector sharedDirector] resume];
     
-    GameLayer *gameLayer = [[GameObjectCache sharedGameObjectCache] gameLayer];
+    GameLayer * gameLayer = [[GameObjectCache sharedGameObjectCache] gameLayer];
+    [gameLayer activeGame]; 
+    
     ScoreCard *card = [[[ScoreCard alloc] init] autorelease];
     [card updateScore:[gameLayer score]];
     [[[GameObjectCache sharedGameObjectCache] gameScene] addChild:card z:100];

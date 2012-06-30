@@ -83,6 +83,16 @@
     active = YES;
 }
 
+- (void) deactiveGame
+{
+    menu.isTouchEnabled = NO;
+}
+
+- (void) activeGame
+{
+    menu.isTouchEnabled = YES;
+}
+
 - (void) animateButtonsIn
 {
     int count = 1;
