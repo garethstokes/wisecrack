@@ -11,6 +11,8 @@
 #import "ScoreCard.h"
 #import "WisecrackConfig.h"
 #import "SimpleAudioEngine.h"
+#import "Wisecrack.h"
+#import "MetricMonster.h"
 
 @implementation GameLayer
 @synthesize board;
@@ -357,6 +359,41 @@
                 return;
             }
         }
+    }
+    
+    // check for wisecrack
+    /*
+    GameItem * one = [[GameItem alloc] init];
+    GameItem * two = [[GameItem alloc] init];
+    GameItem * three = [[GameItem alloc] init];
+    GameItem * four = [[GameItem alloc] init];
+    GameItem * five = [[GameItem alloc] init];
+    
+    [one setName:@"Burning"];
+    [two setName:@"Ring"];
+    [three setName:@"Of"];
+    [four setName:@"Declare"];
+    [five setName:@"Fire"];
+    
+    NSArray * test = [NSArray arrayWithObjects:one, two, three, four, five, nil];
+    */
+    
+    Wisecrack * wc = [Wisecrack find:[uniqueWords allValues]];
+    if (wc != nil)
+    {
+        CGSize size = [[CCDirector sharedDirector] winSize];
+        CCSprite * happy = [wc image];
+        happy.position = ccp(size.width /2, size.height /2);
+        
+        [self addChild:happy z:100];
+        [happy runAction:[CCFadeOut actionWithDuration:3.0f]];
+        
+        score += [wc points];
+        
+        [[MetricMonster monster] queue:@"Wisecrack"];
+        [[MetricMonster monster] queue:[NSString stringWithFormat:@"wc:", wc.key]];
+        
+        [[SimpleAudioEngine sharedEngine] playEffect:@"found_wisecrack_noise.m4a" pitch:1 pan:1 gain:0.2];
     }
     
     ink = kTimeout;

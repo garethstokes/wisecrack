@@ -173,6 +173,7 @@
     [[SimpleAudioEngine sharedEngine] preloadEffect:@"mistake_sound.m4a"];
     [[SimpleAudioEngine sharedEngine] preloadEffect:@"wisecrack_play_1.m4a"];
     [[SimpleAudioEngine sharedEngine] preloadEffect:@"wisecrack_play_2.m4a"];
+    [[SimpleAudioEngine sharedEngine] preloadEffect:@"found_wisecrack_noise.m4a"];
     
     [[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:@"wisecrack_bg_music_low.m4a"];
     
