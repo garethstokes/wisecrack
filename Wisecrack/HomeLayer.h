@@ -16,6 +16,7 @@
     SpriteHelperLoader *backgroundLoader;
     
     CCLabelAtlas * _version;
+    CCLabelAtlas * _highScore;
     CGFloat startTime;
 }
 

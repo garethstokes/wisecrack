@@ -187,7 +187,6 @@
     [[MetricMonster monster] queue:@"OpenTwitter"];
     
     //Grab App Delegate so you can use rootviewcontroller
-    int highScore = [[SettingsManager sharedSettingsManager] getInt:@"HighScore" withDefault:0];
     AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
     //*** Prepare Your Tweet ***//

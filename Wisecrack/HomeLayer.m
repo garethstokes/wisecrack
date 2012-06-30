@@ -54,6 +54,24 @@
         [menu setPosition:CGPointMake(160, 80)];
         [self addChild:menu z:10];
         
+        // HIGH SCORE
+        CCSprite * score_bg = [loader spriteWithUniqueName:@"home_highscore_underlay" atPosition:ccp(0,0) inLayer:nil];
+        [score_bg setPosition:ccp(size.width /2, (size.height /2) + 190)];
+        [self addChild:score_bg z:20];
+        
+        int highScore = [[SettingsManager sharedSettingsManager] getInt:@"HighScore" withDefault:0];
+        if (highScore > 0)
+        {
+            NSString * hs_key = [NSString stringWithFormat:@"%d", highScore];
+            _highScore = [CCLabelAtlas labelWithString:hs_key
+                                        charMapFile:@"home_score_numerals.png" 
+                                          itemWidth:11
+                                         itemHeight:34 
+                                       startCharMap:'0'];
+            [_highScore setAnchorPoint: ccp(1.0f, 0.5f)]; // align left
+            [_highScore setPosition:ccp((size.width /2) + 65, (size.height /2) + 185)];
+            [self addChild:_highScore z:21];
+        }
         // CONFIG VERSION
         _version = [[CCLabelAtlas labelWithString:@"" 
                                       charMapFile:@"orange_numbers.png" 

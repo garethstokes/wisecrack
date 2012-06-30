@@ -15,9 +15,9 @@
 {
     if( (self=[super init]))
     {
-        NSMutableArray * sw = [NSMutableArray arrayWithCapacity:16];
-        NSMutableArray * mw = [NSMutableArray arrayWithCapacity:20];
-        NSMutableArray * lw = [NSMutableArray arrayWithCapacity:20];
+        sw = [[NSMutableArray arrayWithCapacity:16] retain];
+        mw = [[NSMutableArray arrayWithCapacity:20] retain];
+        lw = [[NSMutableArray arrayWithCapacity:20] retain];
         
         // small words
         [sw addObject:@"am:small"];
@@ -98,7 +98,7 @@
         [self shuffle:mw];
         [self shuffle:lw];
         
-        wordsInPlay = [NSMutableArray array];
+        [self setWordsInPlay:[NSMutableArray array]];
         
         int gameWords = [[WisecrackConfig config] gameWords];
         int count = 0;
@@ -128,6 +128,68 @@
     }
     
     return self;
+}
+
+- (void) balanceTo:(int)count
+{
+    int diff = count - [wordsInPlay count];
+    if (diff == 0) return;
+    
+    NSLog(@"rebalancing word by: %d", diff);
+    
+    [self shuffle:sw];
+    [self shuffle:mw];
+    [self shuffle:lw];
+    
+    if (diff > 0) {
+        //add in words. 
+        int x = diff;
+        while (x > 0)
+        {
+            int i = random() % 3;
+            GameItem * word; 
+            if (i == 0)
+            {
+                word = [lw objectAtIndex:0];
+                [wordsInPlay addObject:word];
+                [lw removeObject:word];
+            }
+            
+            if (i == 1)
+            {
+                word = [mw objectAtIndex:0];
+                [wordsInPlay addObject:word];
+                [mw removeObject:word];
+            }
+            
+            if (i >= 2)
+            {
+                word = [sw objectAtIndex:0];
+                [wordsInPlay addObject:word];
+                [sw removeObject:word];
+            }
+            
+            x--;
+        }
+     }
+                                               
+    if (diff < 0) {
+         // remove a few words. 
+        int x = diff; 
+        while (x < 0)
+        {
+            int wc = [wordsInPlay count];
+            [wordsInPlay removeObjectAtIndex:random() % wc];
+            x++;
+        }
+    }
+}
+
+- (void) dealloc
+{
+    [sw release];
+    [mw release];
+    [lw release];
 }
 
 @end

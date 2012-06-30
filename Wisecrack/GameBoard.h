@@ -11,6 +11,7 @@
 #import "GameItem.h"
 #import "PrototypeGame.h"
 #import "BonusManager.h"
+#import "TrueFriendsGame.h"
 
 @interface GameBoard : CCNode {
     CGSize size;
@@ -23,6 +24,8 @@
     BOOL dirty;
     BOOL chain;
     BOOL withBonus;
+    
+    TrueFriendsGame * game;
 }
 
 @property CGSize size;

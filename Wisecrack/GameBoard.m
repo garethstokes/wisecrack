@@ -10,6 +10,7 @@
 #import "TrueFriendsGame.h"
 #import "SettingsManager.h"
 #import "GameObjectCache.h"
+#import "WisecrackConfig.h"
 
 @implementation GameBoard
 @synthesize size;
@@ -255,7 +256,12 @@
 - (void) fill
 {
     int x = 1;
-    BaseGame* game = [[TrueFriendsGame alloc] init];
+    if (game == NULL)
+    {
+        game = [[[TrueFriendsGame alloc] init] retain];
+    }
+    
+    [game balanceTo:[[WisecrackConfig config] gameWords]];
     
     // loop through all the rows
     for (int i = 0; i < kBoardRows; i++) 
@@ -312,7 +318,13 @@
         x = 1;
     }
 
+    //[game release];
+}
+
+- (void) dealloc
+{
     [game release];
+    [super dealloc];
 }
 
 @end

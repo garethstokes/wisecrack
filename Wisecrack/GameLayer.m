@@ -57,7 +57,7 @@
     
     [self schedule:@selector(step:)];
     [self schedule:@selector(stepScoreTimer:) interval:1];
-    [self schedule:@selector(updateBoard:) interval:3.0];
+    [self schedule:@selector(updateBoard:) interval:1.5];
     
     int waveLength = [[WisecrackConfig config] waveLength];
     NSLog(@"WaveLength: %d", waveLength);

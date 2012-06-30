@@ -306,4 +306,8 @@ and when to execute the Scenes.
 // Profiler
 -(void) showProfilers;
 
++(double) getAvailableBytes;
++(double) getAvailableKiloBytes;
++(double) getAvailableMegaBytes;
+
 @end

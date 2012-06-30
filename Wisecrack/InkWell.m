@@ -138,7 +138,7 @@
 }
 
 - (void) dealloc
-{
+{   
     [base_bg dealloc];
     [bottle_bg dealloc];
     [timer_ink dealloc];

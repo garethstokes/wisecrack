@@ -10,7 +10,11 @@
 #import "BaseGame.h"
 
 @interface TrueFriendsGame : BaseGame {
-    NSMutableArray * unpickedWords;
+    NSMutableArray * sw;
+    NSMutableArray * mw;
+    NSMutableArray * lw;
 }
+
+- (void) balanceTo:(int)count;
 
 @end
